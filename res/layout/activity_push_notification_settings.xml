@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/notificationlayout_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/notification_header_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/pushnotificationmargin" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/notificationheaderpadding"
+                        android:background="@color/notification_header_background" />
+
+                    <com.wootag.ui.CustomTextView
+                        style="@style/notificationtextview"
+                        android:text="@string/likes"
+                        android:textColor="@color/notification_header_text_color"
+                        foo:customFont="@string/app_bold_font_name" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/lineheight"
+                    android:background="@color/notification_header_text_color" />
+
+                <RadioGroup
+                    android:id="@+id/likesRadiobuttongroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/likeson"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/checkbox_selector"
+                        android:drawablePadding="@dimen/margin"
+                        android:text="@string/on"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/lineheight"
+                        android:layout_marginLeft="@dimen/seperatorleftmargin"
+                        android:background="@color/notification_header_text_color" />
+
+                    <RadioButton
+                        android:id="@+id/likesoff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_selector"
+                        android:drawablePadding="@dimen/margin"
+                        android:text="@string/off"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/lineheight"
+                    android:background="@color/notification_header_text_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/notification_header_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/pushnotificationmargin" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/notificationheaderpadding"
+                        android:background="@color/notification_header_background" />
+
+                    <com.wootag.ui.CustomTextView
+                        style="@style/notificationtextview"
+                        android:text="@string/comments"
+                        android:textColor="@color/notification_header_text_color"
+                        foo:customFont="@string/app_bold_font_name" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/lineheight"
+                    android:background="@color/notification_header_text_color" />
+
+                <RadioGroup
+                    android:id="@+id/commentRadiobuttongroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/commenton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/checkbox_selector"
+                        android:drawablePadding="@dimen/margin"
+                        android:text="@string/on"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/lineheight"
+                        android:layout_marginLeft="@dimen/seperatorleftmargin"
+                        android:background="@color/notification_header_text_color" />
+
+                    <RadioButton
+                        android:id="@+id/commentoff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_selector"
+                        android:drawablePadding="@dimen/margin"
+                        android:text="@string/off"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/lineheight"
+                    android:background="@color/notification_header_text_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/notification_header_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/pushnotificationmargin" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/notificationheaderpadding"
+                        android:background="@color/notification_header_background" />
+
+                    <com.wootag.ui.CustomTextView
+                        style="@style/notificationtextview"
+                        android:text="@string/mentions"
+                        android:textColor="@color/notification_header_text_color"
+                        foo:customFont="@string/app_bold_font_name" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/lineheight"
+                    android:background="@color/notification_header_text_color" />
+
+                <RadioGroup
+                    android:id="@+id/mentionsRadiobuttongroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/mentionson"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/checkbox_selector"
+                        android:drawablePadding="@dimen/margin"
+                        android:text="@string/on"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/lineheight"
+                        android:layout_marginLeft="@dimen/seperatorleftmargin"
+                        android:background="@color/notification_header_text_color" />
+
+                    <RadioButton
+                        android:id="@+id/mentionsoff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_selector"
+                        android:drawablePadding="@dimen/margin"
+                        android:text="@string/off"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/lineheight"
+                    android:background="@color/notification_header_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

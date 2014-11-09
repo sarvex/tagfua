@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linlay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/selectLocLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/bitmapLay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tagcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/cancel_record" />
+
+        <Button
+            android:id="@+id/tagConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tagcancel"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/next_arrow"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@drawable/cancel_record"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/taglogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/smallmargin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:src="@drawable/tag_f"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_toLeftOf="@+id/taglogo"
+            android:src="@drawable/help"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fbLay"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/tagLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/small"
+        android:padding="@dimen/small"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/fbfriendslay"
+            layout="@layout/facebook_friends_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tagLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/colorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/smallmargin"
+            android:visibility="gone" >
+
+            <include layout="@layout/color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/colorLayout"
+            android:layout_marginBottom="@dimen/smallmargin"
+            android:visibility="gone" >
+
+            <include layout="@layout/time_view" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/scLay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeLayout"
+            android:background="@drawable/tag_layout_background"
+            android:fillViewport="true" >
+
+            <include
+                android:id="@+id/taglay"
+                layout="@layout/tag_layout" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/helpInstructionsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        layout="@layout/tag_help_instructions"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    android:id="@+id/rellay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+    <RelativeLayout
+        android:id="@+id/videoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+
+        <VideoView
+            android:id="@+id/surface"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/dialogView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin"
+            android:alpha="0.8"
+            android:background="@drawable/black_border"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.wootag.ui.CustomTextView
+                android:id="@+id/guide"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/smallmargin"
+                android:text="@string/tap_on_the_tag_icon_"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/small"
+                    android:background="@drawable/tag_facebook_f" />
+
+                <Button
+                    android:id="@+id/google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/small"
+                    android:background="@drawable/tag_googleplus_f" />
+
+                <Button
+                    android:id="@+id/twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/small"
+                    android:background="@drawable/tag_twitter_f" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/small"
+                    android:background="@drawable/tag_wootag_f" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/small"
+                    android:background="@drawable/weblink" />
+            </LinearLayout>
+
+            <com.wootag.ui.CustomTextView
+                android:id="@+id/interact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/smallmargin"
+                android:text="@string/interact_with_people_place_and_product_inside_the_videos"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                foo:customFont="@string/app_bold_font_name" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/videoinfosurface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/player_controls_background"
+        android:padding="@dimen/smallmargin"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/cancelplayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/rightmargin"
+            android:background="@drawable/back_arrow"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ownerlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/layout_background" />
+
+                <com.wootag.ui.RoundedImageView
+                    android:id="@+id/ownerimg"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/member" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ownername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/owner_name"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tagsurface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rightmargin"
+                android:background="@drawable/like_button" />
+
+            <Button
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rightmargin"
+                android:background="@drawable/comment_button" />
+
+            <Button
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rightmargin"
+                android:background="@drawable/tag_button" />
+
+            <Button
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rightmargin"
+                android:background="@drawable/share_button" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/playercontrollersurface"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/player_controls_background"
+        android:padding="@dimen/smallmargin"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/playercontrolsmargin"
+            android:background="@drawable/pause1_f" />
+
+        <com.wootag.ui.CustomLayout
+            android:id="@+id/seekbarLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/playercontrolsmargin"
+            android:layout_marginRight="@dimen/playercontrolsmargin"
+            android:layout_toLeftOf="@+id/videoduration"
+            android:layout_toRightOf="@+id/play" >
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                style="@style/MyCustomProgressStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:progress="1" />
+        </com.wootag.ui.CustomLayout>
+
+        <TextView
+            android:id="@+id/videoduration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/playercontrolsmargin"
+            android:layout_toLeftOf="@+id/tagsetting"
+            android:background="@color/twitter_bg_color"
+            android:paddingBottom="@dimen/small"
+            android:paddingLeft="@dimen/smallmargin"
+            android:paddingRight="@dimen/smallmargin"
+            android:paddingTop="@dimen/small"
+            android:text="@string/_00_00_00_00"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/tagsetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/playercontrolsmargin"
+            android:layout_toLeftOf="@+id/home"
+            android:background="@drawable/settings_button_selector" />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/playercontrolsmargin"
+            android:background="@drawable/home_button_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tagandpublishview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/tagandpublishlay"
+            layout="@layout/panel_activity" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/settingLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playercontrollersurface"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin"
+        layout="@layout/setting"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/friendaboutlayout"
+        layout="@layout/facebook_user_info" />
+
+    <include
+        android:id="@+id/fbfriendcalltoaction"
+        layout="@layout/facebook_friend_call_to_action" />
+
+    <include
+        android:id="@+id/fbownuserinfo"
+        layout="@layout/facebook_own_info" />
+
+    <include
+        android:id="@+id/twitterfriendcalltoaction"
+        layout="@layout/twitter_tagged_friend_info" />
+
+    <include
+        android:id="@+id/wootagcalltoactionview"
+        layout="@layout/wootag_call_to_action" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" >
+
+        <include
+            android:id="@+id/twittermessageLayout"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            layout="@layout/twitter_message"
+            android:visibility="gone" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <include
+            android:id="@+id/sendtweetLayout"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            layout="@layout/send_tweet"
+            android:visibility="gone" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/linkcalltoaction"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/call_to_action_border"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/linkactionLayout"
+            layout="@layout/link_call_to_action" />
+    </RelativeLayout>
+
+</RelativeLayout>

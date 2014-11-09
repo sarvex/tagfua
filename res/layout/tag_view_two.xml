@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/laytwo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btntwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:layout_marginTop="@dimen/smallmargin"
+        android:background="@drawable/recyclebin" />
+
+    <RelativeLayout
+        android:id="@+id/rLaytwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/markerImagetwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bluesecond" />
+
+        <LinearLayout
+            android:id="@+id/tagLinkButtontwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/smallmargin"
+            android:background="@drawable/link_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/twoupperLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/twolowerLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/butnLytwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/markerImagetwo"
+            android:layout_marginLeft="@dimen/smallmargin"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/fbtwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/tagbuttonsmargin"
+                android:background="@drawable/tag_facebook_f" />
+
+            <Button
+                android:id="@+id/gplustwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/tagbuttonsmargin"
+                android:background="@drawable/tag_googleplus_f" />
+
+            <Button
+                android:id="@+id/twittertwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/tagbuttonsmargin"
+                android:background="@drawable/tag_twitter_f" />
+
+            <Button
+                android:id="@+id/wootagtwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/tagbuttonsmargin"
+                android:background="@drawable/tag_wootag_f"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/linktwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/tagbuttonsmargin"
+                android:background="@drawable/weblink" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

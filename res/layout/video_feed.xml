@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    android:id="@+id/videofeedView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header" />
+
+    <include
+        android:id="@+id/fbfriendListLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerLayout"
+        layout="@layout/friend_finder_friend_list"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bodyLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerLayout"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/twitter_bg_color" />
+
+        <LinearLayout
+            android:id="@+id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/small" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/publicTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/publicfeedicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/videofeeds_f" />
+
+                    <com.wootag.ui.CustomTextView
+                        android:id="@+id/publicVideosTab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/notificationbottommargin"
+                        android:text="@string/video_feeds"
+                        android:textColor="@color/twitter_bg_color"
+                        foo:customFont="@string/app_bold_font_name" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/privateTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/privatefeedicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/privatefeeds" />
+
+                    <com.wootag.ui.CustomTextView
+                        android:id="@+id/privateVideosTab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/notificationbottommargin"
+                        android:text="@string/private_feeds"
+                        android:textColor="@color/gray"
+                        foo:customFont="@string/app_bold_font_name" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/twitter_bg_color" />
+
+        <com.wootag.ui.CustomTextView
+            android:id="@+id/feedsearchView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/smallmargin"
+            android:padding="@dimen/small"
+            android:text="@string/no_search_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:visibility="gone"
+            foo:customFont="@string/app_bold_font_name" />
+
+        <com.wootag.ui.CustomTextView
+            android:id="@+id/followingfeedsTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/smallmargin"
+            android:padding="@dimen/small"
+            android:text="@string/follower_videos_availbility"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:visibility="gone"
+            foo:customFont="@string/app_bold_font_name" />
+
+        <RelativeLayout
+            android:id="@+id/publicLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible" >
+
+            <com.wootag.pulltorefresh.PullToRefreshListView
+                android:id="@+id/publicFeedListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/white"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/privateLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/controlspadding"
+            android:visibility="gone" >
+
+            <com.wootag.ui.CustomTextView
+                android:id="@+id/privateVideosTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/smallmargin"
+                android:text="@string/no_privatefeed_text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black"
+                android:textSize="@dimen/heading_bold_text_size"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <com.wootag.pulltorefresh.PullToRefreshListView
+                android:id="@+id/privateFeedListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/privateVideosTextView"
+                android:cacheColorHint="@android:color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/friendfinderView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/controlspadding"
+            android:visibility="gone" >
+
+            <com.wootag.pulltorefresh.PullToRefreshScrollView
+                android:id="@+id/friendfinderscrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:cacheColorHint="@android:color/white" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.wootag.ui.CustomTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="@dimen/margin"
+                        android:text="@string/no_feeds_available_follow_your_connections_and_see_what_they_apos_ve_shared_"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="@dimen/heading_bold_text_size"
+                        foo:customFont="@string/app_bold_font_name" />
+
+                    <include
+                        android:id="@+id/socialsiteafriendfinder"
+                        layout="@layout/friend_finder_social_site" />
+
+                    <LinearLayout
+                        android:id="@+id/suggestedUsersLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/moresuggestedusers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin"
+                        android:layout_marginTop="8dp"
+                        android:background="#F6F6F6"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <com.wootag.ui.CustomTextView
+                            android:id="@+id/suggestedUsersTtextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:padding="@dimen/smallmargin"
+                            android:text="@string/more_suggested_users"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/heading_size"
+                            foo:customFont="@string/app_bold_font_name" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.wootag.pulltorefresh.PullToRefreshScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/profile"
+        layout="@layout/other_user_profile_item"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/videoDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6" >
+
+            <ImageView
+                android:id="@+id/postThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profile_banner"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/playButtonImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/play" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottomView"
+                android:background="@drawable/controls_background"
+                android:paddingBottom="@dimen/controlspadding"
+                android:paddingTop="@dimen/controlspadding" >
+
+                <ImageButton
+                    android:id="@+id/deleteImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/delete_button"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/smallmargin"
+                    android:layout_toRightOf="@+id/deleteImageButton"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.wootag.ui.CustomTextView
+                        android:id="@+id/videoTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="4dp"
+                        android:maxLength="28"
+                        android:text="@string/video_title_"
+                        android:textColor="@color/media_controller_text_color"
+                        android:textSize="@dimen/tags_text_size"
+                        android:textStyle="bold"
+                        foo:customFont="@string/app_bold_font_name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wrap" />
+
+                    <com.wootag.ui.CustomTextView
+                        android:id="@+id/dateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="4dp"
+                        android:maxLines="25"
+                        android:text="@string/created_august_07_2013_"
+                        android:textColor="@color/media_controller_text_color"
+                        android:textSize="@dimen/tags_text_size"
+                        android:textStyle="italic"
+                        foo:customFont="@string/app_italic_font_name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wrap" />
+
+                    <com.wootag.ui.CustomTextView
+                        android:id="@+id/viewsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/views_1000"
+                        android:textColor="@color/media_controller_text_color"
+                        android:textSize="@dimen/tags_text_size"
+                        foo:customFont="@string/app_italic_font_name" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/bottomView"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_below="@+id/postThumbnail" />
+
+            <LinearLayout
+                android:id="@+id/userDetailsLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/controls_background"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/controlspadding"
+                android:paddingTop="@dimen/controlspadding"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/profileImageRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/smallmargin" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/layout_background" />
+
+                    <com.wootag.ui.RoundedImageView
+                        android:id="@+id/profileImageView"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/member" />
+                </RelativeLayout>
+
+                <com.wootag.ui.CustomTextView
+                    android:id="@+id/userNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/marlon_brando"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/media_controller_text_color"
+                    android:textSize="@dimen/username_text_size"
+                    foo:customFont="@string/app_font_name" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tagDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small"
+            android:background="@color/tagsbg"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/tagLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/postTagsImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/tags" />
+
+                <com.wootag.ui.CustomTextView
+                    android:id="@+id/tagTextView"
+                    style="@style/tagsViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_250"
+                    foo:customFont="@string/app_bold_font_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loveLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/postLovedImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/loved" />
+
+                <com.wootag.ui.CustomTextView
+                    android:id="@+id/loveTextView"
+                    style="@style/tagsViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_250"
+                    foo:customFont="@string/app_bold_font_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commentLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/postCommentImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/comments" />
+
+                <com.wootag.ui.CustomTextView
+                    android:id="@+id/commentTextView"
+                    style="@style/tagsViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_250"
+                    foo:customFont="@string/app_bold_font_name" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/smallmargin"
+            android:layout_marginRight="@dimen/smallmargin"
+            android:layout_marginTop="@dimen/small"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/loveDetailsLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/smallmargin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/emoticonpadding"
+                android:paddingTop="@dimen/emoticonpadding"
+                android:visibility="visible" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commentDetailsLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/firstTableRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="@dimen/small"
+                    android:layout_marginLeft="@dimen/smallmargin"
+                    android:layout_marginTop="@dimen/small"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/emoticonpadding"
+                        android:paddingTop="@dimen/emoticonpadding" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/smallmargin"
+                            android:src="@drawable/comments" />
+
+                        <com.wootag.ui.CustomTextView
+                            android:id="@+id/firstUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/small"
+                            android:text="@string/first_name"
+                            android:textColor="@color/twitter_bg_color"
+                            android:textSize="@dimen/usernametextsize"
+                            android:textStyle="bold"
+                            foo:customFont="@string/app_bold_font_name" />
+                    </LinearLayout>
+
+                    <com.wootag.ui.CustomTextView
+                        android:id="@+id/firstComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingBottom="@dimen/emoticonpadding"
+                        android:paddingTop="@dimen/emoticonpadding"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/usernametextsize"
+                        foo:customFont="@string/app_font_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondTableRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="@dimen/small"
+                    android:layout_marginLeft="@dimen/smallmargin"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/emoticonpadding"
+                        android:paddingTop="@dimen/emoticonpadding" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/smallmargin"
+                            android:src="@drawable/comments"
+                            android:visibility="invisible" />
+
+                        <com.wootag.ui.CustomTextView
+                            android:id="@+id/secondUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/small"
+                            android:text="@string/second_name"
+                            android:textColor="@color/twitter_bg_color"
+                            android:textSize="@dimen/usernametextsize"
+                            android:textStyle="bold"
+                            foo:customFont="@string/app_bold_font_name" />
+                    </LinearLayout>
+
+                    <com.wootag.ui.CustomTextView
+                        android:id="@+id/secondComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingBottom="@dimen/emoticonpadding"
+                        android:paddingTop="@dimen/emoticonpadding"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/usernametextsize"
+                        foo:customFont="@string/app_font_name" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/options"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rightmargin"
+            android:layout_marginRight="@dimen/smallmargin"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/rightmargin"
+            android:paddingTop="@dimen/smallmargin" >
+
+            <ImageView
+                android:id="@+id/likeImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/loved_new" />
+
+            <ImageView
+                android:id="@+id/commentImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/rightmargin"
+                android:layout_toRightOf="@id/likeImageView"
+                android:src="@drawable/comments_new" />
+
+            <ImageButton
+                android:id="@+id/optionsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/smallmargin"
+                android:background="@drawable/dots_new" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

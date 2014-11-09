@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_border"
+    android:orientation="vertical" >
+
+    <com.wootag.ui.CustomTextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/optionspadding"
+        android:text="@string/select_option"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        foo:customFont="@string/app_font_name" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/small"
+        android:background="@color/twitter_bg_color" />
+
+    <RelativeLayout
+        android:id="@+id/recordVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/smallmargin" >
+
+        <com.wootag.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/optionspadding"
+            android:text="@string/record"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            foo:customFont="@string/app_font_name" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/small"
+        android:background="@color/twitter_bg_color" />
+
+    <RelativeLayout
+        android:id="@+id/chooseFromLibrary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/smallmargin" >
+
+        <com.wootag.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/optionspadding"
+            android:text="@string/choose_from_library"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            foo:customFont="@string/app_font_name" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/small"
+        android:background="@color/twitter_bg_color" />
+
+    <RelativeLayout
+        android:id="@+id/cancelUploadvideo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/smallmargin" >
+
+        <com.wootag.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/optionspadding"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            foo:customFont="@string/app_font_name" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/small"
+        android:background="@color/twitter_bg_color" />
+
+</LinearLayout>

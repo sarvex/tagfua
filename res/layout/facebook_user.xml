@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    android:id="@+id/lineItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/fbHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/pushnotificationmargin"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/notificationmargin"
+            android:background="@color/white" />
+
+        <com.wootag.ui.CustomTextView
+            android:id="@+id/fbHeaderText"
+            style="@style/notificationtextview"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            foo:customFont="@string/app_bold_font_name" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/userview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fbHeader"
+        android:background="@color/tag_layout_bg_color" >
+
+        <RelativeLayout
+            android:id="@+id/profileRR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/small"
+            android:padding="@dimen/small" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/layout_background" />
+
+            <com.wootag.ui.RoundedImageView
+                android:id="@+id/image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/member" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/profileRR"
+            android:orientation="vertical" >
+
+            <com.wootag.ui.CustomTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:textColor="@color/twitter_bg_color"
+                android:textSize="@dimen/usernametextsize"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <com.wootag.ui.CustomTextView
+                android:id="@+id/userID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/twitter_bg_color"
+                android:textSize="@dimen/tags_text_size"
+                foo:customFont="@string/app_font_name" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/selectFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/invite"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/top_margin_edit_text"
+            android:background="@drawable/add1"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

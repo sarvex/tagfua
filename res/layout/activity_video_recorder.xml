@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </SurfaceView>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/controlsContainer"
+        android:background="@color/blue" />
+
+    <RelativeLayout
+        android:id="@+id/controlsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/done_record" />
+
+        <ImageView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cancel_record" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/record_video" />
+
+    <TextView
+        android:id="@+id/txtElapse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/timer"
+        android:gravity="center"
+        android:text="@string/_00"
+        android:textColor="@color/twitter_bg_color"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/camera" />
+
+    <ImageView
+        android:id="@+id/portraitview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </ImageView>
+
+</RelativeLayout>

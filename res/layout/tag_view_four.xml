@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layfour"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btnfour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/recyclebin" />
+
+    <RelativeLayout
+        android:id="@+id/rLayfour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/tagLinkButtonfour"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:background="@drawable/link_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/fourupperLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fourlowerLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/markerImagefour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tagLinkButtonfour"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/small"
+            android:src="@drawable/bluefourth" />
+
+        <LinearLayout
+            android:id="@+id/butnLyfour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tagLinkButtonfour"
+            android:layout_marginLeft="@dimen/small"
+            android:layout_marginTop="@dimen/small"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/fbfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/tagbuttonsmargin"
+                android:layout_marginTop="@dimen/tagbuttontop"
+                android:background="@drawable/tag_facebook_f"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/gplusfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/tagbuttonsmargin"
+                android:layout_marginTop="@dimen/tagbuttontop"
+                android:background="@drawable/tag_googleplus_f"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/twitterfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/tagbuttonsmargin"
+                android:layout_marginTop="@dimen/tagbuttontop"
+                android:background="@drawable/tag_twitter_f"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/wootagfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/tagbuttonsmargin"
+                android:layout_marginTop="@dimen/tagbuttontop"
+                android:background="@drawable/tag_wootag_f"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/linkfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/tagbuttonsmargin"
+                android:layout_marginTop="@dimen/tagbuttontop"
+                android:background="@drawable/weblink"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

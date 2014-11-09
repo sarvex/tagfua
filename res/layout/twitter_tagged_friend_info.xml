@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    android:id="@+id/aboutuser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/smallmargin"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/smallmargin"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/exittwitterfriendinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bannerHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/twitter_header"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bannerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:src="@drawable/twitter_b" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#50000000"
+            android:orientation="horizontal" >
+
+            <ScrollView
+                android:id="@+id/ScrollView01"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:id="@+id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/smallmargin"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/profileRR"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/small"
+                        android:layout_marginTop="@dimen/small" >
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="78dp"
+                            android:layout_height="78dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/layout_background" />
+
+                        <com.wootag.ui.RoundedImageView
+                            android:id="@+id/twitterfriendImage"
+                            android:layout_width="76dp"
+                            android:layout_height="76dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/member" />
+                    </RelativeLayout>
+
+                    <com.wootag.ui.CustomTextView
+                        android:id="@+id/twitterfriendname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sanjay"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        foo:customFont="@string/app_bold_font_name" />
+
+                    <Button
+                        android:id="@+id/twitterbirthdaybutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small"
+                        android:layout_marginRight="@dimen/small"
+                        android:layout_marginTop="@dimen/smallmargin"
+                        android:background="@drawable/bdaywish" />
+
+                    <Button
+                        android:id="@+id/tweet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/smallmargin"
+                        android:layout_marginLeft="@dimen/small"
+                        android:layout_marginRight="@dimen/small"
+                        android:layout_marginTop="@dimen/smallmargin"
+                        android:background="@drawable/tweet" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/userinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:id="@+id/ScrollView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/userdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <com.wootag.ui.CustomTextView
+                            android:id="@+id/about"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#cdcdcd"
+                            android:padding="10dp"
+                            android:text="@string/about"
+                            android:textColor="#666666"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            foo:customFont="@string/app_bold_font_name" />
+
+                        <RelativeLayout
+                            android:id="@+id/work"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/smallmargin" >
+
+                            <com.wootag.ui.CustomTextView
+                                android:id="@+id/latesttweet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/small"
+                                android:text="@string/latest_tweet"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                foo:customFont="@string/app_bold_font_name" />
+
+                            <com.wootag.ui.CustomTextView
+                                android:id="@+id/latesttweetText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/latesttweet"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#666666"
+                                android:textSize="15sp"
+                                foo:customFont="@string/app_italic_font_name" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/lineheight"
+                                android:layout_below="@id/statusupdateText"
+                                android:background="@android:color/darker_gray"
+                                android:padding="5dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/study"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/smallmargin" >
+
+                            <com.wootag.ui.CustomTextView
+                                android:id="@+id/twitterlastupdatetime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/small"
+                                android:text="@string/last_update_time"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                foo:customFont="@string/app_bold_font_name" />
+
+                            <com.wootag.ui.CustomTextView
+                                android:id="@+id/twitterlastupdatetimeText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/twitterlastupdatetime"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#666666"
+                                android:textSize="15sp"
+                                foo:customFont="@string/app_italic_font_name" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/lineheight"
+                                android:layout_below="@id/lastupdatetimeText"
+                                android:background="@android:color/darker_gray"
+                                android:padding="5dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/lives"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/smallmargin" >
+
+                            <com.wootag.ui.CustomTextView
+                                android:id="@+id/twitteruserlivesLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/small"
+                                android:text="@string/location"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                foo:customFont="@string/app_bold_font_name" />
+
+                            <com.wootag.ui.CustomTextView
+                                android:id="@+id/twitteruserlivesText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/twitteruserlivesLabel"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#666666"
+                                android:textSize="15sp"
+                                foo:customFont="@string/app_italic_font_name" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/lineheight"
+                                android:layout_below="@id/location"
+                                android:background="@android:color/darker_gray"
+                                android:padding="5dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/actionButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:visibility="gone" >
+
+                            <Button
+                                android:id="@+id/messagetotwitterfriend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/message" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

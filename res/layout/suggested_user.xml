@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/suggestedView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:id="@+id/suggestedusersview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/suggestedUsersTtextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="@string/suggested_users"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/heading_size"
+            android:textStyle="bold" />
+
+        <com.wootag.pulltorefresh.PullToRefreshListView
+            android:id="@+id/suggestedUserListView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/white"
+            android:divider="@android:color/transparent" />
+    </LinearLayout>
+
+</RelativeLayout>

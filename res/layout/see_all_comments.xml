@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wootag_banner"
+        android:gravity="top" >
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/seeallcommentsheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/exit" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <EditText
+            android:id="@+id/seeallcommentsheaders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_field"
+            android:hint="@string/write_a_comment"
+            android:padding="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/no_data_to_display"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/videoImg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_banner"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+    <View
+        android:id="@+id/emptyView"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_below="@+id/videoImg" />
+
+    <LinearLayout
+        android:id="@+id/userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/controls_background"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/profileImageRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/smallmargin"
+            android:layout_marginTop="@dimen/smallmargin" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/layout_background" />
+
+            <com.wootag.ui.RoundedImageView
+                android:id="@+id/userpic"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/member" />
+        </RelativeLayout>
+
+        <com.wootag.ui.CustomTextView
+            android:id="@+id/usrName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/user_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_text_size"
+            foo:customFont="@string/app_bold_font_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tagInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emptyView"
+        android:background="@drawable/controls_background"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/controlspadding" >
+
+        <ImageView
+            android:id="@+id/tagPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/small"
+            android:background="@drawable/tag_icon" />
+
+        <com.wootag.ui.CustomTextView
+            android:id="@+id/taginf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/media_controller_text_color"
+            android:textSize="@dimen/tags_text_size"
+            foo:customFont="@string/app_italic_font_name" />
+    </LinearLayout>
+
+</RelativeLayout>

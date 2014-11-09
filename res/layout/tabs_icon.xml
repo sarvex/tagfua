@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabsLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/tab_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/videofeedicon" />
+
+        <ImageView
+            android:id="@+id/tab_notification_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notification_icon"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

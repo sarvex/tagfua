@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/intro_first"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/bannerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/logineditpadding"
+        android:background="@drawable/banner"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/userNameEditText"
+            style="@style/regEditTextStyle"
+            android:background="@drawable/login_edit_border"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:hint="@string/username"
+            android:imeOptions="actionNext"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            style="@style/regEditTextStyle"
+            android:layout_marginTop="@dimen/smallmargin"
+            android:background="@drawable/login_edit_border"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/smallmargin"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.wootag.ui.CustomTextView
+                android:id="@+id/rememberme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remember_me"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <CheckBox
+                android:id="@+id/remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/smallmargin"
+                android:button="@drawable/remember_selector"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <com.wootag.ui.CustomTextView
+            android:id="@+id/forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginRight="@dimen/buttonmargin"
+            android:clickable="true"
+            android:text="@string/forgot_password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            foo:customFont="@string/app_bold_font_name" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/top_margin_signinsocial_buttons"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/loginRegisterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/smallmargin"
+                android:background="@drawable/register_selector" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/smallmargin"
+                android:background="@drawable/login_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/socialButtons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/fblogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/smallmargin"
+                android:background="@drawable/reg_facebook_selector" />
+
+            <Button
+                android:id="@+id/gpluslogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/smallmargin"
+                android:background="@drawable/reg_g_plus_selector" />
+
+            <Button
+                android:id="@+id/twitterlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/smallmargin"
+                android:background="@drawable/reg_twitter_selector"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/copyRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/logineditpadding"
+        android:background="@drawable/copyright"
+        android:contentDescription="@string/app_name" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/help"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/splashImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/splash"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/splashBannerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splashbanner"
+        android:visibility="gone" />
+
+</RelativeLayout>
