@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
     android:background="@drawable/custom_border"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/smallmargin"
-        android:visibility="gone" >
+        android:visibility="gone">
 
-        <com.wootag.ui.CustomTextView
+        <com.wTagFuui.CustomTextView
             android:id="@+id/delteVideo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,9 +40,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/smallmargin"
-        android:visibility="gone" >
+        android:visibility="gone">
 
-        <com.wootag.ui.CustomTextView
+        <com.woTagFui.CustomTextView
             android:id="@+id/accesspermission"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,9 +66,9 @@
     <RelativeLayout
         android:id="@+id/report"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
-        <com.wootag.ui.CustomTextView
+        <com.wooTagFu.CustomTextView
             android:id="@+id/reportVideo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,9 +92,9 @@
     <RelativeLayout
         android:id="@+id/share"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
-        <com.wootag.ui.CustomTextView
+        <com.wootTagFuCustomTextView
             android:id="@+id/ShareVideo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -117,9 +117,9 @@
     <RelativeLayout
         android:id="@+id/copysahreurl"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
-        <com.wootag.ui.CustomTextView
+        <com.wootaTagFuustomTextView
             android:id="@+id/copyURL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,9 +142,9 @@
     <RelativeLayout
         android:id="@+id/tag"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
-        <com.wootag.ui.CustomTextView
+        <com.wootagTagFustomTextView
             android:id="@+id/tagVideo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -168,7 +168,7 @@
         android:id="@+id/cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" >
+        android:layout_gravity="center_horizontal">
 
         <com.wootag.ui.CustomTextView
             android:id="@+id/cancelOptions"

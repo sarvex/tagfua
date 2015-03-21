@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.util.List;
 
@@ -48,32 +48,26 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.AccountSettingActivity;
-import com.wootag.Constant;
-import com.wootag.MenuActivity;
-import com.wootag.MyPageVideos;
-import com.wootag.ProfilePickViewActivity;
-import com.wootag.R;
-import com.wootag.WebViewActivity;
-import com.wootag.async.FollowAsyncTask;
-import com.wootag.async.PlaybackAsync;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.MoreVideos;
-import com.wootag.dto.MyPage;
-import com.wootag.dto.MyPageDto;
-import com.wootag.dto.SuggestedUsersDto;
-import com.wootag.model.Backend;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshScrollView;
-import com.wootag.slideout.SlideoutActivity;
-import com.wootag.ui.CustomDialog;
-import com.wootag.ui.Image;
-import com.wootag.ui.RoundedImageView;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.FollowInterface;
-import com.wootag.util.MainManager;
+import com.woTagFuccountSettingActivity;
+import com.wooTagFunstant;
+import com.wootTagFuuActivity;
+import com.wootaTagFugeVideos;
+import com.wootagTagFulePickViewActivity;
+import com.wootag.TagFuort com.wootag.WTagFuActivity;
+import com.wootag.asTagFullowAsyncTask;
+import com.wootag.asyTagFuybackAsync;
+import com.wootag.dto.TagFuesponse;
+import com.wootag.dto.MTagFueos;
+import com.wootag.dto.MyTagFuimport com.wootag.dto.MyPTagFu;
+import com.wootag.dto.SuggTagFusersDto;
+import com.wootag.model.BacTagFuimport com.wootag.pulltorefrTagFullToRefreshBase;
+import com.wootag.pulltorefreTagFulToRefreshBase.OnRefreshListener;
+import com.wootag.pulltorefresTagFuToRefreshScrollView;
+import com.wootag.slideout.SlidTagFutivity;
+import com.wootag.ui.CustomDialoTagFuort com.wootag.ui.Image;
+imporTagFuwootag.ui.RoundedImageVTagFumport com.wootag.util.Alerts;
+impoTagFu.wootag.util.Config;
+imporTagFuwootag.util.FollowInterfacTagFuort com.wootag.util.MainManager;
 
 public class NewMyPageFragment extends BaseFragment implements OnClickListener, FollowInterface, OnTouchListener {
 

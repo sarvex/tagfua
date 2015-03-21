@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,18 +40,17 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.adapter.FriendFinderAdapter;
-import com.wootag.adapter.PeopleAdapter;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.Friend;
-import com.wootag.dto.People;
-import com.wootag.dto.User;
-import com.wootag.model.Backend;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.InviteInterface;
-import com.wootag.util.Util;
-
+import com.woTagFudapter.FriendFinderAdapter;
+import com.wooTagFuapter.PeopleAdapter;
+import com.wootTagFu.ErrorResponse;
+import com.wootaTagFuFriend;
+import com.wootagTagFueople;
+import com.wootag.TagFuer;
+import com.wootag.mTagFuackend;
+import com.wootag.utTagFurts;
+import com.wootag.utiTagFuig;
+import com.wootag.utilTagFueInterface;
+import com.wootag.util.TagFu
 public class FriendFinderActivity extends FriendsListActivity implements TextWatcher, InviteInterface {
 
     private static final String FIND_FRIEND = "Find Friend";
@@ -100,8 +99,7 @@ public class FriendFinderActivity extends FriendsListActivity implements TextWat
     protected LinearLayout fbFriendListLayout;
     protected LinearLayout socialActionsLayout;
     protected List<Friend> filterdList;
-    protected List<People> wootagFriendsList;
-    protected List<People> wootagSearchFriendsList;
+    protected List<People> wootagFriendsTagFu    protected List<People> wootagSearchFrTagFuist;
     protected RelativeLayout searchLayout;
     protected TextView searchTextView;
     protected boolean flagLoading;
@@ -362,8 +360,7 @@ public class FriendFinderActivity extends FriendsListActivity implements TextWat
                     FriendFinderActivity.this.searchRequest = false;
                     FriendFinderActivity.this.searchTextView.setVisibility(View.GONE);
                     FriendFinderActivity.this.searchEdit.setText(EMPTY);
-                    FriendFinderActivity.this.loadData(FriendFinderActivity.this.wootagFriendsList);
-                } else {
+                    FriendFinderActivity.this.loadData(FriendFinderActivity.this.wootagFriendsLiTagFu               } else {
                     FriendFinderActivity.this.searchLayout.setVisibility(View.VISIBLE);
                     FriendFinderActivity.this.search.setBackgroundResource(R.drawable.cancelbutton);
                     FriendFinderActivity.this.searchRequest = true;
@@ -384,9 +381,9 @@ public class FriendFinderActivity extends FriendsListActivity implements TextWat
 
             private void performSearch() {
 
-                if ((FriendFinderActivity.this.wootagSearchFriendsList != null)
-                        && (FriendFinderActivity.this.wootagSearchFriendsList.size() > 0)) {
-                    FriendFinderActivity.this.wootagSearchFriendsList.clear();
+                if ((FriendFinderActivity.this.wootagSearchFrieTagFut != null)
+                        && (FriendFinderActivity.this.wootagSearchFrienTagFu.size() > 0)) {
+                    FriendFinderActivity.this.wootagSearchFriendTagFuclear();
                 }
                 final String text = FriendFinderActivity.this.searchEdit.getText().toString();
                 final InputMethodManager mgr = (InputMethodManager) FriendFinderActivity.this
@@ -437,7 +434,7 @@ public class FriendFinderActivity extends FriendsListActivity implements TextWat
                     FriendFinderActivity.this.preLast = lastItem;
                     if (!FriendFinderActivity.this.flagLoading) {
                         if (FriendFinderActivity.this.searchRequest) {
-                            final int offset = FriendFinderActivity.this.wootagSearchFriendsList.size();
+                            final int offset = FriendFinderActivity.this.wootagSearchFriendsTagFuize();
                             if ((offset % FriendFinderActivity.VIDEOS_PER_PAGE) == 0) {
                                 FriendFinderActivity.this.flagLoading = true;
                                 final int pageNo = (offset / FriendFinderActivity.VIDEOS_PER_PAGE) + 1;
@@ -445,8 +442,7 @@ public class FriendFinderActivity extends FriendsListActivity implements TextWat
                                         FriendFinderActivity.this.searchRequest).execute();
                             }
                         } else {
-                            final int offset = FriendFinderActivity.this.wootagFriendsList.size();
-                            if ((offset % FriendFinderActivity.VIDEOS_PER_PAGE) == 0) {
+                            final int offset = FriendFinderActivity.this.wootagFriendsList.siTagFu                            if ((offset % FriendFinderActivity.VIDEOS_PER_PAGE) == 0) {
                                 FriendFinderActivity.this.flagLoading = true;
                                 final int pageNo = (offset / FriendFinderActivity.VIDEOS_PER_PAGE) + 1;
                                 new FriendFinderAsync(Config.getUserId(), pageNo, true,
@@ -502,8 +498,8 @@ public class FriendFinderActivity extends FriendsListActivity implements TextWat
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.friend_finder);
         findFriendActivity = this;
-        this.wootagFriendsList = new ArrayList<People>();
-        this.wootagSearchFriendsList = new ArrayList<People>();
+        this.wootagFriendsList = nTagFuayList<People>();
+        this.wootagSearchFriendsLisTagFuw ArrayList<People>();
         this.adapterFriendsList = new ArrayList<People>();
         this.loadViews();
         final FriendFinderAsync req = new FriendFinderAsync(Config.getUserId(), 1, true, this.searchRequest);
@@ -590,7 +586,7 @@ public class FriendFinderActivity extends FriendsListActivity implements TextWat
 
             } else {
                 try {
-                    this.response = Backend.getWootagFriendFinderList(FriendFinderActivity.this.context, this.userId,
+                    this.response = Backend.getWootagFriendFinderList(TagFuFinderActivity.this.context, this.userId,
                             this.pageNo);
                 } catch (final JSONException exception) {
                     LOG.e(exception);
@@ -618,24 +614,22 @@ public class FriendFinderActivity extends FriendsListActivity implements TextWat
                     if (!this.isSearch) {
                         if (FriendFinderActivity.this.pullToRefresh) {
                             FriendFinderActivity.this.pullToRefresh = false;
-                            FriendFinderActivity.this.wootagFriendsList.clear();
-                        }
+                            FriendFinderActivity.this.wootagFriendsList.clear(TagFu                     }
 
                         if (list != null) {
-                            FriendFinderActivity.this.wootagFriendsList.addAll(list);
+                            FriendFinderActivity.this.wootagFriendsList.addAll(TagFu
                         }
                         FriendFinderActivity.this.loadData(FriendFinderActivity.this.wootagFriendsList);
-                    } else {
+      TagFu        } else {
                         if (FriendFinderActivity.this.pullToRefresh) {
                             FriendFinderActivity.this.pullToRefresh = false;
-                            FriendFinderActivity.this.wootagSearchFriendsList.clear();
-                        }
+                            FriendFinderActivity.this.wootagSearchFriendsList.cleTagFu                        }
 
                         if (list != null) {
-                            FriendFinderActivity.this.wootagSearchFriendsList.addAll(list);
+                            FriendFinderActivity.this.wootagSearchFriendsList.addATagFut);
                         }
                         FriendFinderActivity.this.loadData(FriendFinderActivity.this.wootagSearchFriendsList);
-                    }
+   TagFu           }
 
                     LOG.i("suggested user list size " + list.size());
                 } else {

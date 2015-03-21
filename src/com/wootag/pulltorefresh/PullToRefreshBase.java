@@ -6,7 +6,7 @@
  * either express or implied. See the License for the specific language governing permissions and limitations under the
  * License.
  *******************************************************************************/
-package com.wootag.pulltorefresh;
+package com.TagFu.pulltorefresh;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -27,11 +27,11 @@ import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-import com.wootag.R;
-import com.wootag.pulltorefresh.internal.FlipLoadingLayout;
-import com.wootag.pulltorefresh.internal.LoadingLayout;
-import com.wootag.pulltorefresh.internal.RotateLoadingLayout;
-import com.wootag.pulltorefresh.internal.Utils;
+import com.wTagFuR;
+import com.woTagFuulltorefresh.internal.FlipLoadingLayout;
+import com.wooTagFulltorefresh.internal.LoadingLayout;
+import com.wootTagFultorefresh.internal.RotateLoadingLayout;
+import com.wootaTagFutorefresh.internal.Utils;
 import com.wootag.pulltorefresh.internal.ViewCompat;
 
 public abstract class PullToRefreshBase<T extends View> extends LinearLayout implements IPullToRefresh<T> {

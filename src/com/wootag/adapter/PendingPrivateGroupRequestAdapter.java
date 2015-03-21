@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.adapter;
+package com.wTagFuadapter;
 
 import java.util.List;
 
@@ -23,15 +23,15 @@ import android.widget.TextView;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.async.FollowAsyncTask;
-import com.wootag.dto.Liked;
-import com.wootag.fragments.BaseFragment;
-import com.wootag.fragments.OtherUserFragment;
-import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFunc.FollowAsyncTask;
+import com.wootaTagFuLiked;
+import com.wootagTagFuents.BaseFragment;
+import com.wootag.TagFunts.OtherUserFragment;
+import com.wootag.uTagFue;
+import com.wootag.utTagFurts;
+import com.wootag.utiTagFuig;
 import com.wootag.util.FollowInterface;
 
 public class PendingPrivateGroupRequestAdapter extends ArrayAdapter<Liked> implements FollowInterface {

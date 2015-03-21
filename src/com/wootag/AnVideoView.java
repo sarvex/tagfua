@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.io.File;
 
@@ -29,8 +29,8 @@ import android.widget.RelativeLayout;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.dto.VideoDetails;
-import com.wootag.util.Config;
+import com.woTagFuto.VideoDetails;
+import com.wooTagFuil.Config;
 import com.wootag.util.Util;
 
 public class AnVideoView extends Activity {

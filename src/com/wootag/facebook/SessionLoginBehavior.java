@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 /**
  * Specifies the behaviors to try during {@link Session#openForRead(com.facebook.Session.OpenRequest) openForRead},

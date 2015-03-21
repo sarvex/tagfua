@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 /**
  * Specifies different categories of logging messages that can be generated.

@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.util;
+package com.wTagFuutil;
 
 import java.util.Map;
 
@@ -12,7 +12,7 @@ import android.content.SharedPreferences;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
+import com.woTagFuonstant;
 import com.wootag.VideoPlayerApp;
 
 public class Preferences {

@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -51,12 +51,12 @@ import android.util.Log;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.wootag.facebook.internal.NativeProtocol;
-import com.wootag.facebook.internal.SessionAuthorizationType;
-import com.wootag.facebook.internal.Utility;
-import com.wootag.facebook.internal.Validate;
-import com.wootag.facebook.model.GraphMultiResult;
-import com.wootag.facebook.model.GraphObject;
+import com.wTagFufacebook.internal.NativeProtocol;
+import com.woTagFuacebook.internal.SessionAuthorizationType;
+import com.wooTagFucebook.internal.Utility;
+import com.wootTagFuebook.internal.Validate;
+import com.wootaTagFubook.model.GraphMultiResult;
+import com.wootagTagFuook.model.GraphObject;
 import com.wootag.facebook.model.GraphObjectList;
 
 /**

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:id="@+id/lineItem"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@color/tag_layout_bg_color" >
+    android:background="@color/tag_layout_bg_color">
 
     <LinearLayout
         android:id="@+id/contactHeader"
@@ -12,14 +12,14 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:orientation="vertical"
-        android:padding="@dimen/pushnotificationmargin" >
+        android:padding="@dimen/pushnotificationmargin">
 
         <View
             android:layout_width="fill_parent"
             android:layout_height="@dimen/notificationmargin"
             android:background="@color/white" />
 
-        <com.wootag.ui.CustomTextView
+        <com.wTagFuui.CustomTextView
             android:id="@+id/contactHeaderText"
             style="@style/notificationtextview"
             android:layout_gravity="center"
@@ -31,7 +31,7 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/contactHeader" >
+        android:layout_below="@+id/contactHeader">
 
         <RelativeLayout
             android:id="@+id/profileRR"
@@ -41,7 +41,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="@dimen/small"
-            android:padding="@dimen/small" >
+            android:padding="@dimen/small">
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -50,7 +50,7 @@
                 android:layout_centerInParent="true"
                 android:background="@drawable/layout_background" />
 
-            <com.wootag.ui.RoundedImageView
+            <com.woTagFui.RoundedImageView
                 android:id="@+id/image"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -65,9 +65,9 @@
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/profileRR"
             android:gravity="center_vertical"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <com.wootag.ui.CustomTextView
+            <com.wooTagFu.CustomTextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

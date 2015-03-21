@@ -3,12 +3,12 @@
     android:id="@+id/layone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal" >
+    android:orientation="horizontal">
 
     <RelativeLayout
         android:id="@+id/rLayone"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/markerImageone"
@@ -25,21 +25,19 @@
             android:layout_marginTop="@dimen/smallmargin"
             android:background="@drawable/link_background"
             android:gravity="center"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/oneupperLinearLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-            </LinearLayout>
+                android:orientation="horizontal"></LinearLayout>
 
             <LinearLayout
                 android:id="@+id/onelowerLinearLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-            </LinearLayout>
+                android:orientation="horizontal"></LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -48,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/markerImageone"
             android:layout_marginLeft="20dp"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/fbone"
@@ -72,7 +70,7 @@
                 android:background="@drawable/tag_twitter_f" />
 
             <Button
-                android:id="@+id/wootagone"
+                android:id="@+id/TagFuone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/tagbuttonsmargin"

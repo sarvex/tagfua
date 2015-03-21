@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,12 +22,12 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 
-import com.wootag.R;
-import com.wootag.facebook.AppEventsLogger;
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.Request;
-import com.wootag.facebook.Session;
-import com.wootag.facebook.internal.AnalyticsEvents;
+import com.wTagFuR;
+import com.woTagFuacebook.AppEventsLogger;
+import com.wooTagFucebook.FacebookException;
+import com.wootTagFuebook.Request;
+import com.wootaTagFubook.Session;
+import com.wootagTagFuook.internal.AnalyticsEvents;
 import com.wootag.facebook.model.GraphUser;
 
 /**

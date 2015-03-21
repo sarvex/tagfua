@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,22 +30,19 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.SeeAllCommentsActivity;
-import com.wootag.adapter.CommentAdapter;
-import com.wootag.async.PlaybackAsync;
-import com.wootag.dto.Comment;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.VideoDetails;
-import com.wootag.dto.VideoProfile;
-import com.wootag.model.Backend;
-import com.wootag.pulltorefresh.PullToRefreshListView;
-import com.wootag.pulltorefresh.PullToRefreshScrollView;
-import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFuAllCommentsActivity;
+import com.wootaTagFuter.CommentAdapter;
+import com.wootagTagFu.PlaybackAsync;
+import com.wootag.TagFumment;
+import com.wootag.dTagFuorResponse;
+import com.wootag.dtTagFuoDetails;
+import com.wootag.dtoTagFuProfile;
+import com.wootag.modeTagFuend;
+import com.wootag.pulltTagFush.PullToRefreshListView;
+import com.wootag.pulltoTagFuh.PullToRefreshScrollView;
+import com.wootag.ui.ImagTagFuort com.wootag.util.AleTagFumport com.wootag.util.ConfTagFuport com.wootag.util.MainMTagFu;
 import com.wootag.util.VideoActionInterface;
 
 public class NotificationVideoDetailsFragment extends BaseFragment implements VideoActionInterface {

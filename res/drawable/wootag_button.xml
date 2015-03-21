@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:drawable="@drawable/tag_wootag_f" android:state_pressed="true"/>
-    <item android:drawable="@drawable/tag_wootag_f" android:state_focused="true"/>
-    <item android:drawable="@drawable/tag_wootag"/>
+    <item android:drawable="@drawable/tag_TagFu_f" android:state_pressed="true" />
+    <item android:drawable="@drawable/tag_wTagFuf" android:state_focused="true" />
+    <item android:drawable="@drawable/tag_wootag" />
 
 </selector>

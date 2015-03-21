@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.io.OutputStream;
 import java.util.HashMap;

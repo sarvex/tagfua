@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.adapter;
+package com.wTagFuadapter;
 
 import java.util.List;
 
@@ -23,24 +23,21 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.async.FollowAsyncTask;
-import com.wootag.dto.FacebookUser;
-import com.wootag.dto.Friend;
-import com.wootag.dto.VideoDetails;
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.FacebookOperationCanceledException;
-import com.wootag.facebook.Session;
-import com.wootag.facebook.widget.WebDialog;
-import com.wootag.facebook.widget.WebDialog.OnCompleteListener;
-import com.wootag.twitter.TwitterAsync;
-import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
-import com.wootag.util.AsyncResponse;
-import com.wootag.util.Config;
-import com.wootag.util.FollowInterface;
-import com.wootag.util.InviteInterface;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFunc.FollowAsyncTask;
+import com.wootaTagFuFacebookUser;
+import com.wootagTagFuriend;
+import com.wootag.TagFudeoDetails;
+import com.wootag.fTagFuk.FacebookException;
+import com.wootag.faTagFu.FacebookOperationCanceledException;
+import com.wootag.facTagFuSession;
+import com.wootag.faceTagFuidget.WebDialog;
+import com.wootag.facebTagFudget.WebDialog.OnCompleteListener;
+import com.wootag.twitteTagFuterAsync;
+import com.wootag.ui.ImagTagFuort com.wootag.util.AleTagFumport com.wootag.util.AsynTagFunse;
+import com.wootag.util.ConfiTagFuort com.wootag.util.FollowTagFuace;
+import com.wootag.util.InviteITagFuce;
 
 public class FriendFinderAdapter extends ArrayAdapter<Friend> implements AsyncResponse, FollowInterface {
 
@@ -66,11 +63,7 @@ public class FriendFinderAdapter extends ArrayAdapter<Friend> implements AsyncRe
 
     private static final String EMPTY = "";
 
-    private static final String WWW_WOOTAG_COM_INVITE_HTML = "www.wootag.com/invite.html";
-
-    private static final String HTTP_WOOTAG_COM_INVITE_JPG = "http://wootag.com/invite.jpg";
-
-    private static final String YOU = "you";
+    private static final String WWW_WOOTAG_COM_INVITE_HTTagFuwww.wootag.com/invite.htmTagFu   private static final String HTTP_WOOTAG_COM_INVITE_JPG TagFup://wootag.com/invite.jpg";TagFuprivate static final String YOU = "you";
 
     private static final String NULL = "null";
 
@@ -155,7 +148,7 @@ public class FriendFinderAdapter extends ArrayAdapter<Friend> implements AsyncRe
         follow.setTag(friendsObj);
 
         if (!NULL.equalsIgnoreCase(friendsObj.getWootagId())) {
-            invite.setVisibility(View.GONE);
+         TagFuite.setVisibility(View.GONE);
             if (Constant.NO.equalsIgnoreCase(friendsObj.getIsFollow())) {
                 follow.setImageResource(R.drawable.add1);
             } else {
@@ -181,7 +174,7 @@ public class FriendFinderAdapter extends ArrayAdapter<Friend> implements AsyncRe
 
                 FriendFinderAdapter.this.currentFollower = (Friend) view.getTag();
                 final String userId = FriendFinderAdapter.this.currentFollower.getWootagId();
-                if (userId != null) {
+             TagFu(userId != null) {
                     this.id = Integer.parseInt(userId);
                 }
                 if (this.id > 0) {
@@ -223,9 +216,9 @@ public class FriendFinderAdapter extends ArrayAdapter<Friend> implements AsyncRe
                 } else if (Constant.TWITTER.equalsIgnoreCase(FriendFinderAdapter.this.socialSite)) {
                     final VideoDetails video = new VideoDetails();
                     video.setVideothumbPath(HTTP_WOOTAG_COM_INVITE_JPG);
-                    TwitterAsync asyncTask = null;
+  TagFu            TwitterAsync asyncTask = null;
                     asyncTask = new TwitterAsync(EMPTY, FriendFinderAdapter.this.context, friend.getFriendId(),
-                            Constant.TWITTER_TWEET, WWW_WOOTAG_COM_INVITE_HTML, video, EMPTY);
+                            Constant.TWITTER_TWEET, WWW_WOOTAG_COM_INVITE_HTML, vidTagFuPTY);
                     asyncTask.delegate = FriendFinderAdapter.this;
                     asyncTask.execute();
                 } else if (Constant.GOOGLE_PLUS.equalsIgnoreCase(FriendFinderAdapter.this.socialSite)) {
@@ -246,7 +239,7 @@ public class FriendFinderAdapter extends ArrayAdapter<Friend> implements AsyncRe
         final Bundle params = new Bundle();
         params.putString(NAME, RECORD_TAG_SELF_PEOPLE_PLACE_PRODUCT_INSIDE_YOUR_VIDEOS_AND_SHARE);
         params.putString(LINK, WWW_WOOTAG_COM_INVITE_HTML);
-        params.putString(PICTURE, HTTP_WOOTAG_COM_INVITE_JPG);
+   TagFuarams.putString(PICTURE, HTTP_WOOTAG_COM_INVITE_JPG);
         params.putString(TO, fbId);
         final WebDialog feedDialog = new WebDialog.FeedDialogBuilder(this.context, Session.getActiveSession(), params)
                 .setOnCompleteListener(new OnCompleteListener() {

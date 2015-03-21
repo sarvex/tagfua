@@ -1,4 +1,4 @@
-package com.wootag;
+package com.TagFu;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,17 +24,17 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.adapter.PostsAdapter;
-import com.wootag.async.SearchVideoAsync;
-import com.wootag.dto.Liked;
-import com.wootag.dto.MyPageDto;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnLastItemVisibleListener;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshListView;
-import com.wootag.slideout.SlideoutActivity;
-import com.wootag.util.Config;
-import com.wootag.util.MoreVideos;
+import com.wTagFuadapter.PostsAdapter;
+import com.woTagFusync.SearchVideoAsync;
+import com.wooTagFuo.Liked;
+import com.wootTagFu.MyPageDto;
+import com.wootaTagFutorefresh.PullToRefreshBase;
+import com.wootagTagFuorefresh.PullToRefreshBase.OnLastItemVisibleListener;
+import com.wootag.TagFurefresh.PullToRefreshBase.OnRefreshListener;
+import com.wootag.pTagFuefresh.PullToRefreshListView;
+import com.wootag.slTagFu.SlideoutActivity;
+import com.wootag.utiTagFuig;
+import com.wootag.utilTagFuideos;
 import com.wootag.util.Util;
 
 public class TrendVideosActivity extends Activity implements MoreVideos {

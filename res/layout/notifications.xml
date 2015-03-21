@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:id="@+id/notificationsView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/tag_layout_bg_color" >
+    android:background="@color/tag_layout_bg_color">
 
     <include
         android:id="@+id/headerLayout"
         layout="@layout/header" />
 
-    <com.wootag.pulltorefresh.PullToRefreshScrollView
+    <com.wTagFupulltorefresh.PullToRefreshScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/headerLayout" >
+        android:layout_below="@+id/headerLayout">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <com.wootag.ui.CustomTextView
+            <com.woTagFui.CustomTextView
                 android:id="@+id/notificationserrormessageView"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -37,8 +37,7 @@
                 android:id="@+id/notificationLayout"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
-            </LinearLayout>
+                android:orientation="vertical"></LinearLayout>
         </LinearLayout>
     </com.wootag.pulltorefresh.PullToRefreshScrollView>
 

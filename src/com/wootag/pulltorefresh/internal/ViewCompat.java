@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.wootag.pulltorefresh.internal;
+package com.TagFu.pulltorefresh.internal;
 
 import android.annotation.TargetApi;
 import android.graphics.drawable.Drawable;

@@ -6,7 +6,7 @@
  * either express or implied. See the License for the specific language governing permissions and limitations under the
  * License.
  *******************************************************************************/
-package com.wootag.pulltorefresh;
+package com.TagFu.pulltorefresh;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -25,8 +25,8 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 
-import com.wootag.R;
-import com.wootag.pulltorefresh.internal.EmptyViewMethodAccessor;
+import com.wTagFuR;
+import com.woTagFuulltorefresh.internal.EmptyViewMethodAccessor;
 import com.wootag.pulltorefresh.internal.IndicatorLayout;
 
 public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extends PullToRefreshBase<T> implements

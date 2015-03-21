@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.async;
+package com.wTagFuasync;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,10 +17,10 @@ import org.json.JSONException;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.R;
-import com.wootag.connectivity.VideoDataBase;
-import com.wootag.dto.TagInfo;
-import com.wootag.dto.TagResponse;
+import com.woTagFu;
+import com.wooTagFunnectivity.VideoDataBase;
+import com.wootTagFu.TagInfo;
+import com.wootaTagFuTagResponse;
 import com.wootag.model.Backend;
 
 public class TagAsync extends AsyncTask<Void, Void, Boolean> {

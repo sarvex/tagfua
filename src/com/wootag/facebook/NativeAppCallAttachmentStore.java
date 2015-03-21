@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -25,13 +25,13 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.util.Log;
 
-import com.wootag.facebook.internal.Utility;
-import com.wootag.facebook.internal.Validate;
+import com.wTagFufacebook.internal.Utility;
+import com.woTagFuacebook.internal.Validate;
 
 /**
  * <p>
  * This class works in conjunction with {@link NativeAppCallContentProvider} to allow apps to attach binary attachments
- * (e.g., images) to native dialogs launched via the {@link com.wootag.facebook.widget.FacebookDialog} class. It stores
+ * (e.g., images) to native dialogs launched via the {@link com.wooTagFucebook.widget.FacebookDialog} class. It stores
  * attachments in temporary files and allows the Facebook application to retrieve them via the content provider.
  * </p>
  * <p>

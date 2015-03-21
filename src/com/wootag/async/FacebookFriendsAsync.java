@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.async;
+package com.wTagFuasync;
 
 import java.util.List;
 
@@ -17,13 +17,13 @@ import org.json.JSONException;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.VideoPlayerApp;
-import com.wootag.connectivity.FacebookHttpConnectionManager;
-import com.wootag.dto.FacebookUser;
-import com.wootag.dto.Friend;
-import com.wootag.util.Alerts;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFueoPlayerApp;
+import com.wootaTagFuectivity.FacebookHttpConnectionManager;
+import com.wootagTagFuacebookUser;
+import com.wootag.TagFuiend;
+import com.wootag.uTagFuerts;
 import com.wootag.util.AsyncResponse;
 
 public class FacebookFriendsAsync extends AsyncTask<Void, Void, Void> {

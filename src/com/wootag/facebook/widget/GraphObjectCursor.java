@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import com.wootag.facebook.model.GraphObject;
 

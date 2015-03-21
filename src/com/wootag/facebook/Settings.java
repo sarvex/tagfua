@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
@@ -38,9 +38,9 @@ import android.util.Log;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.wootag.facebook.internal.AttributionIdentifiers;
-import com.wootag.facebook.internal.Utility;
-import com.wootag.facebook.internal.Validate;
+import com.wTagFufacebook.internal.AttributionIdentifiers;
+import com.woTagFuacebook.internal.Utility;
+import com.wooTagFucebook.internal.Validate;
 import com.wootag.facebook.model.GraphObject;
 
 /**

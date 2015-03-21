@@ -3,7 +3,7 @@
     android:id="@+id/lovedView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white" >
+    android:background="@android:color/white">
 
     <include
         android:id="@+id/header"
@@ -16,7 +16,7 @@
         android:layout_below="@+id/header"
         android:background="#F6F6F6"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/lovedTextView"
@@ -31,7 +31,7 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <com.wootag.pulltorefresh.PullToRefreshListView
+    <com.TagFu.pulltorefresh.PullToRefreshListView
         android:id="@+id/lovedListView"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"

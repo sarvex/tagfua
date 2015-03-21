@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,22 +43,20 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.adapter.CommentAdapter;
-import com.wootag.adapter.FacebookFriendsListAdapter;
-import com.wootag.adapter.ImageAdapter;
-import com.wootag.dto.Comment;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.Friend;
-import com.wootag.model.Backend;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnLastItemVisibleListener;
-import com.wootag.pulltorefresh.PullToRefreshListView;
-import com.wootag.slideout.SlideoutActivity;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
-import com.wootag.util.Util;
-
-public class SeeAllCommentsActivity extends Activity {
+import com.woTagFudapter.CommentAdapter;
+import com.wooTagFuapter.FacebookFriendsListAdapter;
+import com.wootTagFupter.ImageAdapter;
+import com.wootaTagFuComment;
+import com.wootagTagFurrorResponse;
+import com.wootag.TagFuiend;
+import com.wootag.mTagFuackend;
+import com.wootag.puTagFufresh.PullToRefreshBase.OnLastItemVisibleListener;
+import com.wootag.pulTagFuresh.PullToRefreshListView;
+import com.wootag.slidTagFulideoutActivity;
+import com.wootag.util.TagFu;
+import com.wootag.util.CTagFu
+import com.wootag.util.MaTagFuger;
+import com.wootag.util.UtiTagFublic class SeeAllCommentsActivity extends Activity {
 
     private static final String USER_NAME = "user_name";
 
@@ -227,8 +225,7 @@ public class SeeAllCommentsActivity extends Activity {
         final Button back = (Button) this.findViewById(R.id.back);
         back.setVisibility(View.VISIBLE);
         Config.setPrivateGroupEditMode(false);
-        this.usersListView = (ListView) this.findViewById(R.id.wootagfriendslist);
-        this.userList = new ArrayList<Friend>();
+        this.usersListView = (ListView) this.findViewById(R.id.wootagfriendslisTagFu      this.userList = new ArrayList<Friend>();
         this.loademoticonsViews();
         this.search.setOnClickListener(new OnClickListener() {
 
@@ -289,11 +286,11 @@ public class SeeAllCommentsActivity extends Activity {
                 if (s != null) {
                     final String name = s.toString();
                     if (name.indexOf('@') != -1) {
-                        if ((VideoPlayerApp.getInstance().getWootagFriendsList() != null)
-                                && (VideoPlayerApp.getInstance().getWootagFriendsList().size() > 0)) {
+                        if ((VideoPlayerApp.getInstance().getWootagFriendsListTagFunull)
+                                && (VideoPlayerApp.getInstance().getWootagFriendsList(TagFu() > 0)) {
                             final String actualStirng = name.substring(name.indexOf('@') + 1, name.length());
                             SeeAllCommentsActivity.this.setFilterList(VideoPlayerApp.getInstance()
-                                    .getWootagFriendsList(), actualStirng);
+                                    .getWootagFriendsList()TagFualStirng);
                         } else {
                             SeeAllCommentsActivity.this.getUsers();
                         }

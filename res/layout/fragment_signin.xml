@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/intro_first"
     android:gravity="center"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/bannerImage"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/userNameEditText"
@@ -50,9 +50,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/smallmargin"
             android:gravity="center"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
-            <com.wootag.ui.CustomTextView
+            <com.wTagFuui.CustomTextView
                 android:id="@+id/rememberme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/top_margin_signinsocial_buttons"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/loginRegisterButton"
@@ -111,7 +111,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/fblogin"
@@ -145,7 +145,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/logineditpadding"
         android:background="@drawable/copyright"
-        android:contentDescription="@string/app_name" >
+        android:contentDescription="@string/app_name">
 
         <ImageButton
             android:layout_width="wrap_content"

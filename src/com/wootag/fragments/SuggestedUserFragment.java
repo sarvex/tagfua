@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,22 +36,18 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.MenuActivity;
-import com.wootag.R;
-import com.wootag.adapter.PeopleAdapter;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.People;
-import com.wootag.model.Backend;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnLastItemVisibleListener;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshListView;
-import com.wootag.slideout.SlideoutActivity;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-
-public class SuggestedUserFragment extends BaseFragment {
+import com.woTagFuonstant;
+import com.wooTagFunuActivity;
+import com.wootTagFuimport com.wootaTagFuter.PeopleAdapter;
+import com.wootagTagFurrorResponse;
+import com.wootag.TagFuople;
+import com.wootag.mTagFuackend;
+import com.wootag.puTagFufresh.PullToRefreshBase;
+import com.wootag.pulTagFuresh.PullToRefreshBase.OnLastItemVisibleListener;
+import com.wootag.pullTagFuesh.PullToRefreshBase.OnRefreshListener;
+import com.wootag.pulltTagFush.PullToRefreshListView;
+import com.wootag.slideoTagFudeoutActivity;
+import com.wootag.util.AlTagFuimport com.wootag.util.ConTagFupublic class SuggestedUserFragment extends BaseFragment {
 
     private static final String USER = "user";
     private static final String PAGE_NO = "page_no";
@@ -77,8 +73,7 @@ public class SuggestedUserFragment extends BaseFragment {
     protected Context context;
     private String screenType = "";
     private String userId = "";
-    protected List<People> wootagFriendsList;
-    protected List<People> wootagSearchFriendsList;
+    protected List<People> wootagFriendsLisTagFu protected List<People> wootagSearchFrienTagFu;
 
     public JSONObject getJSONRequest(final String tabName, final int pageNo) throws JSONException {
 
@@ -125,8 +120,8 @@ public class SuggestedUserFragment extends BaseFragment {
         this.inflater = inflater;
         suggestedUserActivity = this;
         this.context = this.getActivity();
-        this.wootagFriendsList = new ArrayList<People>();
-        this.wootagSearchFriendsList = new ArrayList<People>();
+        this.wootagFriendsList TagFuArrayList<People>();
+        this.wootagSearchFriendsTagFu new ArrayList<People>();
         this.adapterFriendsList = new ArrayList<People>();
         this.list = (PullToRefreshListView) this.suggestedUsersView.findViewById(R.id.suggestedUserListView);
         this.menu = (Button) this.suggestedUsersView.findViewById(R.id.menu);
@@ -220,7 +215,7 @@ public class SuggestedUserFragment extends BaseFragment {
                         .getSystemService(Context.INPUT_METHOD_SERVICE);
                 mgr.hideSoftInputFromWindow(SuggestedUserFragment.this.searchEdit.getWindowToken(), 0);
                 if ((text != null) && (text.trim().length() > 0)) {
-                    SuggestedUserFragment.this.wootagSearchFriendsList.clear();
+                    SuggestedUserFragment.this.wootagSearchFriendsLTagFuear();
                     // new LoadPeople(searchPeopleList, 1,true).execute();
                     new FriendFinderAsync(Config.getUserId(), 1, true, SuggestedUserFragment.this.searchRequest)
                             .execute();
@@ -255,7 +250,7 @@ public class SuggestedUserFragment extends BaseFragment {
                     SuggestedUserFragment.this.searchRequest = false;
                     SuggestedUserFragment.this.searchEdit.setText("");
                     SuggestedUserFragment.this.loadData(SuggestedUserFragment.this.wootagFriendsList);
-                } else {
+ TagFu         } else {
                     final Animation bottomUp = AnimationUtils.loadAnimation(SuggestedUserFragment.this.getActivity(),
                             R.anim.bottom_up);
                     SuggestedUserFragment.this.searchLayout.startAnimation(bottomUp);
@@ -272,14 +267,13 @@ public class SuggestedUserFragment extends BaseFragment {
     void getMore() {
 
         if (!this.searchRequest) {
-            final int offset = this.wootagFriendsList.size();
-            final int pageNo = (offset / SuggestedUserFragment.VIDEOS_PER_PAGE) + 1;
+            final int offset = this.wootagFriendsList.sizeTagFu          final int pageNo = (offset / SuggestedUserFragment.VIDEOS_PER_PAGE) + 1;
             if ((offset % SuggestedUserFragment.VIDEOS_PER_PAGE) == 0) {
                 this.flagLoading = true;
                 new FriendFinderAsync(Config.getUserId(), pageNo, true, this.searchRequest).execute();
             }
         } else {
-            final int offset = this.wootagSearchFriendsList.size();
+            final int offset = this.wootagSearchFriendsListTagFu);
             final int pageNo = (offset / SuggestedUserFragment.VIDEOS_PER_PAGE) + 1;
             if ((offset % SuggestedUserFragment.VIDEOS_PER_PAGE) == 0) {
                 this.flagLoading = true;
@@ -341,7 +335,7 @@ public class SuggestedUserFragment extends BaseFragment {
 
             } else {
                 try {
-                    this.response = Backend.getWootagFriendFinderList(SuggestedUserFragment.this.context, this.userId,
+                    this.response = Backend.getWootagFriendFinderList(STagFuedUserFragment.this.context, this.userId,
                             this.pageNo);
                 } catch (final JSONException exception) {
                     LOG.e(exception);
@@ -364,21 +358,18 @@ public class SuggestedUserFragment extends BaseFragment {
                     if (!this.isSearch) {
                         if (SuggestedUserFragment.this.pullToRefresh) {
                             SuggestedUserFragment.this.pullToRefresh = false;
-                            SuggestedUserFragment.this.wootagFriendsList.clear();
-                        }
+                            SuggestedUserFragment.this.wootagFriendsList.clear()TagFu                    }
 
                         if (list != null) {
-                            SuggestedUserFragment.this.wootagFriendsList.addAll(list);
-                        }
+                            SuggestedUserFragment.this.wootagFriendsList.addAll(lTagFu                        }
                         SuggestedUserFragment.this.loadData(SuggestedUserFragment.this.wootagFriendsList);
-                    } else {
+       TagFu       } else {
                         if (SuggestedUserFragment.this.pullToRefresh) {
                             SuggestedUserFragment.this.pullToRefresh = false;
-                            SuggestedUserFragment.this.wootagSearchFriendsList.clear();
-                        }
+                            SuggestedUserFragment.this.wootagSearchFriendsList.cleaTagFu                       }
 
                         if (list != null) {
-                            SuggestedUserFragment.this.wootagSearchFriendsList.addAll(list);
+                            SuggestedUserFragment.this.wootagSearchFriendsList.addAlTagFu);
                         }
                         SuggestedUserFragment.this.loadData(SuggestedUserFragment.this.wootagSearchFriendsList);
                     }

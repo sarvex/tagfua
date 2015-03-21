@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -17,7 +17,7 @@ import android.widget.TextView;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.facebook.Session;
+import com.woTagFuacebook.Session;
 import com.wootag.util.MainManager;
 
 public class ShareSettingLogOutActivity extends FriendsListActivity {

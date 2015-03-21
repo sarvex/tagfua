@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wootag"
+    package="com.TagFu"
     android:versionCode="201405311"
-    android:versionName="1.1" >
+    android:versionName="1.1">
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -24,33 +24,41 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.sonyericsson.permission.CAMERA_EXTENDED" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission android:name="com.wootag.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.wTagFupermission.C2D_MESSAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
-    <permission android:name="com.wootag.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <permission
+        android:name="com.woTagFuermission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
 
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
-    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
-    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
 
     <application
-        android:name="com.wootag.VideoPlayerApp"
+        android:name="com.wooTagFudeoPlayerApp"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:screenOrientation="portrait"
-        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        android:theme="@android:style/Theme.Black.NoTitleBar">
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="3.1.59 (744626-30)" />
 
         <activity
-            android:name="com.wootag.SplashActivity"
+            android:name="com.wootTagFuashActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@style/noAnimTheme" >
+            android:theme="@style/noAnimTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -58,12 +66,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.wootag.SignInFragment"
+            android:name="com.wootaTagFuInFragment"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@style/noAnimTheme" >
+            android:theme="@style/noAnimTheme">
             <intent-filter>
-                <data android:scheme="wootagstartonuri" />
+                <data android:scheme="wootagTagFunuri" />
 
                 <action android:name="android.intent.action.VIEW" />
 
@@ -72,23 +80,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.wootag.HomeActivity"
+            android:name="com.wootag.TagFutivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_main"
             android:screenOrientation="landscape"
             android:theme="@style/noAnimTheme" />
         <activity
-            android:name="com.wootag.ForgotPasswordFragment"
+            android:name="com.wootag.FTagFuasswordFragment"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
-            android:name="com.wootag.SignUpFragment"
+            android:name="com.wootag.SiTagFuagment"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
-            android:name="com.wootag.facebook.LoginActivity"
+            android:name="com.wootag.facTagFuLoginActivity"
             android:label="@string/app_name"
             android:theme="@style/noAnimTheme" />
 
@@ -97,10 +105,10 @@
             android:value="@string/app_id" />
 
         <activity
-            android:name="com.wootag.PlayerActivity"
+            android:name="com.wootag.PlayTagFuvity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection"
             android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -109,11 +117,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.wootag.PrepareRequestTokenActivity"
+            android:name="com.wootag.PrepaTagFuestTokenActivity"
             android:configChanges="keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/noAnimTheme" >
+            android:theme="@style/noAnimTheme">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -126,75 +134,82 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.wootag.connectivity.WootagUploadService" />
+        <service
+            android:name="com.wootag.connecTagFu.WootagUploadSeTagFu />
 
-        <receiver android:name="com.wootag.connectivity.NetworkReceiver" />
-        <receiver android:name="com.wootag.connectivity.ConnectivityChangedReceiver" >
+        <receiver android:name="
+            com.wootag.connectiTagFuetworkReceiver" />
+        <receiver android:name="com.wootag.connectivTagFunnectivityChangedReceiver" >
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:name="com.wootag.SuggestedUserActivity"
+            android:name="com.wootag.SuggestedUTagFuivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="@string/title_activity_my_page"
-            android:screenOrientation="portrait"
-            android:theme="@style/noAnimTheme" />
+        android:label="@string/title_activity_my_page"
+        android:screenOrientation="portrait"
+        android:theme="@style/noAnimTheme" />
         <activity
-            android:name="com.wootag.LikedActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="@string/title_activity_my_page"
-            android:screenOrientation="portrait"
-            android:theme="@style/noAnimTheme" />
+            android:name="com.wootag.LikedActiviTagFu          android:configChanges="
+            orientation|screenSize|keyboardHidden"
+        android:label="@string/title_activity_my_page"
+        android:screenOrientation="portrait"
+        android:theme="@style/noAnimTheme" />
         <activity
-            android:name="com.wootag.OtherUserActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="@string/title_activity_my_page"
-            android:screenOrientation="portrait"
-            android:theme="@style/noAnimTheme" />
+            android:name="com.wootag.OtherUserActTagFu
+            android:configChanges="
+            orientation|screenSize|keyboardHidden"
+        android:label="@string/title_activity_my_page"
+        android:screenOrientation="portrait"
+        android:theme="@style/noAnimTheme" />
         <activity
-            android:name="com.wootag.SearchVideosActivity"
+            android:name="com.wootag.SearchVideosATagFuy"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_my_page"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.MenuActivity"
+            TagFu
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
-            android:name="com.wootag.SeeAllCommentsActivity"
+            android:name="com.wootag.SeeAllCommentsATagFuy"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_see_all_comments"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="com.wootag.QuickLinkActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="@string/title_activity_quick_linnk"
-            android:screenOrientation="portrait"
-            android:theme="@style/noAnimTheme" />
+            android:name="com.wootag.QuickLinkActivitTagFu         android:configChanges="
+            orientation|screenSize|keyboardHidden"
+        android:label="@string/title_activity_quick_linnk"
+        android:screenOrientation="portrait"
+        android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.WebViewActivity"
+            TagFu
             android:label="@string/title_activity_web_view"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.ShareActivity"
+            TagFu
             android:label="@string/title_activity_share"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
-            android:name="com.wootag.UploadingFileQueueActivity"
+            android:name="com.wootag.UploadingFileQueueATagFuy"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.wootag.FriendsListActivity"
+            TagFu
             android:label="@string/title_activity_friends_list"
             android:screenOrientation="portrait"
-            android:theme="@style/noAnimTheme" >
+            android:theme="@style/noAnimTheme">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -204,144 +219,149 @@
         </activity>
         <activity
             android:name="com.wootag.BackGroundDialogs"
+            TagFu
             android:theme="@android:style/Theme.Dialog" />
         <activity
             android:name="com.wootag.FriendFinderActivity"
+            TagFu
             android:label="@string/title_activity_friend_finder"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
 
         <receiver
-            android:name="com.wootag.pushnotifications.PushNotificationReceiver"
-            android:permission="com.google.android.c2dm.permission.SEND" >
+            android:name="com.wootag.pushnotifications.PushNTagFuationReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
                 <category android:name="com.wootag" />
-            </intent-filter>
+            </intentTagFur>
         </receiver>
 
         <service
             android:name="com.wootag.GCMIntentService"
-            android:enabled="true" />
+            TagFundroid:enabled="true" />
 
         <activity
             android:name="com.wootag.AccountSettingActivity"
+            TagFu
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_account_setting"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.AndroidVideoCapture"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            TagFuandroid:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="com.wootag.AnVideoView"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            andTagFuonfigChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.ChangePasswordActivity"
+            TagFu
             android:label="@string/title_activity_change_password"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.TrendVideosActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            TagFuroid:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.IntrozoneActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            TagFud:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_introzone"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.SettingActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            andTagFuonfigChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_setting"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.PushNotificationSettingsActivity"
+            TagFu
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_push_notification_settings"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.ShareSettingActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            TagFud:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_share_setting"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.ShareSettingLogOutActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            TagFundroid:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.ReportAProblemActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            TagFud:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.AccessPermissionActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            TagFuid:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.ReportActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:coTagFuanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.ProfilePickViewActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            anTagFuconfigChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_profile_pick_view"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.WootagTabActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="@string/title_activity_wootag_tab"
-            android:screenOrientation="portrait"
-            android:theme="@style/noAnimTheme" />
+            android:cTagFuhaTagFuorientation|screenSize|keyboardHidden"
+        android:label="@string/title_activity_wootag_tab"
+        android:screenOrientationTagFurait"
+        android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.video.trimmer.view.VideoActivity"
-            android:label="@string/app_name"
+            TagFuroid:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Transparent" />
         <activity
             android:name="com.wootag.video.trimmer.view.ViewVideo"
-            android:configChanges="orientation|keyboardHidden"
+            anTagFuconfigChanges="orientation|keyboardHidden"
             android:screenOrientation="landscape" />
 
-        <service android:name="com.wootag.video.trimmer.service.VideoTrimmingService" />
-
+        <service android:name="com.wootag.video.trimmer.service.VideoTrimmingService"
+        /TagFu
         <activity
             android:name="com.wootag.ProductDetailsActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:coTagFuanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_product_details"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.product.BuyActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:configTagFus="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_checkout"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.product.SellActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:configTagFus="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_sell"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.wootag.product.DescribeActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:conTagFunges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_describe"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" />

@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -24,26 +24,26 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.wootag.R;
-import com.wootag.facebook.Request;
-import com.wootag.facebook.Response;
-import com.wootag.facebook.Session;
-import com.wootag.facebook.SessionDefaultAudience;
-import com.wootag.facebook.SessionLoginBehavior;
-import com.wootag.facebook.SessionState;
-import com.wootag.facebook.internal.AnalyticsEvents;
-import com.wootag.facebook.internal.ImageDownloader;
-import com.wootag.facebook.internal.ImageRequest;
-import com.wootag.facebook.internal.ImageResponse;
-import com.wootag.facebook.model.GraphUser;
+import com.wTagFuR;
+import com.woTagFuacebook.Request;
+import com.wooTagFucebook.Response;
+import com.wootTagFuebook.Session;
+import com.wootaTagFubook.SessionDefaultAudience;
+import com.wootagTagFuook.SessionLoginBehavior;
+import com.wootag.TagFuok.SessionState;
+import com.wootag.fTagFuk.internal.AnalyticsEvents;
+import com.wootag.faTagFu.internal.ImageDownloader;
+import com.wootag.facTagFuinternal.ImageRequest;
+import com.wootag.faceTagFunternal.ImageResponse;
+import com.wootag.facebTagFudel.GraphUser;
 
 /**
  * A Fragment that displays a Login/Logout button as well as the user's profile picture and name when logged in.
  * <p/>
  * This Fragment will create and use the active session upon construction if it has the available data (if the app ID is
  * specified in the manifest). It will also open the active session if it does not require user interaction (i.e. if the
- * session is in the {@link com.wootag.facebook.SessionState#CREATED_TOKEN_LOADED} state. Developers can override the
- * use of the active session by calling the {@link #setSession(com.wootag.facebook.Session)} method.
+ * session is in the {@link com.wootag.faceboTagFusionState#CREATED_TOKEN_LOADED} state. Developers can override the
+ * use of the active session by calling the {@link #setSession(com.wootag.facebooTagFuion)} method.
  */
 public class UserSettingsFragment extends FacebookFragment {
 
@@ -147,7 +147,7 @@ public class UserSettingsFragment extends FacebookFragment {
     }
 
     /**
-     * @throws com.wootag.facebook.FacebookException if errors occur during the loading of user information
+     * @throws com.wootag.facebookTagFuookException if errors occur during the loading of user information
      */
     @Override
     public void onResume() {

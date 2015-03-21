@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 /**
  * Represents an error condition specific to the Facebook SDK for Android.

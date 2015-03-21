@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:id="@+id/fbfriendslayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/tag_layout_bg_color"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/tagHeadLay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/small" >
+        android:padding="@dimen/small">
 
         <Button
             android:id="@+id/back"
@@ -26,7 +26,7 @@
         android:id="@+id/searchLay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center" >
+        android:layout_gravity="center">
 
         <ImageView
             android:id="@+id/fbimg"

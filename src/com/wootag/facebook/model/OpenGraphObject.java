@@ -1,4 +1,4 @@
-package com.wootag.facebook.model;
+package com.TagFu.facebook.model;
 
 import com.wootag.facebook.internal.NativeProtocol;
 

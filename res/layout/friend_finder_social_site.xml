@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <com.wootag.ui.CustomTextView
+    <com.wTagFuui.CustomTextView
         android:id="@+id/searchfriend"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -14,8 +14,8 @@
         android:gravity="center"
         android:padding="@dimen/margin"
         android:text="@string/search_friends"
-        android:textSize="@dimen/heading_size"
         android:textColor="@color/black"
+        android:textSize="@dimen/heading_size"
         foo:customFont="@string/app_bold_font_name" />
 
     <RelativeLayout
@@ -23,7 +23,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:padding="@dimen/margin" >
+        android:padding="@dimen/margin">
 
         <Button
             android:id="@+id/fb"
@@ -38,9 +38,9 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/fb"
             android:gravity="center_vertical"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <com.wootag.ui.CustomTextView
+            <com.woTagFui.CustomTextView
                 android:id="@+id/textfb"
                 style="@style/socialSiteTextView"
                 android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
                 android:text="@string/facebook"
                 foo:customFont="@string/app_bold_font_name" />
 
-            <com.wootag.ui.CustomTextView
+            <com.wooTagFu.CustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/find_your_facebook_friends"
@@ -68,7 +68,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:padding="@dimen/margin" >
+        android:padding="@dimen/margin">
 
         <Button
             android:id="@+id/twitter"
@@ -82,9 +82,9 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/twitter"
             android:gravity="center_vertical"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <com.wootag.ui.CustomTextView
+            <com.wootTagFuCustomTextView
                 android:id="@+id/texttwitter"
                 style="@style/socialSiteTextView"
                 android:layout_width="wrap_content"
@@ -93,7 +93,7 @@
                 android:text="@string/twitter"
                 foo:customFont="@string/app_bold_font_name" />
 
-            <com.wootag.ui.CustomTextView
+            <com.wootaTagFuustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -114,7 +114,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:padding="@dimen/margin" >
+        android:padding="@dimen/margin">
 
         <Button
             android:id="@+id/gplusshare"
@@ -128,9 +128,9 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/gplusshare"
             android:gravity="center_vertical"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <com.wootag.ui.CustomTextView
+            <com.wootagTagFustomTextView
                 android:id="@+id/googletext"
                 style="@style/socialSiteTextView"
                 android:layout_width="wrap_content"
@@ -138,7 +138,7 @@
                 android:text="@string/google"
                 foo:customFont="@string/app_bold_font_name" />
 
-            <com.wootag.ui.CustomTextView
+            <com.wootag.TagFutomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -159,7 +159,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:padding="@dimen/margin" >
+        android:padding="@dimen/margin">
 
         <Button
             android:id="@+id/contact"
@@ -173,9 +173,9 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/contact"
             android:gravity="center_vertical"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <com.wootag.ui.CustomTextView
+            <com.wootag.uTagFuomTextView
                 android:id="@+id/contacttext"
                 style="@style/socialSiteTextView"
                 android:layout_width="wrap_content"
@@ -183,7 +183,7 @@
                 android:text="@string/contacts"
                 foo:customFont="@string/app_bold_font_name" />
 
-            <com.wootag.ui.CustomTextView
+            <com.wootag.uiTagFumTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -193,7 +193,7 @@
                 foo:customFont="@string/app_font_name" />
         </LinearLayout>
     </RelativeLayout>
-    
+
     <com.wootag.ui.CustomTextView
         android:id="@+id/suggestedUsersTtextView"
         android:layout_width="fill_parent"
@@ -203,8 +203,8 @@
         android:gravity="center"
         android:padding="@dimen/margin"
         android:text="@string/suggested_users"
-        android:textColor="@color/black"
         android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
         android:textSize="@dimen/heading_size"
         foo:customFont="@string/app_bold_font_name" />
 

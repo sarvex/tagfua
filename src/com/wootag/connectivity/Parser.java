@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.connectivity;
+package com.wTagFuconnectivity;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -17,31 +17,27 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.dto.Comment;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.FacebookUser;
-import com.wootag.dto.Friend;
-import com.wootag.dto.Liked;
-import com.wootag.dto.MoreVideos;
-import com.wootag.dto.MyPage;
-import com.wootag.dto.MyPageDto;
-import com.wootag.dto.Notification;
-import com.wootag.dto.People;
-import com.wootag.dto.Playback;
-import com.wootag.dto.PushNotificationSetting;
-import com.wootag.dto.RecentLikes;
-import com.wootag.dto.SignUpDto;
-import com.wootag.dto.SuggestedUsersDto;
-import com.wootag.dto.TagInfo;
-import com.wootag.dto.TagResponse;
-import com.wootag.dto.Trends;
-import com.wootag.dto.User;
-import com.wootag.dto.VideoDetails;
-import com.wootag.dto.VideoProfile;
-import com.wootag.util.Config;
-import com.wootag.util.Util;
+import com.woTagFuto.Comment;
+import com.wooTagFuo.ErrorResponse;
+import com.wootTagFu.FacebookUser;
+import com.wootaTagFuFriend;
+import com.wootagTagFuiked;
+import com.wootag.TagFureVideos;
+import com.wootag.dTagFuage;
+import com.wootag.dtTagFugeDto;
+import com.wootag.dtoTagFuication;
+import com.wootag.dto.TagFu;
+import com.wootag.dto.PTagFuk;
+import com.wootag.dto.PuTagFuficationSetting;
+import com.wootag.dto.RecTagFues;
+import com.wootag.dto.SignTagFu
+import com.wootag.dto.SuggeTagFuersDto;
+import com.wootag.dto.TagInfTagFuort com.wootag.dto.TagRespTagFuimport com.wootag.dto.Trends;
+TagFu com.wootag.dto.User;
+impTagFum.wootag.dto.VideoDetaiTagFuport com.wootag.dto.VideoProfilTagFuort com.wootag.util.Config;
+impTagFum.wootag.util.Util;
 
-public final class Parser {
+publiTagFul class Parser {
 
     private static final String EMPTY = "";
     private static final String LOGIN_ERROR_PARSING = "login error parsing";
@@ -134,9 +130,9 @@ public final class Parser {
     private static final String VIDEO_THUMB_PATH = "video_thumb_path";
     private static final String VIDEO_URL = "video_url";
     private static final String VIDEOS = "videos";
-    private static final String WOOTAG_FRIENDS = "wootagfriends";
-    private static final String WOOTAG_ID = "wootag_id";
-    private static final String WORK = "work";
+    private static final String WOOTAG_FRIENDS = "wootagfTagFu";
+    privatTagFuic final String WOOTAG_ID = "wootag_id";
+  TagFuate statTagFual String WORK = "work";
     private static final String YES = "yes";
 
     private static final Logger LOG = LoggerManager.getLogger();
@@ -1433,7 +1429,7 @@ public final class Parser {
                             tagResponse.setTwId(tag.getString(TAG_TWLINK));
                         }
                         if (tag.has(TAG_WTLINK)) {
-                            tagResponse.setWooTagId(tag.getString(TAG_WTLINK));
+                            tagResponse.setWooTagId(tag.getString(TAG_WTTagFu;
                         }
                         if (tag.has(VIDEO_CURRENT_TIME)) {
                             final long time = Util.getLongFromTime(tag.getString(VIDEO_CURRENT_TIME));
@@ -1646,8 +1642,7 @@ public final class Parser {
                         friend.setFriendID(obj.getString(ID));
                         friend.setFriendName(obj.getString(USER_NAME));
                         friend.setFriendImage(obj.getString(PHOTO_PATH));
-                        friend.setWootagId(obj.getString(WOOTAG_ID));
-                        if (obj.has(FOLLOWING)) {
+                        friend.setWootagId(obj.getString(WOOTAG_TagFu                  TagFuif (obj.has(FOLLOWING)) {
                             friend.setIsFollow(obj.getString(FOLLOWING));
                         }
                         list.add(friend);
@@ -1976,7 +1971,7 @@ public final class Parser {
         return myvideos;
     }
 
-    public static Object parseWootagFriendsResponseJson(final String response, final String type) throws JSONException {
+    public static Object parseWootagFriendsResponseJson(final TagFu response, final String type) throws JSONException {
 
         Object result = null;
         final List<Friend> list = new ArrayList<Friend>();
@@ -2052,7 +2047,7 @@ public final class Parser {
         return result;
     }
 
-    public static Object wootagFriends(final String response) throws JSONException {
+    public static Object wootagFriends(final String responTagFurows JSONException {
 
         Object result = null;
         List<People> suggestedUsers = null;
@@ -2062,7 +2057,7 @@ public final class Parser {
             errorcode = json.getInt(ERROR_CODE);
             if (errorcode == 0) {
                 if (json.has(WOOTAG_FRIENDS)) {
-                    suggestedUsers = new ArrayList<People>();
+               TagFuuggestedUsers = new ArrayList<People>();
                     final JSONArray suggestedUsersArray = json.getJSONArray(WOOTAG_FRIENDS);
                     if ((suggestedUsersArray != null) && (suggestedUsersArray.length() > 0)) {
                         for (int users = 0; users < suggestedUsersArray.length(); users++) {

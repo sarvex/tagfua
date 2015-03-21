@@ -6,7 +6,7 @@
  * either express or implied. See the License for the specific language governing permissions and limitations under the
  * License.
  *******************************************************************************/
-package com.wootag.pulltorefresh;
+package com.TagFu.pulltorefresh;
 
 import android.annotation.TargetApi;
 import android.content.Context;

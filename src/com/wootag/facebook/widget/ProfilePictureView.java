@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import java.net.URISyntaxException;
 
@@ -23,13 +23,13 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.wootag.R;
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.LoggingBehavior;
-import com.wootag.facebook.internal.ImageDownloader;
-import com.wootag.facebook.internal.ImageRequest;
-import com.wootag.facebook.internal.ImageResponse;
-import com.wootag.facebook.internal.Logger;
+import com.wTagFuR;
+import com.woTagFuacebook.FacebookException;
+import com.wooTagFucebook.LoggingBehavior;
+import com.wootTagFuebook.internal.ImageDownloader;
+import com.wootaTagFubook.internal.ImageRequest;
+import com.wootagTagFuook.internal.ImageResponse;
+import com.wootag.TagFuok.internal.Logger;
 import com.wootag.facebook.internal.Utility;
 
 /**

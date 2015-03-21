@@ -1,4 +1,4 @@
-package com.wootag.slideout;
+package com.TagFu.slideout;
 
 import android.app.Activity;
 import android.content.Context;

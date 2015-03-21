@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -39,10 +39,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.wootag.facebook.internal.AttributionIdentifiers;
-import com.wootag.facebook.internal.Logger;
-import com.wootag.facebook.internal.Utility;
-import com.wootag.facebook.internal.Validate;
+import com.wTagFufacebook.internal.AttributionIdentifiers;
+import com.woTagFuacebook.internal.Logger;
+import com.wooTagFucebook.internal.Utility;
+import com.wootTagFuebook.internal.Validate;
 import com.wootag.facebook.model.GraphObject;
 
 /**

@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,11 +25,11 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.async.LoginAsyncTask;
-import com.wootag.dto.Friend;
-import com.wootag.dto.User;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
+import com.woTagFusync.LoginAsyncTask;
+import com.wooTagFuo.Friend;
+import com.wootTagFu.User;
+import com.wootaTagFu.Alerts;
+import com.wootagTagFuConfig;
 import com.wootag.util.MainManager;
 
 public class SignUpFragment extends FriendsListActivity {

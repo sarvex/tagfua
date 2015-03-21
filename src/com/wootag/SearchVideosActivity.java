@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,17 +31,17 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.adapter.PostsAdapter;
-import com.wootag.async.SearchVideoAsync;
-import com.wootag.dto.Liked;
-import com.wootag.dto.MyPageDto;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnLastItemVisibleListener;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshListView;
-import com.wootag.slideout.SlideoutActivity;
-import com.wootag.util.Config;
-import com.wootag.util.MoreVideos;
+import com.woTagFudapter.PostsAdapter;
+import com.wooTagFuync.SearchVideoAsync;
+import com.wootTagFu.Liked;
+import com.wootaTagFuMyPageDto;
+import com.wootagTagFuorefresh.PullToRefreshBase;
+import com.wootag.TagFurefresh.PullToRefreshBase.OnLastItemVisibleListener;
+import com.wootag.pTagFuefresh.PullToRefreshBase.OnRefreshListener;
+import com.wootag.puTagFufresh.PullToRefreshListView;
+import com.wootag.sliTagFuSlideoutActivity;
+import com.wootag.utilTagFug;
+import com.wootag.util.TagFudeos;
 import com.wootag.util.Util;
 
 public class SearchVideosActivity extends Activity implements MoreVideos {

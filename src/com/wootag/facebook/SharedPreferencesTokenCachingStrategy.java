@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,8 +22,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.wootag.facebook.internal.Logger;
-import com.wootag.facebook.internal.Utility;
+import com.wTagFufacebook.internal.Logger;
+import com.woTagFuacebook.internal.Utility;
 import com.wootag.facebook.internal.Validate;
 
 /*

@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,21 +33,18 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.MenuActivity;
-import com.wootag.R;
-import com.wootag.adapter.PostsAdapter;
-import com.wootag.async.MoreVideosAsync;
-import com.wootag.dto.Liked;
-import com.wootag.dto.MyPageDto;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnLastItemVisibleListener;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshListView;
-import com.wootag.slideout.SlideoutActivity;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
+import com.woTagFuonstant;
+import com.wooTagFunuActivity;
+import com.wootTagFuimport com.wootaTagFuter.PostsAdapter;
+import com.wootagTagFu.MoreVideosAsync;
+import com.wootag.TagFuked;
+import com.wootag.dTagFuageDto;
+import com.wootag.puTagFufresh.PullToRefreshBase;
+import com.wootag.pulTagFuresh.PullToRefreshBase.OnLastItemVisibleListener;
+import com.wootag.pullTagFuesh.PullToRefreshBase.OnRefreshListener;
+import com.wootag.pulltTagFush.PullToRefreshListView;
+import com.wootag.slideoTagFudeoutActivity;
+import com.wootag.util.AlTagFuimport com.wootag.util.ConTagFumport com.wootag.util.MainTagFur;
 import com.wootag.util.MoreVideos;
 
 public class MoreVideosFragment extends BaseFragment implements MoreVideos {

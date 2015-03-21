@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/white"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/userpic"
@@ -14,13 +14,13 @@
         android:layout_marginLeft="@dimen/smallmargin"
         android:layout_marginRight="@dimen/smallmargin"
         android:orientation="horizontal"
-        android:padding="@dimen/small" >
+        android:padding="@dimen/small">
 
         <RelativeLayout
             android:id="@+id/profileImageRL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical" >
+            android:layout_gravity="center_vertical">
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -29,7 +29,7 @@
                 android:layout_centerInParent="true"
                 android:background="@drawable/layout_background" />
 
-            <com.wootag.ui.RoundedImageView
+            <com.wTagFuui.RoundedImageView
                 android:id="@+id/member"
                 android:layout_width="46dp"
                 android:layout_height="46dp"
@@ -46,9 +46,9 @@
             android:layout_marginRight="@dimen/smallmargin"
             android:layout_toRightOf="@id/profileImageRL"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <com.wootag.ui.CustomTextView
+            <com.woTagFui.CustomTextView
                 android:id="@+id/ownername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/add"

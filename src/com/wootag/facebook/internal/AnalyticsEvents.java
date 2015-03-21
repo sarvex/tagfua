@@ -1,4 +1,4 @@
-package com.wootag.facebook.internal;
+package com.TagFu.facebook.internal;
 
 /**
  * com.facebook.internal is solely for the use of other packages within the Facebook SDK for Android. Use of

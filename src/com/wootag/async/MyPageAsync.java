@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.async;
+package com.wTagFuasync;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -17,11 +17,11 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.WootagTabActivity;
-import com.wootag.model.Backend;
-import com.wootag.util.Config;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFutaTagFutivity;
+import com.wootagTagFu.Backend;
+import com.wootag.TagFuonfig;
 
 public class MyPageAsync extends AsyncTask<Void, Void, Void> {
 

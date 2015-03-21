@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.model;
+package com.TagFu.facebook.model;
 
 /**
  * Provides a strongly-typed representation of a User as defined by the Graph API. Note that this interface is intended

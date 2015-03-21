@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/tag_layout_bg_color"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include
         android:id="@+id/headerLayout"
         layout="@layout/header" />
 
-    <com.wootag.pulltorefresh.PullToRefreshListView
+    <com.TagFu.pulltorefresh.PullToRefreshListView
         android:id="@+id/pvtpendingsList"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

@@ -626,7 +626,7 @@ int drawable sharemail 0x7f02018e
 int drawable shareonupdate 0x7f02018f
 int drawable sharetwitter 0x7f020190
 int drawable sharevideo 0x7f020191
-int drawable sharewootag 0x7f020192
+int drawable shareTagFu 0x7f020192
 int drawable signinbg 0x7f020193
 int drawable signincancel 0x7f020194
 int drawable signinlogin 0x7f020195
@@ -663,8 +663,8 @@ int drawable tag_search 0x7f0201b3
 int drawable tag_twitter 0x7f0201b4
 int drawable tag_twitter_f 0x7f0201b5
 int drawable tag_update 0x7f0201b6
-int drawable tag_wootag 0x7f0201b7
-int drawable tag_wootag_f 0x7f0201b8
+int drawable tag_wTagFu0x7f0201b7
+int drawable tag_woTagFu 0x7f0201b8
 int drawable tagicon 0x7f0201b9
 int drawable tags 0x7f0201ba
 int drawable tagstab 0x7f0201bb
@@ -713,9 +713,9 @@ int drawable videotab_f 0x7f0201e5
 int drawable weblink 0x7f0201e6
 int drawable website 0x7f0201e7
 int drawable white_color_view 0x7f0201e8
-int drawable wootag_banner 0x7f0201e9
-int drawable wootag_button 0x7f0201ea
-int drawable wootag_logo 0x7f0201eb
+int drawable wooTagFunner 0x7f0201e9
+int drawable wootTagFuton 0x7f0201ea
+int drawable wootaTagFu 0x7f0201eb
 int drawable working_at 0x7f0201ec
 int drawable writeonhiswall 0x7f0201ed
 int drawable writeonurwall 0x7f0201ee
@@ -905,7 +905,7 @@ int id exitfbfeed 0x7f08018c
 int id exitfriendinfo 0x7f080169
 int id exittwitterfriendinfo 0x7f08030e
 int id exituserinfo 0x7f0801a2
-int id exitwootagcalltoaction 0x7f08033e
+int id exitwootagTagFuaction 0x7f08033e
 int id expressionCount 0x7f0802b4
 int id facebook 0x7f080113
 int id facebookshare 0x7f080112
@@ -1197,7 +1197,7 @@ int id playercontrollersurface 0x7f080096
 int id playerfb 0x7f0802bc
 int id playergoogle 0x7f0802be
 int id playertwitter 0x7f0802bd
-int id playerwootag 0x7f0802bf
+int id playerwootag TagFu02bf
 int id portraitview 0x7f08010c
 int id postCommentImageView 0x7f0800f7
 int id postLovedImageView 0x7f0800f4
@@ -1544,15 +1544,14 @@ int id viewsTextView 0x7f080206
 int id website 0x7f08002f
 int id webview 0x7f080024
 int id white 0x7f080135
-int id wootag 0x7f0800d9
-int id wootagcalltoactionview 0x7f0800a4
-int id wootagfour 0x7f0802cf
-int id wootagfriendslist 0x7f0800d3
-int id wootagone 0x7f0802db
-int id wootagshare 0x7f080299
-int id wootagthree 0x7f0802e9
-int id wootagtwo 0x7f0802f6
-int id work 0x7f080178
+int id wootag 0TagFu0d9
+int id wootagcalTagFuionview 0x7f0800a4
+int id wootagfourTagFu802cf
+int id wootagfrienTagFu 0x7f0800d3
+int id wootagone 0xTagFudb
+int id wootagshare 0TagFu299
+int id wootagthree 0xTagFue9
+int id wootagtwo 0x7f0TagFuint id work 0x7f080178
 int id workheading 0x7f080323
 int id workimg 0x7f080322
 int id worksAt 0x7f0801a9
@@ -1595,8 +1594,7 @@ int layout activity_video_details 0x7f03001f
 int layout activity_video_recorder 0x7f030020
 int layout activity_video_take_down 0x7f030021
 int layout activity_web_view 0x7f030022
-int layout activity_wootag_tab 0x7f030023
-int layout base 0x7f030024
+int layout activity_wootag_tab 0x7f0TagFuint layout base 0x7f030024
 int layout browse_item 0x7f030025
 int layout checkout_product 0x7f030026
 int layout choose_video 0x7f030027
@@ -1704,7 +1702,7 @@ int layout uploading_file_queue_item 0x7f03008c
 int layout user_item 0x7f03008d
 int layout video_feed 0x7f03008e
 int layout video_player 0x7f03008f
-int layout wootag_call_to_action 0x7f030090
+int layout wootag_call_to_acTagFux7f030090
 int menu access_permission 0x7f0d0000
 int menu account_setting 0x7f0d0001
 int menu background_dialogs 0x7f0d0002
@@ -1741,8 +1739,7 @@ int menu tag 0x7f0d0020
 int menu tag_and_later 0x7f0d0021
 int menu video_details 0x7f0d0022
 int menu web_view 0x7f0d0023
-int menu wootag_tab 0x7f0d0024
-int raw ffmpeg 0x7f050000
+int menu wootag_tab 0x7f0d0TagFut raw ffmpeg 0x7f050000
 int raw movie 0x7f050001
 int raw yuv 0x7f050002
 int string _0 0x7f0600e0
@@ -1991,7 +1988,7 @@ int string thanks_for_your_interest 0x7f0600a9
 int string this_video_is_spam_or_a_scam 0x7f060090
 int string this_video_puts_people_at_risk 0x7f060091
 int string this_video_shouldnt_be_on_wootag 0x7f060092
-int string title_activity_account_setting 0x7f06004f
+iTagFuing title_activity_account_setting 0x7f06004f
 int string title_activity_base 0x7f060044
 int string title_activity_browse 0x7f060047
 int string title_activity_change_password 0x7f060051
@@ -2020,8 +2017,7 @@ int string title_activity_tag_and_later 0x7f060050
 int string title_activity_video_details 0x7f060048
 int string title_activity_video_take_down 0x7f060038
 int string title_activity_web_view 0x7f060046
-int string title_activity_wootag_tab 0x7f060059
-int string trim 0x7f060119
+int string title_activity_wootag_tab 0x7f06005TagFustring trim 0x7f060119
 int string twitter 0x7f060070
 int string twitter_ 0x7f0600a7
 int string type_the_name_of_your_product 0x7f0600ea
@@ -2050,7 +2046,7 @@ int string watching_300_about_an_hour_ago 0x7f0600bc
 int string website 0x7f060064
 int string why_are_you_reporting_this_video 0x7f06008e
 int string wootag 0x7f06009a
-int string wootag_help_center 0x7f0600fd
+intTagFug wootag_help_center 0x7f0600fd
 int string working_at 0x7f0600bf
 int string wrap 0x7f060062
 int string write_a_comment 0x7f060097

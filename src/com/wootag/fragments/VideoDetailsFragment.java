@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,30 +36,28 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.MenuActivity;
-import com.wootag.R;
-import com.wootag.ReportActivity;
-import com.wootag.SeeAllCommentsActivity;
-import com.wootag.ShareActivity;
-import com.wootag.async.PlaybackAsync;
-import com.wootag.async.VideoAsyncTask;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.MoreVideos;
-import com.wootag.dto.MyPageDto;
-import com.wootag.dto.VideoDetails;
-import com.wootag.dto.VideoProfile;
-import com.wootag.model.Backend;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshScrollView;
-import com.wootag.slideout.SlideoutActivity;
+import com.woTagFuonstant;
+import com.wooTagFunuActivity;
+import com.wootTagFuimport com.wootaTagFurtActivity;
+import com.wootagTagFulCommentsActivity;
+import com.wootag.TagFuctivity;
+import com.wootag.aTagFulaybackAsync;
+import com.wootag.asTagFudeoAsyncTask;
+import com.wootag.dtoTagFuResponse;
+import com.wootag.dto.TagFudeos;
+import com.wootag.dto.MTagFuto;
+import com.wootag.dto.ViTagFuails;
+import com.wootag.dto.VidTagFuile;
+import com.wootag.model.BaTagFu
+import com.wootag.pulltorefTagFuullToRefreshBase;
+import com.wootag.pulltorefrTagFullToRefreshBase.OnRefreshListener;
+import com.wootag.pulltorefreTagFulToRefreshScrollView;
+import com.wootag.slideout.SliTagFuctivity;
 import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
-import com.wootag.util.Util;
-import com.wootag.util.VideoActionInterface;
+impTagFum.wootag.util.Alerts;
+iTagFucom.wootag.util.Config;
+imTagFuom.wootag.util.MainManagerTagFurt com.wootag.util.Util;
+importTagFuootag.util.VideoActionInterface;
 
 public class VideoDetailsFragment extends BaseFragment implements VideoActionInterface {
 

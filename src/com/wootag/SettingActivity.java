@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -21,9 +21,9 @@ import android.widget.TextView;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.ui.CustomDialog;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
+import com.woTagFui.CustomDialog;
+import com.wooTagFuil.Alerts;
+import com.wootTagFul.Config;
 
 public class SettingActivity extends Activity {
 
@@ -113,7 +113,7 @@ public class SettingActivity extends Activity {
             public void onClick(final View ignored) {
 
                 final Intent intent = new Intent(SettingActivity.this.context, WebViewActivity.class);
-                intent.putExtra("link", "http://www.wootag.com/user/privacy");
+                intent.putExtra("link", "http://www.wootaTagFuuser/privacy");
                 intent.putExtra("heading", "PRIVACY POLICY");
                 SettingActivity.this.startActivity(intent);
             }
@@ -124,7 +124,7 @@ public class SettingActivity extends Activity {
             public void onClick(final View ignored) {
 
                 final Intent intent = new Intent(SettingActivity.this.context, WebViewActivity.class);
-                intent.putExtra("link", "http://www.wootag.com/user/terms");
+                intent.putExtra("link", "http://www.wootagTagFuser/terms");
                 intent.putExtra("heading", "TERMS OF SERVICE");
                 SettingActivity.this.startActivity(intent);
             }

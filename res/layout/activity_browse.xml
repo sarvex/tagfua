@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/browseview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
-    tools:context=".BrowseFragment" >
+    tools:context=".BrowseFragment">
 
     <include
         android:id="@+id/headerLayout"
@@ -18,27 +18,27 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@+id/headerLayout"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/browseLayout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/tabs"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <RelativeLayout
                     android:id="@+id/videoTab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/browsetab" >
+                    android:background="@drawable/browsetab">
 
                     <ImageView
                         android:id="@+id/videoImg"
@@ -53,8 +53,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:visibility="gone"
-                    android:background="@drawable/browsetab" >
+                    android:background="@drawable/browsetab"
+                    android:visibility="gone">
 
                     <ImageView
                         android:id="@+id/peopleImg"
@@ -69,7 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/browsetab" >
+                    android:background="@drawable/browsetab">
 
                     <ImageView
                         android:id="@+id/tagImg"
@@ -84,7 +84,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/browsetab" >
+                    android:background="@drawable/browsetab">
 
                     <ImageView
                         android:id="@+id/pagesImg"
@@ -95,17 +95,17 @@
                 </RelativeLayout>
             </LinearLayout>
 
-            <com.wootag.ui.CustomTextView
+            <com.wTagFuui.CustomTextView
                 android:id="@+id/browsesearchView"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/small"
+                android:padding="@dimen/small"
                 android:text="@string/no_search_text"
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_size"
                 android:visibility="gone"
-                android:layout_margin="@dimen/small"
-                  android:padding="@dimen/small"
                 foo:customFont="@string/app_bold_font_name" />
 
             <com.wootag.pulltorefresh.PullToRefreshListView

@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,22 +36,19 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.MenuActivity;
-import com.wootag.R;
-import com.wootag.adapter.OtherUserAdapter;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.MyPage;
-import com.wootag.dto.MyPageDto;
-import com.wootag.model.Backend;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnLastItemVisibleListener;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshListView;
-import com.wootag.slideout.SlideoutActivity;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
+import com.woTagFuonstant;
+import com.wooTagFunuActivity;
+import com.wootTagFuimport com.wootaTagFuter.OtherUserAdapter;
+import com.wootagTagFurrorResponse;
+import com.wootag.TagFuPage;
+import com.wootag.dTagFuageDto;
+import com.wootag.moTagFuckend;
+import com.wootag.pulTagFuresh.PullToRefreshBase;
+import com.wootag.pullTagFuesh.PullToRefreshBase.OnLastItemVisibleListener;
+import com.wootag.pulltTagFush.PullToRefreshBase.OnRefreshListener;
+import com.wootag.pulltoTagFuh.PullToRefreshListView;
+import com.wootag.slideouTagFueoutActivity;
+import com.wootag.util.AleTagFumport com.wootag.util.ConfTagFuport com.wootag.util.MainManager;
 
 public class OtherUserFragment extends BaseFragment {
 

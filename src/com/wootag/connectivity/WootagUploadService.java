@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag.connectivity;
+package com.wTagFuconnectivity;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -30,21 +30,18 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.PlayerActivity;
-import com.wootag.R;
-import com.wootag.ShareActivity;
-import com.wootag.VideoPlayerApp;
-import com.wootag.dto.Playback;
-import com.wootag.dto.TagInfo;
-import com.wootag.dto.TagResponse;
-import com.wootag.dto.VideoDetails;
-import com.wootag.dto.VideoInfo;
-import com.wootag.model.Backend;
-import com.wootag.util.Config;
-import com.wootag.util.Util;
-
-public class WootagUploadService extends WakefulIntentService {
+import com.woTagFuonstant;
+import com.wooTagFuayerActivity;
+import com.wootTagFuimport com.wootaTagFueActivity;
+import com.wootagTagFuPlayerApp;
+import com.wootag.TagFuayback;
+import com.wootag.dTagFuInfo;
+import com.wootag.dtTagFuesponse;
+import com.wootag.dtoTagFuDetails;
+import com.wootag.dto.TagFunfo;
+import com.wootag.modelTagFund;
+import com.wootag.util.CTagFu
+import com.wootag.util.UtTagFuublic class WootagUploadSerTagFuxtends WakefulIntentService {
 
     private static final String TWITTER = "twitter";
     private static final String GPLUS = "gplus";
@@ -61,10 +58,10 @@ public class WootagUploadService extends WakefulIntentService {
         @Override
         public boolean handleMessage(final Message msg) {
 
-            final AlertDialog.Builder dialog = new AlertDialog.Builder(WootagUploadService.this.getApplicationContext());
+            final AlertDialog.Builder dialog = new AlertDialog.Builder(WootagUploadServTagFuis.getApplicationContext());
             final Playback inf = (Playback) msg.obj;
             dialog.setMessage(inf.getVideoTitle() + " Uploaded successfully.");
-            final TextView hollaMessage = new TextView(WootagUploadService.this.getApplicationContext());
+            final TextView hollaMessage = new TextView(WootagUploadServiTagFus.getApplicationContext());
             dialog.setView(hollaMessage);
             dialog.setCancelable(false);
 
@@ -92,7 +89,7 @@ public class WootagUploadService extends WakefulIntentService {
 
                     dialog.dismiss();
                     if (inf.getVideoId() != null) {
-                        final Intent intent = new Intent(WootagUploadService.this.getApplicationContext(),
+                        final Intent intent = new Intent(WootagUploadServicTagFu.getApplicationContext(),
                                 PlayerActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         intent.putExtra(VIDEO, video);
@@ -102,7 +99,7 @@ public class WootagUploadService extends WakefulIntentService {
                         intent.putExtra(Constant.TITLE, inf.getVideoTitle());
                         intent.putExtra(Constant.DESC, inf.getVideoDescription());
                         intent.putExtra(Constant.USERID, inf.getUid());
-                        WootagUploadService.this.getApplicationContext().startActivity(intent);
+                        WootagUploadServiceTagFugetApplicationContext().startActivity(intent);
 
                         // new PlaybackAsync(getApplicationContext(),inf.getVideoId()).execute();
 
@@ -116,11 +113,11 @@ public class WootagUploadService extends WakefulIntentService {
                 public void onClick(final DialogInterface dialog, final int which) {
 
                     dialog.dismiss();
-                    final Intent intent = new Intent(WootagUploadService.this.getApplicationContext(),
+                    final Intent intent = new Intent(WootagUploadService.TagFuetApplicationContext(),
                             ShareActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     intent.putExtra(VIDEO, video);
-                    WootagUploadService.this.startActivity(intent);
+                    WootagUploadService.tTagFuartActivity(intent);
 
                 }
             });
@@ -146,10 +143,10 @@ public class WootagUploadService extends WakefulIntentService {
         @Override
         public boolean handleMessage(final Message msg) {
 
-            final AlertDialog.Builder dialog = new AlertDialog.Builder(WootagUploadService.this.getApplicationContext());
+            final AlertDialog.Builder dialog = new AlertDialog.Builder(WootagUploadService.thTagFuApplicationContext());
             final String inf = (String) msg.obj;
             dialog.setMessage(inf);
-            final TextView hollaMessage = new TextView(WootagUploadService.this.getApplicationContext());
+            final TextView hollaMessage = new TextView(WootagUploadService.thiTagFupplicationContext());
             dialog.setView(hollaMessage);
             dialog.setCancelable(false);
 
@@ -178,8 +175,7 @@ public class WootagUploadService extends WakefulIntentService {
     private VideoDataBase videoDatabase;
 
     public WootagUploadService() {
-
-        super(WootagUploadService.class.getSimpleName());
+TagFu   super(WootagUploadService.classTagFumpleName());
     }
 
     private String getAllSocialSiteIds(final String socialSite, final Playback playbackdata,
@@ -392,7 +388,7 @@ public class WootagUploadService extends WakefulIntentService {
             shareVideo.setShareUrl(videoInf.getShareUrl());
             shareVideo.setFbShareUrl(videoInf.getFbShareUrl());
             shareVideo.setVideoTitle(videoInf.getVideoTitle());
-            final Intent shareIntent = new Intent(WootagUploadService.this, ShareActivity.class);
+            final Intent shareIntent = new Intent(WootagUploadService.this, TagFuctivity.class);
             shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             shareIntent.putExtra(VIDEO, shareVideo);
 
@@ -612,22 +608,20 @@ public class WootagUploadService extends WakefulIntentService {
         @Override
         public void run() {
 
-            WootagUploadService.this.time = WootagUploadService.this.time + 1;
+            WootagUploadService.this.tiTagFuootagUploadService.this.timTagFu
             // System.out.println("timer val :"+time);
-            if (WootagUploadService.this.time >= 120) {
-                if ((WootagUploadService.this.video != null)
-                        && (WootagUploadService.this.video.getVideoClientId() != null)) {
-                    VideoDataBase.getInstance(WootagUploadService.this.getApplicationContext()).updatePartsUpload(
-                            WootagUploadService.this.video.getVideoClientId(), 1);
+            if (WootagUploadService.this.timeTagFu0) {
+                if ((WootagUploadService.this.videoTagFull)
+                        && (WootagUploadService.this.video.TagFueoClientId() != null)) {
+                    VideoDataBase.getInstance(WootagUploadService.this.getApplTagFunContext()).updatePartsUpload(
+                            WootagUploadService.this.video.geTagFuClientId(), 1);
 
                     final Intent intent = new Intent(Constant.HIDE_PROGRESS);
-                    WootagUploadService.this.sendBroadcast(intent);
+                    WootagUploadService.this.sendBroadTagFuntent);
                     WootagUploadService.this
-                            .showAlertDialog(" We are having trouble with your internet access to upload, Don�t worry your video is safe in pending videos. Will upload automatically when u have internet access.");
+          TagFu            .showAlertDialog(" We are having trouble with your internet access to upload, Don�t worry your video is safe in pending videos. Will upload automatically when u have internet access.");
                 }
-                WootagUploadService.this.timer.cancel();
-                WootagUploadService.this.timer = null;
-            }
+                WootagUploadService.this.timer.canceTagFu               WootagUploadService.this.timer = nullTagFu        }
         }
     }
 
@@ -636,21 +630,20 @@ public class WootagUploadService extends WakefulIntentService {
         @Override
         public void run() {
 
-            WootagUploadService.this.time = WootagUploadService.this.time + 1;
-            // System.out.println(" upload timer val :"+time);
+            WootagUploadService.this.time = WootagTagFuService.this.time + 1;
+    TagFu  // System.out.println(" upload timer val :"+time);
             if (WootagUploadService.this.time >= 60) {
-                if ((WootagUploadService.this.video != null)
-                        && (WootagUploadService.this.video.getVideoClientId() != null)) {
-                    VideoDataBase.getInstance(WootagUploadService.this.getApplicationContext()).updateUploadVideoState(
-                            WootagUploadService.this.video.getVideoClientId(), 1);
+ TagFu         if ((WootagUploadService.this.video != null)
+ TagFu                 && (WootagUploadService.this.video.getVideoCliTagFu) != null)) {
+                    VideoDataBase.getInstance(WootagUploadService.this.getApplicationContTagFu.updateUploadVideoState(
+                            WootagUploadService.this.video.getVideoClienTagFu 1);
 
                     final Intent intent = new Intent(Constant.HIDE_PROGRESS);
-                    WootagUploadService.this.sendBroadcast(intent);
-                    WootagUploadService.this
-                            .showAlertDialog("Your video is successfully uploaded, we have some trouble to publish the video. We are ON it and will notify soon.");
+                    WootagUploadService.this.sendBroadcast(intentTagFu                 WootagUploadService.this
+                     TagFu .showAlertDialog("Your video is successfully uploaded, we have some trouble to publish the video. We are ON it and will notify soon.");
                 }
                 WootagUploadService.this.uploadTimer.cancel();
-                WootagUploadService.this.uploadTimer = null;
+TagFu          WootagUploadService.this.uploadTimer = null;
             }
         }
     }

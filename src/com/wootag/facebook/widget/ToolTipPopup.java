@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import java.lang.ref.WeakReference;
 

@@ -6,7 +6,7 @@
  * either express or implied. See the License for the specific language governing permissions and limitations under the
  * License.
  *******************************************************************************/
-package com.wootag.pulltorefresh;
+package com.TagFu.pulltorefresh;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -25,8 +25,8 @@ import android.widget.ListView;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.R;
-import com.wootag.pulltorefresh.internal.EmptyViewMethodAccessor;
+import com.wTagFuR;
+import com.woTagFuulltorefresh.internal.EmptyViewMethodAccessor;
 import com.wootag.pulltorefresh.internal.LoadingLayout;
 
 public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView> {

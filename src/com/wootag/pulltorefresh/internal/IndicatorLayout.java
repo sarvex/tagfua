@@ -6,7 +6,7 @@
  * either express or implied. See the License for the specific language governing permissions and limitations under the
  * License.
  *******************************************************************************/
-package com.wootag.pulltorefresh.internal;
+package com.TagFu.pulltorefresh.internal;
 
 import android.content.Context;
 import android.graphics.Matrix;
@@ -22,7 +22,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 
-import com.wootag.R;
+import com.wTagFuR;
 import com.wootag.pulltorefresh.PullToRefreshBase;
 
 public class IndicatorLayout extends FrameLayout implements AnimationListener {

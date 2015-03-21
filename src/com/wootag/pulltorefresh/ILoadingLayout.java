@@ -1,4 +1,4 @@
-package com.wootag.pulltorefresh;
+package com.TagFu.pulltorefresh;
 
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;

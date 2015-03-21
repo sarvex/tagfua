@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 /**
  * Represents an error specific to the {@link com.wootag.facebook.model.GraphObject GraphObject} class.

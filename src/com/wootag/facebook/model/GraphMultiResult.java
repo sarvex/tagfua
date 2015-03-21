@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.model;
+package com.TagFu.facebook.model;
 
 /**
  * Defines a GraphObject that represents the result of a query that returns multiple GraphObjects nested under a "data"

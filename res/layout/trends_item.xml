@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@android:color/white" >
+    android:background="@android:color/white">
 
     <ImageView
         android:id="@+id/videoImg"
@@ -27,7 +27,7 @@
         android:background="@drawable/controls_background"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
-        android:padding="@dimen/controlspadding" >
+        android:padding="@dimen/controlspadding">
 
         <ImageView
             android:id="@+id/tagPic"

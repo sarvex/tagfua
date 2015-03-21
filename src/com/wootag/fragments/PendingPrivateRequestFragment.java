@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,17 +25,17 @@ import org.json.JSONException;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.R;
-import com.wootag.adapter.PendingPrivateGroupRequestAdapter;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.Liked;
-import com.wootag.model.Backend;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnLastItemVisibleListener;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshListView;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
+import com.woTagFu;
+import com.wooTagFuapter.PendingPrivateGroupRequestAdapter;
+import com.wootTagFu.ErrorResponse;
+import com.wootaTagFuLiked;
+import com.wootagTagFu.Backend;
+import com.wootag.TagFurefresh.PullToRefreshBase;
+import com.wootag.pTagFuefresh.PullToRefreshBase.OnLastItemVisibleListener;
+import com.wootag.puTagFufresh.PullToRefreshBase.OnRefreshListener;
+import com.wootag.pulTagFuresh.PullToRefreshListView;
+import com.wootag.utilTagFus;
+import com.wootag.util.TagFu;
 import com.wootag.util.MainManager;
 
 public class PendingPrivateRequestFragment extends BaseFragment {

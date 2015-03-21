@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,26 +40,24 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.MenuActivity;
-import com.wootag.R;
-import com.wootag.adapter.BrowseAdapter;
-import com.wootag.adapter.PeopleAdapter;
-import com.wootag.adapter.TrendsAdapterBrowse;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.People;
-import com.wootag.dto.Trends;
-import com.wootag.dto.VideoDetails;
-import com.wootag.dto.VideoProfile;
-import com.wootag.model.Backend;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnLastItemVisibleListener;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshListView;
-import com.wootag.slideout.SlideoutActivity;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
+import com.woTagFuonstant;
+import com.wooTagFunuActivity;
+import com.wootTagFuimport com.wootaTagFuter.BrowseAdapter;
+import com.wootagTagFuer.PeopleAdapter;
+import com.wootag.TagFur.TrendsAdapterBrowse;
+import com.wootag.dTagFuorResponse;
+import com.wootag.dtTagFule;
+import com.wootag.dtoTagFus;
+import com.wootag.dto.TagFuetails;
+import com.wootag.dto.VTagFuofile;
+import com.wootag.model.TagFud;
+import com.wootag.pulltorTagFu.PullToRefreshBase;
+import com.wootag.pulltoreTagFuPullToRefreshBase.OnLastItemVisibleListener;
+import com.wootag.pulltorefTagFuullToRefreshBase.OnRefreshListener;
+import com.wootag.pulltorefrTagFullToRefreshListView;
+import com.wootag.slideout.SlTagFuActivity;
+import com.wootag.util.Alerts;TagFut com.wootag.util.Config;
+TagFu com.wootag.util.MainManager;
 
 public class BrowseFragment extends BaseFragment {
 

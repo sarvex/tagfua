@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/notification_header_background"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include
         android:id="@+id/header"
         layout="@layout/header" />
 
-    <com.wootag.ui.CustomTextView
+    <com.wTagFuui.CustomTextView
         style="@style/notificationtextview"
         android:layout_marginLeft="@dimen/smallmargin"
         android:layout_marginTop="@dimen/footericontopmargin"
@@ -37,7 +37,6 @@
         android:background="@color/white"
         android:imeOptions="actionSearch"
         android:padding="@dimen/small"
-        android:textSize="@dimen/text_size" >
-    </EditText>
+        android:textSize="@dimen/text_size"></EditText>
 
 </LinearLayout>

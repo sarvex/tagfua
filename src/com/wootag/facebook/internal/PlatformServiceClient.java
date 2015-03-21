@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.internal;
+package com.TagFu.facebook.internal;
 
 import android.content.ComponentName;
 import android.content.Context;

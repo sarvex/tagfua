@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.async;
+package com.wTagFuasync;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,14 +20,14 @@ import org.json.JSONException;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.connectivity.Parser;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.MyPageDto;
-import com.wootag.model.Backend;
-import com.wootag.util.Alerts;
-import com.wootag.util.MoreVideos;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFunectivity.Parser;
+import com.wootaTagFuErrorResponse;
+import com.wootagTagFuyPageDto;
+import com.wootag.TagFuBackend;
+import com.wootag.uTagFuerts;
+import com.wootag.utTagFueVideos;
 import com.wootag.util.Util;
 
 public class SearchVideoAsync extends AsyncTask<Void, Void, Void> {

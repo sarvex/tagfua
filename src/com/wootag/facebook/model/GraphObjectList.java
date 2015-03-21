@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.model;
+package com.TagFu.facebook.model;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ import org.json.JSONArray;
 /**
  * GraphObjectList is the primary representation of a collection of graph objects in the Facebook SDK for Android. It is
  * not implemented by any concrete classes, but rather by a proxy (see the
- * {@link com.wootag.facebook.model.GraphObject.Factory Factory} class). A GraphObjectList can actually contain elements
+ * {@link com.wTagFufacebook.model.GraphObject.Factory Factory} class). A GraphObjectList can actually contain elements
  * of any type, not just graph objects, but its principal use in the SDK is to contain types derived from GraphObject. <br/>
  *
  * @param <T> the type of elements in the list

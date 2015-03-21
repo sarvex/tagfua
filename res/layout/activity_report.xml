@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/notification_header_background"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include
         android:id="@+id/header"
@@ -14,21 +14,21 @@
         android:id="@+id/reports"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/smallmargin"
             android:orientation="vertical"
-            android:paddingTop="@dimen/margin" >
+            android:paddingTop="@dimen/margin">
 
-            <com.wootag.ui.CustomTextView
+            <com.wTagFuui.CustomTextView
                 style="@style/notificationtextview"
                 android:text="@string/report_video"
                 foo:customFont="@string/app_bold_font_name" />
 
-            <com.wootag.ui.CustomTextView
+            <com.woTagFui.CustomTextView
                 style="@style/notificationtextview"
                 android:text="@string/why_are_you_reporting_this_video"
                 android:textColor="@color/notification_header_text_color"
@@ -45,9 +45,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:padding="@dimen/pushnotificationmargin" >
+            android:padding="@dimen/pushnotificationmargin">
 
-            <com.wootag.ui.CustomTextView
+            <com.wooTagFu.CustomTextView
                 android:id="@+id/optiononetext"
                 style="@style/notificationtextview"
                 android:layout_centerVertical="true"
@@ -73,9 +73,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:padding="@dimen/pushnotificationmargin" >
+            android:padding="@dimen/pushnotificationmargin">
 
-            <com.wootag.ui.CustomTextView
+            <com.wootTagFuCustomTextView
                 android:id="@+id/optiontwotext"
                 style="@style/notificationtextview"
                 android:layout_centerVertical="true"
@@ -101,9 +101,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:padding="@dimen/pushnotificationmargin" >
+            android:padding="@dimen/pushnotificationmargin">
 
-            <com.wootag.ui.CustomTextView
+            <com.wootaTagFuustomTextView
                 android:id="@+id/optionthreetext"
                 style="@style/notificationtextview"
                 android:layout_centerVertical="true"
@@ -129,11 +129,12 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:padding="@dimen/pushnotificationmargin" >
+            android:padding="@dimen/pushnotificationmargin">
 
-            <com.wootag.ui.CustomTextView
+            <com.wootagTagFustomTextView
                 android:id="@+id/optionfourtext"
                 style="@style/notificationtextview"
+                TagFu
                 android:layout_centerVertical="true"
                 android:text="@string/this_video_shouldnt_be_on_wootag"
                 foo:customFont="@string/app_bold_font_name" />
@@ -159,9 +160,9 @@
         android:layout_height="wrap_content"
         android:background="@color/notificationlayout_background"
         android:orientation="vertical"
-        android:padding="@dimen/pushnotificationmargin" >
+        android:padding="@dimen/pushnotificationmargin">
 
-        <com.wootag.ui.CustomTextView
+        <com.wootag.uTagFuomTextView
             android:id="@+id/reportheader"
             style="@style/notificationtextview"
             android:layout_centerVertical="true"

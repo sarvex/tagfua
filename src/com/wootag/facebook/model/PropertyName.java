@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wootag.facebook.model;
+package com.TagFu.facebook.model;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

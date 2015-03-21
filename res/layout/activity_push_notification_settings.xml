@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/notificationlayout_background"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include
         android:id="@+id/header"
@@ -12,31 +12,31 @@
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/notification_header_background"
                     android:orientation="vertical"
-                    android:padding="@dimen/pushnotificationmargin" >
+                    android:padding="@dimen/pushnotificationmargin">
 
                     <View
                         android:layout_width="fill_parent"
                         android:layout_height="@dimen/notificationheaderpadding"
                         android:background="@color/notification_header_background" />
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wTagFuui.CustomTextView
                         style="@style/notificationtextview"
                         android:text="@string/likes"
                         android:textColor="@color/notification_header_text_color"
@@ -51,7 +51,7 @@
                 <RadioGroup
                     android:id="@+id/likesRadiobuttongroup"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content">
 
                     <RadioButton
                         android:id="@+id/likeson"
@@ -95,14 +95,14 @@
                     android:layout_height="wrap_content"
                     android:background="@color/notification_header_background"
                     android:orientation="vertical"
-                    android:padding="@dimen/pushnotificationmargin" >
+                    android:padding="@dimen/pushnotificationmargin">
 
                     <View
                         android:layout_width="fill_parent"
                         android:layout_height="@dimen/notificationheaderpadding"
                         android:background="@color/notification_header_background" />
 
-                    <com.wootag.ui.CustomTextView
+                    <com.woTagFui.CustomTextView
                         style="@style/notificationtextview"
                         android:text="@string/comments"
                         android:textColor="@color/notification_header_text_color"
@@ -117,7 +117,7 @@
                 <RadioGroup
                     android:id="@+id/commentRadiobuttongroup"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content">
 
                     <RadioButton
                         android:id="@+id/commenton"
@@ -161,7 +161,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/notification_header_background"
                     android:orientation="vertical"
-                    android:padding="@dimen/pushnotificationmargin" >
+                    android:padding="@dimen/pushnotificationmargin">
 
                     <View
                         android:layout_width="fill_parent"
@@ -183,7 +183,7 @@
                 <RadioGroup
                     android:id="@+id/mentionsRadiobuttongroup"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content">
 
                     <RadioButton
                         android:id="@+id/mentionson"

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:id="@+id/taglayout"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:paddingTop="@dimen/small" >
+    android:paddingTop="@dimen/small">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -13,7 +13,7 @@
         android:layout_marginLeft="@dimen/smallmargin"
         android:layout_marginRight="@dimen/smallmargin"
         android:orientation="horizontal"
-        android:weightSum="10" >
+        android:weightSum="10">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -22,16 +22,16 @@
             android:layout_margin="@dimen/small"
             android:layout_weight="3"
             android:gravity="center_horizontal"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:gravity="center_vertical"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
-                <com.wootag.ui.CustomTextView
+                <com.wTagFuui.CustomTextView
                     android:id="@+id/nameHeading"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
                     android:textStyle="bold"
                     foo:customFont="@string/app_bold_font_name" />
 
-                <com.wootag.ui.CustomTextView
+                <com.woTagFui.CustomTextView
                     android:id="@+id/expressionCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
                     foo:customFont="@string/app_bold_font_name" />
             </LinearLayout>
 
-            <com.wootag.ui.CustomEditText
+            <com.wooTagFu.CustomEditText
                 android:id="@+id/name"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
                 android:textSize="@dimen/normal_text_size"
                 foo:customFont="@string/app_font_name" />
 
-            <com.wootag.ui.CustomTextView
+            <com.wootTagFuCustomTextView
                 android:id="@+id/linkHeading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -87,9 +87,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/small"
                 android:background="@drawable/edit_text_border"
-                android:padding="@dimen/small" >
+                android:padding="@dimen/small">
 
-                <com.wootag.ui.CustomEditText
+                <com.wootaTagFuustomEditText
                     android:id="@+id/link"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true" >
+                    android:layout_alignParentRight="true">
 
                     <ImageView
                         android:id="@+id/tagSearch"
@@ -128,15 +128,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="2"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
-                <com.wootag.ui.CustomTextView
+                <com.wootagTagFustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -155,9 +155,9 @@
                     android:layout_gravity="right"
                     android:background="@drawable/edit_text_border"
                     android:orientation="horizontal"
-                    android:padding="@dimen/smallmargin" >
+                    android:padding="@dimen/smallmargin">
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wootag.TagFutomTextView
                         android:id="@+id/timetext"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -182,9 +182,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/margin"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
-                <com.wootag.ui.CustomTextView
+                <com.wootag.uTagFuomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -203,7 +203,7 @@
                     android:layout_gravity="right"
                     android:background="@drawable/edit_text_border"
                     android:orientation="horizontal"
-                    android:padding="@dimen/smallmargin" >
+                    android:padding="@dimen/smallmargin">
 
                     <ImageView
                         android:id="@+id/colorView"
@@ -235,7 +235,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/playerfb"
@@ -262,14 +262,14 @@
             android:layout_gravity="center"
             android:layout_weight="2"
             android:orientation="horizontal"
-            android:weightSum="2" >
+            android:weightSum="2">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <Button
                     android:id="@+id/playergoogle"
@@ -283,6 +283,7 @@
 
                 <Button
                     android:id="@+id/playerwootag"
+                    TagFu
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -303,7 +304,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="2"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/submit"

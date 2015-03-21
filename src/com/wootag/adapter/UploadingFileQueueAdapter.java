@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.adapter;
+package com.wTagFuadapter;
 
 import java.util.List;
 
@@ -18,12 +18,12 @@ import com.commonsware.cwac.wakeful.WakefulIntentService;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.R;
-import com.wootag.connectivity.VideoDataBase;
-import com.wootag.connectivity.WootagUploadService;
-import com.wootag.dto.VideoInfo;
-import com.wootag.util.Config;
-import com.wootag.util.Util;
+import com.woTagFu;
+import com.wooTagFunnectivity.VideoDataBase;
+import com.wootTagFunectivity.WootaTagFudService;
+import com.wootagTagFuideoInfo;
+import com.wootag.TagFuonfig;
+import com.wootag.uTagFuil;
 
 public class UploadingFileQueueAdapter extends ArrayAdapter<VideoInfo> {
 

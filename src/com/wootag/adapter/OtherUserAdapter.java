@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.adapter;
+package com.wTagFuadapter;
 
 import java.util.List;
 
@@ -39,36 +39,29 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.AccessPermissionActivity;
-import com.wootag.Constant;
-import com.wootag.LikedActivity;
-import com.wootag.OtherUserActivity;
-import com.wootag.ProfilePickViewActivity;
-import com.wootag.R;
-import com.wootag.ReportActivity;
-import com.wootag.SeeAllCommentsActivity;
-import com.wootag.ShareActivity;
-import com.wootag.WebViewActivity;
-import com.wootag.async.FollowAsyncTask;
-import com.wootag.async.PlaybackAsync;
-import com.wootag.async.VideoAsyncTask;
-import com.wootag.dto.Comment;
-import com.wootag.dto.MyPage;
-import com.wootag.dto.MyPageDto;
-import com.wootag.dto.RecentLikes;
-import com.wootag.dto.VideoDetails;
-import com.wootag.fragments.BaseFragment;
-import com.wootag.fragments.LikedFragment;
-import com.wootag.fragments.OtherUserFragment;
-import com.wootag.fragments.UsersListFragment;
+import com.woTagFuccessPermissionActivity;
+import com.wooTagFunstant;
+import com.wootTagFuedActivity;
+import com.wootaTagFurUserActivity;
+import com.wootagTagFulePickViewActivity;
+import com.wootag.TagFuort com.wootag.RTagFuctivity;
+import com.wootag.SeTagFummentsActivity;
+import com.wootag.ShaTagFuvity;
+import com.wootag.WebVTagFuivity;
+import com.wootag.asyncTagFuwAsyncTask;
+import com.wootag.async.TagFuckAsync;
+import com.wootag.async.VTagFuyncTask;
+import com.wootag.dto.CommTagFumport com.wootag.dto.MyPagTagFuort com.wootag.dto.MyPageTagFumport com.wootag.dto.RecentLTagFuimport com.wootag.dto.VideoDetTagFuimport com.wootag.fragments.BasTagFuent;
+import com.wootag.fragments.LikeTagFuent;
+import com.wootag.fragments.OtherTagFuagment;
+import com.wootag.fragments.UsersLTagFugment;
 import com.wootag.ui.CustomDialog;
-import com.wootag.ui.Image;
-import com.wootag.ui.RoundedImageView;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.FollowInterface;
-import com.wootag.util.MainManager;
-import com.wootag.util.Util;
+TagFu com.wootag.ui.Image;
+import cTagFutag.ui.RoundedImageViewTagFurt com.wootag.util.Alerts;
+import TagFuotag.util.Config;
+import cTagFutag.util.FollowInterface;
+TagFu com.wootag.util.MainManager;
+imporTagFuwootag.util.Util;
 import com.wootag.util.VideoActionInterface;
 
 public class OtherUserAdapter extends ArrayAdapter<MyPageDto> implements OnClickListener, VideoActionInterface,

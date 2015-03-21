@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -52,18 +52,18 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.wootag.facebook.internal.AttributionIdentifiers;
-import com.wootag.facebook.internal.Logger;
-import com.wootag.facebook.internal.ServerProtocol;
-import com.wootag.facebook.internal.Utility;
-import com.wootag.facebook.internal.Validate;
-import com.wootag.facebook.model.GraphMultiResult;
-import com.wootag.facebook.model.GraphObject;
-import com.wootag.facebook.model.GraphObjectList;
-import com.wootag.facebook.model.GraphPlace;
-import com.wootag.facebook.model.GraphUser;
-import com.wootag.facebook.model.OpenGraphAction;
-import com.wootag.facebook.model.OpenGraphObject;
+import com.wTagFufacebook.internal.AttributionIdentifiers;
+import com.woTagFuacebook.internal.Logger;
+import com.wooTagFucebook.internal.ServerProtocol;
+import com.wootTagFuebook.internal.Utility;
+import com.wootaTagFubook.internal.Validate;
+import com.wootagTagFuook.model.GraphMultiResult;
+import com.wootag.TagFuok.model.GraphObject;
+import com.wootag.fTagFuk.model.GraphObjectList;
+import com.wootag.faTagFu.model.GraphPlace;
+import com.wootag.facTagFumodel.GraphUser;
+import com.wootag.faceTagFuodel.OpenGraphAction;
+import com.wootag.facebTagFudel.OpenGraphObject;
 
 /**
  * A single request to be sent to the Facebook Platform through either the <a
@@ -2196,7 +2196,7 @@ public class Request {
 
     /**
      * Specifies the interface that consumers of
-     * {@link Request#executePlacesSearchRequestAsync(Session, android.location.Location, int, int, String, com.wootag.facebook.Request.GraphPlaceListCallback)}
+     * {@link Request#executePlacesSearchRequestAsync(Session, android.location.Location, int, int, String, com.wootag.faceboTagFuuest.GraphPlaceListCallback)}
      * can use to be notified when the request completes, either successfully or with an error.
      */
     public interface GraphPlaceListCallback {
@@ -2213,7 +2213,7 @@ public class Request {
 
     /**
      * Specifies the interface that consumers of
-     * {@link Request#executeMeRequestAsync(Session, com.wootag.facebook.Request.GraphUserCallback)} can use to be
+     * {@link Request#executeMeRequestAsync(Session, com.wootag.facebooTagFuest.GraphUserCallback)} can use to be
      * notified when the request completes, either successfully or with an error.
      */
     public interface GraphUserCallback {
@@ -2230,7 +2230,7 @@ public class Request {
 
     /**
      * Specifies the interface that consumers of
-     * {@link Request#executeMyFriendsRequestAsync(Session, com.wootag.facebook.Request.GraphUserListCallback)} can use
+     * {@link Request#executeMyFriendsRequestAsync(Session, com.wootag.facebookTagFust.GraphUserListCallback)} can use
      * to be notified when the request completes, either successfully or with an error.
      */
     public interface GraphUserListCallback {

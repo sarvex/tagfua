@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -33,15 +33,15 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.wootag.R;
-import com.wootag.facebook.AppEventsLogger;
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.LoggingBehavior;
-import com.wootag.facebook.Request;
-import com.wootag.facebook.Session;
-import com.wootag.facebook.internal.AnalyticsEvents;
-import com.wootag.facebook.internal.Logger;
-import com.wootag.facebook.internal.Utility;
+import com.wTagFuR;
+import com.woTagFuacebook.AppEventsLogger;
+import com.wooTagFucebook.FacebookException;
+import com.wootTagFuebook.LoggingBehavior;
+import com.wootaTagFubook.Request;
+import com.wootagTagFuook.Session;
+import com.wootag.TagFuok.internal.AnalyticsEvents;
+import com.wootag.fTagFuk.internal.Logger;
+import com.wootag.faTagFu.internal.Utility;
 import com.wootag.facebook.model.GraphPlace;
 
 public class PlacePickerFragment extends PickerFragment<GraphPlace> {

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
     android:gravity="center"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/profilebanner"
@@ -25,7 +25,7 @@
                 android:background="@drawable/defaultpicture"
                 android:scaleType="fitXY" />
 
-            <com.wootag.ui.CustomTextView
+            <com.wTagFuui.CustomTextView
                 android:id="@+id/bioText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="visible" >
+                android:visibility="visible">
 
                 <RelativeLayout
                     android:id="@+id/settingLay"
@@ -52,9 +52,9 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/small"
                     android:layout_marginRight="@dimen/margin"
-                    android:visibility="visible" >
+                    android:visibility="visible">
 
-                    <com.wootag.ui.CustomTextView
+                    <com.woTagFui.CustomTextView
                         android:id="@+id/lastUpdateTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                     android:id="@+id/userProfilePick"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal" >
+                    android:layout_gravity="center_horizontal">
 
                     <ImageView
                         android:id="@+id/imageView3"
@@ -88,7 +88,7 @@
                         android:layout_centerInParent="true"
                         android:background="@drawable/layout_background" />
 
-                    <com.wootag.ui.RoundedImageView
+                    <com.wooTagFu.RoundedImageView
                         android:id="@+id/profileImageView"
                         android:layout_width="76dp"
                         android:layout_height="76dp"
@@ -102,7 +102,7 @@
                     android:layout_marginBottom="@dimen/smallmargin"
                     android:layout_marginTop="@dimen/smallmargin"
                     android:gravity="center_horizontal"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/profileNameTextView"
@@ -114,7 +114,7 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/text_size" />
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wootTagFuCustomTextView
                         android:id="@+id/profileDetailsTextView"
                         style="@style/AudioFileInfoOverlayText"
                         android:layout_width="wrap_content"
@@ -131,7 +131,7 @@
                         android:layout_margin="2dp"
                         android:background="@null"
                         android:gravity="center_horizontal"
-                        android:orientation="horizontal" >
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:id="@+id/profileviewdot"
@@ -156,7 +156,7 @@
                     android:layout_marginTop="@dimen/smallmargin"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:visibility="gone" >
+                    android:visibility="gone">
 
                     <ImageView
                         android:id="@+id/followingImgView"
@@ -184,7 +184,7 @@
             android:layout_marginLeft="@dimen/margin"
             android:layout_marginRight="@dimen/margin"
             android:layout_marginTop="@dimen/smallmargin"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:id="@+id/followersLL"
@@ -192,9 +192,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
-                <com.wootag.ui.CustomTextView
+                <com.wootaTagFuustomTextView
                     android:id="@+id/followersCountTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -204,7 +204,7 @@
                     android:textSize="@dimen/mypage_text_count_size"
                     foo:customFont="@string/app_bold_font_name" />
 
-                <com.wootag.ui.CustomTextView
+                <com.wootagTagFustomTextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -223,9 +223,9 @@
                 android:layout_marginLeft="@dimen/small"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
-                <com.wootag.ui.CustomTextView
+                <com.wootag.TagFutomTextView
                     android:id="@+id/followingCountTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -235,7 +235,7 @@
                     android:textSize="@dimen/mypage_text_count_size"
                     foo:customFont="@string/app_bold_font_name" />
 
-                <com.wootag.ui.CustomTextView
+                <com.wootag.uTagFuomTextView
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -254,9 +254,9 @@
                 android:layout_marginLeft="@dimen/small"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
-                <com.wootag.ui.CustomTextView
+                <com.wootag.uiTagFumTextView
                     android:id="@+id/privateGroupCountTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -266,7 +266,7 @@
                     android:textSize="@dimen/mypage_text_count_size"
                     foo:customFont="@string/app_bold_font_name" />
 
-                <com.wootag.ui.CustomTextView
+                <com.wootag.ui.TagFuTextView
                     android:id="@+id/privateGrouptext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -289,14 +289,14 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/smallmargin"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageView1"
@@ -305,7 +305,7 @@
                     android:layout_marginRight="@dimen/smallmargin"
                     android:src="@drawable/videos" />
 
-                <com.wootag.ui.CustomTextView
+                <com.wootag.ui.CTagFuextView
                     android:id="@+id/videosCountTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -322,7 +322,7 @@
                 android:layout_marginLeft="@dimen/small"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageView2"

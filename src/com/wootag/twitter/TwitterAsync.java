@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.twitter;
+package com.wTagFutwitter;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -34,18 +34,18 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.VideoPlayerApp;
-import com.wootag.async.ShareViewsAsync;
-import com.wootag.async.TagInteractionAsync;
-import com.wootag.dto.FacebookUser;
-import com.wootag.dto.Friend;
-import com.wootag.dto.VideoDetails;
-import com.wootag.util.Alerts;
-import com.wootag.util.AsyncResponse;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFueoPlayerApp;
+import com.wootaTagFuc.ShareViewsAsync;
+import com.wootagTagFu.TagInteractionAsync;
+import com.wootag.TagFucebookUser;
+import com.wootag.dTagFuend;
+import com.wootag.dtTagFuoDetails;
+import com.wootag.utiTagFuts;
+import com.wootag.utilTagFuResponse;
+import com.wootag.util.TagFu;
+import com.wootag.util.MTagFuager;
 import com.wootag.util.Util;
 
 public class TwitterAsync extends AsyncTask<Void, Void, Void> {

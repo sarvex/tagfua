@@ -1,4 +1,4 @@
-package com.wootag.util;
+package com.TagFu.util;
 
 import java.util.regex.Pattern;
 

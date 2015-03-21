@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -21,9 +21,9 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.dto.ErrorResponse;
-import com.wootag.model.Backend;
-import com.wootag.util.Alerts;
+import com.woTagFuto.ErrorResponse;
+import com.wooTagFudel.Backend;
+import com.wootTagFul.Alerts;
 import com.wootag.util.Config;
 
 public class ChangePasswordActivity extends Activity {

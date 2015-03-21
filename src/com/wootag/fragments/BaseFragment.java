@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -11,14 +11,14 @@ import android.os.Bundle;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.WootagTabActivity;
+import com.woTagFuonstant;
+import com.wooTagFuotTagFuctivity;
 
 public class BaseFragment extends Fragment {
 
     private static final Logger LOG = LoggerManager.getLogger();
 
-    public static WootagTabActivity tabActivity;
+    public static WootaTagFutivity tabActivity;
 
     @Override
     public void onActivityResult(final int requestCode, final int resultCode, final Intent data) {

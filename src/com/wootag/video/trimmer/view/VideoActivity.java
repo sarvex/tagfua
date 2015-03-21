@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag.video.trimmer.view;
+package com.wTagFuvideo.trimmer.view;
 
 import java.util.List;
 
@@ -23,11 +23,11 @@ import android.widget.Toast;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.AndroidVideoCapture;
-import com.wootag.R;
-import com.wootag.connectivity.VideoDataBase;
-import com.wootag.dto.VideoInfo;
-import com.wootag.util.Alerts;
+import com.woTagFundroidVideoCapture;
+import com.wooTagFu
+import com.wootTagFunectivity.VideoDataBase;
+import com.wootaTagFuVideoInfo;
+import com.wootagTagFuAlerts;
 import com.wootag.util.MainManager;
 
 public class VideoActivity extends Activity {

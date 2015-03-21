@@ -7,14 +7,14 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.net.HttpURLConnection;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.wootag.R;
+import com.wTagFuR;
 import com.wootag.facebook.internal.Utility;
 
 /**

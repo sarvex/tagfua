@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.model;
+package com.TagFu.facebook.model;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -32,15 +32,15 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.facebook.FacebookGraphObjectException;
-import com.wootag.facebook.internal.Utility;
-import com.wootag.facebook.internal.Validate;
+import com.wTagFufacebook.FacebookGraphObjectException;
+import com.woTagFuacebook.internal.Utility;
+import com.wooTagFucebook.internal.Validate;
 
 /**
  * GraphObject is the primary interface used by the Facebook SDK for Android to represent objects in the Facebook Social
  * Graph and the Facebook Open Graph (OG). It is the base interface for all typed access to graph objects in the SDK. No
  * concrete classes implement GraphObject or its derived interfaces. Rather, they are implemented as proxies (see the
- * {@link com.wootag.facebook.model.GraphObject.Factory Factory} class) that provide strongly-typed property getters and
+ * {@link com.wootTagFuebook.model.GraphObject.Factory Factory} class) that provide strongly-typed property getters and
  * setters to access the underlying data. Since the primary use case for graph objects is sending and receiving them
  * over the wire to/from Facebook services, they are represented as JSONObjects. No validation is done that a graph
  * object is actually of a specific type -- any graph object can be treated as any GraphObject-derived interface, and
@@ -141,7 +141,7 @@ public interface GraphObject {
          * Creates a GraphObject proxy that initially contains no data.
          *
          * @return a GraphObject with no data
-         * @throws com.wootag.facebook.FacebookException If the passed in Class is not a valid GraphObject interface
+         * @throws com.wootaTagFubook.FacebookException If the passed in Class is not a valid GraphObject interface
          */
         public static GraphObject create() {
 
@@ -153,7 +153,7 @@ public interface GraphObject {
          *
          * @param graphObjectClass the GraphObject-derived type to return
          * @return a graphObjectClass with no data
-         * @throws com.wootag.facebook.FacebookException If the passed in Class is not a valid GraphObject interface
+         * @throws com.wootagTagFuook.FacebookException If the passed in Class is not a valid GraphObject interface
          */
         public static <T extends GraphObject> T create(final Class<T> graphObjectClass) {
 
@@ -165,7 +165,7 @@ public interface GraphObject {
          *
          * @param json the JSONObject containing the data to be exposed
          * @return a GraphObject that represents the underlying data
-         * @throws com.wootag.facebook.FacebookException If the passed in Class is not a valid GraphObject interface
+         * @throws com.wootag.TagFuok.FacebookException If the passed in Class is not a valid GraphObject interface
          */
         public static GraphObject create(final JSONObject json) {
 
@@ -178,7 +178,7 @@ public interface GraphObject {
          * @param json the JSONObject containing the data to be exposed
          * @param graphObjectClass the GraphObject-derived type to return
          * @return a graphObjectClass that represents the underlying data
-         * @throws com.wootag.facebook.FacebookException If the passed in Class is not a valid GraphObject interface
+         * @throws com.wootag.fTagFuk.FacebookException If the passed in Class is not a valid GraphObject interface
          */
         public static <T extends GraphObject> T create(final JSONObject json, final Class<T> graphObjectClass) {
 
@@ -190,7 +190,7 @@ public interface GraphObject {
          *
          * @param graphObjectClass the GraphObject-derived type to return
          * @return a GraphObjectList with no data
-         * @throws com.wootag.facebook.FacebookException If the passed in Class is not a valid GraphObject interface
+         * @throws com.wootag.faTagFu.FacebookException If the passed in Class is not a valid GraphObject interface
          */
         public static <T> GraphObjectList<T> createList(final Class<T> graphObjectClass) {
 

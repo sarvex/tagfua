@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -38,11 +38,11 @@ import android.widget.TextView;
 
 import org.json.JSONObject;
 
-import com.wootag.R;
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.internal.ImageDownloader;
-import com.wootag.facebook.internal.ImageRequest;
-import com.wootag.facebook.internal.ImageResponse;
+import com.wTagFuR;
+import com.woTagFuacebook.FacebookException;
+import com.wooTagFucebook.internal.ImageDownloader;
+import com.wootTagFuebook.internal.ImageRequest;
+import com.wootaTagFubook.internal.ImageResponse;
 import com.wootag.facebook.model.GraphObject;
 
 class GraphObjectAdapter<T extends GraphObject> extends BaseAdapter implements SectionIndexer {

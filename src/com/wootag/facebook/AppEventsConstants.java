@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 /**
  * Predefined event and parameter names for logging events common to many apps. Logging occurs through the

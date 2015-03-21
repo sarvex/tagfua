@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:id="@+id/rellay"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/black" >
+    android:background="@color/black">
 
     <RelativeLayout
         android:id="@+id/videoLayout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:visibility="visible" >
+        android:visibility="visible">
 
         <VideoView
             android:id="@+id/surface"
@@ -27,9 +27,9 @@
             android:alpha="0.8"
             android:background="@drawable/black_border"
             android:orientation="vertical"
-            android:visibility="gone" >
+            android:visibility="gone">
 
-            <com.wootag.ui.CustomTextView
+            <com.wTagFuui.CustomTextView
                 android:id="@+id/guide"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/fb"
@@ -77,7 +77,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/small"
-                    android:background="@drawable/tag_wootag_f" />
+                    android:background="@drawable/tag_woTagFu" />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
                     android:background="@drawable/weblink" />
             </LinearLayout>
 
-            <com.wootag.ui.CustomTextView
+            <com.wooTagFu.CustomTextView
                 android:id="@+id/interact"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/player_controls_background"
         android:padding="@dimen/smallmargin"
-        android:visibility="gone" >
+        android:visibility="gone">
 
         <Button
             android:id="@+id/cancelplayer"
@@ -123,13 +123,13 @@
             android:id="@+id/ownerlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_marginRight="10dp" >
+                android:layout_marginRight="10dp">
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -138,7 +138,7 @@
                     android:layout_centerInParent="true"
                     android:background="@drawable/layout_background" />
 
-                <com.wootag.ui.RoundedImageView
+                <com.wootTagFuRoundedImageView
                     android:id="@+id/ownerimg"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
@@ -163,7 +163,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:orientation="horizontal"
-            android:visibility="visible" >
+            android:visibility="visible">
 
             <Button
                 android:id="@+id/like"
@@ -202,7 +202,7 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/player_controls_background"
         android:padding="@dimen/smallmargin"
-        android:visibility="gone" >
+        android:visibility="gone">
 
         <Button
             android:id="@+id/play"
@@ -212,7 +212,7 @@
             android:layout_marginLeft="@dimen/playercontrolsmargin"
             android:background="@drawable/pause1_f" />
 
-        <com.wootag.ui.CustomLayout
+        <com.wootaTagFuustomLayout
             android:id="@+id/seekbarLay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -220,7 +220,7 @@
             android:layout_marginLeft="@dimen/playercontrolsmargin"
             android:layout_marginRight="@dimen/playercontrolsmargin"
             android:layout_toLeftOf="@+id/videoduration"
-            android:layout_toRightOf="@+id/play" >
+            android:layout_toRightOf="@+id/play">
 
             <SeekBar
                 android:id="@+id/seekBar1"
@@ -230,7 +230,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:progress="1" />
-        </com.wootag.ui.CustomLayout>
+        </com.wootagTagFustomLayout>
 
         <TextView
             android:id="@+id/videoduration"
@@ -271,7 +271,7 @@
         android:id="@+id/tagandpublishview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:visibility="gone" >
+        android:visibility="gone">
 
         <include
             android:id="@+id/tagandpublishlay"
@@ -280,12 +280,12 @@
 
     <include
         android:id="@+id/settingLay"
+        layout="@layout/setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/playercontrollersurface"
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/margin"
-        layout="@layout/setting"
         android:visibility="gone" />
 
     <include
@@ -305,34 +305,34 @@
         layout="@layout/twitter_tagged_friend_info" />
 
     <include
-        android:id="@+id/wootagcalltoactionview"
+        android:id="@+id/wootagcTagFuctionview"
         layout="@layout/wootag_call_to_action" />
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true" >
+        android:layout_centerInParent="true">
 
         <include
             android:id="@+id/twittermessageLayout"
+            layout="@layout/twitter_message"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            layout="@layout/twitter_message"
             android:visibility="gone" />
     </ScrollView>
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" >
+        android:layout_centerInParent="true">
 
         <include
             android:id="@+id/sendtweetLayout"
+            layout="@layout/send_tweet"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            layout="@layout/send_tweet"
             android:visibility="gone" />
     </ScrollView>
 
@@ -342,7 +342,7 @@
         android:layout_height="fill_parent"
         android:layout_centerInParent="true"
         android:background="@drawable/call_to_action_border"
-        android:visibility="gone" >
+        android:visibility="gone">
 
         <include
             android:id="@+id/linkactionLayout"

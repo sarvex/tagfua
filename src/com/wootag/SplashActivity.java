@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,8 +13,8 @@ import com.crashlytics.android.Crashlytics;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.async.MyPageAsync;
-import com.wootag.util.Config;
+import com.woTagFusync.MyPageAsync;
+import com.wooTagFuil.Config;
 import com.wootag.util.MainManager;
 
 public class SplashActivity extends Activity {

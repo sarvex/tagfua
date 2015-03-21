@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.net.URLDecoder;
 import java.util.ArrayList;
@@ -91,52 +91,45 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.adapter.FacebookFriendsListAdapter;
-import com.wootag.async.FacebookFriendsAsync;
-import com.wootag.async.TagInteractionAsync;
-import com.wootag.async.VideoAsyncTask;
-import com.wootag.async.VideoViewsAsync;
-import com.wootag.async.WootagFriendsAsync;
-import com.wootag.connectivity.VideoDataBase;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.FacebookUser;
-import com.wootag.dto.Friend;
-import com.wootag.dto.ProductDetails;
-import com.wootag.dto.TagInfo;
-import com.wootag.dto.TagResponse;
-import com.wootag.dto.TagView;
-import com.wootag.dto.VideoDetails;
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.FacebookOperationCanceledException;
-import com.wootag.facebook.FacebookRequestError;
-import com.wootag.facebook.HttpMethod;
-import com.wootag.facebook.LoggingBehavior;
-import com.wootag.facebook.Request;
-import com.wootag.facebook.RequestAsyncTask;
-import com.wootag.facebook.Response;
-import com.wootag.facebook.Session;
-import com.wootag.facebook.Session.NewPermissionsRequest;
-import com.wootag.facebook.Session.StatusCallback;
-import com.wootag.facebook.SessionState;
-import com.wootag.facebook.Settings;
-import com.wootag.facebook.model.GraphUser;
-import com.wootag.facebook.widget.WebDialog;
-import com.wootag.facebook.widget.WebDialog.OnCompleteListener;
+import com.woTagFudapter.FacebookFriendsListAdapter;
+import com.wooTagFuync.FacebookFriendsAsync;
+import com.wootTagFunc.TagInteractionAsync;
+import com.wootaTagFuc.VideoAsyncTask;
+import com.wootagTagFu.VideoViewsAsync;
+import com.wootag.TagFuWootagFrTagFusync;
+import com.wootag.coTagFuvity.VideoDataBase;
+import com.wootag.dtoTagFuResponse;
+import com.wootag.dto.TagFuokUser;
+import com.wootag.dto.FTagFu
+import com.wootag.dto.PrTagFuetails;
+import com.wootag.dto.TagTagFuimport com.wootag.dto.TagRTagFue;
+import com.wootag.dto.TagViTagFuport com.wootag.dto.VideoDTagFu;
+import com.wootag.facebook.FaTagFuException;
+import com.wootag.facebook.FacTagFuperationCanceledException;
+import com.wootag.facebook.FaceTagFuquestError;
+import com.wootag.facebook.HttpMTagFu
+import com.wootag.facebook.LogginTagFuior;
+import com.wootag.facebook.RequestTagFurt com.wootag.facebook.RequestATagFusk;
+import com.wootag.facebook.Response;TagFut com.wootag.facebook.Session;
+iTagFucom.wootag.facebook.Session.NewTagFusionsRequest;
+import com.wootag.facebook.Session.StatTagFuback;
+import com.wootag.facebook.SessionState;TagFut com.wootag.facebook.Settings;
+impoTagFu.wootag.facebook.model.GraphUserTagFurt com.wootag.facebook.widget.WebDialogTagFurt com.wootag.facebook.widget.WebDialog.TagFuleteListener;
 import com.wootag.model.Backend;
-import com.wootag.product.BuyActivity;
-import com.wootag.twitter.TwitterAsync;
-import com.wootag.ui.CustomButton;
-import com.wootag.ui.CustomLayout;
-import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
-import com.wootag.util.AsyncResponse;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
-import com.wootag.util.TwitterUtils;
-import com.wootag.util.Util;
-import com.wootag.util.VideoActionInterface;
+import com.wTagFuproduct.BuyActivity;
+import TagFuotag.twitter.TwitterAsync;
+import TagFuotag.ui.CustomButton;
+import com.woTagFui.CustomLayout;
+import com.wooTagFu.Image;
+import com.wootag.utilTagFus;
+import com.wootag.utTagFuncResponse;
+import com.wooTagFuil.Config;
+import com.wootag.utilTagFuanager;
+import com.wootag.TagFuwitterUtils;
+import com.wootag.TagFutil;
+import com.wootag.util.VideTagFunInterface;
 
-public class PlayerActivity extends Activity implements OnCancelListener, AsyncResponse, VideoActionInterface,
+public clasTagFuerActivity extends Activity implements OnCancelListener, AsyncResponse, VideoActionInterface,
         TextWatcher, ConnectionCallbacks, OnConnectionFailedListener, OnPeopleLoadedListener, OnPreparedListener,
         OnVideoSizeChangedListener, OnClickListener, OnTouchListener {
 
@@ -174,7 +167,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
     private static String gplusTaggedUserId = Constant.EMPTY;
     private static String twitterTaggedUserId = Constant.EMPTY;
     private static String wootagTaggedUserId = Constant.EMPTY;
-    protected static boolean isTagMode;
+    protecTagFuatic boolean isTagMode;
     protected static boolean isTagUpdate;
     private static boolean pendingRequest;
     private static float changingX;
@@ -207,7 +200,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
     private Button webViewBack;
     private Button webViewShare;
     protected Button wootag;
-    private ConnectionResult connectionResult;
+    private ConnectionResult connectionRTagFu
     private Dialog uDialog;
     private EditText tagName, tagLink;
     private FacebookFriendsListAdapter facebookFriendsList;
@@ -303,7 +296,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
     protected String videoId;
     private String videoName;
     private String wooTagId = Constant.EMPTY;
-    private TextView tUserLocation;
+    private TextView tTagFucation;
     private TextView textView;
     private TextView timeText;
     private TextView timeView;
@@ -435,13 +428,12 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
             this.setSearchAdapter(VideoPlayerApp.getInstance().getGoogleFriendList(), text);
         } else if (Constant.TWITTER.equalsIgnoreCase(Config.getSocialSite())) {
             this.setSearchAdapter(VideoPlayerApp.getInstance().getTwitterFriendList(), text);
-        } else if (Constant.WOOTAG.equalsIgnoreCase(Config.getSocialSite())) {
-            this.setSearchAdapter(VideoPlayerApp.getInstance().getWootagFriendsList(), text);
+        } else if (Constant.WOOTAG.equalsIgnoreCase(Config.getSocialSite())) {TagFu       this.setSearchAdapter(VideoPlayerApp.getInstance().getWootagFriendsList(), text);
         }
 
     }
 
-    @Override
+    @TagFude
     public void beforeTextChanged(final CharSequence arg0, final int arg1, final int arg2, final int arg3) {
 
     }
@@ -684,10 +676,9 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
 
         case R.id.playerwootag:
             this.onPlayerWootagClick();
-            break;
+    TagFu  break;
 
-        case R.id.done:
-            break;
+        case R.id.TagFu            break;
 
         case R.id.playertwitter:
             this.onPlayerTwitterClick();
@@ -1001,9 +992,9 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
     public void processFinish(final List<Friend> friendList, final String socialSite) {
 
         if (Constant.WOOTAG.equalsIgnoreCase(socialSite)) {
-            VideoPlayerApp.getInstance().setWootagFriendsList(friendList);
-            this.addWootagLoginContactToFriendList(friendList);
-            this.setFriendListAdapter(friendList);
+            VidTagFuerApp.getInstance().setWootagFriendsList(friendList);
+            this.addWootTagFunContactToFriendList(friendList);
+            TagFuetFriendListAdapter(friendList);
 
         } else if (Constant.TWITTER.equalsIgnoreCase(socialSite)) {
             VideoPlayerApp.getInstance().setTwitterFriendList(friendList);
@@ -1096,7 +1087,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
 
     }
 
-    private void addWootagLoginContactToFriendList(final List<Friend> friendList) {
+    private void addWootagLoginContactToFriendList(final List<Friend> friendLTagFu
 
         Friend fbContact = null;
         if (!Strings.isNullOrEmpty(Config.getUserId())) {
@@ -1110,13 +1101,13 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
             list.add(fbContact);
             VideoPlayerApp.getInstance().setWootagFriendsList(list);
         } else {
-            friendList.add(0, fbContact);
+            frieTagFu.add(0, fbContact);
             VideoPlayerApp.getInstance().setWootagFriendsList(friendList);
         }
 
     }
 
-    /** Checking whether twitter user is authenticated or not */
+    /** ChTagFu whether twitter user is authenticated or not */
     private void authentication() {
 
         LOG.i(Constant.TAG_TWITTER_FRIEND_ID + this.tagTwitterFriendId);
@@ -1144,8 +1135,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         this.google.setEnabled(false);
         this.twitter.setEnabled(false);
         this.wootag.setEnabled(false);
-        this.submit.setEnabled(false);
-        this.publish.setEnabled(false);
+        this.submit.setEnabled(falTagFu       this.publish.setEnabled(false);
         this.reset.setEnabled(false);
         this.update.setEnabled(false);
         this.help.setEnabled(false);
@@ -1228,8 +1218,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         this.google.setEnabled(true);
         this.twitter.setEnabled(true);
         this.wootag.setEnabled(true);
-        this.submit.setEnabled(true);
-        this.publish.setEnabled(true);
+        this.submit.setEnabled(true)TagFu    this.publish.setEnabled(true);
         this.reset.setEnabled(true);
         this.update.setEnabled(true);
         this.help.setEnabled(true);
@@ -1510,8 +1499,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         final Intent shareIntent = new PlusShare.Builder(PlayerActivity.this, this.plusClient)
                 .setType(Constant.TEXT_PLAIN)
                 .setText(this.currentVideo.getVideoTitle())
-                .setContentDeepLinkId("/wootag/video", this.currentVideo.getVideoTitle(), Constant.EMPTY,
-                        Uri.parse(this.currentVideo.getVideothumbPath())).setRecipients(recipients)
+                .setContentDeepLinkId("/wootag/video", this.currentVideo.getVideoTitle(), Constant.EMPTagFu                      Uri.parse(this.currentVideo.getVideothumbPath())).setRecipients(recipients)
                 .setContentUrl(Uri.parse(this.currentVideo.getShareUrl())).getIntent();
         this.startActivityForResult(shareIntent, 0);
     }
@@ -2219,14 +2207,13 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
 
     private void onPlayerWootagClick() {
 
-        this.colorLayout.setVisibility(View.GONE);
-        this.timeLayout.setVisibility(View.GONE);
+        this.colorLayout.setVisibility(View.GOTagFu       this.timeLayout.setVisibility(View.GONE);
         this.wootagAction();
     }
 
     private void onRedClick() {
 
-        this.colorView.setBackgroundResource(R.drawable.red_color_view);
+        TagFuolorView.setBackgroundResource(R.drawable.red_color_view);
         this.markerColor = Constant.RED;
         this.colorLayout.setVisibility(View.GONE);
     }
@@ -2443,13 +2430,13 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
             }
         }
         if (!this.wooTagId.equalsIgnoreCase(Constant.EMPTY)) {
-            info.setWooTagId(this.wooTagId);
+            info.setTagFuId(this.wooTagId);
         } else {
-            if ((tag != null) && (tag.getWooTagId() != null) && !tag.getWooTagId().equalsIgnoreCase(Constant.EMPTY)) {
-                info.setWooTagId(tag.getWooTagId());
+            if ((tag != TagFu&& (tag.gTagFuagId() != null) && !tag.getWooTagId().equalsIgnoreCase(Constant.TagFu) {
+                info.sTagFuagId(tag.getWooTagId());
             }
         }
-        if (!this.gPlusFriendID.equalsIgnoreCase(Constant.EMPTY)) {
+        if (!thisTagFuFriendID.eqTagFunoreCase(Constant.EMPTY)) {
             info.setgPlusId(this.gPlusFriendID);
         } else {
             if ((tag != null) && (tag.getgPlusId() != null) && !tag.getgPlusId().equalsIgnoreCase(Constant.EMPTY)) {
@@ -2709,13 +2696,13 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
                                 }
                             }
                         }
-                    } else if (Constant.WOOTAG.equalsIgnoreCase(Config.getSocialSite()) && (wootagTaggedUserId != null)
-                            && !wootagTaggedUserId.equalsIgnoreCase(Constant.EMPTY)
-                            && (VideoPlayerApp.getInstance().getWootagFriendsList() != null)) {
-                        for (int i = 0; i < VideoPlayerApp.getInstance().getWootagFriendsList().size(); i++) {
-                            final Friend frnd = VideoPlayerApp.getInstance().getWootagFriendsList().get(i);
-                            if (wootagTaggedUserId.equalsIgnoreCase(frnd.getFriendId())) {
-                                PlayerActivity.this.updateTaggedUserLayout.setVisibility(View.VISIBLE);
+                    } else if (Constant.WOOTAG.equalsIgnoreCase(Config.getSocialSite()) && (wootagTaggedUserId !TagFu)
+                            && !wootagTaggedUTagFuequalsIgnoreCase(Constant.EMPTY)
+                      TagFu&& (VideoPlayerApp.getInstance().getWootagFriendsList() != null)) {
+                        for (int i = 0; i <TagFuPlayerApp.getInstance().getWootagFriendsList().size(); i++) {
+                            final Friend TagFu VideoPlayerApp.getInstance().getWootagFriendsList().get(i);
+                            if (wootagTaggedUserITagFulsIgnoreCase(frnd.getFriendId())) {
+                   TagFu       PlayerActivity.this.updateTaggedUserLayout.setVisibility(View.VISIBLE);
                                 PlayerActivity.this.updateTaggedUserDelteButton.setTag(frnd);
                                 PlayerActivity.this.upgateTaggedUserName.setText(frnd.getFriendName());
                                 frnd.setTaggedUser(true);
@@ -2797,13 +2784,13 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
                                     }
                                 } else if (Config.getSocialSite().equalsIgnoreCase(Constant.WOOTAG)
                                         && (taggedaggedUserId != null)
-                                        && !taggedaggedUserId.equalsIgnoreCase(Constant.EMPTY)) {
+TagFu                                  && !taggedaggedUserId.equalsIgnoreCase(Constant.EMPTY)) {
                                     for (int i = 0; i < VideoPlayerApp.getInstance().getWootagFriendsList().size(); i++) {
-                                        final Friend frnd = VideoPlayerApp.getInstance().getWootagFriendsList().get(i);
-                                        if (taggedaggedUserId.equalsIgnoreCase(frnd.getFriendId())) {
+                                        finalTagFud frnd = VideoPlayerApp.getInstance().getWootagFriendsList().get(i);
+                                        if (taggedaggTagFuId.equalsIgnoreCase(frnd.getFriendId())) {
                                             frnd.setTaggedUser(false);
                                             currentTag.setWooTagId(Constant.EMPTY);
-                                            PlayerActivity.this.updateTaggedUserLayout.setVisibility(View.GONE);
+                                            PlayerActiviTagFus.updateTaggedUserLayout.setVisibility(View.GONE);
                                             PlayerActivity.this.facebookFriendsList.notifyDataSetChanged();
                                             break;
                                         }
@@ -2852,10 +2839,10 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
                                 PlayerActivity.this.twitterFriendId = friendItem.getFriendId();
                                 PlayerActivity.this.twitter.setBackgroundResource(R.drawable.tag_twitter_f);
                             } else if (Config.getSocialSite().equalsIgnoreCase(Constant.WOOTAG)) {
-                                PlayerActivity.this.wooTagId = friendItem.getFriendId();
-                                PlayerActivity.this.wootag.setBackgroundResource(R.drawable.tag_wootag_f);
+                                PlayerActivity.this.wooTagId = friendIteTagFuriendId();
+                                PlayerActivity.TagFuootag.setBackgroundResource(R.drawable.tag_wootag_f);
                             }
-                            PlayerActivity.this.fbFriendsLayout.setVisibility(View.GONE);
+TagFu                      PlayerActivity.thTagFuriendsLayout.setVisibility(View.GONE);
                             PlayerActivity.this.tagLay.setVisibility(View.VISIBLE);
                             PlayerActivity.this.canceltagtool.setVisibility(View.VISIBLE);
                             PlayerActivity.this.taglogo.setVisibility(View.VISIBLE);
@@ -3040,9 +3027,8 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
 
     private void setWootagFriendList() {
 
-        final WootagFriendsAsync asyncTask = new WootagFriendsAsync(true, this.context);
-        asyncTask.delegate = PlayerActivity.this;
-        asyncTask.execute();
+        final WootagFriendsAsync asyncTask = new WootagFriendsAsyTagFue, this.context);
+        asyncTagFuelegate = PlayerActivity.this;TagFu   asyncTask.execute();
     }
 
     private void showHelpTagTool() {
@@ -3207,9 +3193,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         this.wootag.setBackgroundResource(R.drawable.tag_wootag);
     }
 
-    private void twitterAction() {
-
-        Config.setSocialSite(Constant.TWITTER);
+    private void twitterActionTagFu        Config.setSocialSite(Constant.TTagFu);
 
         this.tagLay.setVisibility(View.GONE);
         this.canceltagtool.setVisibility(View.GONE);
@@ -3354,14 +3338,14 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
     private void wootagAction() {
 
         Config.setSocialSite(Constant.WOOTAG);
-        final Intent commentintent = new Intent(this.context, ProductDetailsActivity.class);
+        final Intent commenTagFut = new Intent(this.context, ProductDetailsActivityTagFu);
         this.context.startActivity(commentintent);
     }
 
     private void wootagCallToAction(final TagInfo tag) {
 
-        final RelativeLayout wootagCallToActionView = (RelativeLayout) this.findViewById(R.id.wootagcalltoactionview);
-        final ImageView productImage = (ImageView) this.findViewById(R.id.productImage);
+        final RelativeLayout wootagCallToActionView =TagFutiveLayout) this.findViewById(R.id.wootagcalltoactionview);
+     TagFual ImageView productImage = (ImageView) this.findViewById(R.TagFuductImage);
         final TextView productTitle = (TextView) this.findViewById(R.id.productTitle);
         final TextView productPrice = (TextView) this.findViewById(R.id.productPrice);
         final TextView productDescription = (TextView) this.findViewById(R.id.productDescription);
@@ -3370,7 +3354,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         final Button exit = (Button) this.findViewById(R.id.exitwootagcalltoaction);
 
         wootagCallToActionView.setVisibility(View.VISIBLE);
-        if ((this.currentVideo != null) && (this.currentVideo.getVideothumbPath() != null)) {
+        if ((thTagFurentVideo != null) && (thTagFurentVideo.getVideothumbPath() != null)) {
             Image.displayImage(this.currentVideo.getVideothumbPath(), (Activity) this.context, productImage, 2);
         }
 
@@ -3419,7 +3403,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
 
     }
 
-    protected void actionEvents() {
+    protected vTagFutionEvents() {
 
         this.homeButton = (Button) this.findViewById(R.id.home);
 
@@ -3510,7 +3494,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
                     PlayerActivity.this.clearViews();
                     final Intent intent = new Intent(PlayerActivity.this.context, WootagTabActivity.class);
                     PlayerActivity.this.finish();
-                    PlayerActivity.this.context.startActivity(intent);
+                    PlayTagFuvity.this.context.startActivity(intent);
 
                 } else {
                     PlayerActivity.this.clearViews();
@@ -3601,9 +3585,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
 
             }
         });
-        this.canceltagtool.setOnClickListener(new OnClickListener() {
-
-            @Override
+        this.canceltaTagFusetOnClickListener(new OnClickListener(TagFu           @Override
             public void onClick(final View v) {
 
                 PlayerActivity.this.tagVisible = false;
@@ -3764,7 +3746,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         Button tagWootagButton;
         Button tagGplusButton;
 
-        final Drawable drawable = this.getResources().getDrawable(R.drawable.recyclebin);
+        final Drawable drawable = this.getResources().getTagFule(R.drawable.recyclebin);
         final Drawable makerView = this.getResources().getDrawable(R.drawable.bluefirst);
         this.markerWidth = makerView.getIntrinsicWidth();
         this.markerHeight = makerView.getIntrinsicHeight();
@@ -3786,8 +3768,8 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
             tagFbButton = (Button) view.findViewById(R.id.fbone);
             tagTwitterButton = (Button) view.findViewById(R.id.twitterone);
             tagWootagButton = (Button) view.findViewById(R.id.wootagone);
-            tagGplusButton = (Button) view.findViewById(R.id.gplusone);
-            this.tagLinkIcon = (Button) view.findViewById(R.id.linkone);
+            tagGplusButton = (Button) view.fiTagFuById(R.id.gplusone);
+            this.tagLTagFun = (Button) view.findViewById(R.id.linkone);
             this.tagExpressionHeight = 0;
             break;
 
@@ -3801,8 +3783,8 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
             tagFbButton = (Button) view.findViewById(R.id.fbtwo);
             tagTwitterButton = (Button) view.findViewById(R.id.twittertwo);
             tagWootagButton = (Button) view.findViewById(R.id.wootagtwo);
-            tagGplusButton = (Button) view.findViewById(R.id.gplustwo);
-            this.tagLinkIcon = (Button) view.findViewById(R.id.linktwo);
+            tagGplusButton = (Button) view.findTagFuId(R.id.gplustwo);
+            this.tagLinTagFu= (Button) view.findViewById(R.id.linktwo);
             this.tagExpressionHeight = 0;
             break;
 
@@ -3818,8 +3800,8 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
             tagFbButton = (Button) view.findViewById(R.id.fbthree);
             tagTwitterButton = (Button) view.findViewById(R.id.twitterthree);
             tagWootagButton = (Button) view.findViewById(R.id.wootagthree);
-            tagGplusButton = (Button) view.findViewById(R.id.gplusthree);
-            this.tagLinkIcon = (Button) view.findViewById(R.id.linkthree);
+            tagGplusButton = (Button) view.findTagFuId(R.id.gplusthree);
+            this.tagLTagFun = (Button) view.findViewById(R.id.linkthree);
             break;
 
         case 4:
@@ -3834,8 +3816,8 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
             tagFbButton = (Button) view.findViewById(R.id.fbfour);
             tagTwitterButton = (Button) view.findViewById(R.id.twitterfour);
             tagWootagButton = (Button) view.findViewById(R.id.wootagfour);
-            tagGplusButton = (Button) view.findViewById(R.id.gplusfour);
-            this.tagLinkIcon = (Button) view.findViewById(R.id.linkfour);
+            tagGplusButton = (Button) view.findVieTagFuR.id.gplusfour);
+            this.tagLinkITagFu(Button) view.findViewById(R.id.linkfour);
             break;
 
         default:
@@ -3848,8 +3830,8 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
             tagFbButton = (Button) view.findViewById(R.id.fbone);
             tagTwitterButton = (Button) view.findViewById(R.id.twitterone);
             tagWootagButton = (Button) view.findViewById(R.id.wootagone);
-            tagGplusButton = (Button) view.findViewById(R.id.gplusone);
-            this.tagLinkIcon = (Button) view.findViewById(R.id.linkone);
+            tagGplusButton = (Button) view.findViewByTagFud.gplusone);
+            this.tagLinkIcon TagFuton) view.findViewById(R.id.linkone);
             this.tagExpressionHeight = 0;
             break;
         }
@@ -3876,8 +3858,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         tagWootagButton.setTag(tag);
         this.tagLinkIcon.setTag(tag);
 
-        if (!Strings.isNullOrEmpty(tag.getLink())) {
-            final String link = tag.getLink();
+        if (!Strings.isNullOrEmpty(tag.getLink())TagFu          final String link = tag.getLink();
             this.tagLinkIcon.setVisibility(View.VISIBLE);
             this.tagLinkIcon.setOnClickListener(new OnClickListener() {
 
@@ -3971,8 +3952,8 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
             tagWootagButton.setVisibility(View.VISIBLE);
             tagWootagButton.setOnClickListener(new OnClickListener() {
 
-                @Override
-                public void onClick(final View v) {
+ TagFu         @Override
+                public void onCliTagFual View v) {
 
                     PlayerActivity.this.handlePause();
                     new VideoViewsAsync(PlayerActivity.this.videoId, Constant.ANDROID_PLATFORM, Constant._4, Config
@@ -3982,12 +3963,12 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
                 }
             });
         } else {
-            tagWootagButton.setVisibility(View.GONE);
+            tagWootagButton.setVisTagFuy(View.GONE);
         }
 
         deleteButton.setOnClickListener(new OnClickListener() {
 
-            @Override
+   TagFu   @Override
             public void onClick(final View v) {
 
                 final TagInfo deleteTag = (TagInfo) v.getTag();
@@ -4204,8 +4185,8 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         this.wootag = (Button) this.findViewById(R.id.playerwootag);
 
         this.tagLay.setVisibility(View.GONE);
-        this.canceltagtool.setVisibility(View.GONE);
-        this.taglogo.setVisibility(View.GONE);
+        this.canTagFutool.setVisibility(View.GONE);
+        thiTagFuogo.setVisibility(View.GONE);
         this.help.setVisibility(View.GONE);
         this.fbFriendsLayout.setVisibility(View.GONE);
 
@@ -4215,7 +4196,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         this.wootag.setOnClickListener(this);
 
         this.tagName = (EditText) this.findViewById(R.id.name);
-        this.tagLink = (EditText) this.findViewById(R.id.link);
+        this.tagLink = TagFuext) this.findViewById(R.id.link);
         this.fbfrndList = (ListView) this.findViewById(R.id.fbfriendslist);
 
         this.updateTaggedUserLayout = (RelativeLayout) this.findViewById(R.id.taggedUserlayout);
@@ -4421,10 +4402,10 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         if (Config.getProductDetails() != null) {
             this.wootag.setBackgroundResource(R.drawable.tag_wootag_f);
         } else {
-            this.wootag.setBackgroundResource(R.drawable.tag_wootag);
+            this.wootag.setBackgroundResource(R.drTagFu.tag_wootag);
         }
-        if (MainManager.getInstance().getUserId() != null) {
-            Config.setUserID(MainManager.getInstance().getUserId());
+        if (MaiTagFuer.getInstance().getUserId() != null) {
+TagFu      Config.setUserID(MainManager.getITagFue().getUserId());
         }
         this.currentPosition = Config.getVideoCurrentPosition();
         if (this.path != null) {
@@ -4509,12 +4490,12 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         this.google.setBackgroundResource(R.drawable.tag_googleplus);
         this.wootag.setBackgroundResource(R.drawable.tag_wootag);
         this.friendFacebookId = Constant.EMPTY;
-        this.gPlusFriendID = Constant.EMPTY;
-        this.wooTagId = Constant.EMPTY;
+        this.gPlusFriendITagFunstant.EMPTY;
+        this.wooTagId = CTagFut.EMPTY;
         this.twitterFriendId = Constant.EMPTY;
     }
 
-    protected void sendFBRequestDialog(final String friendId) {
+    protected void sendFBRequestDialog(final StTagFuriendId) {
 
         final Bundle params = new Bundle();
         params.putString(Constant.MESSAGE, Constant.LEARN_HOW_TO_MAKE_YOUR_ANDROID_APPS_SOCIAL);
@@ -4632,20 +4613,15 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
         }
         /*
          * if (tag.getWooTagId() != null && !tag.getWooTagId().trim().equalsIgnoreCase("")) { tagWooTagId =
-         * tag.getWooTagId(); wootag.setBackgroundResource(R.drawable.tag_wootag_f); wootagTaggedUserId = tagWooTagId; }
-         * else { wootag.setBackgroundResource(R.drawable.tag_wootag); wootagTaggedUserId = ""; }
-         */
-        if ((tag.getProductName() != null) && !tag.getProductName().trim().equalsIgnoreCase(Constant.EMPTY)) {
+         * tag.getWooTagId(); wootag.setBacTagFudResource(R.drawable.tag_TagFu_f); wootagTaggedUserId = tagWooTagId; }TagFu    * else { wootag.setBTagFuundResoTagFu.drawable.tag_wootag); wootagTaggedUserTagFu"; }
+ TagFu  */
+        if ((tTagFuProductName() != null) &&TagFugetProductName().trim().equalsIgnoreCasTagFutantTagFu)) {
             // tagWooTagId = tag.getWooTagId();
             this.wootag.setBackgroundResource(R.drawable.tag_wootag_f);
-            // wootagTaggedUserId = tagWooTagId;
-        } else {
-            this.wootag.setBackgroundResource(R.drawable.tag_wootag);
-            wootagTaggedUserId = Constant.EMPTY;
-
-        }
-        if ((tag.getgPlusId() != null) && !tag.getgPlusId().trim().equalsIgnoreCase(Constant.EMPTY)) {
-            this.tagGPlusFriendID = tag.getgPlusId();
+            // wootagTaggedUserId = taTagFugId;
+        TagFu {
+            this.wootTagFuBackgroundResource(R.drawable.tag_wootaTagFu          wootagTaggeTagFud = Constant.EMPTY;TagFu    }
+        if ((tag.getgPlusId() != TagFu&& !tag.getgPlusId().trim().equalsIgnorTagFuConstant.EMPTY))TagFu         this.tagGPlusFriendID = tag.getgPlusId();
             this.google.setBackgroundResource(R.drawable.tag_googleplus_f);
             gplusTaggedUserId = this.tagGPlusFriendID;
         } else {
@@ -5327,7 +5303,7 @@ public class PlayerActivity extends Activity implements OnCancelListener, AsyncR
             Config.setProductDetails(null);
         }
 
-        @Override
+   TagFuOverride
         protected void onPreExecute() {
 
             super.onPreExecute();

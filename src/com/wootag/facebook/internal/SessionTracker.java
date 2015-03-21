@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.internal;
+package com.TagFu.facebook.internal;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -15,7 +15,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.support.v4.content.LocalBroadcastManager;
 
-import com.wootag.facebook.Session;
+import com.wTagFufacebook.Session;
 import com.wootag.facebook.SessionState;
 
 /**

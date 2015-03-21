@@ -20,7 +20,7 @@
     <string name="server_register_error">Could not register device to Server after %1$d attempts.</string>
     <string name="server_registered">From Server: successfully added device!</string>
     <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
-    <string name="app_name">Wootag</string>
+    <string name="app_name">TagFu</string>
     <string name="app_font_name">RobotoRegular.ttf</string>
     <string name="app_bold_font_name">RobotoBold.ttf</string>
     <string name="app_italic_font_name">RobotoItalic.ttf</string>
@@ -35,9 +35,9 @@
     <string name="no_connectivity_feed_privattext">Video feeds not available at this moment, We are facing trouble with your internet access, Try again</string>
     <string name="sdcard_not_present_toast_message">This operation requires an SD Card. But, you don\'t seem to have one in this device.</string>
     <string name="sdcard_not_mounted_toast_message">Looks like your SD Card is not mounted. Please mount it, and try this operation again.</string>
-    <string name="db_name">WOOTAG.sqlite</string>
+    <string name="db_name">WTagFusqlite</string>
     <string name="db_version">5</string>
-    <string name="title_activity_main">WooTag</string>
+    <string name="title_activity_main">WoTagFustring>
     <string name="title_activity_video_take_down">VideoTakeDownActivity</string>
     <string name="title_activity_my_page">VideoFeed</string>
     <string name="username">Enter name</string>
@@ -71,7 +71,7 @@
     <string name="title_activity_share_setting">ShareSettingActivity</string>
     <string name="title_activity_profile_pick_view">ProfilePickViewActivity</string>
     <string name="title_activity_pending_private_request">PendingPrivateRequestActivity</string>
-    <string name="title_activity_wootag_tab">WootagTabActivity</string>
+    <string name="title_activity_wooTagFub">WootTagFuctivity</string>
     <string name="title_activity_product_details">ProductDetailsActivity</string>
     <string name="title_activity_checkout">BuyActivity</string>
     <string name="title_activity_sell">SellActivity</string>
@@ -128,15 +128,15 @@
     <string name="i_dont_like_this_video">I don&amp;apos;t like this video</string>
     <string name="this_video_is_spam_or_a_scam">This video is spam or a scam</string>
     <string name="this_video_puts_people_at_risk">This video puts people at risk</string>
-    <string name="this_video_shouldnt_be_on_wootag">This video shouldn&amp;apos;t be on Wootag</string>
-    <string name="thanks">Thanks</string>
+    <string name="this_video_shouldnt_be_on_wootaTagFus video shouldn&amp;apos;t be on WootagTagFung>
+    <string name=" thanks">Thanks</string>
     <string name="reported_successfully">Reported Successfully</string>
     <string name="your_feedbacks_are_extremely_valuable_for_us">Your feedbacks are extremely valuable for us</string>
     <string name="please_share_your_feedbacks_about_product_issues_and_new_features_">Please share your feedbacks about product,issues and new features.</string>
     <string name="write_a_comment">write a comment</string>
     <string name="account">Account</string>
     <string name="unlink">Unlink</string>
-    <string name="wootag">Wootag</string>
+    <string name="wootag"TagFug</TagFu>
     <string name="marion_brando">Marion Brando</string>
     <string name="created_">"Created: "</string>
     <string name="views">"| Views: "</string>
@@ -235,7 +235,7 @@
     <string name="report_a_problem">Report a Problem</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="terms_of_service">Terms of Service</string>
-    <string name="wootag_help_center">WooTag Help Center</string>
+    <string name="wootag_heTagFuter">WooTag Help Center</string>
     <string name="preferences">PREFERENCES</string>
     <string name="share_settings">Share Settings</string>
     <string name="push_notifications_settings">Push Notifications Settings</string>

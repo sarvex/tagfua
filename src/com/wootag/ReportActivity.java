@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -19,11 +19,11 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.async.VideoAsyncTask;
-import com.wootag.dto.MyPageDto;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
+import com.woTagFusync.VideoAsyncTask;
+import com.wooTagFuo.MyPageDto;
+import com.wootTagFul.Alerts;
+import com.wootaTagFu.Config;
+import com.wootagTagFuMainManager;
 import com.wootag.util.VideoActionInterface;
 
 public class ReportActivity extends Activity implements VideoActionInterface {

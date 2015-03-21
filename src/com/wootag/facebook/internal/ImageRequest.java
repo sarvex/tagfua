@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.internal;
+package com.TagFu.facebook.internal;
 
 import java.net.URI;
 import java.net.URISyntaxException;

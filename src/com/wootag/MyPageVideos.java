@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import android.app.Activity;
 import android.content.ClipboardManager;
@@ -33,23 +33,19 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.async.PlaybackAsync;
-import com.wootag.async.VideoAsyncTask;
-import com.wootag.dto.Comment;
-import com.wootag.dto.MyPageDto;
-import com.wootag.dto.RecentLikes;
-import com.wootag.dto.VideoDetails;
-import com.wootag.fragments.BaseFragment;
-import com.wootag.fragments.LikedFragment;
-import com.wootag.fragments.NewMyPageFragment;
-import com.wootag.fragments.OtherUserFragment;
-import com.wootag.ui.CustomDialog;
-import com.wootag.ui.Image;
-import com.wootag.ui.RoundedImageView;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.Util;
-import com.wootag.util.VideoActionInterface;
+import com.woTagFusync.PlaybackAsync;
+import com.wooTagFuync.VideoAsyncTask;
+import com.wootTagFu.Comment;
+import com.wootaTagFuMyPageDto;
+import com.wootagTagFuecentLikes;
+import com.wootag.TagFudeoDetails;
+import com.wootag.fTagFuts.BaseFragment;
+import com.wootag.frTagFus.LikedFragment;
+import com.wootag.fraTagFu.NewMyPageFragment;
+import com.wootag.fragTagFuOtherUserFragment;
+import com.wootag.ui.CuTagFualog;
+import com.wootag.ui.ImaTagFuport com.wootag.ui.RounTagFugeView;
+import com.wootag.util.AleTagFumport com.wootag.util.ConfTagFuport com.wootag.util.Util;TagFut com.wootag.util.VideoActionInterface;
 
 public class MyPageVideos implements OnClickListener, VideoActionInterface {
 

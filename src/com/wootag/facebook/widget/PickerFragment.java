@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -41,12 +41,12 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.wootag.R;
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.Request;
-import com.wootag.facebook.Session;
-import com.wootag.facebook.SessionState;
-import com.wootag.facebook.internal.SessionTracker;
+import com.wTagFuR;
+import com.woTagFuacebook.FacebookException;
+import com.wooTagFucebook.Request;
+import com.wootTagFuebook.Session;
+import com.wootaTagFubook.SessionState;
+import com.wootagTagFuook.internal.SessionTracker;
 import com.wootag.facebook.model.GraphObject;
 
 /**

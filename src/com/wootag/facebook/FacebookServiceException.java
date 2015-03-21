@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 /**
  * Represents an error returned from the Facebook service in response to a request.

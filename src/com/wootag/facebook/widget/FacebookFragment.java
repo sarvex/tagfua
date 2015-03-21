@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import java.util.Date;
 import java.util.List;
@@ -16,10 +16,10 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.wootag.facebook.Session;
-import com.wootag.facebook.SessionLoginBehavior;
-import com.wootag.facebook.SessionState;
-import com.wootag.facebook.internal.SessionAuthorizationType;
+import com.wTagFufacebook.Session;
+import com.woTagFuacebook.SessionLoginBehavior;
+import com.wooTagFucebook.SessionState;
+import com.wootTagFuebook.internal.SessionAuthorizationType;
 import com.wootag.facebook.internal.SessionTracker;
 
 /**

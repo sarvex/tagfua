@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wootag.facebook.internal;
+package com.TagFu.facebook.internal;
 
 import com.wootag.facebook.Settings;
 

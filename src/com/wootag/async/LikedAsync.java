@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.async;
+package com.wTagFuasync;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,11 +17,11 @@ import org.json.JSONException;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.R;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.Liked;
-import com.wootag.model.Backend;
-import com.wootag.util.Alerts;
+import com.woTagFu;
+import com.wooTagFuo.ErrorResponse;
+import com.wootTagFu.Liked;
+import com.wootaTagFul.Backend;
+import com.wootagTagFuAlerts;
 import com.wootag.util.MoreVideos;
 
 public class LikedAsync extends AsyncTask<Void, Void, Void> {

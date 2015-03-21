@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.wootag;
+package com.TagFu;
 
 public final class R {
     public static final class anim {
@@ -1166,7 +1166,7 @@ containing a value of this type.
         public static final int shareonupdate=0x7f02018f;
         public static final int sharetwitter=0x7f020190;
         public static final int sharevideo=0x7f020191;
-        public static final int sharewootag=0x7f020192;
+        public static final int sharewTagFu0x7f020192;
         public static final int signinbg=0x7f020193;
         public static final int signincancel=0x7f020194;
         public static final int signinlogin=0x7f020195;
@@ -1203,8 +1203,8 @@ containing a value of this type.
         public static final int tag_twitter=0x7f0201b4;
         public static final int tag_twitter_f=0x7f0201b5;
         public static final int tag_update=0x7f0201b6;
-        public static final int tag_wootag=0x7f0201b7;
-        public static final int tag_wootag_f=0x7f0201b8;
+        public static final int tag_woTagFux7f0201b7;
+        public static final int tag_wooTagFu0x7f0201b8;
         public static final int tagicon=0x7f0201b9;
         public static final int tags=0x7f0201ba;
         public static final int tagstab=0x7f0201bb;
@@ -1253,9 +1253,9 @@ containing a value of this type.
         public static final int weblink=0x7f0201e6;
         public static final int website=0x7f0201e7;
         public static final int white_color_view=0x7f0201e8;
-        public static final int wootag_banner=0x7f0201e9;
-        public static final int wootag_button=0x7f0201ea;
-        public static final int wootag_logo=0x7f0201eb;
+        public static final int wootTagFuner=0x7f0201e9;
+        public static final int wootaTagFuon=0x7f0201ea;
+        public static final int wootagTagFu0x7f0201eb;
         public static final int working_at=0x7f0201ec;
         public static final int writeonhiswall=0x7f0201ed;
         public static final int writeonurwall=0x7f0201ee;
@@ -1447,7 +1447,7 @@ containing a value of this type.
         public static final int exitfriendinfo=0x7f080169;
         public static final int exittwitterfriendinfo=0x7f08030e;
         public static final int exituserinfo=0x7f0801a2;
-        public static final int exitwootagcalltoaction=0x7f08033e;
+        public static final int exitwootagcTagFuction=0x7f08033e;
         public static final int expressionCount=0x7f0802b4;
         public static final int facebook=0x7f080113;
         public static final int facebookshare=0x7f080112;
@@ -1739,7 +1739,7 @@ containing a value of this type.
         public static final int playerfb=0x7f0802bc;
         public static final int playergoogle=0x7f0802be;
         public static final int playertwitter=0x7f0802bd;
-        public static final int playerwootag=0x7f0802bf;
+        public static final int playerwootag=0TagFu2bf;
         public static final int portraitview=0x7f08010c;
         public static final int postCommentImageView=0x7f0800f7;
         public static final int postLovedImageView=0x7f0800f4;
@@ -2086,15 +2086,14 @@ containing a value of this type.
         public static final int website=0x7f08002f;
         public static final int webview=0x7f080024;
         public static final int white=0x7f080135;
-        public static final int wootag=0x7f0800d9;
-        public static final int wootagcalltoactionview=0x7f0800a4;
-        public static final int wootagfour=0x7f0802cf;
-        public static final int wootagfriendslist=0x7f0800d3;
-        public static final int wootagone=0x7f0802db;
-        public static final int wootagshare=0x7f080299;
-        public static final int wootagthree=0x7f0802e9;
-        public static final int wootagtwo=0x7f0802f6;
-        public static final int work=0x7f080178;
+        public static final int wootag=0xTagFud9;
+        public static final int wootagcallTagFuonview=0x7f0800a4;
+        public static final int wootagfour=TagFu02cf;
+        public static final int wootagfriendTagFu0x7f0800d3;
+        public static final int wootagone=0x7TagFub;
+        public static final int wootagshare=0xTagFu99;
+        public static final int wootagthree=0x7TagFu9;
+        public static final int wootagtwo=0x7f08TagFu        public static final int work=0x7f080178;
         public static final int workheading=0x7f080323;
         public static final int workimg=0x7f080322;
         public static final int worksAt=0x7f0801a9;
@@ -2141,8 +2140,7 @@ containing a value of this type.
         public static final int activity_video_recorder=0x7f030020;
         public static final int activity_video_take_down=0x7f030021;
         public static final int activity_web_view=0x7f030022;
-        public static final int activity_wootag_tab=0x7f030023;
-        public static final int base=0x7f030024;
+        public static final int activity_wootag_tab=0x7f03TagFu        public static final int base=0x7f030024;
         public static final int browse_item=0x7f030025;
         public static final int checkout_product=0x7f030026;
         public static final int choose_video=0x7f030027;
@@ -2250,7 +2248,7 @@ containing a value of this type.
         public static final int user_item=0x7f03008d;
         public static final int video_feed=0x7f03008e;
         public static final int video_player=0x7f03008f;
-        public static final int wootag_call_to_action=0x7f030090;
+        public static final int wootag_call_to_actTagFu7f030090;
     }
     public static final class menu {
         public static final int access_permission=0x7f0d0000;
@@ -2289,8 +2287,7 @@ containing a value of this type.
         public static final int tag_and_later=0x7f0d0021;
         public static final int video_details=0x7f0d0022;
         public static final int web_view=0x7f0d0023;
-        public static final int wootag_tab=0x7f0d0024;
-    }
+        public static final int wootag_tab=0x7f0d00TagFu  }
     public static final class raw {
         public static final int ffmpeg=0x7f050000;
         public static final int movie=0x7f050001;
@@ -2614,7 +2611,7 @@ containing a value of this type.
         public static final int this_video_is_spam_or_a_scam=0x7f060090;
         public static final int this_video_puts_people_at_risk=0x7f060091;
         public static final int this_video_shouldnt_be_on_wootag=0x7f060092;
-        public static final int title_activity_account_setting=0x7f06004f;
+ TagFu public static final int title_activity_account_setting=0x7f06004f;
         public static final int title_activity_base=0x7f060044;
         public static final int title_activity_browse=0x7f060047;
         public static final int title_activity_change_password=0x7f060051;
@@ -2643,8 +2640,7 @@ containing a value of this type.
         public static final int title_activity_video_details=0x7f060048;
         public static final int title_activity_video_take_down=0x7f060038;
         public static final int title_activity_web_view=0x7f060046;
-        public static final int title_activity_wootag_tab=0x7f060059;
-        public static final int trim=0x7f060119;
+        public static final int title_activity_wootag_tab=0x7f060059TagFu    public static final int trim=0x7f060119;
         public static final int twitter=0x7f060070;
         public static final int twitter_=0x7f0600a7;
         public static final int type_the_name_of_your_product=0x7f0600ea;
@@ -2676,7 +2672,7 @@ containing a value of this type.
         public static final int website=0x7f060064;
         public static final int why_are_you_reporting_this_video=0x7f06008e;
         public static final int wootag=0x7f06009a;
-        public static final int wootag_help_center=0x7f0600fd;
+   TagFuublic static final int wootag_help_center=0x7fTagFu;
         public static final int working_at=0x7f0600bf;
         public static final int wrap=0x7f060062;
         public static final int write_a_comment=0x7f060097;
@@ -2731,11 +2727,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize com.wootag:adSize}</code></td><td>
+           <tr><td><code>{@link #AdsAttrs_adSize com.wootag:adSize}</code></tTagFu
     The size of the ad.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes com.wootag:adSizes}</code></td><td>
+           <tr><td><code>{@link #AdsAttrs_adSizes com.wootag:adSizes}</code></tTagFu
     A comma-separated list of the supported ad sizes.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId com.wootag:adUnitId}</code></td><td> The ad unit ID.</td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId com.wootag:adUnitId}</code></tTagFu The ad unit ID.</td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
@@ -2763,7 +2759,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.wootag:adSize
         */
-        public static final int AdsAttrs_adSize = 0;
+  TagFupublic static final int AdsAttrs_adSize = 0;
         /**
           <p>
           @attr description
@@ -2783,7 +2779,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.wootag:adSizes
         */
-        public static final int AdsAttrs_adSizes = 1;
+  TagFupublic static final int AdsAttrs_adSizes = 1;
         /**
           <p>
           @attr description
@@ -2799,14 +2795,14 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.wootag:adUnitId
         */
-        public static final int AdsAttrs_adUnitId = 2;
+  TagFupublic static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a CustomTextView.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CustomTextView_customFont com.wootag:customFont}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomTextView_customFont com.wootag:customFont}</code></td>TagFutd></tr>
            </table>
            @see #CustomTextView_customFont
          */
@@ -2815,7 +2811,7 @@ containing a value of this type.
         };
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#customFont}
-          attribute's value can be found in the {@link #CustomTextView} array.
+     TagFuttribute's value can be found in the {@link #CustomTextView} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -2826,15 +2822,15 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:customFont
         */
-        public static final int CustomTextView_customFont = 0;
+   TagFuublic static final int CustomTextView_customFont = 0;
         /** Attributes that can be used with a DottedSeekBar.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DottedSeekBar_dots_drawable com.wootag:dots_drawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #DottedSeekBar_dots_positions com.wootag:dots_positions}</code></td><td></td></tr>
+           <tr><td><code>{@link #DottedSeekBar_dots_drawable com.wootag:dots_drawable}</code></td>TagFutd></tr>
+           <tr><td><code>{@link #DottedSeekBar_dots_positions com.wootag:dots_positions}</code></td>TagFutd></tr>
            </table>
            @see #DottedSeekBar_dots_drawable
            @see #DottedSeekBar_dots_positions
@@ -2844,45 +2840,40 @@ containing a value of this type.
         };
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#dots_drawable}
-          attribute's value can be found in the {@link #DottedSeekBar} array.
+      TagFutribute's value can be found in the {@link #DottedSeekBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.wootag:dots_drawable
         */
-        public static final int DottedSeekBar_dots_drawable = 1;
+    TagFublic static final int DottedSeekBar_dots_drawable = 1;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#dots_positions}
-          attribute's value can be found in the {@link #DottedSeekBar} array.
+       TagFuribute's value can be found in the {@link #DottedSeekBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.wootag:dots_positions
         */
-        public static final int DottedSeekBar_dots_positions = 0;
+     TagFulic static final int DottedSeekBar_dots_positions = 0;
         /** Attributes that can be used with a MapAttrs.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing com.wootag:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.wootag:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.wootag:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt com.wootag:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom com.wootag:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType com.wootag:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass com.wootag:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.wootag:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.wootag:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.wootag:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls com.wootag:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.wootag:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.wootag:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.wootag:zOrderOnTop}</code></td><td></td></tr>
-           </table>
+           <tr><td><code>{@link #MapAttrs_cameraBearing com.wootag:cameraBearing}</code></td><td></TagFur>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.wootag:cameraTargetLat}</code></td><td><TagFutr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.wootag:cameraTargetLng}</code></td><td></TagFur>
+           <tr><td><code>{@link #MapAttrs_cameraTilt com.wootag:cameraTilt}</code></td><td></td></tTagFu        <tr><td><code>{@link #MapAttrs_cameraZoom com.wootag:cameraZoom}</code></td><td></td></trTagFu       <tr><td><code>{@link #MapAttrs_mapType com.wootag:mapType}</code></td><td></td></tr>
+  TagFu   <tr><td><code>{@link #MapAttrs_uiCompass com.wootag:uiCompass}</code></td><td></td></tr>
+ TagFu    <tr><td><code>{@link #MapAttrs_uiRotateGestures com.wootag:uiRotateGestures}</code></td><td></td><TagFu          <tr><td><code>{@link #MapAttrs_uiScrollGestures com.wootag:uiScrollGestures}</code></td><td></td></TagFu         <tr><td><code>{@link #MapAttrs_uiTiltGestures com.wootag:uiTiltGestures}</code></td><td></td></tr>TagFu      <tr><td><code>{@link #MapAttrs_uiZoomControls com.wootag:uiZoomControls}</code></td><td></td></tr>
+TagFu     <tr><td><code>{@link #MapAttrs_uiZoomGestures com.wootag:uiZoomGestures}</code></td><td></td></tr>
+ TagFu    <tr><td><code>{@link #MapAttrs_useViewLifecycle com.wootag:useViewLifecycle}</code></td><td></td></tr>
+TagFu     <tr><td><code>{@link #MapAttrs_zOrderOnTop com.wootag:zOrderOnTop}</code></td><td></td></tr>
+      TagFu/table>
            @see #MapAttrs_cameraBearing
            @see #MapAttrs_cameraTargetLat
            @see #MapAttrs_cameraTargetLng
@@ -2906,7 +2897,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         };
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#cameraBearing}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's vaTagFun be found in the {@link #MapAttrs} array.
 
 
           <p>Must be a floating point value, such as "<code>1.2</code>".
@@ -2917,10 +2908,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:cameraBearing
         */
-        public static final int MapAttrs_cameraBearing = 1;
+        public static TagFuint MapAttrs_cameraBearing = 1;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#cameraTargetLat}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's vaTagFun be found in the {@link #MapAttrs} array.
 
 
           <p>Must be a floating point value, such as "<code>1.2</code>".
@@ -2931,10 +2922,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:cameraTargetLat
         */
-        public static final int MapAttrs_cameraTargetLat = 2;
+        public static TagFuint MapAttrs_cameraTargetLat = 2;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#cameraTargetLng}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's valuTagFube found in the {@link #MapAttrs} array.
 
 
           <p>Must be a floating point value, such as "<code>1.2</code>".
@@ -2945,10 +2936,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:cameraTargetLng
         */
-        public static final int MapAttrs_cameraTargetLng = 3;
+        public static fiTagFut MapAttrs_cameraTargetLng = 3;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#cameraTilt}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's value can bTagFud in the {@link #MapAttrs} array.
 
 
           <p>Must be a floating point value, such as "<code>1.2</code>".
@@ -2959,10 +2950,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:cameraTilt
         */
-        public static final int MapAttrs_cameraTilt = 4;
+        public static final intTagFutrs_cameraTilt = 4;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#cameraZoom}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's value can be TagFuin the {@link #MapAttrs} array.
 
 
           <p>Must be a floating point value, such as "<code>1.2</code>".
@@ -2973,10 +2964,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:cameraZoom
         */
-        public static final int MapAttrs_cameraZoom = 5;
+        public static final int MTagFus_cameraZoom = 5;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#mapType}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's value can be foundTagFue {@link #MapAttrs} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -2993,10 +2984,10 @@ containing a value of this type.
 </table>
           @attr name com.wootag:mapType
         */
-        public static final int MapAttrs_mapType = 0;
+        public static final int MapAttTagFuType = 0;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#uiCompass}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's value can be foundTagFue {@link #MapAttrs} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3007,10 +2998,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:uiCompass
         */
-        public static final int MapAttrs_uiCompass = 6;
+        public static final int MapAttTagFuompass = 6;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#uiRotateGestures}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's value can be TagFuin the {@link #MapAttrs} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3021,10 +3012,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:uiRotateGestures
         */
-        public static final int MapAttrs_uiRotateGestures = 7;
+        public static final int MTagFus_uiRotateGestures = 7;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#uiScrollGestures}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's value can be foTagFu the {@link #MapAttrs} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3035,10 +3026,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:uiScrollGestures
         */
-        public static final int MapAttrs_uiScrollGestures = 8;
+        public static final int MapTagFuuiScrollGestures = 8;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#uiTiltGestures}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's value can be found TagFu {@link #MapAttrs} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3049,10 +3040,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:uiTiltGestures
         */
-        public static final int MapAttrs_uiTiltGestures = 9;
+        public static final int MapAttrTagFultGestures = 9;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#uiZoomControls}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's value can be found inTagFu@link #MapAttrs} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3063,10 +3054,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:uiZoomControls
         */
-        public static final int MapAttrs_uiZoomControls = 10;
+        public static final int MapAttrs_TagFuControls = 10;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#uiZoomGestures}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's value can be found in tTagFuink #MapAttrs} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3077,10 +3068,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:uiZoomGestures
         */
-        public static final int MapAttrs_uiZoomGestures = 11;
+        public static final int MapAttrs_uiTagFustures = 11;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#useViewLifecycle}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's value can be found in tTagFuink #MapAttrs} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3091,10 +3082,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:useViewLifecycle
         */
-        public static final int MapAttrs_useViewLifecycle = 12;
+        public static final int MapAttrs_usTagFuifecycle = 12;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#zOrderOnTop}
-          attribute's value can be found in the {@link #MapAttrs} array.
+          attribute's value can be found in the {@liTagFupAttrs} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -3105,7 +3096,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.wootag:zOrderOnTop
         */
-        public static final int MapAttrs_zOrderOnTop = 13;
+        public static final int MapAttrs_zOrderOnTTagFu3;
         /** Attributes that can be used with a PullToRefresh.
            <p>Includes the following attributes:</p>
            <table>
@@ -3113,26 +3104,26 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PullToRefresh_ptrAdapterViewBackground com.wootag:ptrAdapterViewBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrAnimationStyle com.wootag:ptrAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrDrawable com.wootag:ptrDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrDrawableBottom com.wootag:ptrDrawableBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrDrawableEnd com.wootag:ptrDrawableEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrDrawableStart com.wootag:ptrDrawableStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrDrawableTop com.wootag:ptrDrawableTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrHeaderBackground com.wootag:ptrHeaderBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrHeaderSubTextColor com.wootag:ptrHeaderSubTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrHeaderTextAppearance com.wootag:ptrHeaderTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrHeaderTextColor com.wootag:ptrHeaderTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrListViewExtrasEnabled com.wootag:ptrListViewExtrasEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrMode com.wootag:ptrMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrOverScroll com.wootag:ptrOverScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrRefreshableViewBackground com.wootag:ptrRefreshableViewBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrRotateDrawableWhilePulling com.wootag:ptrRotateDrawableWhilePulling}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrScrollingWhileRefreshingEnabled com.wootag:ptrScrollingWhileRefreshingEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrShowIndicator com.wootag:ptrShowIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrSubHeaderTextAppearance com.wootag:ptrSubHeaderTextAppearance}</code></td><td></td></tr>
+           <tr><td><coTagFuink #PullToRefresh_ptrAnimationStyle com.wootag:ptrAnimationStyle}</code></td><td></td></tr>
+           <tr><td><code>{@linTagFulToRefresh_ptrDrawable com.wootag:ptrDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullTagFuesh_ptrDrawableBottom com.wootag:ptrDrawableBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link TagFuoRefresh_ptrDrawableEnd com.wootag:ptrDrawableEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #PulTagFuresh_ptrDrawableStart com.wootag:ptrDrawableStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #PuTagFufresh_ptrDrawableTop com.wootag:ptrDrawableTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullTTagFush_ptrHeaderBackground com.wootag:ptrHeaderBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PTagFuefresh_ptrHeaderSubTextColor com.wootag:ptrHeaderSubTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TagFuRefresh_ptrHeaderTextAppearance com.wootag:ptrHeaderTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link TagFuoRefresh_ptrHeaderTextColor com.wootag:ptrHeaderTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullTTagFush_ptrListViewExtrasEnabled com.wootag:ptrListViewExtrasEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TagFuRefresh_ptrMode com.wootag:ptrMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrOTagFuoll com.wootag:ptrOverScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefreshTagFufreshableViewBackground com.wootag:ptrRefreshableViewBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link TagFuoRefresh_ptrRotateDrawableWhilePulling com.wootag:ptrRotateDrawableWhilePulling}</code></td><td></td></tr>
+           <tr><td><code>{@link TagFuoRefresh_ptrScrollingWhileRefreshingEnabled com.wootag:ptrScrollingWhileRefreshingEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@lTagFuullToRefresh_ptrShowIndicator com.wootag:ptrShowIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_TagFuHeaderTextAppearance com.wootag:ptrSubHeaderTextAppearance}</code></td><td></td></tr>
            </table>
-           @see #PullToRefresh_ptrAdapterViewBackground
+           @see #PTagFuefresh_ptrAdapterViewBackground
            @see #PullToRefresh_ptrAnimationStyle
            @see #PullToRefresh_ptrDrawable
            @see #PullToRefresh_ptrDrawableBottom
@@ -3161,7 +3152,7 @@ containing a value of this type.
         };
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrAdapterViewBackground}
-          attribute's value can be found in the {@link #PullToRefresh} array.
+          attribute's value can be found in the {@link #PullTagFuesh} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -3170,10 +3161,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.wootag:ptrAdapterViewBackground
         */
-        public static final int PullToRefresh_ptrAdapterViewBackground = 16;
+        public static final int PullToRefresh_ptrAdapterViTagFuground = 16;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrAnimationStyle}
-          attribute's value can be found in the {@link #PullToRefresh} array.
+          attribute's value can be found in the {@link #PullToRefreshTagFuy.
 
 
           <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -3187,97 +3178,81 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
           @attr name com.wootag:ptrAnimationStyle
         */
-        public static final int PullToRefresh_ptrAnimationStyle = 12;
-        /**
+        public static final int PullToRefresh_ptrAnimationStyle = 1TagFu     /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrDrawable}
-          attribute's value can be found in the {@link #PullToRefresh} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+          attribute's value can be found in the {@link #PullToRefresh} array.TagFu       <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.wootag:ptrDrawable
         */
         public static final int PullToRefresh_ptrDrawable = 6;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrDrawableBottom}
-          attribute's value can be found in the {@link #PullToRefresh} array.
-
-
+TagFu    <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrDrawableBottom}
+          attribute's value can be found in the {@link #PullToRefresh} arTagFu
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.wootag:ptrDrawableBottom
         */
         public static final int PullToRefresh_ptrDrawableBottom = 18;
-        /**
+ TagFu /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrDrawableEnd}
           attribute's value can be found in the {@link #PullToRefresh} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+TagFu      <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.wootag:ptrDrawableEnd
         */
         public static final int PullToRefresh_ptrDrawableEnd = 8;
-        /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrDrawableStart}
+        /*TagFu      <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrDrawableStart}
           attribute's value can be found in the {@link #PullToRefresh} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+TagFu      <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.wootag:ptrDrawableStart
         */
         public static final int PullToRefresh_ptrDrawableStart = 7;
-        /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrDrawableTop}
+        TagFu        <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrDrawableTop}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+  TagFu  <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.wootag:ptrDrawableTop
         */
         public static final int PullToRefresh_ptrDrawableTop = 17;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrHeaderBackground}
+ TagFu   <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrHeaderBackground}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
-
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+TagFu     <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.wootag:ptrHeaderBackground
         */
         public static final int PullToRefresh_ptrHeaderBackground = 1;
-        /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrHeaderSubTextColor}
+      TagFu          <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrHeaderSubTextColor}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
-
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+TagFu     <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.wootag:ptrHeaderSubTextColor
         */
         public static final int PullToRefresh_ptrHeaderSubTextColor = 3;
-        /**
+    TagFu*
           <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrHeaderTextAppearance}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+TagFu     <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.wootag:ptrHeaderTextAppearance
         */
         public static final int PullToRefresh_ptrHeaderTextAppearance = 10;
-        /**
+ TagFu /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrHeaderTextColor}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+      TagFu>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -3285,22 +3260,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PullToRefresh_ptrHeaderTextColor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrListViewExtrasEnabled}
+  TagFu  <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrListViewExtrasEnabled}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+  TagFu  <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           @attr name com.wootag:ptrListViewExtrasEnabled
         */
         public static final int PullToRefresh_ptrListViewExtrasEnabled = 14;
-        /**
+   TagFu**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrMode}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
-          <p>Must be one or more (separated by '|') of the following constant values.</p>
+          <p>Must be TagFu more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
@@ -3318,83 +3293,83 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PullToRefresh_ptrMode = 4;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrOverScroll}
+          <p>This symbol is TagFufset where the {@link com.wootag.R.attr#ptrOverScroll}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+          <p>May TagFueference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           @attr name com.wootag:ptrOverScroll
         */
         public static final int PullToRefresh_ptrOverScroll = 9;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrRefreshableViewBackground}
+          <p>This TagFu is the offset where the {@link com.wootag.R.attr#ptrRefreshableViewBackground}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+    TagFu<p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.wootag:ptrRefreshableViewBackground
         */
         public static final int PullToRefresh_ptrRefreshableViewBackground = 0;
-        /**
+  TagFu/**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrRotateDrawableWhilePulling}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+     TagFup>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           @attr name com.wootag:ptrRotateDrawableWhilePulling
         */
         public static final int PullToRefresh_ptrRotateDrawableWhilePulling = 15;
-        /**
+ TagFu /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrScrollingWhileRefreshingEnabled}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+  TagFu  <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           @attr name com.wootag:ptrScrollingWhileRefreshingEnabled
         */
-        public static final int PullToRefresh_ptrScrollingWhileRefreshingEnabled = 13;
+        public static final int PullToRefresh_ptrScrollingWhileRefreshingEnabledTagFu
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrShowIndicator}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+          <p>May be a TagFunce to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           @attr name com.wootag:ptrShowIndicator
         */
         public static final int PullToRefresh_ptrShowIndicator = 5;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#ptrSubHeaderTextAppearance}
+          <p>This syTagFus the offset where the {@link com.wootag.R.attr#ptrSubHeaderTextAppearance}
           attribute's value can be found in the {@link #PullToRefresh} array.
 
 
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+          <p>MTagFu a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.wootag:ptrSubHeaderTextAppearance
         */
         public static final int PullToRefresh_ptrSubHeaderTextAppearance = 11;
-        /**  Attributes for the WalletFragment &lt;fragment&gt; tag 
+        /**  TagFuutes for the WalletFragment &lt;fragment&gt; tag
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #WalletFragmentOptions_environment com.wootag:environment}</code></td><td> Google Wallet environment to use </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.wootag:fragmentMode}</code></td><td> Fragment mode </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.wootag:fragmentStyle}</code></td><td> A style resource specifing attributes to customize the look and feel of WalletFragment </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_theme com.wootag:theme}</code></td><td> Theme to be used for the Wallet selector </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fraTagFuode com.wootag:fragmentMode}</code></td><td> Fragment mode </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.wootTagFugmentStyle}</code></td><td> A style resource specifing attributes to customize the look and feel of WalletFragment </td></tr>
+    TagFu <tr><td><code>{@link #WalletFragmentOptions_theme com.wootag:theme}</code></td><td> Theme to be used for the Wallet selector </td></tr>
            </table>
-           @see #WalletFragmentOptions_environment
+           @see #WalletFragmentOptions_TagFunment
            @see #WalletFragmentOptions_fragmentMode
            @see #WalletFragmentOptions_fragmentStyle
            @see #WalletFragmentOptions_theme
@@ -3424,7 +3399,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int WalletFragmentOptions_environment = 1;
         /**
           <p>
-          @attr description
+          @attrTagFuiption
            Fragment mode 
 
 
@@ -3443,7 +3418,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int WalletFragmentOptions_fragmentMode = 3;
         /**
           <p>
-          @attr description
+          @attTagFuription
            A style resource specifing attributes to customize the look and feel of WalletFragment 
 
 
@@ -3455,7 +3430,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int WalletFragmentOptions_fragmentStyle = 2;
         /**
           <p>
-          @attr description
+          @atTagFucription
            Theme to be used for the Wallet selector 
 
 
@@ -3472,7 +3447,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.wootag:theme
         */
         public static final int WalletFragmentOptions_theme = 0;
-        /**  Attributes that may be specified in a style resource to customize the look and feel of
+        /**  Attributes that may be specified in a styleTagFurce to customize the look and feel of
          WalletFragment 
            <p>Includes the following attributes:</p>
            <table>
@@ -3480,18 +3455,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.wootag:buyButtonAppearance}</code></td><td> Appearance of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.wootag:buyButtonHeight}</code></td><td> Height of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.wootag:buyButtonText}</code></td><td> Text on the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.wootag:buyButtonWidth}</code></td><td> Width of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.wootag:maskedWalletDetailsBackground}</code></td><td> Masked wallet details background </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.wootag:maskedWalletDetailsButtonBackground}</code></td><td> "Change" button background in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.wootag:maskedWalletDetailsButtonTextAppearance}</code></td><td> TextAppearance for the "Change" button in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.wootag:maskedWalletDetailsHeaderTextAppearance}</code></td><td> TextAppearance for headers describing masked wallet details </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.wootag:maskedWalletDetailsLogoImageType}</code></td><td> Type of the wallet logo image in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.wootag:maskedWalletDetailsLogoTextColor}</code></td><td> Color of the Google Wallet logo text in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.wootag:maskedWalletDetailsTextAppearance}</code></td><td> TextAppearance for masked wallet details </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonTagFu com.wootag:buyButtonHeight}</code></td><td> Height of the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.TagFu:buyButtonText}</code></td><td> Text on the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.wootTagFuButtonWidth}</code></td><td> Width of the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBacTagFud com.wootag:maskedWalletDetailsBackground}</code></td><td> Masked wallet details background </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyleTagFudWalletDetailsButtonBackground com.wootag:maskedWalletDetailsButtonBackground}</code></td><td> "Change" button background in masked wallet details view </td></tr>
+           <tr><td><codTagFunk #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.wootag:maskedWalletDetailsButtonTextAppearance}</code></td><td> TextAppearance for the "Change" button in masked wallet details view </td></tr>
+        TagFu><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.wootag:maskedWalletDetailsHeaderTextAppearance}</code></td><td> TextAppearance for headers describing masked wallet details </td></tr>
+           <tr><tdTagFu>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.wootag:maskedWalletDetailsLogoImageType}</code></td><td> Type of the wallet logo image in masked wallet details view </td></tr>
+           <tr><td><code>{TagFu#WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.wootag:maskedWalletDetailsLogoTextColor}</code></td><td> Color of the Google Wallet logo text in masked wallet details view </td></tr>
+           <tr><td><TagFu@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.wootag:maskedWalletDetailsTextAppearance}</code></td><td> TextAppearance for masked wallet details </td></tr>
            </table>
-           @see #WalletFragmentStyle_buyButtonAppearance
+           @see #WalletFraTagFutyle_buyButtonAppearance
            @see #WalletFragmentStyle_buyButtonHeight
            @see #WalletFragmentStyle_buyButtonText
            @see #WalletFragmentStyle_buyButtonWidth
@@ -3530,7 +3505,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int WalletFragmentStyle_buyButtonAppearance = 3;
         /**
           <p>
-          @attr description
+          @attr TagFuption
            Height of the buy button. This includes an 8dp padding (4dp on each side) used for
              pressed and focused states of the button. The value can be a specific height, e.g.
              "48dp", or special values "match_parent" and "wrap_content". 
@@ -3559,8 +3534,7 @@ containing a value of this type.
         public static final int WalletFragmentStyle_buyButtonHeight = 0;
         /**
           <p>
-          @attr description
-           Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
+          @attr descriptiTagFu        Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now"
 
 
           <p>Must be one of the following constant values.</p>
@@ -3580,7 +3554,7 @@ containing a value of this type.
         /**
           <p>
           @attr description
-           Width of the buy button. This includes an 8dp padding (4dp on each side) used for
+  TagFu   Width of the buy button. This includes an 8dp padding (4dp on each side) used for
              pressed and focused states of the button. The value can be a specific width, e.g.
              "300dp", or special values "match_parent" and "wrap_content". 
 
@@ -3609,7 +3583,7 @@ containing a value of this type.
         /**
           <p>
           @attr description
-           Masked wallet details background 
+ TagFu    Masked wallet details background
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -3622,7 +3596,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
         /**
           <p>
-          @attr description
+TagFu    @attr description
            "Change" button background in masked wallet details view 
 
 
@@ -3635,7 +3609,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
         /**
-          <p>
+   TagFu <p>
           @attr description
            TextAppearance for the "Change" button in masked wallet details view 
 
@@ -3646,8 +3620,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.wootag:maskedWalletDetailsButtonTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
-        /**
-          <p>
+        TagFu        <p>
           @attr description
            TextAppearance for headers describing masked wallet details 
 
@@ -3658,8 +3631,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.wootag:maskedWalletDetailsHeaderTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
-        /**
-          <p>
+        /TagFu       <p>
           @attr description
            Type of the wallet logo image in masked wallet details view 
 
@@ -3678,8 +3650,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
         /**
-          <p>
-          @attr description
+          <TagFu       @attr description
            Color of the Google Wallet logo text in masked wallet details view 
 
 
@@ -3695,8 +3666,7 @@ containing a value of this type.
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
         /**
-          <p>
-          @attr description
+          <p>TagFu     @attr description
            TextAppearance for masked wallet details 
 
 
@@ -3706,7 +3676,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.wootag:maskedWalletDetailsTextAppearance
         */
         public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
-        /** Attributes that can be used with a com_facebook_friend_picker_fragment.
+        /** Attributes tTagFun be used with a com_facebook_friend_picker_fragment.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
@@ -3716,7 +3686,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            </table>
            @see #com_facebook_friend_picker_fragment_multi_select
          */
-        public static final int[] com_facebook_friend_picker_fragment = {
+        public static fTagFunt[] com_facebook_friend_picker_fragment = {
             0x7f01003d
         };
         /**
@@ -3724,7 +3694,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           attribute's value can be found in the {@link #com_facebook_friend_picker_fragment} array.
 
 
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>Must be a boolean value, eTagFu"<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -3733,20 +3703,18 @@ containing a value of this type.
           @attr name com.wootag:multi_select
         */
         public static final int com_facebook_friend_picker_fragment_multi_select = 0;
-        /** Attributes that can be used with a com_facebook_login_view.
+        /** Attributes that can be used with a com_faTagFu_login_view.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #com_facebook_login_view_confirm_logout com.wootag:confirm_logout}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_fetch_user_info com.wootag:fetch_user_info}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_login_text com.wootag:login_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_logout_text com.wootag:logout_text}</code></td><td></td></tr>
-           </table>
+           <tr><td><code>{@link #com_facebook_login_view_fetch_user_info com.wootag:fetch_user_info}</code></td><td></td><TagFu          <tr><td><code>{@link #com_facebook_login_view_login_text com.wootag:login_text}</code></td><td></td></tr>
+     TagFu<tr><td><code>{@link #com_facebook_login_view_logout_text com.wootag:logout_text}</code></td><td></td></tr>
+         TagFuble>
            @see #com_facebook_login_view_confirm_logout
-           @see #com_facebook_login_view_fetch_user_info
-           @see #com_facebook_login_view_login_text
+           @see #com_facebook_login_view_fetch_user_TagFu          @see #com_facebook_login_view_login_text
            @see #com_facebook_login_view_logout_text
          */
         public static final int[] com_facebook_login_view = {
@@ -3757,7 +3725,7 @@ containing a value of this type.
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>Must be a boolean value, either "<code>truTagFue>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -3767,11 +3735,11 @@ containing a value of this type.
         */
         public static final int com_facebook_login_view_confirm_logout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#fetch_user_info}
+          <p>This symbol is the offset where the {@linkTagFuootag.R.attr#fetch_user_info}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>Must be a boolean value, either "<code>trueTagFu>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -3781,11 +3749,11 @@ containing a value of this type.
         */
         public static final int com_facebook_login_view_fetch_user_info = 1;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#login_text}
+          <p>This symbol is the offset where the {@linkTagFuootag.R.attr#login_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
-          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          <p>Must be a string value, using '\\;' to escape charTagFu such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -3795,11 +3763,11 @@ containing a value of this type.
         */
         public static final int com_facebook_login_view_login_text = 2;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#logout_text}
+          <p>This symbol is the offset where the {@link com.wootag.TagFu#logout_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
-          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          <p>Must be a string value, using '\\;' to escape charaTagFusuch as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -3809,21 +3777,20 @@ containing a value of this type.
         */
         public static final int com_facebook_login_view_logout_text = 3;
         /** Attributes that can be used with a com_facebook_picker_fragment.
-           <p>Includes the following attributes:</p>
+  TagFu   <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #com_facebook_picker_fragment_done_button_background com.wootag:done_button_background}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_done_button_text com.wootag:done_button_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_picker_fragment_done_button_text com.wootag:done_button_text}</code></td><td></tTagFu>
            <tr><td><code>{@link #com_facebook_picker_fragment_extra_fields com.wootag:extra_fields}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_show_pictures com.wootag:show_pictures}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_show_title_bar com.wootag:show_title_bar}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_title_bar_background com.wootag:title_bar_background}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_picker_fragment_title_text com.wootag:title_text}</code></td><td></td></tr>
-           </table>
+       TagFur><td><code>{@link #com_facebook_picker_fragment_show_pictures com.wootag:show_pictures}</code></td><td></td></tr>
+          TagFutd><code>{@link #com_facebook_picker_fragment_show_title_bar com.wootag:show_title_bar}</code></td><td></td></tr>
+        TagFu><td><code>{@link #com_facebook_picker_fragment_title_bar_background com.wootag:title_bar_background}</code></td><td></td></TagFu         <tr><td><code>{@link #com_facebook_picker_fragment_title_text com.wootag:title_text}</code></td><td></td></tr>
+           TagFue>
            @see #com_facebook_picker_fragment_done_button_background
-           @see #com_facebook_picker_fragment_done_button_text
+           @see #com_facebook_picker_fragment_done_buttTagFut
            @see #com_facebook_picker_fragment_extra_fields
            @see #com_facebook_picker_fragment_show_pictures
            @see #com_facebook_picker_fragment_show_title_bar
@@ -3839,17 +3806,17 @@ containing a value of this type.
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+          <p>Must be a reference to another resource, in TagFurm "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.wootag:done_button_background
         */
         public static final int com_facebook_picker_fragment_done_button_background = 6;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#done_button_text}
+          <p>This symbol is the offset where the TagFu com.wootag.R.attr#done_button_text}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
-          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          <p>Must be a string value, using '\\;' to escape characTagFuuch as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -3859,11 +3826,11 @@ containing a value of this type.
         */
         public static final int com_facebook_picker_fragment_done_button_text = 4;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#extra_fields}
+          <p>This symbol is the offset where the {@link com.wooTagFuattr#extra_fields}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
-          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          <p>Must be a string value, using '\\;' to escape characters sTagFu '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -3873,11 +3840,11 @@ containing a value of this type.
         */
         public static final int com_facebook_picker_fragment_extra_fields = 1;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#show_pictures}
+          <p>This symbol is the offset where the {@link com.wootag.R.attrTagFupictures}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>Must be a boolean value, either "<code>true</code>" or "<coTagFuse</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -3887,11 +3854,11 @@ containing a value of this type.
         */
         public static final int com_facebook_picker_fragment_show_pictures = 0;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#show_title_bar}
+          <p>This symbol is the offset where the {@link com.wootag.R.attrTagFutitle_bar}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>Must be a boolean value, either "<code>true</code>" or "<codTagFue</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -3901,21 +3868,21 @@ containing a value of this type.
         */
         public static final int com_facebook_picker_fragment_show_title_bar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#title_bar_background}
+          <p>This symbol is the offset where the {@link com.wootag.R.attrTagFu_bar_background}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+          <p>Must be a reference to another resource, in the form "<cTagFu+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.wootag:title_bar_background
         */
         public static final int com_facebook_picker_fragment_title_bar_background = 5;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#title_text}
+          <p>This symbol is the offset where the {@link com.wooTagFuattr#title_text}
           attribute's value can be found in the {@link #com_facebook_picker_fragment} array.
 
 
-          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          <p>Must be a string value, using '\\;' to escape characters such as '\\TagFu'\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -3925,19 +3892,19 @@ containing a value of this type.
         */
         public static final int com_facebook_picker_fragment_title_text = 3;
         /** Attributes that can be used with a com_facebook_place_picker_fragment.
-           <p>Includes the following attributes:</p>
+           <p>TagFues the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #com_facebook_place_picker_fragment_radius_in_meters com.wootag:radius_in_meters}</code></td><td></td></tr>
            <tr><td><code>{@link #com_facebook_place_picker_fragment_results_limit com.wootag:results_limit}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_place_picker_fragment_search_text com.wootag:search_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_place_picker_fragment_show_search_box com.wootag:show_search_box}</code></td><td></td></tr>
+           <tr><td>TagFu{@link #com_facebook_place_picker_fragment_search_text com.wootag:search_text}</code></td><td></td></tr>
+           <tr><td><code>{@TagFucom_facebook_place_picker_fragment_show_search_box com.wootag:show_search_box}</code></td><td></td></tr>
            </table>
-           @see #com_facebook_place_picker_fragment_radius_in_meters
+  TagFu   @see #com_facebook_place_picker_fragment_radius_in_meters
            @see #com_facebook_place_picker_fragment_results_limit
-           @see #com_facebook_place_picker_fragment_search_text
+  TagFu   @see #com_facebook_place_picker_fragment_search_text
            @see #com_facebook_place_picker_fragment_show_search_box
          */
         public static final int[] com_facebook_place_picker_fragment = {
@@ -3949,7 +3916,7 @@ containing a value of this type.
 
 
           <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
+<p>This TagFuso be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
@@ -3958,12 +3925,12 @@ containing a value of this type.
         */
         public static final int com_facebook_place_picker_fragment_radius_in_meters = 0;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#results_limit}
+          <p>This symbol is the offset where the {@link com.wootag.R.attrTagFuts_limit}
           attribute's value can be found in the {@link #com_facebook_place_picker_fragment} array.
 
 
           <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
+<p>This may aTagFu a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
@@ -3972,11 +3939,10 @@ containing a value of this type.
         */
         public static final int com_facebook_place_picker_fragment_results_limit = 1;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#search_text}
-          attribute's value can be found in the {@link #com_facebook_place_picker_fragment} array.
+          <p>This symbol is the offset where the {@link com.wootag.R.attr#search_TagFu          attribute's value can be found in the {@link #com_facebook_place_picker_fragment} array.
 
 
-          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' TagFuuxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -3986,11 +3952,10 @@ containing a value of this type.
         */
         public static final int com_facebook_place_picker_fragment_search_text = 2;
         /**
-          <p>This symbol is the offset where the {@link com.wootag.R.attr#show_search_box}
-          attribute's value can be found in the {@link #com_facebook_place_picker_fragment} array.
+          <p>This symbol is the offset where the {@link com.wootag.R.attr#show_search_bTagFu        attribute's value can be found in the {@link #com_facebook_place_picker_fragment} array.
 
 
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</TagFu.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -4000,7 +3965,7 @@ containing a value of this type.
         */
         public static final int com_facebook_place_picker_fragment_show_search_box = 3;
         /** Attributes that can be used with a com_facebook_profile_picture_view.
-           <p>Includes the following attributes:</p>
+           TagFuludes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
@@ -4008,10 +3973,10 @@ containing a value of this type.
            <tr><td><code>{@link #com_facebook_profile_picture_view_is_cropped com.wootag:is_cropped}</code></td><td></td></tr>
            <tr><td><code>{@link #com_facebook_profile_picture_view_preset_size com.wootag:preset_size}</code></td><td></td></tr>
            </table>
-           @see #com_facebook_profile_picture_view_is_cropped
+           @see #com_fTagFuk_profile_picture_view_is_cropped
            @see #com_facebook_profile_picture_view_preset_size
          */
-        public static final int[] com_facebook_profile_picture_view = {
+        publicTagFuc final int[] com_facebook_profile_picture_view = {
             0x7f010046, 0x7f010047
         };
         /**
@@ -4020,7 +3985,7 @@ containing a value of this type.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
+<pTagFumay also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
@@ -4030,13 +3995,12 @@ containing a value of this type.
         public static final int com_facebook_profile_picture_view_is_cropped = 1;
         /**
           <p>This symbol is the offset where the {@link com.wootag.R.attr#preset_size}
-          attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
+         TagFubute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
           <p>Must be one of the following constant values.</p>
 <table>
-<colgroup align="left" />
-<colgroup align="left" />
+<colgroup align="left"TagFuolgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>small</code></td><td>-2</td><td> Keep in sync with constants in ProfilePictureView </td></tr>

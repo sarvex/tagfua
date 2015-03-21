@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,12 +30,12 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.adapter.PeopleAdapter;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.People;
-import com.wootag.model.Backend;
-import com.wootag.slideout.SlideoutActivity;
-import com.wootag.util.Alerts;
+import com.woTagFudapter.PeopleAdapter;
+import com.wooTagFuo.ErrorResponse;
+import com.wootTagFu.People;
+import com.wootaTagFul.Backend;
+import com.wootagTagFuout.SlideoutActivity;
+import com.wootag.TagFulerts;
 import com.wootag.util.Util;
 
 public class DiscoverMorePeopleActivity extends Activity {

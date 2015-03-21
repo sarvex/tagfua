@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
     android:background="@drawable/custom_border"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/editProfilePick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/smallmargin"
-        android:visibility="visible" >
+        android:visibility="visible">
 
-        <com.wootag.ui.CustomTextView
+        <com.wTagFuui.CustomTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -39,9 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/smallmargin"
-        android:visibility="visible" >
+        android:visibility="visible">
 
-        <com.wootag.ui.CustomTextView
+        <com.woTagFui.CustomTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -64,7 +64,7 @@
     <RelativeLayout
         android:id="@+id/cancelprofileoptions"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <com.wootag.ui.CustomTextView
             android:layout_width="wrap_content"

@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,10 +11,10 @@ import com.google.android.gcm.GCMBaseIntentService;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.dto.Notification;
-import com.wootag.util.Config;
-import com.wootag.util.GCMServerUtilities;
-import com.wootag.util.MainManager;
+import com.woTagFuto.Notification;
+import com.wooTagFuil.Config;
+import com.wootTagFul.GCMServerUtilities;
+import com.wootaTagFu.MainManager;
 import com.wootag.util.Util;
 
 public class GCMIntentService extends GCMBaseIntentService {

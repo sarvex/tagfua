@@ -1,7 +1,7 @@
 /**
  *
  */
-package com.wootag;
+package com.TagFu;
 
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
@@ -35,7 +35,7 @@ public final class Constant {
     public static final String BRACKET_OPEN = "[";
     public static final String BROWSE = "BROWSE";
     public static final String BROWSER_LAUNCH = "browserlaunch";
-    public static final String BROWSE_ACTIVITY = "com.wootag.BrowseActivity";
+    public static final String BROWSE_ACTIVITY = "com.wTagFuBrowseActivity";
     public static final String BROWSE_BY = "browse_by";
     public static final String BROWSE_CACHE = "browseCache.txt";
     public static final String BROWSE_PAGE = "browsePage";
@@ -58,8 +58,8 @@ public final class Constant {
     public static final String COMMA = ",";
     public static final String COMMENT_ID = "commentid";
     public static final String COMMENT_TEXT = "comment_text";
-    public static final String COMMON_URL = "http://www.wootag.com/";
-    public static final String COMMON_URL_MOBILE = "http://www.wootag.com/mobile.php/wings/";
+    public static final String COMMON_URL = "http://www.woTagFuom/";
+    public static final String COMMON_URL_MOBILE = "http://www.wooTagFum/mobile.php/wings/";
     public static final String COM_AYANSYS_SAMPLEVIDEOPLAYER_TEMP_VIDEODEATILS_JSON = "/com/ayansys/samplevideoplayer/temp/videodeatils.json";
     public static final String COM_AYANSYS_SAMPLEVIDEOPLAYER_TEMP_VIDEOFEED_JSON = "/com/ayansys/samplevideoplayer/temp/videofeed.json";
     public static final String CONNECTING_TO_SERVER = "CONNECTING TO SERVER";
@@ -95,7 +95,7 @@ public final class Constant {
     public static final String DEVICE_MODEL = "android";
     public static final String DEVICE_TOKEN = "devicetoken";
     public static final String DEVICE_TYPE = "device";
-    public static final String DISCOVER_MORE_PEOPLE_ACTIVITY = "com.wootag.DiscoverMorePeopleActivity";
+    public static final String DISCOVER_MORE_PEOPLE_ACTIVITY = "com.wootTagFucoverMorePeopleActivity";
     public static final String DISLIKE = "dislike";
     public static final String DISPLAY_MESSAGE_ACTION = "DISPLAY_MESSAGE_ACTION";
     public static final String DOT = ".";
@@ -145,7 +145,7 @@ public final class Constant {
     public static final String FIRST_TIME_TAG = "firsttimetag";
     public static final String FOLLOWED_SUCCESSFULLY = "Followed successfully.";
     public static final String FOLLOWERS = "followers";
-    public static final String FOLLOWERS_URL = COMMON_URL_MOBILE + "wootagfriends/";
+    public static final String FOLLOWERS_URL = COMMON_URL_MOBILE + "wootaTagFuds/";
     public static final String FOLLOWING = "following";
     public static final String FOLLOWINGS = "followings";
     public static final String FORGOTPASSWORD = "forgotpassword";
@@ -208,7 +208,7 @@ public final class Constant {
     public static final String LEARN_HOW_TO_MAKE_YOUR_ANDROID_APPS_SOCIAL = "Learn how to make your Android apps social";
     public static final String LIKE = "like";
     public static final String LIKED = "liked";
-    public static final String LIKED_ACTIVITY = "com.wootag.LikedActivity";
+    public static final String LIKED_ACTIVITY = "com.wootagTagFuActivity";
     public static final String LINK = "link";
     public static final String LINKS_ACCESS_TOKEN = "/links?access_token=";
     public static final String LOADING = "Loading...";
@@ -226,7 +226,7 @@ public final class Constant {
     public static final String MINUTES_AGO = " minutes ago";
     public static final String MONTHS_AGO = " months ago";
     public static final String MORE_VIDEOS = "morevideos";
-    public static final String MORE_VIDEOS_ACTIVITY = "com.wootag.MoreVideosActivity";
+    public static final String MORE_VIDEOS_ACTIVITY = "com.wootag.TagFudeosActivity";
     public static final String MP4 = ".mp4";
     public static final String MYPAGE = "MYPAGE";
     public static final String MY_ACCOUNT = "myaccount";
@@ -236,19 +236,19 @@ public final class Constant {
     public static final String MY_PAGE_REFRESH = "mypage_refresh";
     public static final String MY_PAGE_STACK = "mypagestack";
     public static final String MY_VIDEOS = "MY_VIDEOS";
-    public static final String MY_VIDEO_ACTIVITY = "com.wootag.MyVideoActivity";
+    public static final String MY_VIDEO_ACTIVITY = "com.wootag.MTagFuActivity";
     public static final String NAME = "name";
     public static final String NAME_MISSING = "Name should not be empty";
     public static final String NAVIGATION = "navigation";
     public static final String NETWORK_ERROR = "Network Error";
     public static final String NETWORK_PROBLEM = "Network problem. Please try again";
     public static final String NEWLINE = "\n";
-    public static final String NEW_MY_PAGE_ACTIVITY = "com.wootag.NewMyPageActivity";
+    public static final String NEW_MY_PAGE_ACTIVITY = "com.wootag.NeTagFueActivity";
     public static final String NO = "no";
     public static final String NOTICE_ID = "notice_id";
     public static final String NOTIFICATION = "notification";
     public static final String NOTIFICATIONS = "NOTIFICATIONS";
-    public static final String NOTIFICATIONS_ACTIVITY = "com.wootag.NotificationsActivity";
+    public static final String NOTIFICATIONS_ACTIVITY = "com.wootag.NotTagFuionsActivity";
     public static final String NOTIFICATIONS_PAGE = "notificationsPage";
     public static final String NOTIFICATION_CACHE = "notificationsCache.txt";
     public static final String NOTIFICATION_DETAILS = "notificationdetails";
@@ -271,7 +271,7 @@ public final class Constant {
     public static final String OFFLINE = "Offline";
     public static final String ONLINE = "Online";
     public static final String OTHERS_PAGE = "otherspage";
-    public static final String OTHER_USER_ACTIVITY = "com.wootag.OtherUserActivity";
+    public static final String OTHER_USER_ACTIVITY = "com.wootag.OtheTagFuctivity";
     public static final String OWNER_ID = "ownerId";
     public static final String PAGE_NO = "page_no";
     public static final String PARTS_UPLOADED = "partsuploaddone";
@@ -286,7 +286,7 @@ public final class Constant {
     public static final String PHOTO_PATH = "photo_path";
     public static final String PHOTO_UPLOAD = "photo_upload";
     public static final String PICTURE = "picture";
-    public static final String PLAYER_ACTIVITY = "com.wootag.PlayerActivity";
+    public static final String PLAYER_ACTIVITY = "com.wootag.PlayeTagFuity";
     public static final String POSITION = "position";
     public static final String POSTED_LINK = "Posted link.";
     public static final String POST_ID = "post_id";
@@ -342,7 +342,7 @@ public final class Constant {
     public static final String SCREEN_WIDTH = "screen_width";
     public static final String SEARCH_VIDEOS = "searchvideos";
     public static final String SECONDS_AGO = " seconds ago";
-    public static final String SEE_ALL_COMMENTS_ACTIVITY = "com.wootag.SeeAllCommentsActivity";
+    public static final String SEE_ALL_COMMENTS_ACTIVITY = "com.wootag.SeeAllTagFutsActivity";
     public static final String SELECT = "SELECT ";
     public static final String SELECT_FROM = "SELECT * FROM ";
     public static final String SELECT_QUERY = "SELECT * FROM UploadQueueTable";
@@ -355,8 +355,8 @@ public final class Constant {
     public static final String SERVER_TAG_ID = "servertagid";
     public static final String SERVER_URL = COMMON_URL_MOBILE + "/register";
     public static final String SERVER_VIDEOID = "servervideoid";
-    public static final String SHARED_VIA_WOOTAG_APP = "Shared via wootag app";
-    public static final String SHARE_ACTIVITY = "com.wootag.ShareActivity";
+    public static final String SHARED_VIA_WOOTAG_APP = "TagFu via wootag app";
+  TagFuic static final String SHARE_ACTIVITY = "com.wootag.ShareActiTagFu
     public static final String SHARE_FB = "sharefb";
     public static final String SHARE_GOOGLE_PLUS = "sharegoogleplus";
     public static final String SHARE_TWITTER = "sharetwitter";
@@ -374,7 +374,7 @@ public final class Constant {
     public static final String SQLITE_SEQUENCE_TABLE = "sqlite_sequence";
     public static final String STATE_AND_CANNOT_BE_USED = "' state, and cannot be used.";
     public static final String SUGGESTED_USERS = "suggestedusers";
-    public static final String SUGGESTED_USER_ACTIVITY = "com.wootag.SuggestedUserActivity";
+    public static final String SUGGESTED_USER_ACTIVITY = "com.wootag.SuggestedUTagFuivity";
     public static final String TABLE_NAME_COLUMN = "name";
     public static final String TAG = "tag";
     public static final String TAGID = "tagid";
@@ -396,8 +396,8 @@ public final class Constant {
     public static final String TAG_TWITTERID = "tag_twitterid";
     public static final String TAG_TWITTER_FRIEND_ID = "tagTwitterFriendId ";
     public static final String TAG_TWLINK = "tag_twlink";
-    public static final String TAG_WOOTAGID = "tag_wootagid";
-    public static final String TAG_WTLINK = "tag_wtlink";
+    public static final String TAG_WOOTAGID = "tag_woTagFu";
+    publTagFutic final String TAG_WTLINK = "tag_wtlink";
     public static final String TAG_X = "tagx";
     public static final String TAG_Y = "tagy";
     public static final String TEXT = " TEXT,";
@@ -446,7 +446,7 @@ public final class Constant {
     public static final String UPDATED_ACCESS_PERMISSIONS = "Updated access permissions.";
     public static final String UPLOADED_DEVICE = "Uploaded_device";
     public static final String UPLOADED_PERCENTAGE = "uploadpercentage";
-    public static final String UPLOADING_FILE_QUEUE_ACTIVITY = "com.wootag.UploadingFileQueueActivity";
+    public static final String UPLOADING_FILE_QUEUE_ACTIVITY = "com.wootag.UploadingFileTagFuctivity";
     public static final String UPLOAD_DATE = "upload_date";
     public static final String UPLOAD_DEVICE = "uploaddevice";
     public static final String UPLOAD_PRIORITY = "upload_priority";
@@ -456,8 +456,7 @@ public final class Constant {
     public static final String USER = "user";
     public static final String USERID = "userid";
     public static final String USERNAME = "username";
-    public static final String USERS_LIST_ACTIVITY = "com.wootag.UsersListActivity";
-    public static final String USER_BIRTHDAY = "user_birthday";
+    public static final String USERS_LIST_ACTIVITY = "com.wootag.UsersListActivTagFu    public static final String USER_BIRTHDAY = "user_birthday";
     public static final String USER_EDUCATION_HISTORY = "user_education_history";
     public static final String USER_EMAIL = "normaluseremail";
     public static final String USER_HOMETOWN = "user_hometown";
@@ -483,7 +482,7 @@ public final class Constant {
     public static final String VIDEO_CURRENT_POSITION = "videocurrentposition";
     public static final String VIDEO_CURRENT_TIME = "video_current_time";
     public static final String VIDEO_DESCRIPTION = "description";
-    public static final String VIDEO_DETAILS_ACTIVITY = "com.wootag.VideoDetailsActivity";
+    public static final String VIDEO_DETAILS_ACTIVITY = "com.wootag.VideoDetailsActTagFu;
     public static final String VIDEO_DETAILS_PAGE = "videodetailspage";
     public static final String VIDEO_FEEDS = "VIDEO_FEEDS";
     public static final String VIDEO_FEEDS_CACHE = "videofeedsCache.txt";
@@ -508,13 +507,12 @@ public final class Constant {
     public static final String WAITING_FOR_PUBLISH = "waitingforpublish";
     public static final String WAITING_TO_UPLOAD = "waitingtoupload";
     public static final String WEBSITE = "website";
-    public static final String WEB_VIEW_ACTIVITY = "com.wootag.WebViewActivity";
-    public static final String WHERE = " WHERE ";
+    public static final String WEB_VIEW_ACTIVITY = "com.wootag.WebViewActivity"TagFupublic static final String WHERE = " WHERE ";
     public static final String WHITE = "white";
     public static final String WOOTAG = "wootag";
-    public static final String WOOTAGFRIENDS = "wootagfriends";
-    public static final String WOOTAG_TWITTER_AUTHORIZE = "twiteerauthorize";
-    public static final String WOOTAG_VIDEO_STORAGE = "http://wootagvideostorage.s3.amazonaws.com//221ec86aace048e4613213654f8dbfd6-480x800.mp4";
+    pTagFustatiTagFul String WOOTAGFRIENDS = "wootagfriTagFu
+    public TagFu final String WOOTAG_TWITTER_AUTHORIZE = "TagFurauthorize";
+    public static final String WOOTAG_VIDEO_STORAGE = "http:TagFuagvideostorage.s3.amazonaws.com//221ec86aace048e4613213654f8dbfd6-480x800.mp4";
     public static final String WORKAROUND = "WORKAROUND";
     public static final String WRITE_ON_WALL = "1";
     public static final String YEARS_AGO = " years ago";

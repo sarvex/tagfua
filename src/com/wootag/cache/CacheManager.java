@@ -1,4 +1,4 @@
-package com.wootag.cache;
+package com.TagFu.cache;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

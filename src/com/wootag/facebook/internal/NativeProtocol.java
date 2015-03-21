@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.internal;
+package com.TagFu.facebook.internal;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,8 +31,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.FacebookOperationCanceledException;
+import com.wTagFufacebook.FacebookException;
+import com.woTagFuacebook.FacebookOperationCanceledException;
 import com.wootag.facebook.Settings;
 
 /**

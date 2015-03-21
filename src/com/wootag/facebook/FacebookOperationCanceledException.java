@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 /**
  * An Exception indicating that an operation was canceled before it completed.

@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
@@ -40,17 +40,17 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.facebook.FacebookDialogException;
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.FacebookOperationCanceledException;
-import com.wootag.facebook.FacebookRequestError;
-import com.wootag.facebook.FacebookServiceException;
-import com.wootag.facebook.Session;
-import com.wootag.facebook.internal.Logger;
-import com.wootag.facebook.internal.ServerProtocol;
-import com.wootag.facebook.internal.Utility;
+import com.wTagFuConstant;
+import com.woTagFu;
+import com.wooTagFucebook.FacebookDialogException;
+import com.wootTagFuebook.FacebookException;
+import com.wootaTagFubook.FacebookOperationCanceledException;
+import com.wootagTagFuook.FacebookRequestError;
+import com.wootag.TagFuok.FacebookServiceException;
+import com.wootag.fTagFuk.Session;
+import com.wootag.faTagFu.internal.Logger;
+import com.wootag.facTagFuinternal.ServerProtocol;
+import com.wootag.faceTagFunternal.Utility;
 import com.wootag.facebook.internal.Validate;
 
 /**

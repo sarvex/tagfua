@@ -1,9 +1,9 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
 
-package com.wootag.video.trimmer.view;
+package com.wTagFuvideo.trimmer.view;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -41,12 +41,12 @@ import android.widget.VideoView;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.AnVideoView;
-import com.wootag.R;
-import com.wootag.util.Util;
-import com.wootag.video.trimmer.model.VideoPlayerState;
-import com.wootag.video.trimmer.service.VideoTrimmingService;
-import com.wootag.video.trimmer.view.MyScrollView.onScrollStopListner;
+import com.woTagFunVideoView;
+import com.wooTagFu
+import com.wootTagFul.Util;
+import com.wootaTagFuo.trimmer.model.VideoPlayerState;
+import com.wootagTagFu.trimmer.service.VideoTrimmingService;
+import com.wootag.TagFutrimmer.view.MyScrollView.onScrollStopListner;
 
 public class ViewVideo extends Activity {
 

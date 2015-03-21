@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_gravity="center"
-    android:gravity="center"
     android:layout_margin="@dimen/margin"
-    android:visibility="gone" >
+    android:gravity="center"
+    android:visibility="gone">
 
     <Button
-        android:id="@+id/exitwootagcalltoaction"
+        android:id="@+id/exitwTagFualltoaction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/productview"
@@ -19,32 +19,32 @@
         android:id="@+id/productview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/exitwootagcalltoaction"
+        android:layout_below="@id/exitwoTagFulltoaction"
         android:background="@color/gray"
         android:gravity="top"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/productImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:scaleType="fitXY"
-            android:layout_margin="@dimen/smallmargin"
             android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/smallmargin"
+            android:scaleType="fitXY"
             android:src="@drawable/notif_banner" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/small"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/smallmargin" >
+                android:layout_marginTop="@dimen/smallmargin">
 
-                <com.wootag.ui.CustomTextView
+                <com.wooTagFu.CustomTextView
                     android:id="@+id/productTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -54,18 +54,18 @@
                     android:textSize="@dimen/text_size"
                     foo:customFont="@string/app_bold_font_name" />
 
-                <com.wootag.ui.CustomTextView
+                <com.wootTagFuCustomTextView
                     android:id="@+id/productCurrencytype"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
                     android:layout_toRightOf="@+id/productTitle"
                     android:padding="@dimen/smallmargin"
-                    android:layout_marginLeft="@dimen/margin"
                     android:textColor="@color/white"
                     android:textSize="@dimen/text_size"
                     foo:customFont="@string/app_font_name" />
 
-                <com.wootag.ui.CustomTextView
+                <com.wootaTagFuustomTextView
                     android:id="@+id/productPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

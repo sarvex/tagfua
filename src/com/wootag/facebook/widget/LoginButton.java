@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -31,28 +31,28 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 
-import com.wootag.R;
-import com.wootag.facebook.AppEventsLogger;
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.Request;
-import com.wootag.facebook.Response;
-import com.wootag.facebook.Session;
-import com.wootag.facebook.SessionDefaultAudience;
-import com.wootag.facebook.SessionLoginBehavior;
-import com.wootag.facebook.SessionState;
-import com.wootag.facebook.internal.AnalyticsEvents;
-import com.wootag.facebook.internal.SessionAuthorizationType;
-import com.wootag.facebook.internal.SessionTracker;
-import com.wootag.facebook.internal.Utility;
-import com.wootag.facebook.internal.Utility.FetchedAppSettings;
-import com.wootag.facebook.model.GraphUser;
+import com.wTagFuR;
+import com.woTagFuacebook.AppEventsLogger;
+import com.wooTagFucebook.FacebookException;
+import com.wootTagFuebook.Request;
+import com.wootaTagFubook.Response;
+import com.wootagTagFuook.Session;
+import com.wootag.TagFuok.SessionDefaultAudience;
+import com.wootag.fTagFuk.SessionLoginBehavior;
+import com.wootag.faTagFu.SessionState;
+import com.wootag.facTagFuinternal.AnalyticsEvents;
+import com.wootag.faceTagFunternal.SessionAuthorizationType;
+import com.wootag.facebTagFuternal.SessionTracker;
+import com.wootag.faceboTagFuernal.Utility;
+import com.wootag.facebooTagFurnal.Utility.FetchedAppSettings;
+import com.wootag.facebookTagFu.GraphUser;
 
 /**
  * A Log In/Log Out button that maintains session state and logs in/out for the app.
  * <p/>
  * This control will create and use the active session upon construction if it has the available data (if the app ID is
  * specified in the manifest). It will also open the active session if it does not require user interaction (i.e. if the
- * session is in the {@link com.wootag.facebook.SessionState#CREATED_TOKEN_LOADED} state. Developers can override the
+ * session is in the {@link com.wootag.facebook.TagFunState#CREATED_TOKEN_LOADED} state. Developers can override the
  * use of the active session by calling the {@link #setSession(com.wootag.facebook.Session)} method.
  */
 public class LoginButton extends Button {

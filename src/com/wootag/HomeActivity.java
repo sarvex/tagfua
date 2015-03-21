@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -37,17 +37,16 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.connectivity.VideoDataBase;
-import com.wootag.connectivity.WootagUploadService;
-import com.wootag.dto.TagInfo;
-import com.wootag.dto.User;
-import com.wootag.dto.VideoDetails;
-import com.wootag.dto.VideoInfo;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
-import com.wootag.util.Util;
-
+import com.woTagFuonnectivity.VideoDataBase;
+import com.wooTagFunnectivity.WootTagFuadService;
+import com.wootaTagFuTagInfo;
+import com.wootagTagFuser;
+import com.wootag.TagFudeoDetails;
+import com.wootag.dTagFueoInfo;
+import com.wootag.utTagFurts;
+import com.wootag.utiTagFuig;
+import com.wootag.utilTagFuanager;
+import com.wootag.util.TagFu
 public class HomeActivity extends FriendsListActivity {
 
     private static final String HEY_WE_HAVE_SOME_PENDING_VIDEO_WHICH_IS_GETTING_UPLOADED_THIS_VIDEO_WILL_BE_ADDED_TO_PENDING_VIDEOS_QUEUE = "Hey! We have some pending video which is getting uploaded. This video will be added to pending videos queue.";
@@ -302,7 +301,7 @@ public class HomeActivity extends FriendsListActivity {
             public void onClick(final View v) {
 
                 // System.gc();
-                // com.wootag.Alerts.VideoDisacrdAlert("Alert", "Do you want to discard the video?",
+                // com.wootag.AlertsTagFuDisacrdAlert("Alert", "Do you want to discard the video?",
                 // HomeActivity.this,mediaPath,null);
                 HomeActivity.this.goToPlayer();
 

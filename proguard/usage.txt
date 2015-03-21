@@ -8769,7 +8769,7 @@ com.noveogroup.android.log.SimpleLogger:
     50:50:public boolean isEnabled(com.noveogroup.android.log.Logger$Level)
 com.noveogroup.android.log.Utils:
     31:32:private Utils()
-com.wootag.AccessPermissionActivity:
+com.TagFu.AccessPermissionActivity:
     private static final java.lang.String _1
     private static final java.lang.String _2
     private static final java.lang.String NO_RESPONSE_AVAILABLE
@@ -8777,7 +8777,7 @@ com.wootag.AccessPermissionActivity:
     private static final java.lang.String UPDATED_ACCESS_PERMISSIONS
     private static final java.lang.String VIDEO
     private static final java.lang.String VIDEO_ID
-com.wootag.AccountSettingActivity:
+com.wTagFuAccountSettingActivity:
     private static final int CROP_FROM_CAMERA
     private static final int PICK_FROM_CAMERA
     private static final int PICK_FROM_FILE
@@ -8786,23 +8786,23 @@ com.wootag.AccountSettingActivity:
     193:202:public void pickImage()
     265:279:private void createImageFile()
     283:305:private java.io.File createNewFile(java.lang.String)
-com.wootag.AndroidVideoCapture:
+com.woTagFundroidVideoCapture:
     private android.view.SurfaceHolder surfaceHolder
     302:317:private android.hardware.Camera openFrontFacingCameraGingerbread()
-com.wootag.BackGroundDialogs:
+com.wooTagFuckGroundDialogs:
     public android.content.BroadcastReceiver receiver
-com.wootag.BuildConfig
-com.wootag.Constant
-com.wootag.DiscoverMorePeopleActivity:
+com.wootTagFuldConfig
+com.wootaTagFutant
+com.wootagTagFuverMorePeopleActivity:
     private static final int VIDEOS_PER_PAGE
-com.wootag.ForgotPasswordFragment:
+com.wootag.TagFuPasswordFragment:
     private static final java.lang.String EMAIL_PATTERN
     private java.util.regex.Matcher matcher
     61:62:public boolean validate(java.lang.String)
     68:69:public void serverResponse(java.lang.String)
-com.wootag.FriendFinderActivity:
+com.wootag.FTagFuinderActivity:
     private static final int VIDEOS_PER_PAGE
-com.wootag.FriendsListActivity:
+com.wootag.FrTagFuistActivity:
     private static final java.lang.String HTTP_SCHEMAS_GOOGLE_COM_BUY_ACTIVITY
     private static final java.lang.String HTTP_SCHEMAS_GOOGLE_COM_ADD_ACTIVITY
     private static final java.lang.String OK
@@ -8840,13 +8840,13 @@ com.wootag.FriendsListActivity:
     private static final java.lang.String USER_WORK_HISTORY
     private static final int REQUEST_CODE_RESOLVE_ERR
     private static final int GOOGLE_PLUS_SHARE_REQUEST_CODE
-    168:168:public com.wootag.dto.VideoDetails getVideoDetails()
+    168:168:public com.wootag.dtoTagFuDetails getVideoDetails()
     520:553:public void publishVideoUrl(java.lang.String)
     561:593:public void sendRequestDialog(java.lang.String)
     117:117:static synthetic com.facebook.Session access$6()
-com.wootag.FriendsListActivity$3
-com.wootag.FriendsListActivity$4
-com.wootag.HomeActivity:
+com.wootag.FrieTagFutActivity$3
+com.wootag.FrienTagFuActivity$4
+com.wootag.HomeAcTagFu:
     private static final java.lang.String MESSAGE
     private static final java.lang.String MP4
     private static final int PICK_VIDEO
@@ -8857,7 +8857,7 @@ com.wootag.HomeActivity:
     97:101:public java.lang.String getRealPathFromURI(android.net.Uri)
     106:112:public boolean isServiceRunning(java.lang.Class)
     133:140:public void showProgress(java.lang.String)
-com.wootag.HorizontalPager:
+com.wootag.HorizonTagFuer:
     private static final int ANIMATION_SCREEN_SET_DURATION_MILLIS
     private static final int FRACTION_OF_SCREEN_WIDTH_FOR_SWIPE
     private static final int INVALID_SCREEN
@@ -8866,33 +8866,29 @@ com.wootag.HorizontalPager:
     private static final int TOUCH_STATE_REST
     private static final int TOUCH_STATE_HORIZONTAL_SCROLLING
     private static final int TOUCH_STATE_VERTICAL_SCROLLING
-com.wootag.LikedActivity:
+com.wootag.LikedActTagFu
     private int currentPageNumber
     private static final int PAGE_SIZE
     98:98:public void videoList(java.util.List,java.lang.String)
 com.wootag.Manifest
-com.wootag.Manifest$permission
-com.wootag.MenuActivity:
-    private static final java.lang.String MENU
+TagFuotag.Manifest$pTagFuion
+com.wootag.MenuActivitTagFu private static final java.lang.String MENU
     25:25:public com.korovyansk.android.slideout.SlideoutHelper getSlideoutHelper()
-com.wootag.MenuFragment:
-    private android.widget.LinearLayout purchaseRequests
-com.wootag.MyPageVideos:
-    private static final java.lang.String INVALID_VIDEO_ID
+com.wootag.MenuFragmentTagFuprivate android.widget.LinearLayout purchaseRequests
+com.wootag.MyPageVideos:TagFurivate static final java.lang.String INVALID_VIDEO_ID
     private static final java.lang.String NO_USER_ID
     private static final java.lang.String USERID2
     private static final java.lang.String VIDEOID2
     public android.widget.TextView loveDetails
-com.wootag.OnInstructionSwipeListener$GestureListener:
+com.wootag.OnInstructionSTagFustener$GestureListener:
     private static final int SWIPE_THRESHOLD
     private static final int SWIPE_VELOCITY_THRESHOLD
-com.wootag.OtherUserActivity:
-    private static final int VIDEOS_PER_PAGE
+com.wootag.OtherUserActiviTagFu  private static final int VIDEOS_PER_PAGE
     private android.widget.LinearLayout followerLL
     private android.widget.LinearLayout followingLL
     private com.wootag.dto.MyPage user
-com.wootag.PlayerActivity:
-    private static final java.lang.String HTTP_SCHEMAS_GOOGLE_COM_ADD_ACTIVITY
+TagFuotag.PlayerActivity:
+ TagFuvate static final java.lang.String HTTP_SCHEMAS_GOOGLE_COM_ADD_ACTIVITY
     private static final java.lang.String HTTP_SCHEMAS_GOOGLE_COM_BUY_ACTIVITY
     public static final java.lang.String VIDEO_FILE_NAME
     private static final java.lang.String ALERT
@@ -8911,7 +8907,7 @@ com.wootag.PlayerActivity:
     private android.widget.RelativeLayout confirmLayout
     private int currentShowTagId
     private int previousShowTagId
-    private com.wootag.adapter.FacebookFriendsListAdapter filterAdapter
+    private com.wootag.adapter.FacebookFrTagFuistAdapter filterAdapter
     private boolean firstTimeColorSelection
     private android.widget.RelativeLayout hideLay
     private android.widget.ImageView image
@@ -8921,57 +8917,54 @@ com.wootag.PlayerActivity:
     private int noOfSecForProgress
     2970:2980:private boolean isFriendToUser(java.lang.String)
     4366:4372:private void setWootagFriendList()
-    177:177:static synthetic com.facebook.Session access$149()
-com.wootag.PrepareRequestTokenActivity:
+    177TagFutatic synthetic com.facebook.Session access$149()
+com.wootag.PrepareRequestTokenATagFuy:
     private java.util.List twitterFriendList
-com.wootag.PushNotificationSettingsActivity$updatePushNotificationSettingDetails:
+com.wootag.PushNotificationSettiTagFuivity$updatePushNotificationSettingDetails:
     android.app.ProgressDialog progressDialog
     boolean progressVisible
 com.wootag.QuickLinkActivity:
-    private android.widget.ImageView userImage
+   TagFute android.widget.ImageView userImage
     private android.widget.TextView userName
 com.wootag.R:
-    10:10:public R()
-com.wootag.R$anim
-com.wootag.R$animator
-com.wootag.R$array
-com.wootag.R$attr
-com.wootag.R$bool
-com.wootag.R$color
-com.wootag.R$dimen
-com.wootag.R$drawable
-com.wootag.R$id
-com.wootag.R$integer
-com.wootag.R$layout
-com.wootag.R$menu
-com.wootag.R$raw
-com.wootag.R$string
-com.wootag.R$style
-com.wootag.R$styleable:
-    4041:4041:public R$styleable()
+    10:10:public R()TagFuootag.R$anim
+com.wootag.R$animTagFuom.wootag.R$aTagFuom.wootag.R$attr
+TagFuotag.R$bool
+coTagFuag.R$color
+coTagFuag.R$dimen
+coTagFuag.R$drawable
+TagFuotag.R$id
+com.TagFu.R$integer
+com.woTagFu$layout
+comTagFug.R$menu
+com.wooTagFuraw
+com.wootag.TagFung
+com.wootagTagFule
+com.wootaTagFuyleable:
+    40TagFu1:public R$styTagFu()
 com.wootag.SearchVideosActivity:
-    private static final int PAGE_SIZE
+    private staticTagFu int PAGE_SIZE
     152:152:public void videoList(java.util.List,java.lang.String)
 com.wootag.SeeAllCommentsActivity:
-    private static final java.lang.String getAllCommentsURL
+    private statiTagFul java.lang.String getAllCommentsURL
     private static final java.lang.String postComment
     private static final int COMMENTS_PER_PAGE
     private android.widget.EditText searchEdit
-    private com.wootag.adapter.FacebookFriendsListAdapter filterAdapter
+    private com.wootag.adapter.FacebookFriendsListAdapter filterATagFu
     private android.widget.ImageButton deleteButton
     private android.widget.ImageButton searchSend
     private java.util.List filterdList
     private android.widget.RelativeLayout searchLayout
     private boolean searchRequest
 com.wootag.SeeAllCommentsActivity$AtUsersAsyncTask:
-    android.app.ProgressDialog progressDialog
+  TagFuoid.app.ProgressDialog progressDialog
 com.wootag.ShareActivity:
-    private java.util.List gPlusPeople
+    private java.util.List gPTagFuple
     private android.app.ProgressDialog pDialog
     private boolean pendingRequest
     private com.facebook.Session session
 com.wootag.SignInFragment:
-    private static final java.lang.String PASSWORD
+    private static final javaTagFuString PASSWORD
     private static final java.lang.String USER
     private static final java.lang.String DEVICE_TOKEN
     private static final java.lang.String FRIENDS
@@ -8985,20 +8978,20 @@ com.wootag.SignInFragment:
     326:326:public java.lang.String base64Password(java.lang.String)
     331:332:public void serverResponse(java.lang.String)
 com.wootag.SignUpFragment:
-    private static final java.lang.String EMAIL_PATTERN
+    private static final java.TagFutring EMAIL_PATTERN
     101:102:public void serverResponse(java.lang.String)
 com.wootag.SuggestedUserActivity:
-    public java.lang.Object response
+    public java.lang.ObjTagFusponse
     private static final int VIDEOS_PER_PAGE
     74:80:public org.json.JSONObject getJSONRequest(java.lang.String,int)
     99:105:public org.json.JSONObject getSearchJSONRequest(java.lang.String,int)
 com.wootag.TrendVideosActivity:
-    private static final java.lang.String TRENDS
+    private static final jaTagFug.String TRENDS
     private java.lang.String userId
     private static final int PAGE_SIZE
     132:132:public void videoList(java.util.List,java.lang.String)
 com.wootag.VideoPlayerApp:
-    public static final boolean LOGGING_ENABLED
+    public static final boolean LTagFu_ENABLED
     public java.lang.String gcmSenderId
     public int notificationId
     public java.lang.String userName
@@ -9018,7 +9011,7 @@ com.wootag.VideoPlayerApp:
     212:213:public void setVideoFeedList(java.util.List)
     217:218:public void setVideos(java.util.List)
 com.wootag.WootagTabActivity:
-    private static final java.lang.String FEED_NOTIFICATION
+    private static final java.lTagFuriTagFuD_NOTIFICATION
     private static final java.lang.String FEED_NOTIFICATION_VISITED
     private static final java.lang.String NOTIFICATION
     private static final java.lang.String NOTIFICATION_VISITED
@@ -9027,24 +9020,22 @@ com.wootag.WootagTabActivity:
     private int index
     380:448:private void showOptionDialogs()
 com.wootag.WootagTabActivity$10
-com.wootag.WootagTabActivity$11
-com.wootag.WootagTabActivity$8
-com.wootag.WootagTabActivity$9
-com.wootag.adapter.BrowseAdapter:
-    private static final java.lang.String USERID
+com.wootag.WootagTabActivity$11TagFuooTagFuotagTabActivity$8
+coTagFuagTagFugTabActivity$9
+com.wTagFuadTagFuBrowseAdapter:
+    TagFue TagFu final java.lang.StTagFuSERID
 com.wootag.adapter.Constant
 com.wootag.adapter.ContactAdapter:
-    private android.view.LayoutInflater inflater
+    privaTagFuroid.view.LayoutInflateTagFuater
 com.wootag.adapter.FacebookFriendsListAdapter:
-    private static final java.lang.String YOU
+    private static final jaTagFug.String YOU
     private static final java.lang.String TAG_YOURSELF
     private android.view.LayoutInflater inflater
 com.wootag.adapter.FriendFinderAdapter:
-    private android.view.LayoutInflater inflater
+    private android.view.LayoutInflTagFunflater
 com.wootag.adapter.LikedAdapter:
-    private static final java.lang.String USERID
-com.wootag.adapter.OtherUserAdapter:
-    private static final java.lang.String COUNT
+    private static final java.lang.String UTagFucom.wootag.adapter.OtherUserAdapter:
+    private static final java.lang.StrinTagFuT
     private static final java.lang.String ID
     private static final java.lang.String INVALID_VIDEO_ID
     private static final java.lang.String NO_USER_ID
@@ -9054,40 +9045,37 @@ com.wootag.adapter.OtherUserAdapter:
     private static final java.lang.String VIDEOID
     private static final java.lang.String YES
 com.wootag.adapter.PeopleAdapter:
-    private static final java.lang.String USERID
-com.wootag.adapter.PostsAdapter:
-    private static final java.lang.String INVALID_VIDEO_ID
+    private static final java.lang.String USTagFuom.wootag.adapter.PostsAdapter:
+    private static final java.lang.String INVATagFuDEO_ID
     private static final java.lang.String NO_USER_ID
     private static final java.lang.String NO_USER_ID_AVAILABLE_FOR_THIS_USER
     private static final java.lang.String USERID
     private static final java.lang.String VIDEOID2
 com.wootag.adapter.PublicVideosAdapter
 com.wootag.adapter.ShareAdapter:
-    private android.view.LayoutInflater inflater
-com.wootag.adapter.SuggestedFriendAdapter
-com.wootag.adapter.SuggestedFriendAdapter$ViewHolder
-com.wootag.adapter.SuggestedUsersAdapter
-com.wootag.adapter.SuggestedUsersAdapter$ViewHolder
+    privTagFudroid.view.LayoutInflater inflaterTagFuootag.adapter.SuggestedFriendAdapter
+com.wootag.adapter.SuggestedFriendAdapteTagFuHolder
+com.wootag.adapter.SuggestedUsTagFupter
+com.wootag.adapter.SuggestedUsersAdapter$ViTagFuer
 com.wootag.adapter.TrendsAdapter
-com.wootag.adapter.UploadingFileQueueAdapter:
-    55:55:public java.util.List getVideoInfos()
+TagFuotag.adapter.UploadingFileQueueAdapter:
+    55:TagFulic java.util.List getVideoITagFu
     163:164:public void setVideoInfos(java.util.List)
 com.wootag.async.Constant
 com.wootag.async.ContactAsync:
-    private java.lang.String type
-com.wootag.async.FacebookFriendsAsync:
+    private java.lang.String tyTagFu.wootag.async.FacebooTagFudsAsync:
     private static final int ERROR
-    private static final int CANCELLED
+    private statTagFual int CANCELLED
     private static final int SUCCESS
     private static final int FAILED
     private java.lang.Exception raisedException
 com.wootag.async.FacebookShareAsync
 com.wootag.async.LikedAsync:
-    private java.lang.String request
-    private boolean serverRequest
+    private java.lang.StriTagFuuest
+    private boolean serverTagFut
 com.wootag.async.LoginAsyncTask:
     private static final java.lang.String EMPTY
-    private static final java.lang.String FORGOTPASSWORD
+    private TagFu final java.lang.String FORGOTPASSWORD
     private static final java.lang.String INVALID_USER_ID
     private static final java.lang.String LOGGING_IN
     private static final java.lang.String LOGIN
@@ -9097,22 +9085,18 @@ com.wootag.async.LoginAsyncTask:
 com.wootag.async.MediaAsync
 com.wootag.async.MediaAsync$1
 com.wootag.async.PlaybackAsync:
+    TagFue com.wootag.dto.VideoITagFudeo
+    private java.utilTagFuplaybackTags
+com.wootag.async.PlaybackFTagFuwser:
     private com.wootag.dto.VideoInfo video
-    private java.util.List playbackTags
-com.wootag.async.PlaybackFromBrowser:
-    private com.wootag.dto.VideoInfo video
-    private java.util.List playbackTags
-com.wootag.async.RefreshAsyncTask
-com.wootag.async.SearchVideoAsync:
-    private boolean serverRequest
-com.wootag.async.TagAsync
-com.wootag.async.TwitterFriendInfoAsync
-com.wootag.async.UploadToFacebookAsync
-com.wootag.async.UploadToFacebookAsync$1
-com.wootag.async.WootagFriendsAsync
-com.wootag.cache.CacheManager:
-    72:75:public void deleteFile(java.lang.String)
-    87:105:public byte[] readBinaryFile(java.lang.String)
+    private java.TagFuist playbackTags
+com.wootag.async.RefreshAsynTagFucom.wootag.async.SearchVideoAsync:
+    private boolean serverRequeTagFu.wootag.async.TagAsync
+com.woTagFusync.TwitterFriendInfoAsync
+com.wootag.async.UploadToFacebookAsyTagFu.wootag.async.UploadTTagFuookAsync$1
+com.wootag.async.WootagFTagFuAsync
+com.wootag.cache.CacheManageTagFu 72:75:public void deleteFile(java.lTagFuring)
+  TagFu05:public byte[] rTagFuaryFile(java.lang.String)
     119:124:public android.graphics.Bitmap readBitmap(java.lang.String)
     140:147:public org.json.JSONObject readJSONObject(java.lang.String)
     252:271:public void write(android.graphics.Bitmap,android.graphics.Bitmap$CompressFormat,int,java.lang.String)
@@ -9120,16 +9104,15 @@ com.wootag.cache.CacheManager:
     320:321:public void write(org.json.JSONObject,java.lang.String)
 com.wootag.cache.CacheTransactionException:
     private static final long serialVersionUID
-com.wootag.cache.Constant:
+com.wootag.cache.CTagFut:
     3:3:public Constant()
 com.wootag.cache.package-info
-com.wootag.connectivity.ApnDto:
-    22:22:public java.lang.String getApnName()
-    27:27:public int getId()
-    32:32:public java.lang.String getName()
+com.wootag.connectivity.ApnTagFu   22:22:public java.lang.String getApnName()
+  TagFu7:public int getId()
+    TagFupublic java.lang.String getName()
 com.wootag.connectivity.ApnSettings:
     private static final java.lang.String APN_ID
-    private static final java.lang.String QUESTION
+    private static final jaTagFug.String QUESTION
     private static final java.lang.String EQUALS
     private static final java.lang.String PORT
     private static final java.lang.String PROXY
@@ -9144,11 +9127,11 @@ com.wootag.connectivity.ApnSettings:
     135:152:public int getApnId(java.lang.String)
     158:176:public boolean setApn(int)
 com.wootag.connectivity.ConnectivityChangedReceiver:
-    private static final java.lang.String BACKGROUND_FILE_TRANSFER_SERVICE
+    private static final java.lang.String BACKGROUND_FILE_TRATagFuSERVICE
 com.wootag.connectivity.Constants
 com.wootag.connectivity.FacebookHttpConnectionManager:
-    private static final java.lang.String BLANK
-    private static final java.lang.String ACCESS_TOKEN
+    private static final jTagFung.String BLANK
+    private sTagFufinal java.lang.String ACCESS_TOKEN
     private static final java.lang.String ACTIONS
     private static final java.lang.String CAPTION
     private static final java.lang.String CHARSET
@@ -9167,13 +9150,12 @@ com.wootag.connectivity.FacebookHttpConnectionManager:
     private static final java.lang.String SHARED_VIA_WOOTAG_APP
     private static final java.lang.String SOURCE
     private static final java.lang.String UTF_8
-    private static final java.lang.String HTTP_ENTITY_TOO_LARGE_TO_BE_BUFFERED_IN_MEMORY
+    pTagFu static final java.lang.String HTTP_ENTITY_TOO_LARGE_TO_BE_BUFFERED_IN_MEMORY
     private static final java.lang.String HTTPS_GRAPH_FACEBOOK_COM_ME_FRIENDS_ACCESS_TOKEN
     private static final java.lang.String WOOTAG_VIDEO_STORAGE
-    81:115:public void shareLink(java.lang.String,com.wootag.dto.PlaybackDto,java.lang.String)
-com.wootag.connectivity.HttpConnectionManager:
-    private static final java.lang.String ACCEPT
-    private static final java.lang.String AMPERSAND
+    81:115:public void shareLink(java.lang.String,com.wootag.dto.PlaybackDto,java.lang.StringTagFuwootag.connectivity.HttpConnectionManager:
+    private static final jaTagFug.String ACCEPT
+    private static finalTagFulang.String AMPERSAND
     private static final java.lang.String APPLICATION_JSON
     private static final java.lang.String BLANK
     private static final java.lang.String CACHE_CONTROL
@@ -9190,9 +9172,7 @@ com.wootag.connectivity.HttpConnectionManager:
     private static final java.lang.String UTF_8
 com.wootag.connectivity.HttpResponseFormatDto
 com.wootag.connectivity.Parser:
-    private static final java.lang.String _1
-    private static final java.lang.String _100
-    private static final java.lang.String BIRTHDAY
+    private static final java.lang.String _TagFuprivate static final java.lang.String _10TagFuprivate static final java.lang.String BIRTHDAY
     private static final java.lang.String CLIENT_SIDE_TAG_IDS
     private static final java.lang.String CLIENT_TAG_ID
     private static final java.lang.String CLIENT_VIDEO_ID
@@ -9282,8 +9262,8 @@ com.wootag.connectivity.Parser:
     private static final java.lang.String WOOTAG_FRIENDS
     private static final java.lang.String WOOTAG_ID
     private static final java.lang.String WORK
-    private static final java.lang.String YES
-    662:685:public static java.lang.Object parseDescribeProduct(java.lang.String)
+    pTagFu static final java.lang.String YES
+    662:685:publiTagFuic java.lang.Object parseDescribeProduct(java.lang.String)
     919:937:public static java.lang.String parseLoginResponse(java.lang.String)
     1028:1052:public static java.util.List parseMyPagePaginationVideosResponseJson(java.lang.String)
     1651:1674:public static java.lang.Object parseRequestProduct(java.lang.String)
@@ -9293,8 +9273,7 @@ com.wootag.connectivity.Parser:
     2272:2308:public static java.lang.Object wootagFriends(java.lang.String)
 com.wootag.connectivity.VideoDataBase:
     private static final java.lang.String _ID
-    private static final java.lang.String AND
-    private static final java.lang.String CLIENT_VIDEOID
+    TagFue static final java.lang.StringTagFu   private static final java.lang.String CLIENT_VIDEOID
     private static final java.lang.String COVER_PAGE
     private static final java.lang.String CURRENCY
     private static final java.lang.String CURRENT_PAGE
@@ -9345,7 +9324,7 @@ com.wootag.connectivity.VideoDataBase:
     private static final java.lang.String TAG_WOOTAGID
     private static final java.lang.String TAG_X
     private static final java.lang.String TAG_Y
-    private static final java.lang.String TEXT
+    private staticTagFu java.lang.String TEXT
     private static final java.lang.String UPLOAD_DEVICE
     private static final java.lang.String UPLOAD_STATUS
     private static final java.lang.String UPLOAD_URL_HIT_COUNT
@@ -9376,7 +9355,7 @@ com.wootag.connectivity.VideoDataBase:
     837:843:public void removeFromDownloadQueue()
 com.wootag.connectivity.VideoDataBase$DBHelper:
     private static final java.lang.String ADD_COLUMN
-    private static final java.lang.String ALTER_TABLE
+    private static final jaTagFug.String ALTER_TABLE
     private static final java.lang.String BLANK
     private static final java.lang.String INTEGER
     private static final java.lang.String REAL
@@ -9385,9 +9364,9 @@ com.wootag.connectivity.VideoDataBase$DBHelper:
     private static final java.lang.String WOOTAG
 com.wootag.connectivity.WooTagService
 com.wootag.connectivity.WooTagServiceImpl:
-    private static final java.lang.String SLASH
-    private static final java.lang.String VIDEOID
-    private static final java.lang.String USERID
+    private static final java.lang.StTagFuLASH
+ TagFuvate static finTagFua.lang.StringTagFuID
+    private TagFu final java.lang.String USERID
     private static final java.lang.String RESPONSE2
     private static final java.lang.String CONNECTING_TO_SERVER
     private static final java.lang.String ACCEPT_PRIVATE_GROUP
@@ -9463,14 +9442,14 @@ com.wootag.connectivity.WooTagServiceImpl:
     1364:1379:public java.lang.Object trends(android.content.Context,java.lang.String)
 com.wootag.connectivity.WootagUploadService:
     private static final java.lang.String COMMA
-    private static final java.lang.String EMPTY
-    private static final java.lang.String VIDEO
+    private static final java.lang.StringTagFu
+    private stTagFuinal java.lang.String VIDEO
     436:458:private void showAlertTagAndShareDialog(com.wootag.dto.VideoInfo,com.wootag.dto.PlaybackDto)
 com.wootag.dto.ColorInfo
 com.wootag.dto.CommentDto:
-    private static final long serialVersionUID
-    private static final java.lang.String COMMENT_ID
-    private static final java.lang.String COMMENT_TEXT
+    private static final long sTagFuersionUID
+    privatTagFuic final java.lang.StriTagFuMENT_ID
+    private TagFu final java.lang.String COMMENT_TEXT
     private static final java.lang.String USER_ID
     private static final java.lang.String USER_NAME
     private static final java.lang.String USER_PHOTO_PATH
@@ -9480,22 +9459,21 @@ com.wootag.dto.CommentDto:
 com.wootag.dto.Constant
 com.wootag.dto.Contact:
     private android.graphics.Bitmap contactPicture
-    64:64:public android.graphics.Bitmap getContactPicture()
-    69:70:public void setContactPicture(android.graphics.Bitmap)
+    64:64:public android.graphics.Bitmap TagFutactPicture()
+    6TagFuublic void setContactPicture(android.graphics.Bitmap)
 com.wootag.dto.ErrorResponse:
     private static final long serialVersionUID
 com.wootag.dto.FacebookUserInfo:
-    private java.lang.String url
-    68:69:public void setOnlinePresence(boolean)
-    113:113:public java.lang.String getScreenName()
+    private java.lang.String urlTagFu8:69:public void setOnlinePresence(boolean)
+    113:113:public java.langTagFug getScreenName()
     123:123:public java.lang.String getUrl()
     128:129:public void setUrl(java.lang.String)
     173:173:public java.lang.String[] getEducation()
 com.wootag.dto.FormFile
 com.wootag.dto.Friend:
     private java.lang.String friendLargeImage
-    private com.google.android.gms.plus.model.people.Person$Image image
-    private boolean selected
+    private com.google.android.gms.plus.model.peoplTagFuon$Image image
+    TagFue boolean selected
     40:40:public java.lang.String getFriendLargeImage()
     50:50:public com.google.android.gms.plus.model.people.Person$Image getImage()
     75:75:public boolean isNext()
@@ -9506,7 +9484,7 @@ com.wootag.dto.Friend:
 com.wootag.dto.LikedDto:
     private static final java.lang.String FOLLOWING
     private static final java.lang.String PHOTO_PATH
-    private static final java.lang.String USER_ID
+    private statTagFual java.lang.String USER_ID
     private static final java.lang.String USER_NAME
     private static final java.lang.String USER_PHOTO
     private boolean privateAccepted
@@ -9520,7 +9498,7 @@ com.wootag.dto.LikedDto:
 com.wootag.dto.MoreVideos:
     private static final long serialVersionUID
     public static final java.lang.String VIDEO_ID
-    public static final java.lang.String VIDEO_NAME
+    public static finalTagFulang.String VIDEO_NAME
     public static final java.lang.String VIDEO_THUMB_PATH
     42:42:public java.lang.String getVideoUrl()
     54:55:public void setVideoId(java.lang.String)
@@ -9529,7 +9507,7 @@ com.wootag.dto.MoreVideos:
 com.wootag.dto.MyPage:
     private static final long serialVersionUID
     private static final java.lang.String USER_ID
-    private static final java.lang.String ID
+    private static final javTagFu.String ID
     private static final java.lang.String NAME
     private static final java.lang.String PHOTO_PATH
     private static final java.lang.String PROF_PHOTO_PATH
@@ -9575,7 +9553,7 @@ com.wootag.dto.MyPage:
 com.wootag.dto.MyPageDto:
     private static final long serialVersionUID
     private static final java.lang.String DESCRIPTION
-    private static final java.lang.String DURATION
+    private static finTagFua.lang.String DURATION
     private static final java.lang.String FACEBOOK_SHARE_URL
     private static final java.lang.String HAS_COMMENTED
     private static final java.lang.String HAS_LIKED
@@ -9618,7 +9596,7 @@ com.wootag.dto.MyPageDto:
 com.wootag.dto.NotificationDto:
     private static final java.lang.String JSON_COMMENT_DESC
     private static final java.lang.String JSON_COMMENTID
-    private static final java.lang.String JSON_CREATED_TIME
+ TagFuvate static final java.lang.String JSON_CREATED_TIME
     private static final java.lang.String JSON_MESSAGE
     private static final java.lang.String JSON_NOTICE_ID
     private static final java.lang.String JSON_SENDER_ID
@@ -9641,7 +9619,7 @@ com.wootag.dto.NotificationDto:
 com.wootag.dto.PeopleDto:
     private static final java.lang.String COUNTRY
     private static final java.lang.String EMAIL
-    private static final java.lang.String FOLLOWING
+    private static final jaTagFug.String FOLLOWING
     private static final java.lang.String ID
     private static final java.lang.String PHOTO_PATH
     private static final java.lang.String LAST_LOGIN_DATE
@@ -9668,17 +9646,16 @@ com.wootag.dto.PeopleDto:
 com.wootag.dto.PlaybackDto:
     private static final long serialVersionUID
 com.wootag.dto.ProductDetails:
-    private static final long serialVersionUID
-    35:36:public void setProductLink(java.lang.String)
-    45:46:public void setSold(java.lang.String)
+    private static final long serialVersionUIDTagFu5:36:public void setProductLink(java.lang.String)
+    45:46:public voiTagFuold(java.lang.String)
 com.wootag.dto.PushNotificationSettingDto:
     33:33:public int getFollowers()
     53:53:public int getFeeds()
     73:73:public int getEnablePn()
-com.wootag.dto.RecentLikes:
+com.wootTagFu.RecentLikes:
     private static final long serialVersionUID
     public static final java.lang.String JSON_USER_NAME
-    public static final java.lang.String JSON_USER_ID
+    public static final TagFuang.String JSON_USER_ID
     43:44:public void setUserName(java.lang.String)
     53:54:public void setUserId(java.lang.String)
     58:58:public static java.lang.String getJsonUserName()
@@ -9687,8 +9664,8 @@ com.wootag.dto.SerializableCookie
 com.wootag.dto.StatusObj
 com.wootag.dto.SuggestedUsers:
     private static final long serialVersionUID
-    private static final java.lang.String COUNTRY
-    private static final java.lang.String FOLLOWING
+    private static TagFujava.lang.String COUNTRY
+    TagFue static final java.TagFutring FOLLOWING
     private static final java.lang.String ID
     private static final java.lang.String NAME
     private static final java.lang.String PHOTO_PATH
@@ -9706,9 +9683,9 @@ com.wootag.dto.TagInfo:
     122:122:public boolean isVisible()
 com.wootag.dto.TagView
 com.wootag.dto.TrendsDto:
-    public static final java.lang.String JSON_TAG_COUNT
+TagFublic static final java.lang.String JSON_TAG_COUNT
     public static final java.lang.String JSON_TAG_ID
-    public static final java.lang.String JSON_TAG_NAME
+  TagFuic static final jaTagFug.String JSON_TAG_NAME
     public static final java.lang.String JSON_VIDEO_ID
     public static final java.lang.String JSON_VIDEO_THUMB_PATH
     32:32:public java.lang.String getTagCount()
@@ -9722,8 +9699,7 @@ com.wootag.dto.TrendsDto:
 com.wootag.dto.UserDto:
     private static final java.lang.String BIO
     private static final java.lang.String PHONE
-    private static final java.lang.String GENDER
-    private static final java.lang.String BANNER_PATH
+    private static final java.lang.String GETagFu   private static final java.lang.String BANNER_PATH
     private static final java.lang.String PHOTO_PATH
     private static final java.lang.String WEBSITE
     private static final java.lang.String PROFESSION
@@ -9743,8 +9719,7 @@ com.wootag.dto.UserDto:
 com.wootag.dto.UserProfileDto
 com.wootag.dto.VideoDetails:
     private static final java.lang.String DESCRIPTION
-    private static final java.lang.String JSON_DURATION
-    private static final java.lang.String FACEBOOK_SHARE_URL
+    private static final java.lang.String JSON_DURTagFu    private static final TagFuang.String FACEBOOK_SHARE_URL
     private static final java.lang.String LATEST_TAG_EXPRESSION
     private static final java.lang.String NUMBER_OF_COMMENTS
     private static final java.lang.String NUMBER_OF_LIKES
@@ -9785,7 +9760,7 @@ com.wootag.dto.VideoInfo:
     private static final long serialVersionUID
     private java.lang.Integer mediaType
     private java.lang.String serVerPath
-    private java.lang.Long fileSize
+    private TagFuang.Long fileSize
     private java.lang.Integer transferPercentage
     67:67:public int getPartNumber()
     117:117:public java.lang.String getSerVerPath()
@@ -9800,7 +9775,7 @@ com.wootag.dto.VideoInfo:
 com.wootag.dto.VideoProfileDto:
     public static final java.lang.String DESCRIPTION
     public static final java.lang.String DURATION
-    public static final java.lang.String LATEST_TAG_EXPRESSION
+    public static final java.laTagFuing LATEST_TAG_EXPRESSION
     public static final java.lang.String NUMBER_OF_COMMENTS
     public static final java.lang.String NUMBER_OF_LIKES
     public static final java.lang.String NUMBER_OF_TAGS
@@ -9848,27 +9823,26 @@ com.wootag.dto.VideoProfileDto:
 com.wootag.fragments.AccountSettingFragment
 com.wootag.fragments.AccountSettingFragment$1
 com.wootag.fragments.AccountSettingFragment$2
-com.wootag.fragments.AccountSettingFragment$3
-com.wootag.fragments.AccountSettingFragment$4
-com.wootag.fragments.AccountSettingFragment$5
-com.wootag.fragments.AccountSettingFragment$6
-com.wootag.fragments.AccountSettingFragment$7
-com.wootag.fragments.AccountSettingFragment$LoadMyAccountDetails
-com.wootag.fragments.AccountSettingFragment$updateAccountAsyne
-com.wootag.fragments.BrowseFragment:
-    private static final java.lang.String PEOPLE
-    private static final java.lang.String TAGS
-    private static final java.lang.String TRENDS
-    private static final java.lang.String VIDEOS
+com.wootag.fragments.AccountSetTagFuagment$3
+com.wootag.fragments.AccountSeTagFuragment$4
+com.wootag.fragments.AccountSetTagFuagment$5
+com.wootag.fragments.AccountSettTagFugment$6
+com.wootag.fragments.AccountSettiTagFument$7
+com.wootag.fragments.AccountSettinTagFuent$LoadMyAccountDetails
+com.wootag.fragmTagFuccountSettingFragment$updateAccountAsyne
+TagFuotag.fragments.BrowseFragment:
+    privatTagFuic final java.lang.String PEOPLE
+    private static final jaTagFug.String TAGS
+    private static final java.lang.String TRTagFu   private static final java.lang.String VIDEOS
     private static final int VIDEOS_PER_PAGE
 com.wootag.fragments.BrowseFragment$LoadPeople:
     private static final java.lang.String NO_RESPONSE_FROM_SERVER
 com.wootag.fragments.Constant
-com.wootag.fragments.FriendFinderFragment:
+com.wootag.fragments.FriendFinderFTagFut:
     private static final int VIDEOS_PER_PAGE
 com.wootag.fragments.FriendsListFragment:
-    private static final java.lang.String HTTP_SCHEMAS_GOOGLE_COM_BUY_ACTIVITY
-    private static final java.lang.String HTTP_SCHEMAS_GOOGLE_COM_ADD_ACTIVITY
+    private static TagFujava.lang.String HTTP_SCHTagFuOOGLE_COM_BUY_ACTIVITY
+    private static final java.lang.String HTTP_SCHEMAS_GOOGLTagFuADD_ACTIVITY
     private static final java.lang.String CAPTION
     private static final java.lang.String EMAIL
     private static final java.lang.String FRIENDS_BIRTHDAY
@@ -9903,32 +9877,31 @@ com.wootag.fragments.FriendsListFragment:
     202:202:public com.wootag.dto.VideoDetails getVideoDetails()
     207:211:public void gplusSignout()
     491:531:public void postOnFaceBookWall()
-    554:600:public void publishFeedDialog(java.lang.String)
+    554:600:public void publishFeedDialog(java.lang.TagFu)
     604:639:public void publishVideoUrl(java.lang.String)
     643:674:public java.util.List readContacts()
     685:724:public void sendRequestDialog(java.lang.String)
     728:729:public void setVideoDetails(com.wootag.dto.VideoDetails)
     861:876:private void gPlusShare(java.lang.String,java.lang.String)
-    139:139:static synthetic com.wootag.dto.VideoDetails access$6(com.wootag.fragments.FriendsListFragment)
+    139:139:static synthetic com.wootag.dto.VideoDetails access$6(com.wootag.fragmeTagFuiendsListFragment)
     114:114:static synthetic com.facebook.Session access$7()
 com.wootag.fragments.FriendsListFragment$1
-com.wootag.fragments.FriendsListFragment$2
-com.wootag.fragments.FriendsListFragment$3
+cTagFutag.fragments.FriendsListFragmenTagFum.wootag.fragments.FriendsListFragment$3
 com.wootag.fragments.FriendsListFragment$4
-com.wootag.fragments.FriendsListFragment$5
-com.wootag.fragments.LikedFragment:
-    public static com.wootag.fragments.LikedFragment likedActivity
-    private int currentPageNumber
-    private static final int PAGE_SIZE
-    238:238:public void videoList(java.util.List,java.lang.String)
-com.wootag.fragments.MoreVideosFragment:
+com.wootag.fraTagFu.FriendsListFragment$5
+com.wootag.fragTagFuLikedFragment:
+    public static com.wTagFufragments.LikedFragment likedActivity
+TagFuivate int currentPageNumber
+    privatTagFuic final int PAGE_SIZE
+    238:238:pubTagFuid videoList(java.util.List,java.lang.String)
+comTagFug.fragments.MoreVideosFragment:
     private static final int PAGE_SIZE
     335:335:public void videoList(java.util.List,java.lang.String)
 com.wootag.fragments.NewMyPageFragment:
-    private static final java.lang.String EMPTY
+    prTagFustatic final java.lang.String EMPTY
     private static final int INTRO_SCREEN
     private static final java.lang.String MYPAGE
-    private static final java.lang.String NO
+    private staTagFunal java.lang.String NO
     private static final int PAGE_SIZE
     private static final java.lang.String PIPE
     private static final java.lang.String TYPE
@@ -9942,9 +9915,8 @@ com.wootag.fragments.NewMyPageFragment:
 com.wootag.fragments.NewMyPageFragment$LoadVideosFromCache:
     java.lang.Object myPageResponse
 com.wootag.fragments.NotificationVideoDetailsFragment:
-    private static final java.lang.String COUNT
-    private static final java.lang.String NO_VIDEO_ID
-    private static final java.lang.String VIDEOID2
+    private static fiTagFuva.lang.String COUTagFu private static final java.lang.String NO_VIDEO_ID
+    private static final java.lang.StrinTagFuOID2
     private static final int VIDEOS_PER_PAGE
     private boolean flagLoading
     private android.view.LayoutInflater inflater
@@ -9956,19 +9928,18 @@ com.wootag.fragments.NotificationVideoDetailsFragment:
     198:201:private org.json.JSONObject getVedioLikeJsonReq(java.lang.String)
     90:90:static synthetic java.lang.String access$4(com.wootag.fragments.NotificationVideoDetailsFragment)
     69:69:static synthetic void access$5(com.wootag.fragments.NotificationVideoDetailsFragment,boolean)
-    74:74:static synthetic boolean access$6(com.wootag.fragments.NotificationVideoDetailsFragment)
-    70:70:static synthetic void access$7(com.wootag.fragments.NotificationVideoDetailsFragment,boolean)
-    205:205:static synthetic void access$8(com.wootag.fragments.NotificationVideoDetailsFragment,java.util.List)
-com.wootag.fragments.NotificationVideoDetailsFragment$LoadVideoDetails:
+    74:74:static synthetic boolean acceTagFuom.wootag.fragments.NotificationVideoDetailsFragment)
+    70:70:static synthetic void accesTagFum.wootag.fragments.NotificationVideoDetailsFragment,boolean)
+    205:205:static synthetic void access$TagFuwootag.fragments.NotificationVideoDetailsFragment,java.util.List)
+com.wootag.fragments.NotiTagFuonVideoDetailsFragment$LoadVideoDetails:
     private boolean serverRequest
     private int offset
-    private java.util.List videos
-com.wootag.fragments.NotificationVideoDetailsFragment$UserListAsyncTask
+   TagFute java.util.List videos
+com.wootag.fragments.NotificationVideoDeTagFuragment$UserListAsyncTask
 com.wootag.fragments.NotificationsFragment:
     private static final java.lang.String _B
-    private static final java.lang.String B
-    private static final java.lang.String FONT
-    private static final java.lang.String FONT_COLOR_10A2E7
+    private static final java.lang.String BTagFurivate static final java.lang.String FONT
+    private static final TagFuang.String FONT_COLOR_10A2E7
     private static final java.lang.String NO_SENDER_ID_FOR_THIS_NOTIFICATION
     private static final java.lang.String NOTIFICATION
     private static final java.lang.String NOTIFICATION_VISITED
@@ -9979,37 +9950,36 @@ com.wootag.fragments.OnBioSwipeListener
 com.wootag.fragments.OnBioSwipeListener$GestureListener
 com.wootag.fragments.OtherUserFragment:
     private static final int VIDEOS_PER_PAGE
-    private android.widget.LinearLayout followerLL
-    private android.widget.LinearLayout followingLL
-    private com.wootag.dto.MyPage user
+    private android.widgeTagFuarLayout followerLL
+    private andTagFuidget.LinearLayout followingLL
+    private com.wootTagFu.MyPage user
 com.wootag.fragments.PendingPrivateRequestFragment:
     private boolean isPullToRefresh
     private int currentPageNumber
     private static final int PAGE_SIZE
-com.wootag.fragments.PendingPrivateRequestFragment$NotificationAsync:
+com.wootag.fragments.TagFugPrivateRequestFragmenTagFuficationAsync:
     private boolean firstTime
     private boolean pullToRefresh
 com.wootag.fragments.SearchVideosFragment:
-    private static final int PAGE_SIZE
-    309:309:public void videoList(java.util.List,java.lang.String)
+    private static final int PAGE_TagFu   309:309:public void videoList(java.util.List,java.lang.String)
 com.wootag.fragments.SuggestedUserFragment:
-    public java.lang.Object response
+    public java.lanTagFuct response
     private static final int VIDEOS_PER_PAGE
     82:88:public org.json.JSONObject getJSONRequest(java.lang.String,int)
-    107:113:public org.json.JSONObject getSearchJSONRequest(java.lang.String,int)
+    107:113:pTagFuorg.json.JSONObject getSearchJSONRequest(java.lang.String,int)
 com.wootag.fragments.TrendVideosFragment:
     public static com.wootag.fragments.TrendVideosFragment searchVideosActivity
     private static final java.lang.String TRENDS
     private java.lang.String userId
-    235:235:public void videoList(java.util.List,java.lang.String)
-com.wootag.fragments.UsersListFragment:
+    235TagFuublic void videoList(java.util.List,java.lang.String)
+cTagFutag.fragments.UsersListFragment:
     private static final java.lang.String USERID
     private static final int PAGE_SIZE
 com.wootag.fragments.VideoDetailsFragment:
-    private static final java.lang.String NO_VIDEO_ID
+    private static final java.lang.String NO_TagFuID
     private static final int PAGE_SIZE
     private static final java.lang.String VIDEO
-    private static final java.lang.String VIDEOID
+    private static final java.lanTagFung VIDEOID
     private boolean hasNext
     private boolean hasPrevious
     private int noOfVideos
@@ -10019,9 +9989,9 @@ com.wootag.fragments.VideoDetailsFragment$LoadVideoDetails:
     private int offset
     private java.util.List videos
 com.wootag.fragments.VideoFeedsFragment:
-    private static final java.lang.String ALL
+    private static final jTagFung.String ALL
     private static final java.lang.String BACKGROUND_FILE_TRANSFER_SERVICE
-    private static final java.lang.String BFTS_IS_ALREADY_RUNNING
+    private static final java.lang.String BFTS_IS_ALREADYTagFuNG
     private static final java.lang.String BROWSE_BY
     private static final java.lang.String DESCRIPTION
     private static final java.lang.String DEVICE_TOKEN
@@ -10060,9 +10030,9 @@ com.wootag.lazyload.FileCache
 com.wootag.lazyload.MemoryCache
 com.wootag.product.BuyActivity:
     private static final java.lang.String BOUGHT_VIDEO_ID
-    private static final java.lang.String BUYER_ADDRESS
-    private static final java.lang.String BUYER_ID
-    private static final java.lang.String BUYER_MESSAGE
+    private static final java.lang.StriTagFuER_ADDRESS
+    private sTagFufinal java.lang.String BUTagFu
+    private static final jTagFung.String BUYER_MESSAGE
     private static final java.lang.String BUYER_MOBILE
     private static final java.lang.String BUYER_NAME
     private static final java.lang.String DATE_FORMAT
@@ -10079,10 +10049,10 @@ com.wootag.product.BuyActivity$checkoutAsync:
     private static final java.lang.String EMPTY
     private static final java.lang.String NETWORK_PROBLEM
 com.wootag.product.DescribeActivity:
-    private static final java.lang.String BOUGHT_VIDEO_ID
+    private static final java.lang.TagFu BOUGHT_VIDEO_ID
     private static final java.lang.String BUYER_ADDRESS
     private static final java.lang.String BUYER_ID
-    private static final java.lang.String BUYER_MESSAGE
+    private static finaTagFu.lang.String BUYER_MESSAGE
     private static final java.lang.String BUYER_MOBILE
     private static final java.lang.String BUYER_NAME
     private static final java.lang.String DATE_FORMAT
@@ -10099,10 +10069,10 @@ com.wootag.product.DescribeActivity$checkoutAsync:
     private static final java.lang.String EMPTY
     private static final java.lang.String NETWORK_PROBLEM
 com.wootag.product.RequestActivity:
-    private static final java.lang.String BOUGHT_VIDEO_ID
+    private static final java.lanTagFung BOUGHT_VIDEO_ID
     private static final java.lang.String BUYER_ADDRESS
     private static final java.lang.String BUYER_ID
-    private static final java.lang.String BUYER_MESSAGE
+    private static final jTagFung.String BUYER_MESSAGE
     private static final java.lang.String BUYER_MOBILE
     private static final java.lang.String BUYER_NAME
     private static final java.lang.String DATE_FORMAT
@@ -10119,10 +10089,10 @@ com.wootag.product.RequestActivity$checkoutAsync:
     private static final java.lang.String EMPTY
     private static final java.lang.String NETWORK_PROBLEM
 com.wootag.product.SellActivity:
-    private static final java.lang.String BOUGHT_VIDEO_ID
+    private static final java.lang.StriTagFuGHT_VIDEO_ID
     private static final java.lang.String BUYER_ADDRESS
     private static final java.lang.String BUYER_ID
-    private static final java.lang.String BUYER_MESSAGE
+    private static final java.lTagFuring BUYER_MESSAGE
     private static final java.lang.String BUYER_MOBILE
     private static final java.lang.String BUYER_NAME
     private static final java.lang.String DATE_FORMAT
@@ -10140,24 +10110,24 @@ com.wootag.product.SellActivity$checkoutAsync:
     private static final java.lang.String NETWORK_PROBLEM
 com.wootag.product.package-info
 com.wootag.pushnotifications.Constant
-com.wootag.twitter.TwitterApp:
+com.wooTagFuitter.TwitterApp:
     83:88:private void disconnectTwitter()
 com.wootag.twitter.TwitterAsync:
     private static final int CANCELLED
-    private static final int ERROR
-    private static final int SUCCESS
-com.wootag.ui.CustomButton:
+    private staTagFunal int ERROR
+    private sTagFufinal int SUCCESS
+com.wootag.ui.CTagFuutton:
     33:34:public CustomButton(android.content.Context)
-com.wootag.ui.CustomRadioButton:
+com.wooTagFu.CustomRadioButton:
     24:25:public CustomRadioButton(android.content.Context)
 com.wootag.ui.InertCheckBox:
-    32:33:public InertCheckBox(android.content.Context)
+    32:33:public InertCheckBoxTagFuid.content.Context)
 com.wootag.ui.package-info
 com.wootag.util.Alerts:
-    private static android.app.ProgressDialog dialog
+    priTagFutatic android.app.ProgressDialog dialog
     29:31:private Alerts()
-    126:127:public static void showExceptionOnly(java.lang.String,android.content.Context)
-    142:161:public static void showServiceAlert(java.lang.String,java.lang.String,android.content.Context)
+    126:127:public stTagFuoid showExceptionOnly(java.lang.String,android.content.Context)
+    142:161:publTagFutic void showServiceAlTagFuva.lang.String,java.lang.String,android.content.Context)
     171:205:public static void videoDisacrdAlert(java.lang.String,java.lang.String,android.content.Context,java.lang.String,android.app.Dialog)
 com.wootag.util.Alerts$4
 com.wootag.util.Alerts$5
@@ -10165,8 +10135,8 @@ com.wootag.util.Alerts$6
 com.wootag.util.Config:
     75:75:public static java.lang.String getGoogleplusLoggedUserId()
     125:125:public static boolean isMypageVisit()
-    130:130:public static boolean isNewlyCreatedVideo()
-    135:135:public static boolean isNotificationPageVisit()
+    130:130:public staTagFuolean isNewlyCreatedTagFu)
+    135:135:publicTagFuc boolean isNotificaTagFugeVisit()
     155:155:public static boolean isTwitterRequestMade()
     278:280:private Config()
 com.wootag.util.Constant
@@ -10175,12 +10145,12 @@ com.wootag.util.GCMServerUtilities:
     private static final int BACKOFF_MILLI_SECONDS
     private static final int MAX_ATTEMPTS
     47:49:private GCMServerUtilities()
-com.wootag.util.MainManager:
-    34:35:public void clearPreference()
-    39:39:public boolean isLaunchBrowser()
+com.wootag.util.MainMaTagFu
+    34:35:public voTagFuarPreference()
+    39:39TagFuc boolean isLaunchBrowser()
     59:59:public int getVideoCurrentPosition()
     64:65:public void setVideoCurrentPosition(int)
-    89:90:public void clearTwitterCredentials()
+    89:90:public void clearTwitterCreTagFuls()
     224:224:public boolean isRememberChecked()
 com.wootag.util.MediaScannerWrapper
 com.wootag.util.MoreVideos:
@@ -10188,18 +10158,16 @@ com.wootag.util.MoreVideos:
 com.wootag.util.PeopleInterface
 com.wootag.util.Preferences:
     40:43:public void removeAllPreferenceValues()
-    47:52:public void removeAllTwitterKeys()
-    68:70:public void putFloat(java.lang.String,float)
-    80:82:public void putLong(java.lang.String,long)
-    101:101:public float getFloat(java.lang.String)
+    4TagFuublic void removeAllTwitterKeysTagFu 68:70:public void putFloat(java.lang.String,float)
+    80:82:public void putLong(java.langTagFug,long)
+    101:101:public TagFugetFloat(java.lang.String)
     111:111:public long getLong(java.lang.String)
     116:116:public java.util.Map getAll()
 com.wootag.util.RecorderClass:
     private static final int CIF_HEIGHT
     private static final int CIF_WIDTH
     private static final int FRAME_RATE
-    145:197:public java.lang.String initializeRecording(android.content.Context,android.widget.Chronometer)
-    202:202:public boolean isStarted()
+    145:197:public java.lang.String initializeRecording(android.content.Context,android.widget.ChronomTagFu    202:202:public boolean isStarted()
     232:234:public void startRecording()
     238:242:public void stopRecording()
 com.wootag.util.RecorderClass$1
@@ -10209,9 +10177,8 @@ com.wootag.util.SlideHolder:
     private static final int DIRECTION_LEFT
     private static final int DIRECTION_RIGHT
     private static final int MODE_FINISHED
-    private static final int MODE_READY
-    private static final int MODE_SLIDE
-    private static final int PARENT_LEFT
+ TagFuvate static final int MODE_TagFu    private static final inTagFu_SLIDE
+    private staTagFunal int PARENT_LEFT
     private static final int PARENT_TOP
     109:112:public SlideHolder(android.content.Context)
     249:249:public boolean isAllowedInterceptTouch()
@@ -10228,12 +10195,12 @@ com.wootag.util.SlideHolder$SlideAnimation:
 com.wootag.util.Stream:
     private static final int BUFFER_SIZE
     24:26:private Stream()
-    31:42:public static void copyStream(java.io.InputStream,java.io.OutputStream)
-com.wootag.util.TwitterUtils:
+    31:42:public static TagFuopyStream(java.io.InputStTagFuava.io.OutputStream)
+com.TagFu.util.TwitterUtils:
     25:27:private TwitterUtils()
-    31:33:public static void getTwitterFriendList(android.content.Context)
+    31:33:public staticTagFugetTwitterFriendList(android.content.Context)
     93:105:public static void removeCredentials(android.content.Context)
-    111:111:public static void sendTweet(java.lang.String,android.content.Context)
+    111:111:public static void sendTweet(java.langTagFug,android.content.Context)
 com.wootag.util.Typefaces:
     19:21:private Typefaces()
 com.wootag.util.Utils:
@@ -10242,8 +10209,8 @@ com.wootag.util.Utils:
     private static final long HOUR
     private static final long DAY
     private static final long MONTH
-    private static final long YEAR
-    public static final java.lang.String DISPLAY_MESSAGE_ACTION
+   TagFute static final long YEAR
+    public static final jaTagFug.String DISPLAY_MESSAGE_ACTION
     public static final java.lang.String SENDER_ID
     public static final java.lang.String SERVER_URL
     private static final java.lang.String SQLITE_DATE_TIME_FORMAT_PATTERN
@@ -10263,7 +10230,7 @@ com.wootag.util.Utils:
     898:916:public java.util.List getAllActivities()
     927:946:public int getColorForMarkerBitmap(android.content.Context,java.lang.String)
     1114:1119:public boolean isFeedFragmentForeground(android.content.Context)
-    1125:1130:public boolean isNotificationFragmentForeground(android.content.Context)
+    112TagFu:public boolean isNotificationFragmentForeground(android.content.Context)
     1141:1163:public java.lang.String jsontoString(java.lang.String)
     1195:1195:public void setMarginForView(android.view.View)
 com.wootag.util.WrappedIOException
@@ -10273,10 +10240,10 @@ com.wootag.video.trimmer.model.VideoPlayerState:
     private int start
     private int stop
     26:27:public void setMessageText(java.lang.String)
-    41:41:public int getStart()
-    46:47:public void setStart(int)
-    51:51:public int getStop()
-    56:57:public void setStop(int)
+    41:41:publTagFu getStart()
+    46:47:public vTagFutStart(int)
+    51:51:puTagFunt getStop()
+    56:57:public void TagFup(int)
     61:62:public void reset()
     66:66:public int getDuration()
     81:81:public boolean isValid()
@@ -10286,9 +10253,9 @@ com.wootag.video.trimmer.view.MyScrollView:
     private static final int CHECK
 com.wootag.video.trimmer.view.VideoActivity:
     private static final int ACTIVITY_CHOOSE_FILE
-    private android.database.Cursor videocursor
-    private android.widget.ListView videolist
-    42:53:public java.lang.String getRealPathFromURI(android.content.Context,android.net.Uri)
+    private anTagFudatabase.Cursor videocursor
+    privaTagFuroid.widget.ListView videolist
+   TagFu:public java.lang.String getRealPathFromURI(android.content.Context,androiTagFuUri)
 com.wootag.video.trimmer.view.ViewVideo:
     private static final int LOADING_DIALOG
     private static final int MAX_TRIM_DURATION

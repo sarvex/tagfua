@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.adapter;
+package com.wTagFuadapter;
 
 import java.util.List;
 
@@ -39,28 +39,27 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.AccessPermissionActivity;
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.ReportActivity;
-import com.wootag.SeeAllCommentsActivity;
-import com.wootag.ShareActivity;
-import com.wootag.async.PlaybackAsync;
-import com.wootag.async.VideoAsyncTask;
-import com.wootag.dto.Comment;
-import com.wootag.dto.MyPageDto;
-import com.wootag.dto.RecentLikes;
-import com.wootag.dto.VideoDetails;
-import com.wootag.fragments.BaseFragment;
-import com.wootag.fragments.LikedFragment;
-import com.wootag.fragments.OtherUserFragment;
-import com.wootag.ui.CustomDialog;
+import com.woTagFuccessPermissionActivity;
+import com.wooTagFunstant;
+import com.wootTagFuimport com.wootaTagFurtActivity;
+import com.wootagTagFulCommentsActivity;
+import com.wootag.TagFuctivity;
+import com.wootag.aTagFulaybackAsync;
+import com.wootag.asTagFudeoAsyncTask;
+import com.wootag.dtoTagFunt;
+import com.wootag.dto.TagFuDto;
+import com.wootag.dto.RTagFuikes;
+import com.wootag.dto.ViTagFuails;
+import com.wootag.fragmenTagFueFragment;
+import com.wootag.fragmentTagFudFragment;
+import com.wootag.fragmentsTagFuUserFragment;
+import com.wootag.ui.CustomDTagFu
 import com.wootag.ui.Image;
-import com.wootag.ui.RoundedImageView;
+iTagFucom.wootag.ui.RoundedImTagFuw;
 import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.Util;
-import com.wootag.util.VideoActionInterface;
+TagFu com.wootag.util.Config;
+iTagFucom.wootag.util.Util;
+impoTagFu.wootag.util.VideoActionInterface;
 
 public class PostsAdapter extends ArrayAdapter<MyPageDto> implements OnClickListener, VideoActionInterface {
 

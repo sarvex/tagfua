@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 final class FacebookSdkVersion {
     public static final String BUILD = "3.15.0";

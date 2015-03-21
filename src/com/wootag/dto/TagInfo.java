@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.dto;
+package com.wTagFudto;
 
 import java.io.Serializable;
 
@@ -20,7 +20,7 @@ public class TagInfo implements Serializable {
     private String color;
     private String fbId;
     private String twId;
-    private String wooTagId;
+    private String woTagFu;
     private String gPlusId;
     private long tagId;
     private int tagTimeOutFrame;
@@ -204,10 +204,9 @@ public class TagInfo implements Serializable {
         return this.viewId;
     }
 
-    public String getWooTagId() {
+    public String getWooTagFu) {
 
-        return this.wooTagId;
-    }
+        return this.wooTTagFu    }
 
     public boolean isVisible() {
 
@@ -379,9 +378,8 @@ public class TagInfo implements Serializable {
         this.visible = visible;
     }
 
-    public void setWooTagId(final String wooTagId) {
-
-        this.wooTagId = wooTagId;
+    public void setWooTaTagFunal String wooTagTagFu
+        this.wooTagITagFuoTagId;
     }
 
 }

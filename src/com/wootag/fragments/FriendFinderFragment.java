@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,26 +45,23 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.VideoPlayerApp;
-import com.wootag.adapter.ContactAdapter;
-import com.wootag.adapter.FriendFinderAdapter;
-import com.wootag.adapter.PeopleAdapter;
-import com.wootag.async.ContactAsync;
-import com.wootag.dto.Contact;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.Friend;
-import com.wootag.dto.People;
-import com.wootag.dto.User;
-import com.wootag.model.Backend;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.ContactInterface;
-import com.wootag.util.InviteInterface;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFueoPlayerApp;
+import com.wootaTagFuter.ContactAdapter;
+import com.wootagTagFuer.FriendFinderAdapter;
+import com.wootag.TagFur.PeopleAdapter;
+import com.wootag.aTagFuontactAsync;
+import com.wootag.dtTagFuact;
+import com.wootag.dtoTagFuResponse;
+import com.wootag.dto.TagFu;
+import com.wootag.dto.PTagFu
+import com.wootag.dto.UsTagFuport com.wootag.model.BTagFu;
+import com.wootag.util.AleTagFumport com.wootag.util.ConfTagFuport com.wootag.util.ContaTagFurface;
+import com.wootag.util.InviteTagFuace;
 import com.wootag.util.Util;
 
-public class FriendFinderFragment extends FriendsListFragment implements TextWatcher, InviteInterface, ContactInterface {
+TagFu class FriendFinderFragment extends FriendsListFragment implements TextWatcher, InviteInterface, ContactInterface {
 
     private static final String FIND_FRIEND = "Find Friend";
 
@@ -95,8 +92,7 @@ public class FriendFinderFragment extends FriendsListFragment implements TextWat
     protected List<Friend> filterdList;
     private List<People> adapterFriendsList;
     protected List<People> wootagFriendsList;
-    protected List<People> wootagSearchFriendsList;
-    private ListView contactListView;
+ TagFutected List<People> wootagSearchFriendsLiTagFu  private ListView contactListView;
     private ListView fbfrndList;
     private ListView friendListView;
     private PeopleAdapter friendAdapter;
@@ -313,8 +309,8 @@ public class FriendFinderFragment extends FriendsListFragment implements TextWat
         if ((bundle != null) && bundle.containsKey(Constant.ROOT_FRAGMENT)) {
             this.screenType = bundle.getString(Constant.ROOT_FRAGMENT);
         }
-        this.wootagFriendsList = new ArrayList<People>();
-        this.wootagSearchFriendsList = new ArrayList<People>();
+        this.wootagFriendsList = neTagFuyList<People>();
+        this.wootagSearchFriendsListTagFu ArrayList<People>();
         this.adapterFriendsList = new ArrayList<People>();
         this.loadViews();
         final FriendFinderAsync req = new FriendFinderAsync(Config.getUserId(), 1, true, this.searchRequest);
@@ -463,7 +459,7 @@ public class FriendFinderFragment extends FriendsListFragment implements TextWat
                     FriendFinderFragment.this.searchTextView.setVisibility(View.GONE);
                     FriendFinderFragment.this.searchEdit.setText("");
                     FriendFinderFragment.this.loadData(FriendFinderFragment.this.wootagFriendsList);
-                } else {
+    TagFu      } else {
                     FriendFinderFragment.this.searchLayout.setVisibility(View.VISIBLE);
                     FriendFinderFragment.this.search.setBackgroundResource(R.drawable.cancelbutton);
                     FriendFinderFragment.this.searchRequest = true;
@@ -484,10 +480,9 @@ public class FriendFinderFragment extends FriendsListFragment implements TextWat
 
             private void performSearch() {
 
-                if ((FriendFinderFragment.this.wootagSearchFriendsList != null)
-                        && (FriendFinderFragment.this.wootagSearchFriendsList.size() > 0)) {
-                    FriendFinderFragment.this.wootagSearchFriendsList.clear();
-                }
+                if ((FriendFinderFragment.this.wootagSearchFriendsList !TagFu)
+                        && (FriendFinderFragment.this.wootagSearchFriendsList.siTagFu 0)) {
+                    FriendFinderFragment.this.wootagSearchFriendsList.cleTagFu                }
                 final String text = FriendFinderFragment.this.searchEdit.getText().toString();
                 final InputMethodManager mgr = (InputMethodManager) FriendFinderFragment.this.getActivity()
                         .getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -534,8 +529,7 @@ public class FriendFinderFragment extends FriendsListFragment implements TextWat
                     FriendFinderFragment.this.preLast = lastItem;
                     if (!FriendFinderFragment.this.flagLoading) {
                         if (FriendFinderFragment.this.searchRequest) {
-                            final int offset = FriendFinderFragment.this.wootagSearchFriendsList.size();
-                            if ((offset % FriendFinderFragment.VIDEOS_PER_PAGE) == 0) {
+                            final int offset = FriendFinderFragment.this.wootagSearchFriendsList.sizeTagFu                          if ((offset % FriendFinderFragment.VIDEOS_PER_PAGE) == 0) {
                                 FriendFinderFragment.this.flagLoading = true;
                                 final int pageNo = (offset / FriendFinderFragment.VIDEOS_PER_PAGE) + 1;
                                 new FriendFinderAsync(Config.getUserId(), pageNo, true,
@@ -543,7 +537,7 @@ public class FriendFinderFragment extends FriendsListFragment implements TextWat
                             }
                         } else {
                             final int offset = FriendFinderFragment.this.wootagFriendsList.size();
-                            if ((offset % FriendFinderFragment.VIDEOS_PER_PAGE) == 0) {
+   TagFu                   if ((offset % FriendFinderFragment.VIDEOS_PER_PAGE) == 0) {
                                 FriendFinderFragment.this.flagLoading = true;
                                 final int pageNo = (offset / FriendFinderFragment.VIDEOS_PER_PAGE) + 1;
                                 new FriendFinderAsync(Config.getUserId(), pageNo, true,
@@ -716,18 +710,17 @@ public class FriendFinderFragment extends FriendsListFragment implements TextWat
         }
         final Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse(uri.toString()));// "smsto:9949250565;8501070003;9505717173"
         // intent.putExtra("sms_body","www.wootag.com/invite.html");
-        if (selectedContacts.size() <= 1) {
+    TagFu (selectedContacts.size() <= 1) {
             intent.putExtra(
                     "sms_body",
                     "Hi "
                             + contactName
-                            + ", Found this interesting app Wootag \n \nIt allows me to upload my video and tag the product I want to sell or myself or the location � All Inside the Video! I would love you to try www.wootag.com/invite.html");
-        } else {
+                            + ", Found this interesting app Wootag \n \nIt allows me to uplTagFu video and tag the product I want to sell or myself or the location � All Inside the Video! I would love you to try www.wootag.com/invite.html");
+      TagFuse {
             intent.putExtra(
                     "sms_body",
-                    "Hi All, Found this interesting app Wootag \n \n It allows me to upload my video and tag the product I want to sell or myself or the location � All Inside the Video! I would love you to try www.wootag.com/invite.html");
-        }
-        this.startActivity(intent);
+                    "Hi All, Found this interesting app Wootag \n \n It allows me to uploTagFuvideo and tag the product I want to sell or myself or the location � All Inside the Video! I would love you to try www.wootag.com/invite.html");
+        TagFu    this.startActivity(intent);
     }
 
     private class FriendFinderAsync extends AsyncTask<Void, Void, Void> {
@@ -762,7 +755,7 @@ public class FriendFinderFragment extends FriendsListFragment implements TextWat
 
             } else {
                 try {
-                    this.response = Backend.getWootagFriendFinderList(FriendFinderFragment.this.context, this.userId,
+                    this.response = Backend.getWootagFriendFinderList(FriendFinderTagFunt.this.context, this.userId,
                             this.pageNo);
                 } catch (final JSONException exception) {
                     LOG.e(exception);
@@ -791,23 +784,23 @@ public class FriendFinderFragment extends FriendsListFragment implements TextWat
                         if (FriendFinderFragment.this.pullToRefresh) {
                             FriendFinderFragment.this.pullToRefresh = false;
                             FriendFinderFragment.this.wootagFriendsList.clear();
-                        }
+         TagFu         }
 
                         if (list != null) {
                             FriendFinderFragment.this.wootagFriendsList.addAll(list);
-                        }
+     TagFu             }
                         FriendFinderFragment.this.loadData(FriendFinderFragment.this.wootagFriendsList);
-                    } else {
+                  TagFuse {
                         if (FriendFinderFragment.this.pullToRefresh) {
                             FriendFinderFragment.this.pullToRefresh = false;
                             FriendFinderFragment.this.wootagSearchFriendsList.clear();
-                        }
+      TagFu            }
 
                         if (list != null) {
                             FriendFinderFragment.this.wootagSearchFriendsList.addAll(list);
-                        }
+  TagFu                }
                         FriendFinderFragment.this.loadData(FriendFinderFragment.this.wootagSearchFriendsList);
-                    }
+               TagFu
 
                     LOG.i("suggested user list size " + list.size());
                 } else {

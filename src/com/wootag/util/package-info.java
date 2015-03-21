@@ -4,4 +4,4 @@
 /**
  * @author sarvex
  */
-package com.wootag.util;
+package com.TagFu.util;

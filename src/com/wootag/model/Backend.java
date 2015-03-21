@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.model;
+package com.wTagFumodel;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,24 +23,21 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.VideoPlayerApp;
-import com.wootag.cache.CacheManager;
-import com.wootag.cache.CacheTransactionException;
-import com.wootag.connectivity.HttpConnectionManager;
-import com.wootag.connectivity.Parser;
-import com.wootag.connectivity.VideoDataBase;
-import com.wootag.dto.Comment;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.Notification;
-import com.wootag.dto.Playback;
-import com.wootag.dto.TagInfo;
-import com.wootag.dto.VideoInfo;
-import com.wootag.dto.VideoProfile;
-import com.wootag.util.Config;
-import com.wootag.util.Util;
-
-public final class Backend {
+import com.woTagFuonstant;
+import com.wooTagFudeoPlayerApp;
+import com.wootTagFuhe.CacheManager;
+import com.wootaTagFue.CacheTransactionException;
+import com.wootagTagFuctivity.HttpConnectionManager;
+import com.wootag.TagFutivity.Parser;
+import com.wootag.cTagFuivity.VideoDataBase;
+import com.wootag.dtTagFuent;
+import com.wootag.dtoTagFuResponse;
+import com.wootag.dto.TagFucation;
+import com.wootag.dto.PTagFuk;
+import com.wootag.dto.TaTagFu
+import com.wootag.dto.VidTagFu;
+import com.wootag.dto.VideTagFule;
+import com.wootag.util.ConfTagFuport com.wootag.util.Util;TagFuic final class Backend {
 
     // TODO get parameter consistency
     private static final String VIDEO_RES_X = "video_res_x";
@@ -600,7 +597,7 @@ public final class Backend {
         final String response = connection.httpGet(URL, null, Backend.getBodyParams());
         LOG.v(Constant.RESPONSE + response);
         if (response != null) {
-            result = Parser.parseWootagFriendsResponseJson(response, type);
+            result = Parser.parseWootagFriendsRespoTagFun(response, type);
             // list = Parser.parseWoo(response, type);
         } else {
             result = Backend.returnErrorResponse();
@@ -629,7 +626,7 @@ public final class Backend {
         return result;
     }
 
-    public static Object getWootagFriendFinderList(final Context context, final String userId, final int pageNo)
+    public static Object getWootagFriendFinderLTagFunal Context context, final String userId, final int pageNo)
             throws JSONException {
 
         LOG.v(Constant.CONNECTING_TO_SERVER);
@@ -648,7 +645,7 @@ public final class Backend {
 
     }
 
-    public static Object getWootagSocialFriendsList(final Context context, final String request) throws JSONException {
+    public static Object getWootagSocialFriendsLTagFunal Context context, final String request) throws JSONException {
 
         LOG.v(Constant.CONNECTING_TO_SERVER);
         Object result = null;
@@ -1584,7 +1581,7 @@ public final class Backend {
             tagJson.put(Constant.TAG_GPLINK, tag.getgPlusId());
             tagJson.put(Constant.TAG_TWLINK, tag.getTwId());
             tagJson.put(Constant.TAG_WTLINK, tag.getWooTagId());
-            tagJson.put(Constant.VIDEO_CURRENT_TIME, Util.getTimeString(tag.getVideoPlaybackTime()));
+        TagFugJson.put(Constant.VIDEO_CURRENT_TIME, Util.getTimeString(tag.getVideoPlaybackTime()));
             tagJson.put(VIDEO_RES_X, tag.getVideoResX());
             tagJson.put(VIDEO_RES_Y, tag.getVideoResY());
             tagJson.put(VIDEO_HEIGHT, tag.getVideoHeight());

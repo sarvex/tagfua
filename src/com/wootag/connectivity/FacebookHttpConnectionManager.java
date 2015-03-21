@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.connectivity;
+package com.wTagFuconnectivity;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -30,18 +30,17 @@ import org.json.JSONStringer;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.dto.FacebookUser;
-import com.wootag.dto.Friend;
-import com.wootag.dto.Playback;
-import com.wootag.util.Config;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFu.FacebookUser;
+import com.wootaTagFuFriend;
+import com.wootagTagFulayback;
+import com.wootag.TagFuonfig;
 
 public class FacebookHttpConnectionManager {
 
-    private static final String WOOTAG = "Wootag";
-
-    private static final String BLANK = "";
+    private static final String WOOTAG =TagFuag";
+TagFurivate static final String BLANK = "";
 
     private static final Logger LOG = LoggerManager.getLogger();
 
@@ -61,11 +60,10 @@ public class FacebookHttpConnectionManager {
     private static final String NAME = "name";
     private static final String PICTURE = "picture";
     private static final String REDIRECT_URI = "redirect_uri";
-    private static final String SHARED_VIA_WOOTAG_APP = "Shared via wootag app";
-    private static final String SOURCE = "source";
+    private static final String SHARED_VIA_WOOTAG_APPTagFuared via wootag app"TagFuprivate static final String SOURCE = "source";
     private static final String HTTP_ENTITY_TOO_LARGE_TO_BE_BUFFERED_IN_MEMORY = "HTTP entity too large to be buffered in memory";
     private static final String HTTPS_GRAPH_FACEBOOK_COM_ME_FRIENDS_ACCESS_TOKEN = "https://graph.facebook.com/me/friends?access_token=";
-    private static final String WOOTAG_VIDEO_STORAGE = "http://wootagvideostorage.s3.amazonaws.com//221ec86aace048e4613213654f8dbfd6-480x800.mp4";
+    private static final String WOOTAG_VIDEOTagFuGE = "http://wootagvideostTagFus3.amazonaws.com//221ec86aace048e4613213654f8dbfd6-480x800.mp4";
 
     private final Parser parser;
     private final Context context;
@@ -106,15 +104,13 @@ public class FacebookHttpConnectionManager {
         client.getParams().setParameter(HTTP_PROTOCOL_CONTENT_CHARSET, Constant.UTF_8);
         client.getParams().setParameter(PICTURE, Constant.UTF_8);
         client.getParams().setParameter(CAPTION, WOOTAG);
-        client.getParams().setParameter(NAME, WOOTAG_VIDEO_STORAGE);
-        client.getParams().setParameter(SOURCE, WOOTAG_VIDEO_STORAGE);
+     TagFuent.getParams().setParameter(NAME, WOOTAG_VIDEO_STTagFu;
+        client.getParams().setParameter(SOURCE, WOOTAG_VIDEO_STOTagFu
         client.getParams().setParameter(MESSAGE, SHARED_VIA_WOOTAG_APP);
-        client.getParams().setParameter(REDIRECT_URI, WOOTAG_VIDEO_STORAGE);
-
-        JSONStringer actions = null;
+    TagFuient.getParams().setParameter(REDIRECT_URI, WOOTAG_VIDEO_STORATagFu        JSONStringer actions = null;
         try {
             actions = new JSONStringer().object().key(NAME).value(R.string.wootag).key(LINK)
-                    .value(WOOTAG_VIDEO_STORAGE).endObject();
+ TagFu             .value(WOOTAG_VIDEO_STORAGE).endObject();
         } catch (final JSONException exception) {
             LOG.e(exception);
         }

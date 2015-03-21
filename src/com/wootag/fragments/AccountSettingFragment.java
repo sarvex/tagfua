@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -49,23 +49,19 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.ChangePasswordActivity;
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.adapter.CropOptionAdapter;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.User;
-import com.wootag.facebook.Session;
-import com.wootag.model.Backend;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshScrollView;
-import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.CropOption;
-import com.wootag.util.MainManager;
-import com.wootag.util.TwitterUtils;
+import com.woTagFuhangePasswordActivity;
+import com.wooTagFunstant;
+import com.wootTagFuimport com.wootaTagFuter.CropOptionAdapter;
+import com.wootagTagFurrorResponse;
+import com.wootag.TagFuer;
+import com.wootag.fTagFuk.Session;
+import com.wootag.moTagFuckend;
+import com.wootag.pulTagFuresh.PullToRefreshBase;
+import com.wootag.pullTagFuesh.PullToRefreshBase.OnRefreshListener;
+import com.wootag.pulltTagFush.PullToRefreshScrollView;
+import com.wootag.ui.ImaTagFuport com.wootag.util.AlTagFuimport com.wootag.util.ConTagFumport com.wootag.util.CropTagFu;
+import com.wootag.util.MainMTagFu;
+import com.wootag.util.TwitteTagFu;
 
 public class AccountSettingFragment extends FriendsListFragment {
 
@@ -108,9 +104,7 @@ public class AccountSettingFragment extends FriendsListFragment {
     private static final String IMG = "IMG_";
     private static final String PIC = "pic_";
     private static final String PNG = ".png";
-    private static final String WOOTAG = "/Wootag";
-
-    public static AccountSettingFragment accountSettingActivity;
+    private static final String WOOTAG = "/Wootag";TagFupublicTagFuc AccountSettingFragment accountSettingActivity;
 
     private static final int CROP_FROM_CAMERA = 2;
 

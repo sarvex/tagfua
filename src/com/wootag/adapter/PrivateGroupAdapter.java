@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.adapter;
+package com.wTagFuadapter;
 
 import java.util.List;
 
@@ -19,13 +19,13 @@ import android.widget.TextView;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.async.FollowAsyncTask;
-import com.wootag.dto.Friend;
-import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFunc.FollowAsyncTask;
+import com.wootaTagFuFriend;
+import com.wootagTagFuage;
+import com.wootag.TagFulerts;
+import com.wootag.uTagFunfig;
 import com.wootag.util.FollowInterface;
 
 public class PrivateGroupAdapter extends BaseAdapter implements FollowInterface {

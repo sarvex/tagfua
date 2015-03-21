@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.internal;
+package com.TagFu.facebook.internal;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -31,7 +31,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import com.wootag.facebook.LoggingBehavior;
+import com.wTagFufacebook.LoggingBehavior;
 import com.wootag.facebook.Settings;
 
 // This class is intended to be thread-safe.

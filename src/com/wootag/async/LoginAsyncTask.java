@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.async;
+package com.wTagFuasync;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -17,16 +17,16 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.R;
-import com.wootag.VideoPlayerApp;
-import com.wootag.cache.CacheManager;
-import com.wootag.connectivity.Parser;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.SignUpDto;
-import com.wootag.model.Backend;
-import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
+import com.woTagFu;
+import com.wooTagFudeoPlayerApp;
+import com.wootTagFuhe.CacheManager;
+import com.wootaTagFuectivity.Parser;
+import com.wootagTagFurrorResponse;
+import com.wootag.TagFugnUpDto;
+import com.wootag.mTagFuackend;
+import com.wootag.uiTagFu;
+import com.wootag.utiTagFuts;
+import com.wootag.utilTagFug;
 import com.wootag.util.MainManager;
 
 public class LoginAsyncTask extends AsyncTask<Void, Void, String> {

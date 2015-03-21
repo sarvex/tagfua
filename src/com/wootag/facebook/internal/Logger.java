@@ -7,14 +7,14 @@
  * License.
  */
 
-package com.wootag.facebook.internal;
+package com.TagFu.facebook.internal;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import android.util.Log;
 
-import com.wootag.facebook.LoggingBehavior;
+import com.wTagFufacebook.LoggingBehavior;
 import com.wootag.facebook.Settings;
 
 /**

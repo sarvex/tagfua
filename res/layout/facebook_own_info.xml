@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:id="@+id/aboutuser"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/transparent"
     android:orientation="vertical"
-    android:visibility="gone" >
+    android:visibility="gone">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -16,11 +16,11 @@
         android:layout_marginRight="50dp"
         android:layout_marginTop="15dp"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/exitfbfeed"
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/facebook_header"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/userbannerName"
@@ -50,7 +50,7 @@
             android:layout_height="match_parent"
             android:background="@color/tag_layout_bg_color"
             android:orientation="vertical"
-            android:padding="@dimen/margin" >
+            android:padding="@dimen/margin">
 
             <RelativeLayout
                 android:id="@+id/lay"
@@ -58,13 +58,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin"
                 android:layout_marginRight="@dimen/margin"
-                android:layout_marginTop="@dimen/smallmargin" >
+                android:layout_marginTop="@dimen/smallmargin">
 
                 <RelativeLayout
                     android:id="@+id/profileRR"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true" >
+                    android:layout_alignParentLeft="true">
 
                     <ImageView
                         android:id="@+id/imageView3"
@@ -73,7 +73,7 @@
                         android:layout_centerInParent="true"
                         android:background="@drawable/layout_background" />
 
-                    <com.wootag.ui.RoundedImageView
+                    <com.wTagFuui.RoundedImageView
                         android:id="@+id/ownerimage"
                         android:layout_width="76dp"
                         android:layout_height="76dp"
@@ -87,9 +87,9 @@
                     android:layout_marginLeft="@dimen/margin"
                     android:layout_marginTop="@dimen/smallmargin"
                     android:layout_toRightOf="@+id/profileRR"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
-                    <com.wootag.ui.CustomTextView
+                    <com.woTagFui.CustomTextView
                         android:id="@+id/ownfbname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                         android:textSize="18sp"
                         foo:customFont="@string/app_bold_font_name" />
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wooTagFu.CustomTextView
                         android:id="@+id/lastseen"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -123,9 +123,9 @@
                 android:layout_gravity="left"
                 android:layout_marginLeft="@dimen/margin"
                 android:layout_marginTop="@dimen/smallmargin"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
-                <com.wootag.ui.CustomTextView
+                <com.wootTagFuCustomTextView
                     android:id="@+id/recentupdates"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -135,7 +135,7 @@
                     android:textSize="15sp"
                     foo:customFont="@string/app_bold_font_name" />
 
-                <com.wootag.ui.CustomTextView
+                <com.wootaTagFuustomTextView
                     android:id="@+id/recentupdatestext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin" >
+                android:layout_margin="@dimen/margin">
 
                 <Button
                     android:id="@+id/postonwall"
@@ -162,7 +162,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="@dimen/margin" >
+                    android:layout_marginRight="@dimen/margin">
 
                     <ImageView
                         android:id="@+id/ownonlineimageview"

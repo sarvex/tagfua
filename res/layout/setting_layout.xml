@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/notificationlayout_background"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include
         android:id="@+id/header"
@@ -12,17 +12,17 @@
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <View
                     android:layout_width="fill_parent"
@@ -33,9 +33,9 @@
                     android:id="@+id/editmyprofile"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/pushnotificationmargin" >
+                    android:padding="@dimen/pushnotificationmargin">
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wTagFuui.CustomTextView
                         style="@style/notificationtextview"
                         android:layout_centerVertical="true"
                         android:text="@string/edit_my_profile"
@@ -60,9 +60,9 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/pushnotificationmargin"
-                    android:visibility="gone" >
+                    android:visibility="gone">
 
-                    <com.wootag.ui.CustomTextView
+                    <com.woTagFui.CustomTextView
                         style="@style/notificationtextview"
                         android:layout_centerVertical="true"
                         android:text="@string/videos_i_am_tagged"
@@ -88,14 +88,14 @@
                     android:layout_height="wrap_content"
                     android:background="@color/notification_header_background"
                     android:orientation="vertical"
-                    android:padding="@dimen/pushnotificationmargin" >
+                    android:padding="@dimen/pushnotificationmargin">
 
                     <View
                         android:layout_width="fill_parent"
                         android:layout_height="@dimen/notificationheaderpadding"
                         android:background="@color/notification_header_background" />
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wooTagFu.CustomTextView
                         style="@style/notificationtextview"
                         android:text="@string/support"
                         android:textColor="@color/notification_header_text_color"
@@ -112,9 +112,9 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/pushnotificationmargin"
-                    android:visibility="gone" >
+                    android:visibility="gone">
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wootTagFuCustomTextView
                         style="@style/notificationtextview"
                         android:layout_centerVertical="true"
                         android:text="@string/report_a_problem"
@@ -139,9 +139,9 @@
                     android:id="@+id/privacypolicy"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/pushnotificationmargin" >
+                    android:padding="@dimen/pushnotificationmargin">
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wootaTagFuustomTextView
                         style="@style/notificationtextview"
                         android:layout_centerVertical="true"
                         android:text="@string/privacy_policy"
@@ -165,9 +165,9 @@
                     android:id="@+id/terms"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/pushnotificationmargin" >
+                    android:padding="@dimen/pushnotificationmargin">
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wootagTagFustomTextView
                         style="@style/notificationtextview"
                         android:layout_centerVertical="true"
                         android:text="@string/terms_of_service"
@@ -191,12 +191,12 @@
                     android:id="@+id/help"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/pushnotificationmargin" >
+                    android:padding="@dimen/pushnotificationmargin">
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wootag.TagFutomTextView
                         style="@style/notificationtextview"
                         android:layout_centerVertical="true"
-                        android:text="@string/wootag_help_center"
+                        android:text="@string/wootag_hTagFunter"
                         foo:customFont="@string/app_bold_font_name" />
 
                     <ImageView
@@ -218,14 +218,14 @@
                     android:layout_height="wrap_content"
                     android:background="@color/notification_header_background"
                     android:orientation="vertical"
-                    android:padding="@dimen/pushnotificationmargin" >
+                    android:padding="@dimen/pushnotificationmargin">
 
                     <View
                         android:layout_width="fill_parent"
                         android:layout_height="@dimen/notificationheaderpadding"
                         android:background="@color/notification_header_background" />
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wootag.uiTagFumTextView
                         style="@style/notificationtextview"
                         android:text="@string/preferences"
                         android:textColor="@color/notification_header_text_color"
@@ -241,9 +241,9 @@
                     android:id="@+id/sharesettings"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/pushnotificationmargin" >
+                    android:padding="@dimen/pushnotificationmargin">
 
-                    <com.wootag.ui.CustomTextView
+                    <com.wootag.ui.TagFuTextView
                         style="@style/notificationtextview"
                         android:layout_centerVertical="true"
                         android:text="@string/share_settings"
@@ -267,7 +267,7 @@
                     android:id="@+id/notificationsettings"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/pushnotificationmargin" >
+                    android:padding="@dimen/pushnotificationmargin">
 
                     <com.wootag.ui.CustomTextView
                         style="@style/notificationtextview"

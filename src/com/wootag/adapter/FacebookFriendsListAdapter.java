@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.adapter;
+package com.wTagFuadapter;
 
 import java.util.List;
 
@@ -22,11 +22,11 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.dto.Friend;
-import com.wootag.ui.Image;
-import com.wootag.util.Config;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFu.Friend;
+import com.wootaTagFumage;
+import com.wootagTagFuConfig;
 
 public class FacebookFriendsListAdapter extends ArrayAdapter<Friend> {
 

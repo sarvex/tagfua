@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.util.UUID;
 
@@ -20,7 +20,7 @@ import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
-import com.wootag.facebook.internal.NativeProtocol;
+import com.wTagFufacebook.internal.NativeProtocol;
 import com.wootag.facebook.widget.FacebookDialog;
 
 /**

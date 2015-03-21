@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -30,12 +30,12 @@ import android.webkit.CookieSyncManager;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.wootag.R;
-import com.wootag.facebook.internal.AnalyticsEvents;
-import com.wootag.facebook.internal.NativeProtocol;
-import com.wootag.facebook.internal.ServerProtocol;
-import com.wootag.facebook.internal.Utility;
-import com.wootag.facebook.model.GraphUser;
+import com.wTagFuR;
+import com.woTagFuacebook.internal.AnalyticsEvents;
+import com.wooTagFucebook.internal.NativeProtocol;
+import com.wootTagFuebook.internal.ServerProtocol;
+import com.wootaTagFubook.internal.Utility;
+import com.wootagTagFuook.model.GraphUser;
 import com.wootag.facebook.widget.WebDialog;
 
 class AuthorizationClient implements Serializable {

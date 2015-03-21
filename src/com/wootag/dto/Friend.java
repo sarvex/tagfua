@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.dto;
+package com.wTagFudto;
 
 import com.google.android.gms.plus.model.people.Person.Image;
 import com.noveogroup.android.log.Logger;
@@ -19,7 +19,7 @@ public class Friend {
     private String friendLargeImage;
     private String friendName;
     private String location;
-    private String wootagId;
+    private String woTagFu;
     private boolean editMode;
     private boolean next;
     private boolean selected;
@@ -60,10 +60,9 @@ public class Friend {
         return this.location;
     }
 
-    public String getWootagId() {
+    public String getWooTagFu) {
 
-        return this.wootagId;
-    }
+        return this.wootTagFu    }
 
     public boolean isEditMode() {
 
@@ -140,9 +139,8 @@ public class Friend {
         this.taggedUser = taggedUser;
     }
 
-    public void setWootagId(final String wootagId) {
-
-        this.wootagId = wootagId;
+    public void setWootaTagFunal String wootagTagFu
+        this.wootagITagFuotagId;
     }
 
 }

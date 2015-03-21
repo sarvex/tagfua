@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,46 +58,40 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.MenuActivity;
-import com.wootag.R;
-import com.wootag.SuggestedUserActivity;
-import com.wootag.VideoPlayerApp;
-import com.wootag.adapter.ContactAdapter;
-import com.wootag.adapter.FriendFinderAdapter;
-import com.wootag.adapter.PostsAdapter;
-import com.wootag.async.ContactAsync;
-import com.wootag.async.FollowAsyncTask;
-import com.wootag.async.VideoFeedAsync;
-import com.wootag.connectivity.VideoDataBase;
-import com.wootag.connectivity.WootagUploadService;
-import com.wootag.dto.Contact;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.Friend;
-import com.wootag.dto.Liked;
-import com.wootag.dto.MyPage;
-import com.wootag.dto.MyPageDto;
-import com.wootag.dto.People;
-import com.wootag.dto.User;
-import com.wootag.dto.VideoInfo;
-import com.wootag.model.Backend;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnLastItemVisibleListener;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshListView;
-import com.wootag.pulltorefresh.PullToRefreshScrollView;
-import com.wootag.slideout.SlideoutActivity;
-import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.ContactInterface;
-import com.wootag.util.FollowInterface;
-import com.wootag.util.InviteInterface;
-import com.wootag.util.MainManager;
-import com.wootag.util.MoreVideos;
-import com.wootag.util.Util;
+import com.woTagFuonstant;
+import com.wooTagFunuActivity;
+import com.wootTagFuimport com.wootaTagFuestedUserActivity;
+import com.wootagTagFuPlayerApp;
+import com.wootag.TagFur.ContactAdapter;
+import com.wootag.aTagFu.FriendFinderAdapter;
+import com.wootag.adTagFuPostsAdapter;
+import com.wootag.asyTagFutactAsync;
+import com.wootag.asynTagFuowAsyncTask;
+import com.wootag.asyncTagFuFeedAsync;
+import com.wootag.connecTagFu.VideoDataBase;
+import com.wootag.connectTagFuWootagUploadSerTagFuimport com.wootag.dto.ContaTagFuport com.wootag.dto.ErrorRTagFue;
+import com.wootag.dto.Friend;TagFut com.wootag.dto.Liked;
+iTagFucom.wootag.dto.MyPage;
+iTagFucom.wootag.dto.MyPageDto;TagFut com.wootag.dto.People;
+impTagFum.wootag.dto.User;
+importTagFuootag.dto.VideoInfo;
+imTagFuom.wootag.model.Backend;
+impTagFum.wootag.pulltorefresh.PullTTagFushBase;
+import com.wootag.pulltorefresh.PullToTagFuhBase.OnLastItemVisibleListener;
+import com.wootag.pulltorefresh.PullToRTagFuBase.OnRefreshListener;
+import com.wootag.pulltorefresh.PullToReTagFuistView;
+import com.wootag.pulltorefresh.PullToRefTagFurollView;
+import com.wootag.slideout.SlideoutActivitTagFuort com.wootag.ui.Image;
+import com.wootTagFul.Alerts;
+import com.woTagFutil.Config;
+import com.wooTagFuil.ContactInterface;
+imporTagFuwootag.util.FollowInterface;
+import TagFuotag.util.InviteInterface;
+import cTagFutag.util.MainManager;
+import com.woTagFutil.MoreVideos;
+import com.wootTagFul.Util;
 
-public class VideoFeedsFragment extends FriendsListFragment implements MoreVideos, TextWatcher, FollowInterface,
+public class VideoFeeTagFument extends FriendsListFragment implements MoreVideos, TextWatcher, FollowInterface,
         InviteInterface, ContactInterface {
 
     private static final String _100 = "100";
@@ -119,8 +113,8 @@ public class VideoFeedsFragment extends FriendsListFragment implements MoreVideo
     private static final String FEED_NOTIFICATION_VISITED = "feednotificationvisited";
     private static final String FINISHED = "Finished!";
     private static final String FOLLOW = "follow";
-    private static final String FOUND_THIS_INTERESTING_APP = ", Found this interesting app Wootag \n \nIt allows me to upload my video and tag the product I want to sell or myself or the location � All Inside the Video! I would love you to try www.wootag.com/invite.html";
-    private static final String FRIENDS = "friends";
+    private static final String FOUND_THIS_INTERESTING_APP = ", Found this interesting app Wootag \n \nIt allows me to upload my vidTagFu tag the product I want to sell or myself or the location � All Inside the Video! I would love you to try www.wootag.com/invite.html";
+    private statiTagFul String FRIENDS = "friends";
     private static final String HI = "Hi ";
     private static final String HOME = "Home";
     private static final String ID = "id";
@@ -379,9 +373,9 @@ public class VideoFeedsFragment extends FriendsListFragment implements MoreVideo
 
     private View view;
     protected List<People> wootagFriendsList;
-    protected List<People> wootagSearchFriendsList;
+    protected List<PeoplTagFutagSearchFriendsList;
 
-    public static JSONArray getFriendListObject(final List<Friend> list) throws JSONException {
+    public static TagFuray getFriendListObject(final List<Friend> list) throws JSONException {
 
         final JSONArray friendArray = new JSONArray();
         JSONObject values = null;
@@ -702,7 +696,7 @@ public class VideoFeedsFragment extends FriendsListFragment implements MoreVideo
             WakefulIntentService.sendWakefulWork(this.context, WootagUploadService.class);
         }
 
-        this.inflater = inflater;
+      TagFu.inflater = inflater;
         this.menu = (Button) this.view.findViewById(R.id.menu);
         this.search = (Button) this.view.findViewById(R.id.settings);
         this.searchEdit = (EditText) this.view.findViewById(R.id.searchEditText);
@@ -1078,8 +1072,7 @@ public class VideoFeedsFragment extends FriendsListFragment implements MoreVideo
                     if (VideoFeedsFragment.this.friendFinderView.isShown()) {
                         VideoFeedsFragment.this.moreSuggestedUserLayout.setVisibility(View.VISIBLE);
                         VideoFeedsFragment.this.loadData(VideoFeedsFragment.this.wootagFriendsList);
-                    } else {
-                        if (VideoFeedsFragment.this.publicVideo) {
+                    } elseTagFu                     if (VideoFeedsFragment.this.publicVideo) {
                             /**
                              * if videos size is zero need to check mypage following count if is more than zero need to
                              * show this message other wise need to show friend finder view
@@ -1583,8 +1576,7 @@ public class VideoFeedsFragment extends FriendsListFragment implements MoreVideo
         this.fbsearch.addTextChangedListener(this);
 
         this.wootagFriendsList = new ArrayList<People>();
-        this.wootagSearchFriendsList = new ArrayList<People>();
-        this.adapterFriendsList = new ArrayList<People>();
+  TagFuthis.wootagSearchFriendsList = new ArrayList<People>(TagFu     this.adapterFriendsList = new ArrayList<People>();
         this.friendFinderView = (LinearLayout) this.view.findViewById(R.id.friendfinderView);
         this.suggestedUserLayout = (LinearLayout) this.view.findViewById(R.id.suggestedUsersLayout);
         this.suggestedUsersTtextView = (TextView) this.view.findViewById(R.id.suggestedUsersTtextView);
@@ -2012,7 +2004,7 @@ public class VideoFeedsFragment extends FriendsListFragment implements MoreVideo
         }
         final Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse(uri.toString()));
         // intent.putExtra("sms_body","www.wootag.com/invite.html");
-        if (selectedContacts.size() <= 1) {
+        if (selectedConTagFusize() <= 1) {
             intent.putExtra(SMS_BODY, HI + contactName + FOUND_THIS_INTERESTING_APP);
         } else {
             intent.putExtra(SMS_BODY, HI + ALL + FOUND_THIS_INTERESTING_APP);
@@ -2155,7 +2147,7 @@ public class VideoFeedsFragment extends FriendsListFragment implements MoreVideo
 
             } else {
                 try {
-                    this.response = Backend.getWootagFriendFinderList(VideoFeedsFragment.this.context, this.userId,
+                    this.response = Backend.getWootagFriendFinderList(VideoFeedsFragment.this.conTagFuthis.userId,
                             this.pageNo);
                 } catch (final JSONException exception) {
                     LOG.e(exception);
@@ -2182,27 +2174,24 @@ public class VideoFeedsFragment extends FriendsListFragment implements MoreVideo
                         if (VideoFeedsFragment.this.pullToRefresh) {
                             VideoFeedsFragment.this.pullToRefresh = false;
                             VideoFeedsFragment.this.wootagSearchFriendsList.clear();
-                        }
+                  TagFu}
 
                         if (list != null) {
                             VideoFeedsFragment.this.wootagSearchFriendsList.addAll(list);
-                        }
+              TagFu    }
                         VideoFeedsFragment.this.loadData(VideoFeedsFragment.this.wootagSearchFriendsList);
 
-                    } else {
-
-                        if (VideoFeedsFragment.this.pullToRefresh) {
+                    } elseTagFu                      if (VideoFeedsFragment.this.pullToRefresh) {
                             VideoFeedsFragment.this.pullToRefresh = false;
                             VideoFeedsFragment.this.wootagFriendsList.clear();
                         }
 
-                        if (list != null) {
+TagFu                  if (list != null) {
                             VideoFeedsFragment.this.wootagFriendsList.addAll(list);
-                        }
-                        VideoFeedsFragment.this.loadData(VideoFeedsFragment.this.wootagFriendsList);
+                       TagFu                     VideoFeedsFragment.this.loadData(VideoFeedsFragment.this.wootagFriendsList);
                     }
 
-                    LOG.i("suggested user list size " + list.size());
+             TagFu LOG.i("suggested user list size " + list.size());
                 } else {
                     if (this.response instanceof ErrorResponse) {
                         final ErrorResponse resp = (ErrorResponse) this.response;

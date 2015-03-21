@@ -3,4 +3,4 @@
  * any of the classes in this package is unsupported, and they may be modified or removed without warning at
  * any time.
  */
-package com.wootag.facebook.internal;
+package com.TagFu.facebook.internal;

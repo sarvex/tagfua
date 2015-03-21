@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.io.File;
 import java.io.IOException;
@@ -42,9 +42,9 @@ import android.widget.Toast;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
-import com.wootag.util.Util;
+import com.woTagFutil.Config;
+import com.wooTagFuil.MainManager;
+import com.wootTagFul.Util;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class AndroidVideoCapture extends Activity implements OnClickListener, Camera.PreviewCallback,

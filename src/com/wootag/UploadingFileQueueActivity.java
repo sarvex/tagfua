@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,10 +21,10 @@ import android.widget.TextView;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.adapter.UploadingFileQueueAdapter;
-import com.wootag.connectivity.VideoDataBase;
-import com.wootag.dto.VideoInfo;
-import com.wootag.util.Config;
+import com.woTagFudapter.UploadingFileQueueAdapter;
+import com.wooTagFunnectivity.VideoDataBase;
+import com.wootTagFu.VideoInfo;
+import com.wootaTagFu.Config;
 import com.wootag.util.MainManager;
 
 /**

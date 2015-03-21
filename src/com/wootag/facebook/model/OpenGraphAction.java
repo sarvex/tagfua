@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.model;
+package com.TagFu.facebook.model;
 
 import java.util.Date;
 import java.util.List;

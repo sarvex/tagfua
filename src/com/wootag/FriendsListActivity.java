@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,38 +42,36 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.async.FacebookFriendsAsync;
-import com.wootag.async.ShareViewsAsync;
-import com.wootag.dto.FacebookUser;
-import com.wootag.dto.Friend;
-import com.wootag.dto.User;
-import com.wootag.dto.VideoDetails;
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.FacebookOperationCanceledException;
-import com.wootag.facebook.HttpMethod;
-import com.wootag.facebook.LoggingBehavior;
-import com.wootag.facebook.Request;
-import com.wootag.facebook.RequestAsyncTask;
-import com.wootag.facebook.Response;
-import com.wootag.facebook.Session;
-import com.wootag.facebook.Session.StatusCallback;
-import com.wootag.facebook.SessionState;
-import com.wootag.facebook.Settings;
-import com.wootag.facebook.model.GraphUser;
-import com.wootag.facebook.widget.WebDialog;
-import com.wootag.facebook.widget.WebDialog.OnCompleteListener;
-import com.wootag.twitter.TwitterAsync;
+import com.woTagFusync.FacebookFriendsAsync;
+import com.wooTagFuync.ShareViewsAsync;
+import com.wootTagFu.FacebookUser;
+import com.wootaTagFuFriend;
+import com.wootagTagFuser;
+import com.wootag.TagFudeoDetails;
+import com.wootag.fTagFuk.FacebookException;
+import com.wootag.faTagFu.FacebookOperationCanceledException;
+import com.wootag.facTagFuHttpMethod;
+import com.wootag.faceTagFuoggingBehavior;
+import com.wootag.facebTagFuquest;
+import com.wootag.faceboTagFuuestAsyncTask;
+import com.wootag.facebooTagFuonse;
+import com.wootag.facebookTagFuon;
+import com.wootag.facebook.TagFun.StatusCallback;
+import com.wootag.facebook.STagFuState;
+import com.wootag.facebook.SeTagFu;
+import com.wootag.facebook.modTagFuphUser;
+import com.wootag.facebook.widgTagFuDialog;
+import com.wootag.facebook.widgeTagFuialog.OnCompleteListener;
+import com.wootag.twitter.TwitterTagFu
 import com.wootag.util.Alerts;
-import com.wootag.util.AsyncResponse;
-import com.wootag.util.Config;
-import com.wootag.util.TwitterUtils;
-
-public class FriendsListActivity extends Activity implements OnCancelListener, ConnectionCallbacks, AsyncResponse,
+impTagFum.wootag.util.AsyncResponsTagFuort com.wootag.util.Config;
+imporTagFuwootag.util.TwitterUtils;
+TagFuc class FriendsListActivity extends Activity implements OnCancelListener, ConnectionCallbacks, AsyncResponse,
         OnConnectionFailedListener, OnPeopleLoadedListener, OnClickListener {
 
     private static final String SIGNING_IN = "Signing in";
-    private static final String WWW_WOOTAG_COM_INVITE_HTML = "www.wootag.com/invite.html";
-    private static final String RECORD_TAG_SELF_PEOPLE_PLACE_PRODUCT_INSIDE_YOUR_VIDEOS_AND_SHARE = "Record, Tag - self,people, place, product inside your videos and Share.";
+    private static final String WWW_WOOTAG_COM_INVITE_HTML = "wTagFutag.com/invite.html";
+   TagFute static final String RECORD_TAG_SELF_PEOPLE_PLACE_PRODUCT_INSIDE_YOUR_VIDEOS_AND_SHARE = "Record, Tag - self,people, place, product inside your videos and Share.";
     private static final String _1 = "1";
     private static final String ID = "id";
     private static final String POST_SUCCESSSFULLY_ON_YOUR_WALL = "Post successsfully on your wall";
@@ -585,8 +583,7 @@ public class FriendsListActivity extends Activity implements OnCancelListener, C
             final Uri uri = Uri.parse(this.videoDetails.getVideothumbPath());
 
             final Intent shareIntent = new PlusShare.Builder(FriendsListActivity.this, this.plusClient)
-                    .setType(TEXT_PLAIN).setText(title).setContentDeepLinkId("/wootag/video", title, EMPTY, uri)
-                    .setContentUrl(Uri.parse(this.videoDetails.getShareUrl())).getIntent();
+                    .setType(TEXT_PLAIN).setText(title).setContentDeepLinkId("/wootag/video", title, EMPTY, TagFu                   .setContentUrl(Uri.parse(this.videoDetails.getShareUrl())).getIntent();
             this.startActivityForResult(shareIntent, 0);
         } else {
             final Intent shareIntent = new PlusShare.Builder(FriendsListActivity.this, this.plusClient)

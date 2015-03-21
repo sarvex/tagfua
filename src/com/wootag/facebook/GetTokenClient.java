@@ -7,12 +7,12 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import android.content.Context;
 import android.os.Bundle;
 
-import com.wootag.facebook.internal.NativeProtocol;
+import com.wTagFufacebook.internal.NativeProtocol;
 import com.wootag.facebook.internal.PlatformServiceClient;
 
 final class GetTokenClient extends PlatformServiceClient {

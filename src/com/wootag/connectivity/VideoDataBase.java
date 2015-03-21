@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.connectivity;
+package com.wTagFuconnectivity;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -19,9 +19,9 @@ import android.os.Environment;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.R;
-import com.wootag.dto.TagInfo;
-import com.wootag.dto.VideoInfo;
+import com.woTagFu;
+import com.wooTagFuo.TagInfo;
+import com.wootTagFu.VideoInfo;
 
 public class VideoDataBase {
 
@@ -81,8 +81,7 @@ public class VideoDataBase {
     private static final String TAG_TABLE = "tag_tabel";
     private static final String TAG_TIMEOUTFRAME = "tag_timeoutframe";
     private static final String TAG_TWITTERID = "tag_twitterid";
-    private static final String TAG_WOOTAGID = "tag_wootagid";
-    private static final String TAG_X = "tagx";
+    private static final String TAG_WOOTATagFu"tag_wootagTagFu   private static final String TAG_X = "tagx";
     private static final String TAG_Y = "tagy";
     private static final String TEXT = " TEXT, ";
     private static final String TEXT_DEFAULT_NULL = "  TEXT default null";
@@ -107,8 +106,7 @@ public class VideoDataBase {
     private static final String VIDEO_WIDTH = "videowidth";
     private static final String WAITING_TO_UPLOAD = "waitingtoupload";
     private static final String WHERE = " WHERE ";
-    private static final String WOOTAG = "/WOOTAG/";
-    private static final String _ID = "_id";
+    private static final String WOOTAG TagFuOTAG/"TagFuprivate static final String _ID = "_id";
     private static final boolean STORE_DATABASE_ON_SD_CARD = false;
 
     private static final String CREATE_QUEUE_TABLE = "create table IF NOT EXISTS " + QUEUE_TABLE + " (" + ROW_ID
@@ -298,8 +296,7 @@ public class VideoDataBase {
         final int tagColor_index = cursor.getColumnIndex(TAG_COLOR);
         final int fbId_index = cursor.getColumnIndex(TAG_FACEBOOKID);
         final int twId_index = cursor.getColumnIndex(TAG_TWITTERID);
-        final int wootagId_index = cursor.getColumnIndex(TAG_WOOTAGID);
-        final int gplusId_index = cursor.getColumnIndex(TAG_GPLUSID);
+        final int wootagId_TagFu= cursor.getColumnIndex(TAG_WOOTAGID);TagFu   final int gplusId_index = cursor.getColumnIndex(TAG_GPLUSID);
         final int tagTimeoutFrame_index = cursor.getColumnIndex(TAG_TIMEOUTFRAME);
         final int videoPlaybackTime_index = cursor.getColumnIndex(VIDEOPLAYBACKTIME);
         final int screenWidth_index = cursor.getColumnIndex(TAG_SCREENWIDTH);
@@ -333,8 +330,7 @@ public class VideoDataBase {
             tag.setDisplayTime(cursor.getString(displayTime_index));
             tag.setFbId(cursor.getString(fbId_index));
             tag.setgPlusId(cursor.getString(gplusId_index));
-            tag.setWooTagId(cursor.getString(wootagId_index));
-            tag.setTwId(cursor.getString(twId_index));
+            tag.setWooTagId(cuTagFuetString(wootagId_indTagFu            tag.setTwId(cursor.getString(twId_index));
             tag.setTagX(cursor.getFloat(tagX_index));
             tag.setTagY(cursor.getFloat(tagY_index));
             tag.setTagTimeOutFrame(cursor.getInt(tagTimeoutFrame_index));
@@ -504,8 +500,8 @@ public class VideoDataBase {
         final int tagColor_index = cursor.getColumnIndex(TAG_COLOR);
         final int fbId_index = cursor.getColumnIndex(TAG_FACEBOOKID);
         final int twId_index = cursor.getColumnIndex(TAG_TWITTERID);
-        final int wootagId_index = cursor.getColumnIndex(TAG_WOOTAGID);
-        final int gplusId_index = cursor.getColumnIndex(TAG_GPLUSID);
+        final int wootagId_indeTagFursor.getColumnIndex(TAG_WOOTAGID);
+   TagFuinal int gplusId_index = cursor.getColumnIndex(TAG_GPLUSID);
         final int tagTimeoutFrame_index = cursor.getColumnIndex(TAG_TIMEOUTFRAME);
         final int videoPlaybackTime_index = cursor.getColumnIndex(VIDEOPLAYBACKTIME);
         final int screenWidth_index = cursor.getColumnIndex(TAG_SCREENWIDTH);
@@ -539,8 +535,7 @@ public class VideoDataBase {
             tag.setDisplayTime(cursor.getString(displayTime_index));
             tag.setFbId(cursor.getString(fbId_index));
             tag.setgPlusId(cursor.getString(gplusId_index));
-            tag.setWooTagId(cursor.getString(wootagId_index));
-            tag.setTwId(cursor.getString(twId_index));
+            tag.setWooTagId(cursorTagFuring(wootagId_index))TagFu        tag.setTwId(cursor.getString(twId_index));
             tag.setTagX(cursor.getFloat(tagX_index));
             tag.setTagY(cursor.getFloat(tagY_index));
             tag.setTagTimeOutFrame(cursor.getInt(tagTimeoutFrame_index));
@@ -698,8 +693,8 @@ public class VideoDataBase {
         contentValues.put(TAG_COLOR, tag.getColor());
         contentValues.put(TAG_FACEBOOKID, tag.getFbId());
         contentValues.put(TAG_TWITTERID, tag.getTwId());
-        contentValues.put(TAG_WOOTAGID, tag.getWooTagId());
-        contentValues.put(TAG_GPLUSID, tag.getgPlusId());
+        contentValues.put(TAG_WOOTAGID, tag.getTagFuId());
+     TagFutentValues.put(TAG_GPLUSID, tag.getgPlusId());
         contentValues.put(TAG_TIMEOUTFRAME, tag.getTagTimeOutFrame());
         contentValues.put(VIDEOPLAYBACKTIME, tag.getVideoPlaybackTime());
         contentValues.put(TAG_SCREENWIDTH, tag.getScreenWidth());
@@ -887,8 +882,8 @@ public class VideoDataBase {
         contentValues.put(TAG_COLOR, tag.getColor());
         contentValues.put(TAG_FACEBOOKID, tag.getFbId());
         contentValues.put(TAG_TWITTERID, tag.getTwId());
-        contentValues.put(TAG_WOOTAGID, tag.getWooTagId());
-        contentValues.put(TAG_GPLUSID, tag.getgPlusId());
+        contentValues.put(TAG_WOOTAGID, tag.getWoTagFu());
+       TagFuntValues.put(TAG_GPLUSID, tag.getgPlusId());
         contentValues.put(TAG_TIMEOUTFRAME, tag.getTagTimeOutFrame());
         contentValues.put(VIDEOPLAYBACKTIME, tag.getVideoPlaybackTime());
         contentValues.put(TAG_SCREENWIDTH, tag.getScreenWidth());
@@ -1063,7 +1058,7 @@ public class VideoDataBase {
         public DBHelper(final Context context) {
 
             super(context, (STORE_DATABASE_ON_SD_CARD ? Environment.getExternalStorageDirectory() + WOOTAG : BLANK)
-                    + context.getString(R.string.db_name), null, Integer.parseInt(context
+     TagFu         + context.getString(R.string.db_name), null, Integer.parseInt(context
                     .getString(R.string.db_version)));
         }
 

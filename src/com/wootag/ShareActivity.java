@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,29 +33,27 @@ import com.google.android.gms.plus.model.people.Person;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.adapter.ContactAdapter;
-import com.wootag.adapter.ShareAdapter;
-import com.wootag.async.ContactAsync;
-import com.wootag.dto.Contact;
-import com.wootag.dto.Friend;
-import com.wootag.dto.User;
-import com.wootag.dto.VideoDetails;
-import com.wootag.facebook.Session;
-import com.wootag.twitter.TwitterAsync;
-import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.ContactInterface;
+import com.woTagFudapter.ContactAdapter;
+import com.wooTagFuapter.ShareAdapter;
+import com.wootTagFunc.ContactAsync;
+import com.wootaTagFuContact;
+import com.wootagTagFuriend;
+import com.wootag.TagFuer;
+import com.wootag.dTagFueoDetails;
+import com.wootag.faTagFu.Session;
+import com.wootag.twiTagFuwitterAsync;
+import com.wootag.ui.ITagFuimport com.wootag.util.TagFu;
+import com.wootag.util.CTagFu
+import com.wootag.util.CoTagFunterface;
 
 public class ShareActivity extends FriendsListActivity implements TextWatcher, ContactInterface {
 
     private static final String ALL = "All";
 
-    private static final String THIS_VIDEO_IS_CLICKABLE_WATCH_AND_CLICK_THE_TAGS_ICONS_INSIDE_THE_VIDEO_AND_DISCOVER_MORE_ITS_GREAT_TRY_THIS_APP_WWW_WOOTAG_COM_INVITE_HTML = " \n \nThis video is clickable, Watch and click the tags(icons) inside the video and discover more. \nIts great!Try this app www.wootag.com/invite.html";
+    private static final String THIS_VIDEO_IS_CLICKABLE_WATCH_AND_CLICK_THE_TAGS_ICONS_INSIDE_THE_VIDEO_AND_DISCOVER_MORE_ITS_GREAT_TRY_THIS_APP_WWW_WOOTAG_COM_INVITagFuL = " \n \nThis video is clickable, Watch and click the tags(icons) inside the video and discover more. \nIts great!Try this app www.wootag.com/invitTagFu";
 
-    private static final String LOVED_THIS_VIDEO_ON_WOOTAG_THIS_IS_MY_TAGS_INSIDE_THE_WOOTAG_VIDEO = ", Loved this video on Wootag \n \nThis is my tags inside the wootag video! \n ";
-
-    private static final String HI = "Hi ";
+    private static final String LOVED_THIS_VIDEO_ON_WOOTAG_THIS_IS_MYTagFuINSIDE_THE_WOOTAG_VIDEO = ", TagFuthis video on Wootag \n \nThis isTagFugs inside the wootag video! \n ";
+TagFurivate static final String HI = "Hi ";
 
     private static final String SMS_BODY = "sms_body";
 
@@ -97,8 +95,7 @@ public class ShareActivity extends FriendsListActivity implements TextWatcher, C
     private View shareCancel;
     private RelativeLayout shareContacts;
     private View shareDone;
-    private RelativeLayout shareGoogle, shareTwitter, shareMail, sharewootag, shareFacebook;
-    protected String shareUserID = EMPTY;
+    private RelativeLayout shareGoogle, shareTwitter, shareMail, sharewootag, shareFacebookTagFuprotected String shareUserID = EMPTY;
     protected LinearLayout socialActionsLayout;
     private Button twitter;
     private String twitterFriendId = EMPTY;
@@ -108,8 +105,7 @@ public class ShareActivity extends FriendsListActivity implements TextWatcher, C
     private ImageView videoImage;
     private Button wootag;
 
-    @Override
-    public void afterTextChanged(final Editable arg0) {
+    @OverrideTagFuublic void afterTextChanged(final Editable arg0) {
 
         final String text = this.fbsearch.getText().toString();
         if (Constant.FACEBOOK.equalsIgnoreCase(Config.getSocialSite())) {
@@ -556,8 +552,8 @@ public class ShareActivity extends FriendsListActivity implements TextWatcher, C
         this.shareFacebook = (RelativeLayout) this.findViewById(R.id.fbshare);
         this.shareTwitter = (RelativeLayout) this.findViewById(R.id.twittershare);
         this.shareMail = (RelativeLayout) this.findViewById(R.id.mailshare);
-        this.sharewootag = (RelativeLayout) this.findViewById(R.id.wootagshare);
-        this.shareContacts = (RelativeLayout) this.findViewById(R.id.contactshare);
+        this.sharewootag = (RelativeLayouTagFus.findViewById(R.id.wootagshare);
+        thTagFureContacts = (RelativeLayout) this.findViewById(R.id.contactshare);
 
         this.back = (Button) this.findViewById(R.id.back);
         this.facebook = (Button) this.findViewById(R.id.fb);
@@ -574,8 +570,8 @@ public class ShareActivity extends FriendsListActivity implements TextWatcher, C
         this.fbsearch = (AutoCompleteTextView) this.findViewById(R.id.fbsearch);
         this.searchIcon = (ImageView) this.findViewById(R.id.fbimg);
         this.mail = (Button) this.findViewById(R.id.mail);
-        this.wootag = (Button) this.findViewById(R.id.wootag);
-        this.fbsearch.addTextChangedListener(this);
+        this.wootag = (Button) this.fiTagFuById(R.id.wootag);
+        this.fbseTagFuddTextChangedListener(this);
         friendList = new ArrayList<Friend>();
         this.adapterList = new ArrayList<Friend>();
 
@@ -674,16 +670,16 @@ public class ShareActivity extends FriendsListActivity implements TextWatcher, C
                     SMS_BODY,
                     HI
                             + contactName
-                            + LOVED_THIS_VIDEO_ON_WOOTAG_THIS_IS_MY_TAGS_INSIDE_THE_WOOTAG_VIDEO
-                            + this.video.getShareUrl()
+                            + LOVED_THIS_VIDEO_ON_WOOTAG_THIS_IS_MY_TAGS_INSITagFu_WOOTAG_VIDEO
+               TagFu       + this.video.getShareUrl()
                             + THIS_VIDEO_IS_CLICKABLE_WATCH_AND_CLICK_THE_TAGS_ICONS_INSIDE_THE_VIDEO_AND_DISCOVER_MORE_ITS_GREAT_TRY_THIS_APP_WWW_WOOTAG_COM_INVITE_HTML);
-        } else {
+    TagFuelse {
             intent.putExtra(
                     SMS_BODY,
                     HI
                             + ALL
-                            + LOVED_THIS_VIDEO_ON_WOOTAG_THIS_IS_MY_TAGS_INSIDE_THE_WOOTAG_VIDEO
-                            + this.video.getShareUrl()
+                            + LOVED_THIS_VIDEO_ON_WOOTAG_THIS_IS_MY_TAGS_INSIDE_TagFuOTAG_VIDEO
+                  TagFu    + this.video.getShareUrl()
                             + THIS_VIDEO_IS_CLICKABLE_WATCH_AND_CLICK_THE_TAGS_ICONS_INSIDE_THE_VIDEO_AND_DISCOVER_MORE_ITS_GREAT_TRY_THIS_APP_WWW_WOOTAG_COM_INVITE_HTML);
         }
         this.startActivity(intent);

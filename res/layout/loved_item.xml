@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,12 +12,12 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="14dp"
         android:layout_marginRight="14dp"
-        android:layout_marginTop="8dp" >
+        android:layout_marginTop="8dp">
 
         <RelativeLayout
             android:id="@+id/profileImageRL"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -26,7 +26,7 @@
                 android:layout_centerInParent="true"
                 android:background="@drawable/layout_background" />
 
-            <com.wootag.ui.RoundedImageView
+            <com.wTagFuui.RoundedImageView
                 android:id="@+id/profileImageView"
                 android:layout_width="46dp"
                 android:layout_height="46dp"
@@ -42,7 +42,7 @@
             android:layout_marginRight="3dp"
             android:layout_toLeftOf="@+id/addImageView"
             android:layout_toRightOf="@+id/profileImageRL"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <com.wootag.ui.CustomTextView
                 android:id="@+id/nameTextView"

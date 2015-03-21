@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/notificationlayout_background"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include
         android:id="@+id/header"
@@ -20,7 +20,7 @@
         android:id="@+id/fbAuthentication"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/accountsettingoptionspadding" >
+        android:padding="@dimen/accountsettingoptionspadding">
 
         <Button
             android:id="@+id/fb"
@@ -34,9 +34,9 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/fb"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <com.wootag.ui.CustomTextView
+            <com.wTagFuui.CustomTextView
                 android:id="@+id/textfb"
                 style="@style/socialSiteTextView"
                 android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
                 android:text="@string/facebook"
                 foo:customFont="@string/app_bold_font_name" />
 
-            <com.wootag.ui.CustomTextView
+            <com.woTagFui.CustomTextView
                 android:id="@+id/fbmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
         android:id="@+id/twitterAuthentication"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/accountsettingoptionspadding" >
+        android:padding="@dimen/accountsettingoptionspadding">
 
         <Button
             android:id="@+id/twitter"
@@ -89,9 +89,9 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/twitter"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <com.wootag.ui.CustomTextView
+            <com.wooTagFu.CustomTextView
                 android:id="@+id/texttwitter"
                 style="@style/socialSiteTextView"
                 android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
                 android:text="@string/twitter"
                 foo:customFont="@string/app_bold_font_name" />
 
-            <com.wootag.ui.CustomTextView
+            <com.wootTagFuCustomTextView
                 android:id="@+id/twittermail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
         android:id="@+id/gplusAuthentication"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/accountsettingoptionspadding" >
+        android:padding="@dimen/accountsettingoptionspadding">
 
         <Button
             android:id="@+id/gplusshare"
@@ -144,9 +144,9 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/gplusshare"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <com.wootag.ui.CustomTextView
+            <com.wootaTagFuustomTextView
                 style="@style/socialSiteTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

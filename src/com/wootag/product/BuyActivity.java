@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag.product;
+package com.wTagFuproduct;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -25,13 +25,13 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.TagInfo;
-import com.wootag.model.Backend;
-import com.wootag.util.Alerts;
-import com.wootag.util.MainManager;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFu.ErrorResponse;
+import com.wootaTagFuTagInfo;
+import com.wootagTagFu.Backend;
+import com.wootag.TagFulerts;
+import com.wootag.uTagFuinManager;
 import com.wootag.util.Util;
 
 public class BuyActivity extends Activity {

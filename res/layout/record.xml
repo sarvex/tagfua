@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/recordView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <FrameLayout
             android:id="@+id/videoview"
@@ -28,8 +28,7 @@
             android:gravity="center"
             android:textColor="@color/twitter_bg_color"
             android:textSize="20sp"
-            android:visibility="visible" >
-        </Chronometer>
+            android:visibility="visible"></Chronometer>
 
         <LinearLayout
             android:id="@+id/recordinstructionview"
@@ -41,7 +40,7 @@
             android:alpha="0.8"
             android:background="@drawable/black_border"
             android:orientation="vertical"
-            android:padding="@dimen/smallmargin" >
+            android:padding="@dimen/smallmargin">
 
             <com.wootag.ui.CustomTextView
                 android:id="@+id/recordinstruction"
@@ -81,7 +80,7 @@
             android:paddingBottom="10dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:paddingTop="10dp" >
+            android:paddingTop="10dp">
 
             <ImageView
                 android:id="@+id/cancelrecord"

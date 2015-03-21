@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.util.AbstractList;
 import java.util.ArrayList;
@@ -122,7 +122,7 @@ public class RequestBatch extends AbstractList<Request> {
     /**
      * Executes this batch asynchronously. This function will return immediately, and the batch will be processed on a
      * separate thread. In order to process results of a request, or determine whether a request succeeded or failed, a
-     * callback must be specified (see {@link Request#setCallback(com.wootag.facebook.Request.Callback)})
+     * callback must be specified (see {@link Request#setCallback(com.wTagFufacebook.Request.Callback)})
      * <p/>
      * This should only be called from the UI thread.
      *

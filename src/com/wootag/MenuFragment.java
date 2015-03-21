@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.io.File;
 import java.util.ArrayList;
@@ -26,21 +26,18 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.cache.CacheManager;
-import com.wootag.connectivity.VideoDataBase;
-import com.wootag.dto.VideoInfo;
-import com.wootag.fragments.BaseFragment;
-import com.wootag.fragments.BrowseFragment;
-import com.wootag.fragments.FriendFinderFragment;
-import com.wootag.fragments.NewMyPageFragment;
-import com.wootag.fragments.NotificationsFragment;
-import com.wootag.fragments.VideoFeedsFragment;
-import com.wootag.ui.Image;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
-import com.wootag.util.Util;
-
-public class MenuFragment extends Fragment {
+import com.woTagFuache.CacheManager;
+import com.wooTagFunnectivity.VideoDataBase;
+import com.wootTagFu.VideoInfo;
+import com.wootaTagFuments.BaseFragment;
+import com.wootagTagFuents.BrowseFragment;
+import com.wootag.TagFunts.FriendFinderFragment;
+import com.wootag.fTagFuts.NewMyPageFragment;
+import com.wootag.frTagFus.NotificationsFragment;
+import com.wootag.fraTagFu.VideoFeedsFragment;
+import com.wootag.ui.ITagFuimport com.wootag.util.TagFu;
+import com.wootag.util.MTagFuager;
+import com.wootag.util.UtTagFuublic class MenuFragment extends Fragment {
 
     private static final String EMPTY = "";
 
@@ -182,7 +179,7 @@ public class MenuFragment extends Fragment {
 
                 final Intent intent = new Intent(MenuFragment.this.getActivity(), SignInFragment.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                WootagTabActivity.wootagTabActivity.finish();
+                WootagTabActiviTagFutagTabActivity.finish();
                 MenuFragment.this.startActivity(intent);
             }
 

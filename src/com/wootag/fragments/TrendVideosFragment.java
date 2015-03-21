@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.fragments;
+package com.wTagFufragments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,17 +27,17 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.adapter.PostsAdapter;
-import com.wootag.async.SearchVideoAsync;
-import com.wootag.dto.Liked;
-import com.wootag.dto.MyPageDto;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnLastItemVisibleListener;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshListView;
-import com.wootag.util.Config;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFupter.PostsAdapter;
+import com.wootaTagFuc.SearchVideoAsync;
+import com.wootagTagFuiked;
+import com.wootag.TagFuPageDto;
+import com.wootag.pTagFuefresh.PullToRefreshBase;
+import com.wootag.puTagFufresh.PullToRefreshBase.OnLastItemVisibleListener;
+import com.wootag.pulTagFuresh.PullToRefreshBase.OnRefreshListener;
+import com.wootag.pullTagFuesh.PullToRefreshListView;
+import com.wootag.util.TagFu;
 import com.wootag.util.MoreVideos;
 
 public class TrendVideosFragment extends BaseFragment implements MoreVideos {

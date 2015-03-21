@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 /**
  * Represents an error condition relating to displaying a Facebook Web dialog.

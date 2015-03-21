@@ -3,12 +3,12 @@
     android:id="@+id/laythree"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal" >
+    android:orientation="horizontal">
 
     <RelativeLayout
         android:id="@+id/rLaythree"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:id="@+id/tagLinkButtonthree"
@@ -16,8 +16,8 @@
             android:layout_height="35dp"
             android:layout_alignParentLeft="true"
             android:background="@drawable/link_background"
-            android:orientation="vertical"
-            android:gravity="center" >
+            android:gravity="center"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/threeupperLinearLayout"
@@ -25,15 +25,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
-                android:orientation="horizontal" >
-            </LinearLayout>
+                android:orientation="horizontal"></LinearLayout>
 
             <LinearLayout
                 android:id="@+id/threelowerLinearLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-            </LinearLayout>
+                android:orientation="horizontal"></LinearLayout>
         </LinearLayout>
 
         <ImageView
@@ -47,8 +45,8 @@
             android:id="@+id/btnthree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin"
             android:layout_marginLeft="@dimen/small"
+            android:layout_marginTop="@dimen/margin"
             android:layout_toRightOf="@+id/markerImagethree"
             android:background="@drawable/recyclebin" />
 
@@ -56,10 +54,10 @@
             android:id="@+id/butnLythree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/tagLinkButtonthree"
             android:layout_marginLeft="30dp"
-             android:layout_below="@+id/tagLinkButtonthree"
-             android:layout_marginTop="@dimen/smallmargin"
-            android:orientation="horizontal" >
+            android:layout_marginTop="@dimen/smallmargin"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/fbthree"
@@ -83,14 +81,14 @@
                 android:background="@drawable/tag_twitter_f" />
 
             <Button
-                android:id="@+id/wootagthree"
+                android:id="@+id/TagFuthree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/tagbuttonsmargin"
-                android:background="@drawable/tag_wootag_f" 
-                android:visibility="gone"/>
-            
-             <Button
+                android:background="@drawable/tag_wootag_f"
+                android:visibility="gone" />
+
+            <Button
                 android:id="@+id/linkthree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

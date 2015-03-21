@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:id="@+id/detailsView"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/white" >
+    android:background="@color/white">
 
     <include
         android:id="@+id/header"
@@ -14,21 +14,21 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/header"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
-        <com.wootag.pulltorefresh.PullToRefreshScrollView
+        <com.wTagFupulltorefresh.PullToRefreshScrollView
             android:id="@+id/videodetailsScroll"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
-                <com.wootag.ui.CustomTextView
+                <com.woTagFui.CustomTextView
                     android:id="@+id/videodetailserrormessageView"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -45,11 +45,11 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:visibility="gone" >
+                    android:visibility="gone">
 
                     <RelativeLayout
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content" >
+                        android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/videoThumb"
@@ -89,7 +89,7 @@
                         android:layout_weight="8"
                         android:background="@android:color/white"
                         android:orientation="horizontal"
-                        android:padding="@dimen/smallmargin" >
+                        android:padding="@dimen/smallmargin">
 
                         <LinearLayout
                             android:id="@+id/otherpage"
@@ -99,13 +99,13 @@
                             android:layout_marginTop="3dp"
                             android:layout_weight="3"
                             android:gravity="center"
-                            android:orientation="horizontal" >
+                            android:orientation="horizontal">
 
                             <RelativeLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
-                                android:layout_marginRight="2dp" >
+                                android:layout_marginRight="2dp">
 
                                 <ImageView
                                     android:id="@+id/imageView3"
@@ -114,7 +114,7 @@
                                     android:layout_centerInParent="true"
                                     android:background="@drawable/layout_background" />
 
-                                <com.wootag.ui.RoundedImageView
+                                <com.wooTagFu.RoundedImageView
                                     android:id="@+id/videoOwnerImg"
                                     android:layout_width="44dp"
                                     android:layout_height="44dp"
@@ -122,7 +122,7 @@
                                     android:src="@drawable/member" />
                             </RelativeLayout>
 
-                            <com.wootag.ui.CustomTextView
+                            <com.wootTagFuCustomTextView
                                 android:id="@+id/videoOwnerName"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
                             android:layout_gravity="center"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:orientation="vertical" >
+                            android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -157,9 +157,9 @@
                                 android:layout_gravity="center"
                                 android:layout_toRightOf="@+id/deleteImageButton"
                                 android:gravity="center"
-                                android:weightSum="1" >
+                                android:weightSum="1">
 
-                                <com.wootag.ui.CustomTextView
+                                <com.wootaTagFuustomTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="2dp"
@@ -170,7 +170,7 @@
                                     android:textSize="@dimen/videodetails_tags_text_size"
                                     foo:customFont="@string/app_bold_font_name" />
 
-                                <com.wootag.ui.CustomTextView
+                                <com.wootagTagFustomTextView
                                     android:id="@+id/createdtext"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
                                     android:textSize="@dimen/videodetails_tags_text_size"
                                     foo:customFont="@string/app_font_name" />
 
-                                <com.wootag.ui.CustomTextView
+                                <com.wootag.TagFutomTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="2dp"
@@ -191,7 +191,7 @@
                                     android:textSize="@dimen/videodetails_tags_text_size"
                                     foo:customFont="@string/app_bold_font_name" />
 
-                                <com.wootag.ui.CustomTextView
+                                <com.wootag.uTagFuomTextView
                                     android:id="@+id/noofviews"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -208,7 +208,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:gravity="center" >
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/tagLL"
@@ -217,7 +217,7 @@
                                     android:layout_marginBottom="6dp"
                                     android:layout_marginRight="2dp"
                                     android:layout_marginTop="6dp"
-                                    android:gravity="center_vertical" >
+                                    android:gravity="center_vertical">
 
                                     <ImageView
                                         android:id="@+id/postTagsImageView"
@@ -226,7 +226,7 @@
                                         android:layout_marginRight="2dp"
                                         android:src="@drawable/tags" />
 
-                                    <com.wootag.ui.CustomTextView
+                                    <com.wootag.uiTagFumTextView
                                         android:id="@+id/videoTag"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -244,7 +244,7 @@
                                     android:layout_marginBottom="6dp"
                                     android:layout_marginRight="2dp"
                                     android:layout_marginTop="6dp"
-                                    android:gravity="center_vertical" >
+                                    android:gravity="center_vertical">
 
                                     <ImageView
                                         android:id="@+id/postLovedImageView"
@@ -254,7 +254,7 @@
                                         android:layout_marginRight="2dp"
                                         android:src="@drawable/loved" />
 
-                                    <com.wootag.ui.CustomTextView
+                                    <com.wootag.ui.TagFuTextView
                                         android:id="@+id/videoLike"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -272,7 +272,7 @@
                                     android:layout_marginBottom="6dp"
                                     android:layout_marginRight="2dp"
                                     android:layout_marginTop="6dp"
-                                    android:gravity="center_vertical" >
+                                    android:gravity="center_vertical">
 
                                     <ImageView
                                         android:id="@+id/postCommentImageView"
@@ -282,7 +282,7 @@
                                         android:layout_marginRight="2dp"
                                         android:src="@drawable/comments" />
 
-                                    <com.wootag.ui.CustomTextView
+                                    <com.wootag.ui.CTagFuextView
                                         android:id="@+id/videoComment"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -301,9 +301,9 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/tabbgcolor"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
-                        <com.wootag.ui.CustomTextView
+                        <com.wootag.ui.CuTagFuxtView
                             android:id="@+id/videoTitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -313,7 +313,7 @@
                             android:textSize="@dimen/text_size"
                             foo:customFont="@string/app_bold_font_name" />
 
-                        <com.wootag.ui.CustomTextView
+                        <com.wootag.ui.CusTagFutView
                             android:id="@+id/videoDescription"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -332,9 +332,9 @@
                         android:background="@android:color/white"
                         android:gravity="center"
                         android:orientation="horizontal"
-                        android:padding="@dimen/smallmargin" >
+                        android:padding="@dimen/smallmargin">
 
-                        <com.wootag.ui.CustomTextView
+                        <com.wootag.ui.CustTagFuView
                             android:id="@+id/textView1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -357,7 +357,7 @@
                             android:id="@+id/tagDetail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center_vertical" >
+                            android:gravity="center_vertical">
 
                             <LinearLayout
                                 android:id="@+id/tagLayout"
@@ -366,7 +366,7 @@
                                 android:layout_marginBottom="6dp"
                                 android:layout_marginRight="4dp"
                                 android:layout_marginTop="6dp"
-                                android:gravity="center_vertical" >
+                                android:gravity="center_vertical">
 
                                 <ImageView
                                     android:id="@+id/share"
@@ -384,7 +384,7 @@
                                 android:layout_marginBottom="6dp"
                                 android:layout_marginRight="4dp"
                                 android:layout_marginTop="6dp"
-                                android:gravity="center_vertical" >
+                                android:gravity="center_vertical">
 
                                 <ImageView
                                     android:id="@+id/like"
@@ -402,7 +402,7 @@
                                 android:layout_marginBottom="6dp"
                                 android:layout_marginRight="4dp"
                                 android:layout_marginTop="6dp"
-                                android:gravity="center_vertical" >
+                                android:gravity="center_vertical">
 
                                 <ImageView
                                     android:id="@+id/comment"
@@ -428,14 +428,13 @@
                         android:layout_marginBottom="20dp"
                         android:background="#F6F6F6"
                         android:paddingBottom="4dp"
-                        android:paddingTop="4dp" >
+                        android:paddingTop="4dp">
 
                         <LinearLayout
                             android:id="@+id/userPublicvideos"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal" >
-                        </LinearLayout>
+                            android:orientation="horizontal"></LinearLayout>
                     </HorizontalScrollView>
                 </LinearLayout>
             </LinearLayout>

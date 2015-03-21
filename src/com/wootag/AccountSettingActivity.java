@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -47,20 +47,20 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.adapter.CropOptionAdapter;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.User;
-import com.wootag.facebook.Session;
-import com.wootag.model.Backend;
-import com.wootag.pulltorefresh.PullToRefreshBase;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshScrollView;
-import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
-import com.wootag.util.Config;
-import com.wootag.util.CropOption;
-import com.wootag.util.MainManager;
-import com.wootag.util.TwitterUtils;
+import com.woTagFudapter.CropOptionAdapter;
+import com.wooTagFuo.ErrorResponse;
+import com.wootTagFu.User;
+import com.wootaTagFubook.Session;
+import com.wootagTagFu.Backend;
+import com.wootag.TagFurefresh.PullToRefreshBase;
+import com.wootag.pTagFuefresh.PullToRefreshBase.OnRefreshListener;
+import com.wootag.puTagFufresh.PullToRefreshScrollView;
+import com.wootag.ui.TagFu
+import com.wootag.utilTagFus;
+import com.wootag.util.TagFu;
+import com.wootag.util.CTagFuion;
+import com.wootag.util.MaTagFuger;
+import com.wootag.util.TwiTagFuils;
 
 public class AccountSettingActivity extends FriendsListActivity {
 
@@ -104,9 +104,7 @@ public class AccountSettingActivity extends FriendsListActivity {
     private static final String SCALE = "scale";
     private static final String USER = "user";
     private static final String USER_ID = "user_id";
-    private static final String WOOTAG = "/Wootag";
-
-    public static AccountSettingActivity accountSettingActivity;
+    private static final String WOOTAG = "/WootaTagFu   pubTagFuatic AccountSettingActivity accountSettingActivity;
 
     private static final int CROP_FROM_CAMERA = 2;
     protected static final Logger LOG = LoggerManager.getLogger();

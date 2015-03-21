@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.adapter;
+package com.wTagFuadapter;
 
 import java.util.List;
 
@@ -22,14 +22,14 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.dto.VideoProfile;
-import com.wootag.fragments.BaseFragment;
-import com.wootag.fragments.BrowseFragment;
-import com.wootag.fragments.OtherUserFragment;
-import com.wootag.ui.Image;
-import com.wootag.util.Alerts;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFu.VideoProfile;
+import com.wootaTagFuments.BaseFragment;
+import com.wootagTagFuents.BrowseFragment;
+import com.wootag.TagFunts.OtherUserFragment;
+import com.wootag.uTagFue;
+import com.wootag.utTagFurts;
 import com.wootag.util.Config;
 
 public class BrowseAdapter extends BaseAdapter {

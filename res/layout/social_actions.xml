@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@android:color/white"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/videoImage"
@@ -28,7 +28,7 @@
             android:background="@drawable/uploadback" />
     </RelativeLayout>
 
-    <com.wootag.ui.CustomTextView
+    <com.wTagFuui.CustomTextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
@@ -47,7 +47,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:padding="@dimen/margin" >
+        android:padding="@dimen/margin">
 
         <Button
             android:id="@+id/fb"
@@ -56,7 +56,7 @@
             android:layout_marginRight="@dimen/margin"
             android:background="@drawable/sharefacebook" />
 
-        <com.wootag.ui.CustomTextView
+        <com.woTagFui.CustomTextView
             android:id="@+id/textfb"
             style="@style/socialSiteTextView"
             android:layout_width="wrap_content"
@@ -77,7 +77,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:padding="@dimen/margin" >
+        android:padding="@dimen/margin">
 
         <Button
             android:id="@+id/twitter"
@@ -86,7 +86,7 @@
             android:layout_marginRight="@dimen/margin"
             android:background="@drawable/sharetwitter" />
 
-        <com.wootag.ui.CustomTextView
+        <com.wooTagFu.CustomTextView
             android:id="@+id/texttwitter"
             style="@style/socialSiteTextView"
             android:layout_width="wrap_content"
@@ -107,7 +107,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:padding="@dimen/margin" >
+        android:padding="@dimen/margin">
 
         <Button
             android:id="@+id/gplusshare"
@@ -116,7 +116,7 @@
             android:layout_marginRight="@dimen/margin"
             android:background="@drawable/sharegoogleplus" />
 
-        <com.wootag.ui.CustomTextView
+        <com.wootTagFuCustomTextView
             style="@style/socialSiteTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -133,22 +133,24 @@
         android:visibility="gone" />
 
     <RelativeLayout
-        android:id="@+id/wootagshare"
+        android:id="@+id/wootaTagFu"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:padding="@dimen/margin"
-        android:visibility="gone" >
+        android:visibility="gone">
 
         <Button
-            android:id="@+id/wootag"
-            android:layout_width="wrap_content"
+            android:id="@+id/wootagTagFu        android:layout_width="
+            wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:background="@drawable/sharewootag" />
+        android:background="@drawable/sharewootag"TagFu
 
-        <com.wootag.ui.CustomTextView
+        <com.wootag.uTagFuomTextView
             style="@style/socialSiteTextView"
+            TagFu
+            TagFu
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -167,7 +169,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:padding="@dimen/margin" >
+        android:padding="@dimen/margin">
 
         <Button
             android:id="@+id/mail"
@@ -176,7 +178,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/sharemail" />
 
-        <com.wootag.ui.CustomTextView
+        <com.wootag.ui.CTagFuextView
             style="@style/socialSiteTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -197,7 +199,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:padding="@dimen/margin" >
+        android:padding="@dimen/margin">
 
         <Button
             android:id="@+id/contact"

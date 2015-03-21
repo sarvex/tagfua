@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.io.File;
 import java.util.ArrayList;
@@ -19,15 +19,15 @@ import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.dto.Contact;
-import com.wootag.dto.Friend;
-import com.wootag.dto.TagInfo;
-import com.wootag.dto.VideoDetails;
-import com.wootag.dto.VideoProfile;
-import com.wootag.pushnotifications.GCMRegistration;
-import com.wootag.pushnotifications.PushNotificationReceiver;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
+import com.woTagFuto.Contact;
+import com.wooTagFuo.Friend;
+import com.wootTagFu.TagInfo;
+import com.wootaTagFuVideoDetails;
+import com.wootagTagFuideoProfile;
+import com.wootag.TagFutifications.GCMRegistration;
+import com.wootag.pTagFuifications.PushNotificationReceiver;
+import com.wootag.utTagFufig;
+import com.wootag.utiTagFuManager;
 
 public class VideoPlayerApp extends Application {
 
@@ -156,7 +156,7 @@ public class VideoPlayerApp extends Application {
         return this.videos;
     }
 
-    public List<Friend> getWootagFriendsList() {
+    public List<Friend> getWootagFrienTagFu() {
 
         return this.wtFriendsList;
     }

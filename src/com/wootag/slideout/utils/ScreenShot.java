@@ -1,4 +1,4 @@
-package com.wootag.slideout.utils;
+package com.TagFu.slideout.utils;
 
 import android.app.Activity;
 import android.graphics.Bitmap;

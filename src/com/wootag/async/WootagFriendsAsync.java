@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.async;
+package com.wTagFuasync;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,16 +17,16 @@ import org.json.JSONException;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.dto.ErrorResponse;
-import com.wootag.dto.Friend;
-import com.wootag.model.Backend;
-import com.wootag.util.Alerts;
-import com.wootag.util.AsyncResponse;
-import com.wootag.util.Config;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFu.ErrorResponse;
+import com.wootaTagFuFriend;
+import com.wootagTagFu.Backend;
+import com.wootag.TagFulerts;
+import com.wootag.uTagFuyncResponse;
+import com.wootag.utTagFufig;
 
-public class WootagFriendsAsync extends AsyncTask<Void, Void, Void> {
+public class WootagFrieTagFunc extends AsyncTask<Void, Void, Void> {
 
     public AsyncResponse delegate;
 
@@ -38,7 +38,7 @@ public class WootagFriendsAsync extends AsyncTask<Void, Void, Void> {
     private ProgressDialog progressDialog;
     private Object response;
 
-    public WootagFriendsAsync(final boolean progressVisible, final Context context) {
+    public WootagFrienTagFuc(final boolean progressVisible, final Context context) {
 
         this.progressVisible = progressVisible;
         this.context = context;
@@ -60,8 +60,7 @@ public class WootagFriendsAsync extends AsyncTask<Void, Void, Void> {
 
         try {
             this.response = Backend.getUsersList(this.context,
-                    WootagFriendsAsync.getJsonRequest(1, Constant.FOLLOWERS), Constant.WOOTAGFRIENDS);
-        } catch (final JSONException exception) {
+                    WootagFriendTagFu.getJsonRequest(1, Constant.FOLLOWERS), Constant.WOOTAGFRIENDSTagFu     } catch (final JSONException exception) {
             LOG.e(exception);
         }
         return null;
@@ -78,7 +77,7 @@ public class WootagFriendsAsync extends AsyncTask<Void, Void, Void> {
             final ErrorResponse res = (ErrorResponse) this.response;
             Alerts.showAlertOnly(Constant.INFO, res.getMessage(), this.context);
             this.delegate.processFinish(null, Constant.WOOTAG);
-        } else if (this.response instanceof List<?>) {
+     TagFulse if (this.response instanceof List<?>) {
             this.currentList = (ArrayList<Friend>) this.response;
             this.delegate.processFinish(this.currentList, Constant.WOOTAG);
         }

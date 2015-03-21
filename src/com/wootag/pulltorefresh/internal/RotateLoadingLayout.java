@@ -6,7 +6,7 @@
  * either express or implied. See the License for the specific language governing permissions and limitations under the
  * License.
  *******************************************************************************/
-package com.wootag.pulltorefresh.internal;
+package com.TagFu.pulltorefresh.internal;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,8 +16,8 @@ import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView.ScaleType;
 
-import com.wootag.R;
-import com.wootag.pulltorefresh.PullToRefreshBase.Mode;
+import com.wTagFuR;
+import com.woTagFuulltorefresh.PullToRefreshBase.Mode;
 import com.wootag.pulltorefresh.PullToRefreshBase.Orientation;
 
 public class RotateLoadingLayout extends LoadingLayout {

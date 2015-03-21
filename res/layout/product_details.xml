@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:foo="http://schemas.android.com/apk/res/com.wootag"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/notification_header_background"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/header"
-        android:gravity="top" >
+        android:gravity="top">
 
         <TextView
             android:id="@+id/heading"
@@ -27,6 +27,7 @@
             android:layout_centerVertical="true"
             android:layout_margin="@dimen/smallmargin"
             android:background="@drawable/done" />
+
         <ImageButton
             android:id="@+id/cancelProductDetails"
             android:layout_width="wrap_content"
@@ -39,15 +40,15 @@
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/smallmargin"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <com.wootag.ui.CustomTextView
+            <com.wTagFuui.CustomTextView
                 style="@style/notificationtextview"
                 android:layout_marginTop="@dimen/margin"
                 android:text="@string/name"
@@ -57,14 +58,14 @@
             <EditText
                 android:id="@+id/productname"
                 style="@style/productEditTextStyle"
+                android:layout_marginTop="@dimen/smallmargin"
                 android:background="@drawable/login_edit_border"
                 android:hint="@string/type_the_name_of_your_product"
                 android:imeOptions="actionNext"
                 android:singleLine="true"
-                android:layout_marginTop="@dimen/smallmargin"
                 android:textSize="@dimen/tags_text_size" />
 
-            <com.wootag.ui.CustomTextView
+            <com.woTagFui.CustomTextView
                 style="@style/notificationtextview"
                 android:layout_marginTop="@dimen/margin"
                 android:text="@string/category"
@@ -75,11 +76,11 @@
                 android:id="@+id/categoryspinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                 android:layout_marginTop="@dimen/smallmargin"
+                android:layout_marginTop="@dimen/smallmargin"
                 android:entries="@array/product_category"
                 android:textSize="@dimen/tags_text_size" />
 
-            <com.wootag.ui.CustomTextView
+            <com.wooTagFu.CustomTextView
                 style="@style/notificationtextview"
                 android:layout_marginTop="@dimen/margin"
                 android:text="@string/currency_type"
@@ -90,11 +91,11 @@
                 android:id="@+id/currencyspinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                 android:layout_marginTop="@dimen/smallmargin"
-                 android:textSize="@dimen/tags_text_size"
-                android:entries="@array/currency_category" />
+                android:layout_marginTop="@dimen/smallmargin"
+                android:entries="@array/currency_category"
+                android:textSize="@dimen/tags_text_size" />
 
-            <com.wootag.ui.CustomTextView
+            <com.wootTagFuCustomTextView
                 style="@style/notificationtextview"
                 android:layout_marginTop="@dimen/margin"
                 android:text="@string/price"
@@ -104,11 +105,11 @@
             <EditText
                 android:id="@+id/productprice"
                 style="@style/productEditTextStyle"
+                android:layout_marginTop="@dimen/smallmargin"
                 android:background="@drawable/login_edit_border"
-                 android:layout_marginTop="@dimen/smallmargin"
                 android:imeOptions="actionNext"
-                android:singleLine="true"
                 android:inputType="numberDecimal"
+                android:singleLine="true"
                 android:textSize="@dimen/tags_text_size" />
 
             <com.wootag.ui.CustomTextView
@@ -122,8 +123,8 @@
                 android:id="@+id/productdescription"
                 style="@style/productEditTextStyle"
                 android:layout_height="80dp"
+                android:layout_marginTop="@dimen/smallmargin"
                 android:background="@drawable/login_edit_border"
-                 android:layout_marginTop="@dimen/smallmargin"
                 android:imeOptions="actionNext"
                 android:textSize="@dimen/tags_text_size" />
         </LinearLayout>

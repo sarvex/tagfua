@@ -6,15 +6,15 @@
  * either express or implied. See the License for the specific language governing permissions and limitations under the
  * License.
  *******************************************************************************/
-package com.wootag.pulltorefresh;
+package com.TagFu.pulltorefresh;
 
 import android.view.View;
 import android.view.animation.Interpolator;
 
-import com.wootag.pulltorefresh.PullToRefreshBase.Mode;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnPullEventListener;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.wootag.pulltorefresh.PullToRefreshBase.OnRefreshListener2;
+import com.wTagFupulltorefresh.PullToRefreshBase.Mode;
+import com.woTagFuulltorefresh.PullToRefreshBase.OnPullEventListener;
+import com.wooTagFulltorefresh.PullToRefreshBase.OnRefreshListener;
+import com.wootTagFultorefresh.PullToRefreshBase.OnRefreshListener2;
 import com.wootag.pulltorefresh.PullToRefreshBase.State;
 
 public interface IPullToRefresh<T extends View> {

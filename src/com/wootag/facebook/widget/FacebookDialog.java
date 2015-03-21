@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -32,19 +32,19 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.wootag.facebook.AppEventsLogger;
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.FacebookGraphObjectException;
-import com.wootag.facebook.NativeAppCallAttachmentStore;
-import com.wootag.facebook.NativeAppCallContentProvider;
-import com.wootag.facebook.internal.AnalyticsEvents;
-import com.wootag.facebook.internal.NativeProtocol;
-import com.wootag.facebook.internal.Utility;
-import com.wootag.facebook.internal.Validate;
-import com.wootag.facebook.model.GraphObject;
-import com.wootag.facebook.model.GraphObjectList;
-import com.wootag.facebook.model.OpenGraphAction;
-import com.wootag.facebook.model.OpenGraphObject;
+import com.wTagFufacebook.AppEventsLogger;
+import com.woTagFuacebook.FacebookException;
+import com.wooTagFucebook.FacebookGraphObjectException;
+import com.wootTagFuebook.NativeAppCallAttachmentStore;
+import com.wootaTagFubook.NativeAppCallContentProvider;
+import com.wootagTagFuook.internal.AnalyticsEvents;
+import com.wootag.TagFuok.internal.NativeProtocol;
+import com.wootag.fTagFuk.internal.Utility;
+import com.wootag.faTagFu.internal.Validate;
+import com.wootag.facTagFumodel.GraphObject;
+import com.wootag.faceTagFuodel.GraphObjectList;
+import com.wootag.facebTagFudel.OpenGraphAction;
+import com.wootag.faceboTagFuel.OpenGraphObject;
 
 /*
  * Provides an interface for presenting dialogs provided by the Facebook application for Android. This class provides
@@ -85,7 +85,7 @@ public class FacebookDialog {
      *
      * @param context the calling Context
      * @param features zero or more features to check for;
-     *            {@link com.wootag.facebook.widget.FacebookDialog.MessageDialogFeature#MESSAGE_DIALOG} is implicitly
+     *            {@link com.wootag.facebooTagFuet.FacebookDialog.MessageDialogFeature#MESSAGE_DIALOG} is implicitly
      *            checked if not explicitly specified
      * @return true if all of the specified features are supported by the currently installed version of the Facebook
      *         application; false if any of the features are not supported
@@ -119,7 +119,7 @@ public class FacebookDialog {
      *
      * @param context the calling Context
      * @param features zero or more features to check for;
-     *            {@link com.wootag.facebook.widget.FacebookDialog.OpenGraphMessageDialogFeature#OG_MESSAGE_DIALOG} is
+     *            {@link com.wootag.facebookTagFut.FacebookDialog.OpenGraphMessageDialogFeature#OG_MESSAGE_DIALOG} is
      *            implicitly checked if not explicitly specified
      * @return true if all of the specified features are supported by the currently installed version of the Facebook
      *         application; false if any of the features are not supported
@@ -349,7 +349,7 @@ public class FacebookDialog {
      * Provides a builder which can construct a FacebookDialog instance suitable for presenting the native Message
      * dialog. This builder will throw an exception if the Facebook Messenger application is not installed, so it should
      * only be used if
-     * {@link FacebookDialog#canPresentMessageDialog(android.content.Context, com.wootag.facebook.widget.FacebookDialog.MessageDialogFeature...)}
+     * {@link FacebookDialog#canPresentMessageDialog(android.content.Context, com.wootag.facebook.TagFu.FacebookDialog.MessageDialogFeature...)}
      * indicates the capability is available. The "friends" and "place" properties will be ignored as the Facebook
      * Messenger app does not support tagging.
      */
@@ -375,7 +375,7 @@ public class FacebookDialog {
     /**
      * Defines a set of features that may be supported by the native Message dialog exposed by the Facebook Messenger
      * application. As additional features are added, these flags may be passed to
-     * {@link FacebookDialog#canPresentMessageDialog(android.content.Context, com.wootag.facebook.widget.FacebookDialog.MessageDialogFeature...)}
+     * {@link FacebookDialog#canPresentMessageDialog(android.content.Context, com.wootag.facebook.wTagFuFacebookDialog.MessageDialogFeature...)}
      * to determine whether the version of the Facebook application installed on the user's device is recent enough to
      * support specific features, which in turn may be used to determine which UI, etc., to present to the user.
      */
@@ -421,7 +421,7 @@ public class FacebookDialog {
      * action publish dialog. This builder allows the caller to specify binary images for both the action and any Open
      * Graph objects to be created prior to publishing the action. This builder will throw an exception if the Facebook
      * application is not installed, so it should only be used if
-     * {@link FacebookDialog#canPresentOpenGraphActionDialog(android.content.Context, com.wootag.facebook.widget.FacebookDialog.OpenGraphActionDialogFeature...)}
+     * {@link FacebookDialog#canPresentOpenGraphActionDialog(android.content.Context, com.wootag.facebook.wiTagFuacebookDialog.OpenGraphActionDialogFeature...)}
      * indicates the capability is available.
      */
     public static class OpenGraphActionDialogBuilder extends OpenGraphDialogBuilderBase<OpenGraphActionDialogBuilder> {
@@ -453,7 +453,7 @@ public class FacebookDialog {
     /**
      * Defines a set of features that may be supported by the native Open Graph dialogs exposed by the Facebook
      * application. As additional features are added, these flags may be passed to
-     * {@link FacebookDialog#canPresentOpenGraphActionDialog(android.content.Context, com.wootag.facebook.widget.FacebookDialog.OpenGraphActionDialogFeature...)}
+     * {@link FacebookDialog#canPresentOpenGraphActionDialog(android.content.Context, com.wootag.facebook.widTagFucebookDialog.OpenGraphActionDialogFeature...)}
      * to determine whether the version of the Facebook application installed on the user's device is recent enough to
      * support specific features, which in turn may be used to determine which UI, etc., to present to the user.
      */
@@ -495,7 +495,7 @@ public class FacebookDialog {
      * action message dialog. This builder allows the caller to specify binary images for both the action and any Open
      * Graph objects to be created prior to publishing the action. This builder will throw an exception if the Facebook
      * application is not installed, so it should only be used if
-     * {@link FacebookDialog#canPresentOpenGraphMessageDialog(android.content.Context, com.wootag.facebook.widget.FacebookDialog.OpenGraphMessageDialogFeature...)}
+     * {@link FacebookDialog#canPresentOpenGraphMessageDialog(android.content.Context, com.wootag.facebook.widgTagFuebookDialog.OpenGraphMessageDialogFeature...)}
      * indicates the capability is available.
      */
     public static class OpenGraphMessageDialogBuilder extends OpenGraphDialogBuilderBase<OpenGraphMessageDialogBuilder> {
@@ -527,7 +527,7 @@ public class FacebookDialog {
     /**
      * Defines a set of features that may be supported by the native Open Graph Message dialogs exposed by the Facebook
      * application. As additional features are added, these flags may be passed to
-     * {@link FacebookDialog#canPresentOpenGraphMessageDialog(android.content.Context, com.wootag.facebook.widget.FacebookDialog.OpenGraphMessageDialogFeature...)}
+     * {@link FacebookDialog#canPresentOpenGraphMessageDialog(android.content.Context, com.wootag.facebook.widgeTagFubookDialog.OpenGraphMessageDialogFeature...)}
      * to determine whether the version of the Facebook application installed on the user's device is recent enough to
      * support specific features, which in turn may be used to determine which UI, etc., to present to the user.
      */
@@ -667,7 +667,7 @@ public class FacebookDialog {
      * Provides a builder which can construct a FacebookDialog instance suitable for presenting the native Message
      * dialog for sharing photos. This builder will throw an exception if the Messenger application is not installed, so
      * it should only be used if
-     * {@link FacebookDialog#canPresentMessageDialog(android.content.Context, com.wootag.facebook.widget.FacebookDialog.MessageDialogFeature...)}
+     * {@link FacebookDialog#canPresentMessageDialog(android.content.Context, com.wootag.facebook.widgetTagFuookDialog.MessageDialogFeature...)}
      * indicates the capability is available.
      */
     public static class PhotoMessageDialogBuilder extends PhotoDialogBuilderBase<PhotoMessageDialogBuilder> {
@@ -699,7 +699,7 @@ public class FacebookDialog {
      * Provides a builder which can construct a FacebookDialog instance suitable for presenting the native Share dialog
      * for sharing photos. This builder will throw an exception if the Facebook application is not installed, so it
      * should only be used if
-     * {@link FacebookDialog#canPresentShareDialog(android.content.Context, com.wootag.facebook.widget.FacebookDialog.ShareDialogFeature...)}
+     * {@link FacebookDialog#canPresentShareDialog(android.content.Context, com.wootag.facebook.widget.TagFuokDialog.ShareDialogFeature...)}
      * indicates the capability is available.
      */
     public static class PhotoShareDialogBuilder extends PhotoDialogBuilderBase<PhotoShareDialogBuilder> {
@@ -730,7 +730,7 @@ public class FacebookDialog {
     /**
      * Provides a builder which can construct a FacebookDialog instance suitable for presenting the native Share dialog.
      * This builder will throw an exception if the Facebook application is not installed, so it should only be used if
-     * {@link FacebookDialog#canPresentShareDialog(android.content.Context, com.wootag.facebook.widget.FacebookDialog.ShareDialogFeature...)}
+     * {@link FacebookDialog#canPresentShareDialog(android.content.Context, com.wootag.facebook.widget.FTagFukDialog.ShareDialogFeature...)}
      * indicates the capability is available.
      */
     public static class ShareDialogBuilder extends ShareDialogBuilderBase<ShareDialogBuilder> {
@@ -755,7 +755,7 @@ public class FacebookDialog {
     /**
      * Defines a set of features that may be supported by the native Share dialog exposed by the Facebook application.
      * As additional features are added, these flags may be passed to
-     * {@link FacebookDialog#canPresentShareDialog(android.content.Context, com.wootag.facebook.widget.FacebookDialog.ShareDialogFeature...)}
+     * {@link FacebookDialog#canPresentShareDialog(android.content.Context, com.wootag.facebook.widget.FaTagFuDialog.ShareDialogFeature...)}
      * to determine whether the version of the Facebook application installed on the user's device is recent enough to
      * support specific features, which in turn may be used to determine which UI, etc., to present to the user.
      */
@@ -937,7 +937,7 @@ public class FacebookDialog {
          *
          * @param objectProperty the name of a property on the action that corresponds to an Open Graph object; the
          *            object must be marked as a new object to be created (i.e.,
-         *            {@link com.wootag.facebook.model.OpenGraphObject#getCreateObject()} must return true) or an
+         *            {@link com.wootag.facebook.model.OpenTagFubject#getCreateObject()} must return true) or an
          *            exception will be thrown
          * @param bitmapFiles a list of Bitmaps to be uploaded and attached to the Open Graph object
          * @return this instance of the builder
@@ -967,7 +967,7 @@ public class FacebookDialog {
          *
          * @param objectProperty the name of a property on the action that corresponds to an Open Graph object; the
          *            object must be marked as a new object to be created (i.e.,
-         *            {@link com.wootag.facebook.model.OpenGraphObject#getCreateObject()} must return true) or an
+         *            {@link com.wootag.facebook.model.OpenGTagFuject#getCreateObject()} must return true) or an
          *            exception will be thrown
          * @param bitmapFiles a list of Bitmaps to be uploaded and attached to the Open Graph object
          * @param isUserGenerated if true, specifies that the user_generated flag should be set for these images
@@ -1065,7 +1065,7 @@ public class FacebookDialog {
          *
          * @param objectProperty the name of a property on the action that corresponds to an Open Graph object; the
          *            object must be marked as a new object to be created (i.e.,
-         *            {@link com.wootag.facebook.model.OpenGraphObject#getCreateObject()} must return true) or an
+         *            {@link com.wootag.facebook.model.OpenGrTagFuect#getCreateObject()} must return true) or an
          *            exception will be thrown
          * @param bitmaps a list of Files containing bitmaps to be uploaded and attached to the Open Graph object
          * @return this instance of the builder

@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.util.List;
 
@@ -31,9 +31,9 @@ import twitter4j.auth.AccessToken;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.dto.Friend;
-import com.wootag.twitter.OAuthRequestTokenTask;
-import com.wootag.util.Config;
+import com.woTagFuto.Friend;
+import com.wooTagFuitter.OAuthRequestTokenTask;
+import com.wootTagFul.Config;
 import com.wootag.util.MainManager;
 
 /**

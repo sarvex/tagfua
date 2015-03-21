@@ -1,4 +1,4 @@
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

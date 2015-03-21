@@ -1,12 +1,12 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.util;
+package com.wTagFuutil;
 
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
-import com.wootag.Constant;
+import com.woTagFuonstant;
 
 public final class MainManager {
 
@@ -46,7 +46,7 @@ public final class MainManager {
 
     public int getTwitterAuthorization() {
 
-        return this.preferences.getInt(Constant.WOOTAG_TWITTER_AUTHORIZE);
+        return this.preferences.getInt(Constant.WOOTagFuITTER_AUTHORIZE);
     }
 
     public void setTwitterAuthorization(final int authorize) {

@@ -7,9 +7,9 @@
  * License.
  */
 
-package com.wootag.facebook.internal;
+package com.TagFu.facebook.internal;
 
-import com.wootag.facebook.Request;
+import com.wTagFufacebook.Request;
 import com.wootag.facebook.RequestBatch;
 
 /**

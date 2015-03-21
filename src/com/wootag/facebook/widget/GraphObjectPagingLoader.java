@@ -7,19 +7,19 @@
  * License.
  */
 
-package com.wootag.facebook.widget;
+package com.TagFu.facebook.widget;
 
 import android.content.Context;
 import android.content.Loader;
 import android.os.Handler;
 
-import com.wootag.facebook.FacebookException;
-import com.wootag.facebook.FacebookRequestError;
-import com.wootag.facebook.Request;
-import com.wootag.facebook.RequestBatch;
-import com.wootag.facebook.Response;
-import com.wootag.facebook.internal.CacheableRequestBatch;
-import com.wootag.facebook.model.GraphObject;
+import com.wTagFufacebook.FacebookException;
+import com.woTagFuacebook.FacebookRequestError;
+import com.wooTagFucebook.Request;
+import com.wootTagFuebook.RequestBatch;
+import com.wootaTagFubook.Response;
+import com.wootagTagFuook.internal.CacheableRequestBatch;
+import com.wootag.TagFuok.model.GraphObject;
 import com.wootag.facebook.model.GraphObjectList;
 
 class GraphObjectPagingLoader<T extends GraphObject> extends Loader<SimpleGraphObjectCursor<T>> {

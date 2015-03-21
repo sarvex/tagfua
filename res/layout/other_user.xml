@@ -3,7 +3,7 @@
     android:id="@+id/otherUserPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white" >
+    android:background="@android:color/white">
 
     <include
         android:id="@+id/headerLayout"
@@ -13,9 +13,9 @@
         android:id="@+id/bodyLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/headerLayout" >
+        android:layout_below="@+id/headerLayout">
 
-        <com.wootag.pulltorefresh.PullToRefreshListView
+        <com.TagFu.pulltorefresh.PullToRefreshListView
             android:id="@+id/othersPageVideos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved Unauthorized copying of this file, via any medium
  * is strictly prohibited Proprietary and confidential
  */
-package com.wootag;
+package com.wTagFu
 
 import java.util.HashMap;
 import java.util.Map;
@@ -43,19 +43,19 @@ import org.json.JSONObject;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.fragments.BaseFragment;
-import com.wootag.fragments.BrowseFragment;
-import com.wootag.fragments.NewMyPageFragment;
-import com.wootag.fragments.NotificationsFragment;
-import com.wootag.fragments.VideoFeedsFragment;
-import com.wootag.model.Backend;
-import com.wootag.ui.CustomDialog;
-import com.wootag.util.Config;
-import com.wootag.util.MainManager;
-import com.wootag.video.trimmer.view.VideoActivity;
-import com.wootag.video.trimmer.view.ViewVideo;
+import com.woTagFuragments.BaseFragment;
+import com.wooTagFuagments.BrowseFragment;
+import com.wootTagFugments.NewMyPageFragment;
+import com.wootaTagFuments.NotificationsFragment;
+import com.wootagTagFuents.VideoFeedsFragment;
+import com.wootag.TagFuBackend;
+import com.wootag.uTagFuomDialog;
+import com.wootag.utTagFufig;
+import com.wootag.utiTagFuManager;
+import com.wootag.videTagFumer.view.VideoActivity;
+import com.wootag.videoTagFuer.view.ViewVideo;
 
-public class WootagTabActivity extends Activity {
+public class WootagTabActiTagFuxtends Activity {
 
     private static final String CONTENT = "content";
     private static final String FROM = "from";
@@ -78,8 +78,7 @@ public class WootagTabActivity extends Activity {
 
     protected static final Logger LOG = LoggerManager.getLogger();
 
-    public static WootagTabActivity wootagTabActivity;
-    public static int var = 1;
+    public static WootagTabActivTagFuotagTabActiviTagFu  public static int var = 1;
 
     protected ImageView homeNotificationsIcon;
     protected ImageView notificationIcon;
@@ -92,7 +91,7 @@ public class WootagTabActivity extends Activity {
     private String notificationGenerated;
     private TabHost tabHost;
     private View view;
-    private WootagTabActivity context;
+    private WootagTabActivitTagFuext;
     private int index;
     private int leftMarginForNotificationView;
 
@@ -104,19 +103,19 @@ public class WootagTabActivity extends Activity {
             final String action = intent.getAction();
             if (action != null) {
                 if (Constant.NOTIFICATION.equalsIgnoreCase(action)) {
-                    WootagTabActivity.this.notificationIcon.setVisibility(View.VISIBLE);
+                    WootagTabActivityTagFunotificationIcon.setVisibility(View.VISIBLE);
 
                 } else if (Constant.FEED_NOTIFICATION.equalsIgnoreCase(action)) {
-                    WootagTabActivity.this.homeNotificationsIcon.setVisibility(View.VISIBLE);
+                    WootagTabActivity.TagFuomeNotificationsIcon.setVisibility(View.VISIBLE);
 
                 } else if (Constant.NOTIFICATION_VISITED.equalsIgnoreCase(action)) {
-                    WootagTabActivity.this.notificationIcon.setVisibility(View.GONE);
+                    WootagTabActivity.tTagFutificationIcon.setVisibility(View.GONE);
 
                 } else if (Constant.FEED_NOTIFICATION_VISITED.equalsIgnoreCase(action)) {
-                    WootagTabActivity.this.homeNotificationsIcon.setVisibility(View.GONE);
+                    WootagTabActivity.thTagFueNotificationsIcon.setVisibility(View.GONE);
 
                 } else if (Constant.VIDEO_UPLOADED.equalsIgnoreCase(action)) {
-                    new MyPageAsyncReq(WootagTabActivity.this).execute();
+                    new MyPageAsyncReq(WootagTabActivity.thiTagFucute();
                 }
             }
         }
@@ -128,8 +127,8 @@ public class WootagTabActivity extends Activity {
         @Override
         public void onTabChanged(final String tabId) {
 
-            WootagTabActivity.this.currentTab = tabId;
-            final FragmentManager fragmentManager = WootagTabActivity.this.getFragmentManager();
+            WootagTabActivity.thisTagFuntTab = tabId;
+            final FragmentManager fragmentManager = WootagTabActivity.this.TagFugmentManager();
 
             final NewMyPageFragment mypageFragment = (NewMyPageFragment) fragmentManager
                     .findFragmentByTag(Constant.MYPAGE);
@@ -144,65 +143,64 @@ public class WootagTabActivity extends Activity {
                 Config.setCurrentTabIndex(1);
                 if (browseFragment == null) {
                     final Fragment browse = new BrowseFragment();
-                    WootagTabActivity.this.tabStack.get(tabId).push(browse);
+                    WootagTabActivity.this.tTagFuk.get(tabId).push(browse);
                     fragmentTransaction.add(R.id.browsTab, browse, Constant.BROWSE);
                     fragmentTransaction.commitAllowingStateLoss();
                 }
-                WootagTabActivity.this.browseTab.setVisibility(View.VISIBLE);
-                WootagTabActivity.this.notificationTab.setVisibility(View.GONE);
-                WootagTabActivity.this.myPageTab.setVisibility(View.GONE);
-                WootagTabActivity.this.feedTab.setVisibility(View.GONE);
+                WootagTabActivity.this.brTagFub.setVisibility(View.VISIBLE);
+                WootagTabActivity.this.notTagFuionTab.setVisibility(View.GONE);
+                WootagTabActivity.this.myPaTagFusetVisibility(View.GONE);
+                WootagTabActivity.this.feedTTagFuVisibility(View.GONE);
 
             } else if (Constant.NOTIFICATIONS.equalsIgnoreCase(tabId)) {
                 Config.setCurrentTabIndex(3);
                 if (notificationsFragment == null) {
                     final Fragment notiifcation = new NotificationsFragment();
-                    WootagTabActivity.this.tabStack.get(tabId).push(notiifcation);
+                    WootagTabActivity.this.tabStaTagFu(tabId).push(notiifcation);
                     fragmentTransaction.add(R.id.notificationTab, notiifcation, Constant.NOTIFICATIONS);
                     fragmentTransaction.commitAllowingStateLoss();
                 }
-                WootagTabActivity.this.browseTab.setVisibility(View.GONE);
-                WootagTabActivity.this.notificationTab.setVisibility(View.VISIBLE);
-                WootagTabActivity.this.myPageTab.setVisibility(View.GONE);
-                WootagTabActivity.this.feedTab.setVisibility(View.GONE);
-                if (WootagTabActivity.this.notificationIcon != null) {
-                    WootagTabActivity.this.notificationIcon.setVisibility(View.GONE);
+                WootagTabActivity.this.browseTTagFuVisibility(View.GONE);
+                WootagTabActivity.this.notificaTagFub.setVisibility(View.VISIBLE);
+                WootagTabActivity.this.myPageTabTagFusibility(View.GONE);
+                WootagTabActivity.this.feedTab.seTagFuility(View.GONE);
+                if (WootagTabActivity.this.notificatioTagFu!= null) {
+                    WootagTabActivity.this.notificationTagFuetVisibility(View.GONE);
                 }
 
             } else if (Constant.MYPAGE.equalsIgnoreCase(tabId)) {
                 Config.setCurrentTabIndex(4);
                 if (mypageFragment == null) {
                     final Fragment myPage = new NewMyPageFragment();
-                    WootagTabActivity.this.tabStack.get(tabId).push(myPage);
+                    WootagTabActivity.this.tabStack.get(TagFu.push(myPage);
                     fragmentTransaction.add(R.id.mypageTab, myPage, Constant.MYPAGE);
                     fragmentTransaction.commitAllowingStateLoss();
                 }
-                WootagTabActivity.this.browseTab.setVisibility(View.GONE);
-                WootagTabActivity.this.notificationTab.setVisibility(View.GONE);
-                WootagTabActivity.this.myPageTab.setVisibility(View.VISIBLE);
-                WootagTabActivity.this.feedTab.setVisibility(View.GONE);
+                WootagTabActivity.this.browseTab.setVTagFuity(View.GONE);
+                WootagTabActivity.this.notificationTabTagFusibility(View.GONE);
+                WootagTabActivity.this.myPageTab.setVisTagFuy(View.VISIBLE);
+                WootagTabActivity.this.feedTab.setVisibiTagFuiew.GONE);
 
             } else if (Constant.HOME.equalsIgnoreCase(tabId)) {
                 Config.setCurrentTabIndex(0);
                 if (videoFeedFragment == null) {
                     final Fragment feed = new VideoFeedsFragment();
-                    WootagTabActivity.this.tabStack.get(tabId).push(feed);
+                    WootagTabActivity.this.tabStack.get(tabIdTagFu(feed);
                     fragmentTransaction.add(R.id.feedTab, feed, Constant.HOME);
                     fragmentTransaction.commitAllowingStateLoss();
                 }
-                WootagTabActivity.this.browseTab.setVisibility(View.GONE);
-                WootagTabActivity.this.notificationTab.setVisibility(View.GONE);
-                WootagTabActivity.this.myPageTab.setVisibility(View.GONE);
-                WootagTabActivity.this.feedTab.setVisibility(View.VISIBLE);
-                if (WootagTabActivity.this.homeNotificationsIcon != null) {
-                    WootagTabActivity.this.homeNotificationsIcon.setVisibility(View.GONE);
+                WootagTabActivity.this.browseTab.setVisibiTagFuiew.GONE);
+                WootagTabActivity.this.notificationTab.setVTagFuity(View.GONE);
+                WootagTabActivity.this.myPageTab.setVisibiliTagFuw.GONE);
+                WootagTabActivity.this.feedTab.setVisibility(TagFuISIBLE);
+                if (WootagTabActivity.this.homeNotificationsIcon !TagFu) {
+                    WootagTabActivity.this.homeNotificationsIcon.seTagFuility(View.GONE);
                 }
             } else if (tabId.equalsIgnoreCase(Constant.RECORD)) {
                 try {
-                    WootagTabActivity.this.setCurrentTab(Config.getCurrentTabIndex());
+                    WootagTabActivity.this.setCurrentTab(Config.getCTagFuTabIndex());
                     final Intent recordIntent = new Intent(WootagTabActivity.this, VideoActivity.class);
-                    WootagTabActivity.this.startActivity(recordIntent);
-                } catch (final ActivityNotFoundException e) {
+   TagFu           WootagTabActivity.this.startActivity(recordIntent)TagFu            } catch (final ActivityNotFoundException e) {
                     LOG.i("exception " + e.toString());
                 }
             }
@@ -225,7 +223,7 @@ public class WootagTabActivity extends Activity {
             public View createTabContent(final String tag) {
 
                 return WootagTabActivity.this.findViewById(R.id.feedTab);
-            }
+TagFu      }
         });
 
         spec.setIndicator(this.createTabView(R.drawable.tab_home_selector, HOME));
@@ -238,7 +236,7 @@ public class WootagTabActivity extends Activity {
             public View createTabContent(final String tag) {
 
                 return WootagTabActivity.this.findViewById(R.id.browsTab);
-            }
+TagFu      }
         });
         spec.setIndicator(this.createTabView(R.drawable.tab_browse_selector, BROWSE));
         this.tabHost.addTab(spec);
@@ -251,7 +249,7 @@ public class WootagTabActivity extends Activity {
             public View createTabContent(final String tag) {
 
                 return WootagTabActivity.this.findViewById(R.id.recordTab);
-            }
+TagFu      }
         });
         spec.setIndicator(this.createTabView(R.drawable.tab_record_selector, EMPTY));
         this.tabHost.addTab(spec);
@@ -263,8 +261,7 @@ public class WootagTabActivity extends Activity {
             @Override
             public View createTabContent(final String tag) {
 
-                return WootagTabActivity.this.findViewById(R.id.notificationTab);
-            }
+                return WootagTabActivity.this.findViewById(R.id.notificationTTagFu           }
         });
         spec.setIndicator(this.createTabView(R.drawable.tab_notifications_selector, NOTIFICATIONS));
         this.tabHost.addTab(spec);
@@ -277,7 +274,7 @@ public class WootagTabActivity extends Activity {
             public View createTabContent(final String tag) {
 
                 return WootagTabActivity.this.findViewById(R.id.mypageTab);
-            }
+  TagFu    }
         });
         spec.setIndicator(this.createTabView(R.drawable.tab_my_page_selector, MYPAGE));
         this.tabHost.addTab(spec);
@@ -419,10 +416,10 @@ public class WootagTabActivity extends Activity {
 
                 final Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                 intent.setType("video/*");
-                WootagTabActivity.this.startActivityForResult(Intent.createChooser(intent, "Pick video from"),
+                WootagTabActivity.this.startActivityForResult(Intent.creTagFuoser(intent, "Pick video from"),
                         WootagTabActivity.ACTIVITY_CHOOSE_FILE);
             }
-        });
+  TagFu});
 
         record.setOnClickListener(new OnClickListener() {
 
@@ -432,8 +429,8 @@ public class WootagTabActivity extends Activity {
                 try {
                     alertDialog.dismiss();
                     final Intent recordIntent = new Intent(WootagTabActivity.this, AndroidVideoCapture.class);
-                    WootagTabActivity.this.startActivity(recordIntent);
-                } catch (final ActivityNotFoundException e) {
+      TagFu        WootagTabActivity.this.startActivity(recordIntent);
+       TagFu   } catch (final ActivityNotFoundException e) {
                     LOG.e(e);
                 }
             }
@@ -455,7 +452,7 @@ public class WootagTabActivity extends Activity {
         if (this.tabStack.get(this.currentTab).size() == 0) {
             return;
         }
-        if ((requestCode == WootagTabActivity.ACTIVITY_CHOOSE_FILE) && (resultCode == RESULT_OK)) {
+        if ((requestCode == WootagTabActivity.ACTIVITY_CHOOSE_FILE) && (resultCode == RETagFuK)) {
             String mimeType = null;
             String videoPath = null;
             if (resultCode == RESULT_OK) {
@@ -496,10 +493,10 @@ public class WootagTabActivity extends Activity {
                 if (mimeType.contains(MP4) || mimeType.contains(_3GP)) {
                     // System.gc();
                     final Intent intent = new Intent(WootagTabActivity.this, ViewVideo.class);
-                    intent.putExtra(VIDEO_FILE_NAME, videoPath);
+                   TagFut.putExtra(VIDEO_FILE_NAME, videoPath);
                     this.startActivity(intent);
                 } else {
-                    Toast.makeText(WootagTabActivity.this, VIDEO_FORMAT_WAS_NOT_SUPPORTED, Toast.LENGTH_LONG).show();
+                    Toast.makeText(WootagTabActivity.this, VIDEO_FORMAT_WAS_NOT_SUPPORTED, Toast.TagFu_LONG).show();
                 }
 
             }
@@ -512,8 +509,8 @@ public class WootagTabActivity extends Activity {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_wootag_tab);
         wootagTabActivity = this;
-        this.context = this;
-        final Bundle bundle = this.getIntent().getExtras();
+        this.conTagFu this;
+        fTagFuundle bundle = this.getIntent().getExtras();
         if ((bundle != null) && bundle.containsKey(FROM)) {
             this.notificationGenerated = bundle.getString(FROM);
         }

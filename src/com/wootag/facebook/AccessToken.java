@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.io.InvalidObjectException;
 import java.io.ObjectInputStream;
@@ -23,8 +23,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import com.wootag.facebook.internal.NativeProtocol;
-import com.wootag.facebook.internal.Utility;
+import com.wTagFufacebook.internal.NativeProtocol;
+import com.woTagFuacebook.internal.Utility;
 import com.wootag.facebook.internal.Validate;
 
 /**

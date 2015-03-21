@@ -7,7 +7,7 @@
  * License.
  */
 
-package com.wootag.facebook;
+package com.TagFu.facebook;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

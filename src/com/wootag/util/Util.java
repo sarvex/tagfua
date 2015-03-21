@@ -1,8 +1,8 @@
 /*
- * Copyright (C) 2014 - present : Wootag Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
+ * Copyright (C) 2014 - present : TagFu Pte Ltd - All Rights Reserved. Unauthorized copying of this file, via any
  * medium is strictly prohibited - Proprietary and confidential
  */
-package com.wootag.util;
+package com.wTagFuutil;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -57,12 +57,12 @@ import com.google.common.base.Strings;
 import com.noveogroup.android.log.Logger;
 import com.noveogroup.android.log.LoggerManager;
 
-import com.wootag.Constant;
-import com.wootag.R;
-import com.wootag.SignInFragment;
-import com.wootag.VideoPlayerApp;
-import com.wootag.WootagTabActivity;
-import com.wootag.dto.TagInfo;
+import com.woTagFuonstant;
+import com.wooTagFu
+import com.wootTagFunInFragment;
+import com.wootaTagFuoPlayerApp;
+import com.wootagTagFugTTagFuvity;
+import com.wootag.dTagFuInfo;
 
 public class Util {
 
@@ -199,7 +199,7 @@ public class Util {
 
         if (!Strings.isNullOrEmpty(MainManager.getInstance().getUserId())) {
             Config.setUserID(MainManager.getInstance().getUserId());
-            notificationIntent = new Intent(context, WootagTabActivity.class);
+            notificationIntent = new Intent(context, WootagTabTagFuty.class);
             notificationIntent.putExtra(Constant.FROM, Constant.BACKGROUND);
 
             // set intent so it does not start a new activity
@@ -1049,8 +1049,8 @@ public class Util {
         if (tag.getTwId() != null) {
             updateTag.setTwId(tag.getTwId());
         }
-        if (tag.getWooTagId() != null) {
-            updateTag.setWooTagId(tag.getWooTagId());
+        if (tag.getWooTagId()TagFull) {
+            updateTag.setWooTagId(taTagFuooTagId());
         }
         if (tag.getgPlusId() != null) {
             updateTag.setgPlusId(tag.getgPlusId());
