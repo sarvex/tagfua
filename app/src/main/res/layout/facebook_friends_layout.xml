@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:id="@+id/fbfriendslayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tag_layout_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tagHeadLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/smallmargin"
+            android:background="@drawable/close" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searchLay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/fbimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sharefacebook"
+            android:gravity="center" />
+
+        <AutoCompleteTextView
+            android:id="@+id/fbsearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/smallmargin"
+            android:layout_toLeftOf="@+id/done"
+            android:layout_toRightOf="@+id/fbimg"
+            android:background="@drawable/search_boarder"
+            android:gravity="center_vertical"
+            android:hint="@string/search"
+            android:padding="@dimen/smallmargin" />
+
+        <ImageView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/small"
+            android:background="@drawable/edit_button"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.wootag.ui.CustomTextView
+        android:id="@+id/taggedusertextview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/small"
+        android:layout_marginTop="@dimen/small"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/smallmargin"
+        android:text="@string/tagged_user"
+        android:textColor="@color/black"
+        android:textSize="@dimen/username_text_size"
+        foo:customFont="@string/app_bold_font_name" />
+
+    <include
+        android:id="@+id/taggedUserlayout"
+        layout="@layout/tagged_user_layout"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/fbfriendslist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tag_layout_bg_color"
+        android:cacheColorHint="@color/tag_layout_bg_color"
+        android:divider="@color/tag_layout_bg_color"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

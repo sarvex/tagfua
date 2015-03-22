@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:id="@+id/usersCount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F6F6"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/small"
+        android:paddingTop="@dimen/small" >
+
+        <TextView
+            android:id="@+id/usersCountTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/heading_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/smallmargin"
+            android:src="@drawable/edit_button"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/requestView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/lineheight"
+            android:background="@color/notification_header_text_color" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/pushnotificationmargin" >
+
+            <com.wTagFuui.CustomTextView
+                android:id="@+id/pendingrequests"
+                style="@style/notificationtextview"
+                android:layout_centerVertical="true"
+                android:text=""
+                foo:customFont="@string/app_bold_font_name" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/smallmargin"
+                android:src="@drawable/push_notification_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/lineheight"
+            android:background="@color/notification_header_text_color" />
+    </LinearLayout>
+
+    <com.woTagFui.CustomTextView
+        android:id="@+id/userlisterrormessageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/no_search_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:visibility="gone"
+        foo:customFont="@string/app_bold_font_name" />
+
+    <com.wootag.pulltorefresh.PullToRefreshListView
+        android:id="@+id/followersList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@color/twitter_bg_color"
+        android:dividerHeight="@dimen/lineheight" />
+
+</LinearLayout>

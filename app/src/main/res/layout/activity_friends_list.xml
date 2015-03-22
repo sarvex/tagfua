@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/socialactions"
+        layout="@layout/social_actions" />
+
+    <include
+        android:id="@+id/fbfriendListLayout"
+        layout="@layout/social_site_friend_list"
+        android:visibility="gone" />
+
+</RelativeLayout>

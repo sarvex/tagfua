@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/signinbg" >
+
+    <ImageView
+        android:id="@+id/bannerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/browsetagleft"
+        android:layout_marginTop="@dimen/login_edit_margin"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/banner" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bannerImage"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/signinseperatorheight"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/notificationmargin"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/smallmargin"
+                    android:src="@drawable/signinmail" />
+
+                <com.wTagFuui.CustomEditText
+                    android:id="@+id/userNameEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="@string/username"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/smallmargin"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_size"
+                    foo:customFont="@string/app_bold_font_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/signinseperatorheight"
+                android:layout_marginLeft="@dimen/signinseperatorleftmargin"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/notificationmargin"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/smallmargin"
+                    android:src="@drawable/signinpassword" />
+
+                <com.woTagFui.CustomEditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="@string/password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/smallmargin"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_size"
+                    foo:customFont="@string/app_bold_font_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/signinseperatorheight"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@color/white" />
+
+            <com.wooTagFu.CustomTextView
+                android:id="@+id/forgotpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/top_margin_edit_text"
+                android:layout_marginTop="@dimen/top_margin_edit_text"
+                android:clickable="true"
+                android:text="@string/forgot_password"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/smallmargin"
+                android:background="@drawable/signinlogin" />
+
+            <Button
+                android:id="@+id/loginRegisterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/smallmargin"
+                android:background="@drawable/signinregister"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/socialButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_edit_text"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <com.wootag.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/sign_in_using"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    foo:customFont="@string/app_bold_font_name" />
+
+                <Button
+                    android:id="@+id/fblogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/smallmargin"
+                    android:background="@drawable/sharefacebook" />
+
+                <Button
+                    android:id="@+id/gpluslogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/smallmargin"
+                    android:background="@drawable/sharegoogleplus" />
+
+                <Button
+                    android:id="@+id/twitterlogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/smallmargin"
+                    android:background="@drawable/reg_twitter_selector"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:src="@drawable/copyright"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/splashImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/splash"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/splashBannerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splashbanner"
+        android:visibility="gone" />
+
+</RelativeLayout>

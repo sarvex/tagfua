@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/moreVideosLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="8dp"
+        android:background="#F6F6F6"
+        android:gravity="center" >
+
+        <com.wTagFuui.CustomTextView
+            android:id="@+id/moreVideosTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/more_videos"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="@dimen/heading_bold_text_size"
+            foo:customFont="@string/app_bold_font_name" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/publicvideos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/videosListGalleryLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/suggestedUsersLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="8dp"
+        android:background="#F6F6F6"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.woTagFui.CustomTextView
+            android:id="@+id/suggestedUsersTtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/suggested_users"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="@dimen/username_text_size"
+            foo:customFont="@string/app_bold_font_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sugegestedFriendLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!--
+        <ListView
+            android:id="@+id/sugegestedFriendListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/white" >
+        </ListView>
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/discoverPeopleLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:background="#F6F6F6"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.wootag.ui.CustomTextView
+            android:id="@+id/discoverPeopleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/discover_more_people"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/username_text_size"
+            foo:customFont="@string/app_bold_font_name" />
+    </LinearLayout>
+
+</LinearLayout>

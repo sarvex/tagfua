@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <VideoView
+        android:id="@+id/VideoView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/coverselectionLayout"
+        android:layout_below="@+id/controlsContainer"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/controlsContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/coverpage_background"
+        android:padding="@dimen/smallmargin" >
+
+        <ImageView
+            android:id="@+id/cancelrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/rightmargin"
+            android:background="@drawable/back_arrow" />
+
+        <com.wTagFuui.CustomTextView
+            android:id="@+id/trimtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/trim"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            foo:customFont="@string/app_bold_font_name" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/rightmargin"
+            android:background="@drawable/next_arrow" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/play" />
+
+    <LinearLayout
+        android:id="@+id/coverselectionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            style="@style/TrimSelectionProgressStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:indeterminate="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:thumb="@drawable/thumbler_small"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/black" >
+
+            <com.woTagFuideo.trimmer.view.MyScrollView
+                android:id="@+id/myhorizontalScrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#fff" >
+
+                <LinearLayout
+                    android:id="@+id/myframes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+            </com.wootag.video.trimmer.view.MyScrollView>
+
+            <ImageView
+                android:id="@+id/sliderview"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/slider_thumb" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

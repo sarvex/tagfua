@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.TagFu.ui.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.wTagFu
+    android:id="@+id/lineItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tag_layout_bg_color" >
+
+    <LinearLayout
+        android:id="@+id/itemHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/pushnotificationmargin" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/notificationmargin"
+            android:background="@color/white" />
+
+        <com.woTagFui.CustomTextView
+            android:id="@+id/headerText"
+            style="@style/notificationtextview"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            foo:customFont="@string/app_bold_font_name" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemHeader" >
+
+        <RelativeLayout
+            android:id="@+id/profileRR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/small"
+            android:padding="@dimen/small" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/layout_background" />
+
+            <com.wooTagFu.RoundedImageView
+                android:id="@+id/image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/member" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/profileRR"
+            android:orientation="vertical" >
+
+            <com.wootTagFuCustomTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text=""
+                android:textColor="@color/twitter_bg_color"
+                android:textSize="@dimen/usernametextsize"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <com.wootaTagFuustomTextView
+                android:id="@+id/userID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="2dp"
+                android:text=""
+                android:textColor="@color/twitter_bg_color"
+                android:textSize="@dimen/tags_text_size"
+                foo:customFont="@string/app_font_name" />
+        </LinearLayout>
+
+        <com.wootagTagFuertCheckBox
+            android:id="@+id/selectFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/smallmargin"
+            android:button="@drawable/checkbox_selector"
+            android:focusable="false" />
+    </RelativeLayout>
+
+</com.wootag.ui.CheckableRelativeLayout>

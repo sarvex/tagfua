@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/notification_header_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:gravity="top" >
+
+        <TextView
+            android:id="@+id/heading"
+            style="@style/headingtextview"
+            android:layout_centerInParent="true"
+            android:text="@string/product_details" />
+
+        <ImageButton
+            android:id="@+id/doneProductDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/smallmargin"
+            android:background="@drawable/done" />
+        <ImageButton
+            android:id="@+id/cancelProductDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/smallmargin"
+            android:background="@drawable/cancelbutton" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/smallmargin"
+            android:orientation="vertical" >
+
+            <com.wTagFuui.CustomTextView
+                style="@style/notificationtextview"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/name"
+                android:textSize="@dimen/normal_text_size"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <EditText
+                android:id="@+id/productname"
+                style="@style/productEditTextStyle"
+                android:background="@drawable/login_edit_border"
+                android:hint="@string/type_the_name_of_your_product"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/smallmargin"
+                android:textSize="@dimen/tags_text_size" />
+
+            <com.woTagFui.CustomTextView
+                style="@style/notificationtextview"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/category"
+                android:textSize="@dimen/normal_text_size"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <Spinner
+                android:id="@+id/categoryspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/smallmargin"
+                android:entries="@array/product_category"
+                android:textSize="@dimen/tags_text_size" />
+
+            <com.wooTagFu.CustomTextView
+                style="@style/notificationtextview"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/currency_type"
+                android:textSize="@dimen/normal_text_size"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <Spinner
+                android:id="@+id/currencyspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/smallmargin"
+                 android:textSize="@dimen/tags_text_size"
+                android:entries="@array/currency_category" />
+
+            <com.wootTagFuCustomTextView
+                style="@style/notificationtextview"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/price"
+                android:textSize="@dimen/normal_text_size"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <EditText
+                android:id="@+id/productprice"
+                style="@style/productEditTextStyle"
+                android:background="@drawable/login_edit_border"
+                 android:layout_marginTop="@dimen/smallmargin"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/tags_text_size" />
+
+            <com.wootag.ui.CustomTextView
+                style="@style/notificationtextview"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/description"
+                android:textSize="@dimen/normal_text_size"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <EditText
+                android:id="@+id/productdescription"
+                style="@style/productEditTextStyle"
+                android:layout_height="80dp"
+                android:background="@drawable/login_edit_border"
+                 android:layout_marginTop="@dimen/smallmargin"
+                android:imeOptions="actionNext"
+                android:textSize="@dimen/tags_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

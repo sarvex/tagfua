@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="@color/tag_layout_bg_color"
+    android:orientation="horizontal"
+    android:padding="@dimen/smallmargin" >
+
+    <ImageView
+        android:id="@+id/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/smallmargin"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:background="@drawable/red_color_view" />
+
+    <ImageView
+        android:id="@+id/skyblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:background="@drawable/blue_color_view" />
+
+    <ImageView
+        android:id="@+id/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:background="@drawable/green_color_view" />
+
+    <ImageView
+        android:id="@+id/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:background="@drawable/yellow_color_view" />
+
+    <ImageView
+        android:id="@+id/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:background="@drawable/white_color_view" />
+
+    <ImageView
+        android:id="@+id/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:background="@drawable/black_color_view" />
+
+    <ImageView
+        android:id="@+id/lavender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:background="@drawable/lavender_color_view" />
+
+</LinearLayout>

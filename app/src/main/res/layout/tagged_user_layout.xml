@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/smallmargin"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:layout_marginTop="8dp" >
+
+        <RelativeLayout
+            android:id="@+id/profileImageRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/layout_background" />
+
+            <com.wTagFuui.RoundedImageView
+                android:id="@+id/taggeduserimageView"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/member" />
+        </RelativeLayout>
+
+        <com.wootag.ui.CustomTextView
+            android:id="@+id/taggedusername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/smallmargin"
+            android:layout_marginRight="@dimen/smallmargin"
+            android:layout_toRightOf="@+id/profileImageRL"
+            android:paddingRight="@dimen/smallmargin"
+            android:text="@string/una_reddy_ghghar"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/twitter_bg_color"
+            android:textSize="@dimen/username_text_size"
+            foo:customFont="@string/app_bold_font_name" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/taggeduserdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/uncheck" />
+
+</RelativeLayout>

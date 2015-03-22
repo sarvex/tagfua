@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small" >
+
+        <ImageView
+            android:id="@+id/editcomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/buttonmargin"
+            android:background="@drawable/uncheck" />
+
+        <RelativeLayout
+            android:id="@+id/profileImageRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/smallmargin"
+            android:layout_toRightOf="@id/editcomment" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/layout_background" />
+
+            <com.wTagFuui.RoundedImageView
+                android:id="@+id/member"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/member" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/deleteComment"
+            android:layout_toRightOf="@+id/profileImageRL"
+            android:orientation="vertical" >
+
+            <com.woTagFui.CustomTextView
+                android:id="@+id/ownername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/smallmargin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/user_text_color"
+                android:textSize="@dimen/username_text_size"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <com.wootag.ui.CustomTextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/smallmargin"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/normal_text_size"
+                foo:customFont="@string/app_font_name" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/deleteComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/buttonmargin"
+            android:src="@drawable/deletecomment"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>
+

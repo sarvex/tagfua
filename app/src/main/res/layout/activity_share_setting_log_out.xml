@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/notificationlayout_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/notification_header_background"
+        android:orientation="vertical"
+        android:padding="@dimen/pushnotificationmargin" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/notificationheaderpadding"
+            android:background="@color/notification_header_background" />
+
+        <com.wTagFuui.CustomTextView
+            style="@style/notificationtextview"
+            android:text="@string/account"
+            android:textColor="@color/notification_header_text_color"
+            foo:customFont="@string/app_bold_font_name" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/lineheight"
+        android:background="@color/notification_header_text_color" />
+
+    <RelativeLayout
+        android:id="@+id/unlink"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pushnotificationmargin" >
+
+        <com.wootag.ui.CustomTextView
+            style="@style/notificationtextview"
+            android:layout_centerVertical="true"
+            android:text="@string/unlink"
+            foo:customFont="@string/app_bold_font_name" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/smallmargin"
+            android:src="@drawable/push_notification_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/lineheight"
+        android:background="@color/notification_header_text_color" />
+
+</LinearLayout>

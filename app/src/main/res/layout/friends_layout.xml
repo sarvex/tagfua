@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/fbfriendslayout">
+    <ImageButton android:id="@+id/fbback"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right"
+      android:background="@drawable/exit"
+       />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:padding="2dp"
+        android:id="@+id/searchLay"
+        android:background="#3b5998">
+
+        <ImageView
+            android:id="@+id/fbimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/tag_facebook_f"
+            android:gravity="center" />
+
+        <AutoCompleteTextView
+            android:id="@+id/fbsearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/fbimg"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit"
+            android:padding="10dp" />
+    </RelativeLayout>
+     <ListView
+        android:id="@+id/emptyList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#3b5998"
+        android:dividerHeight="1dp"
+        android:gravity="center_horizontal" 
+        android:background="@android:color/white"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/fbfriendslist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#3b5998"
+        android:dividerHeight="1dp"
+        android:gravity="center_horizontal" 
+        android:cacheColorHint="@android:color/white"
+        android:background="@android:color/white"/>
+     <ListView
+        android:id="@+id/fbfilterlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#3b5998"
+        android:dividerHeight="1dp"
+        android:gravity="center_horizontal" 
+        android:cacheColorHint="@@android:color/black"
+        android:background="@android:color/black"
+        android:visibility="gone"/>
+
+</LinearLayout>

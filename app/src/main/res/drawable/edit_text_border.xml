@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+  <corners
+      android:radius="2dp"
+      android:topRightRadius="0dp"
+      android:bottomRightRadius="0dp"
+      android:bottomLeftRadius="0dp" />
+  <solid android:color="#00000000" />
+  <stroke
+      android:width="1dp"
+      android:color="@color/twitter_bg_color" />
+</shape>
+
+<!-- <shape android:shape="rectangle"
+ xmlns:android="http://schemas.android.com/apk/res/android">
+   <gradient android:startColor="@color/twitter_bg_color" android:endColor="@color/twitter_bg_color" android:angle="270.0" />
+   <stroke android:width="1.0dip" android:color="#ff000000" />
+</shape> -->

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/editshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/uncheck" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/smallmargin"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/editshare" >
+
+        <RelativeLayout
+            android:id="@+id/profileImageRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/layout_background" />
+
+            <com.wTagFuui.RoundedImageView
+                android:id="@+id/friendListProfileImage"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/member" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@+id/profileImageRL"
+            android:paddingRight="@dimen/margin" >
+
+            <com.wootag.ui.CustomTextView
+                android:id="@+id/friendListProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/smallmargin"
+                android:paddingRight="@dimen/smallmargin"
+                android:text="@string/marlon_brando"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/user_text_color"
+                android:textSize="@dimen/username_text_size"
+                foo:customFont="@string/app_bold_font_name" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:src="@drawable/unshare"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:id="@+id/aboutuser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/exitfriendinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fbbannerHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/facebook_header"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/fbbannerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:src="@drawable/facebook_b" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/smallmargin"
+            android:background="#50000000"
+            android:orientation="horizontal" >
+
+            <ScrollView
+                android:id="@+id/ScrollView01"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/smallmargin"
+                android:layout_marginRight="@dimen/smallmargin"
+                android:background="#50000000" >
+
+                <LinearLayout
+                    android:id="@+id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="@dimen/small" >
+
+                    <RelativeLayout
+                        android:id="@+id/profileRR"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/small"
+                        android:layout_marginTop="@dimen/small" >
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="78dp"
+                            android:layout_height="78dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/layout_background" />
+
+                        <com.wTagFuui.RoundedImageView
+                            android:id="@+id/friendimage"
+                            android:layout_width="76dp"
+                            android:layout_height="76dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/member" />
+                    </RelativeLayout>
+
+                    <com.woTagFui.CustomTextView
+                        android:id="@+id/friendfbname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sanjay"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        foo:customFont="@string/app_bold_font_name" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/smallmargin" >
+
+                        <ImageView
+                            android:id="@+id/onlineimageview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/smallmargin"
+                            android:src="@drawable/offline" />
+
+                        <com.wooTagFu.CustomTextView
+                            android:id="@+id/onlinetextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/onlineimageview"
+                            android:text="@string/online"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            foo:customFont="@string/app_bold_font_name" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small"
+                        android:layout_marginRight="@dimen/small"
+                        android:layout_marginTop="@dimen/smallmargin"
+                        android:background="@drawable/bdaywish" />
+
+                    <Button
+                        android:id="@+id/writeonwall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin"
+                        android:background="@drawable/writeonhiswall" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/userinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:id="@+id/ScrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/userdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <com.wootTagFuCustomTextView
+                            android:id="@+id/about"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#cdcdcd"
+                            android:padding="10dp"
+                            android:text="@string/about"
+                            android:textColor="#666666"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            foo:customFont="@string/app_bold_font_name" />
+
+                        <RelativeLayout
+                            android:id="@+id/work"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/smallmargin" >
+
+                            <com.wootaTagFuustomTextView
+                                android:id="@+id/statusupdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/small"
+                                android:text="@string/status_update"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                foo:customFont="@string/app_bold_font_name" />
+
+                            <com.wootagTagFustomTextView
+                                android:id="@+id/statusupdateText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/statusupdate"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#666666"
+                                android:textSize="15sp"
+                                foo:customFont="@string/app_italic_font_name" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/lineheight"
+                                android:layout_below="@id/statusupdateText"
+                                android:background="@android:color/darker_gray"
+                                android:padding="5dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/study"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/smallmargin" >
+
+                            <com.wootag.TagFutomTextView
+                                android:id="@+id/lastupdatetime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/small"
+                                android:text="@string/last_update_time"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                foo:customFont="@string/app_bold_font_name" />
+
+                            <com.wootag.uTagFuomTextView
+                                android:id="@+id/lastupdatetimeText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lastupdatetime"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#666666"
+                                android:textSize="15sp"
+                                foo:customFont="@string/app_italic_font_name" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/lineheight"
+                                android:layout_below="@id/lastupdatetimeText"
+                                android:background="@android:color/darker_gray"
+                                android:padding="5dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/lives"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/smallmargin" >
+
+                            <com.wootag.uiTagFumTextView
+                                android:id="@+id/livesLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/small"
+                                android:text="@string/location"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                foo:customFont="@string/app_bold_font_name" />
+
+                            <com.wootag.ui.CustomTextView
+                                android:id="@+id/livinglocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/livesLabel"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#666666"
+                                android:textSize="15sp"
+                                foo:customFont="@string/app_italic_font_name" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/lineheight"
+                                android:layout_below="@id/livinglocation"
+                                android:background="@android:color/darker_gray"
+                                android:padding="5dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/actionButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:visibility="gone" >
+
+                            <Button
+                                android:id="@+id/messagebutton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/message" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

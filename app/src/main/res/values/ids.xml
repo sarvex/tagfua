@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="home_notification_id" type="id"/>
+    <item name="notification_id" type="id"/>
+    <item name="coverpageimageview_tag_id" type="id"/>
+    <item name="coverpage_selection_tag_id" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="webview" type="id"/>
+    <item name="scrollview" type="id"/>
+
+</resources>

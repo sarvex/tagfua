@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/notificationlayout_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/lineheight"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@color/notification_header_text_color" />
+
+    <RelativeLayout
+        android:id="@+id/fbAuthentication"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/accountsettingoptionspadding" >
+
+        <Button
+            android:id="@+id/fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/sharefacebook" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fb"
+            android:orientation="vertical" >
+
+            <com.wTagFuui.CustomTextView
+                android:id="@+id/textfb"
+                style="@style/socialSiteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/facebook"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <com.woTagFui.CustomTextView
+                android:id="@+id/fbmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="gone"
+                foo:customFont="@string/app_font_name" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/smallmargin"
+            android:src="@drawable/push_notification_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/lineheight"
+        android:background="@color/notification_header_text_color" />
+
+    <RelativeLayout
+        android:id="@+id/twitterAuthentication"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/accountsettingoptionspadding" >
+
+        <Button
+            android:id="@+id/twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/sharetwitter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/twitter"
+            android:orientation="vertical" >
+
+            <com.wooTagFu.CustomTextView
+                android:id="@+id/texttwitter"
+                style="@style/socialSiteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/twitter"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <com.wootTagFuCustomTextView
+                android:id="@+id/twittermail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="gone"
+                foo:customFont="@string/app_font_name" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/smallmargin"
+            android:src="@drawable/push_notification_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/lineheight"
+        android:background="@color/notification_header_text_color" />
+
+    <RelativeLayout
+        android:id="@+id/gplusAuthentication"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/accountsettingoptionspadding" >
+
+        <Button
+            android:id="@+id/gplusshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/sharegoogleplus" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/gplusshare"
+            android:orientation="vertical" >
+
+            <com.wootaTagFuustomTextView
+                style="@style/socialSiteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/google"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <com.wootag.ui.CustomTextView
+                android:id="@+id/gplusmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="gone"
+                foo:customFont="@string/app_font_name" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/smallmargin"
+            android:src="@drawable/push_notification_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/lineheight"
+        android:background="@color/notification_header_text_color" />
+
+</LinearLayout>

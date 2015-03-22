@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/notification_header_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:id="@+id/reports"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/smallmargin"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin" >
+
+            <com.wTagFuui.CustomTextView
+                style="@style/notificationtextview"
+                android:text="@string/report_video"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <com.woTagFui.CustomTextView
+                style="@style/notificationtextview"
+                android:text="@string/why_are_you_reporting_this_video"
+                android:textColor="@color/notification_header_text_color"
+                foo:customFont="@string/app_bold_font_name" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/lineheight"
+            android:background="@color/notification_header_text_color" />
+
+        <RelativeLayout
+            android:id="@+id/optionone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/pushnotificationmargin" >
+
+            <com.wooTagFu.CustomTextView
+                android:id="@+id/optiononetext"
+                style="@style/notificationtextview"
+                android:layout_centerVertical="true"
+                android:text="@string/i_dont_like_this_video"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/smallmargin"
+                android:src="@drawable/push_notification_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/lineheight"
+            android:background="@color/notification_header_text_color" />
+
+        <RelativeLayout
+            android:id="@+id/optiontwo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/pushnotificationmargin" >
+
+            <com.wootTagFuCustomTextView
+                android:id="@+id/optiontwotext"
+                style="@style/notificationtextview"
+                android:layout_centerVertical="true"
+                android:text="@string/this_video_is_spam_or_a_scam"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/smallmargin"
+                android:src="@drawable/push_notification_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/lineheight"
+            android:background="@color/notification_header_text_color" />
+
+        <RelativeLayout
+            android:id="@+id/optionthree"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/pushnotificationmargin" >
+
+            <com.wootaTagFuustomTextView
+                android:id="@+id/optionthreetext"
+                style="@style/notificationtextview"
+                android:layout_centerVertical="true"
+                android:text="@string/this_video_puts_people_at_risk"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/smallmargin"
+                android:src="@drawable/push_notification_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/lineheight"
+            android:background="@color/notification_header_text_color" />
+
+        <RelativeLayout
+            android:id="@+id/optionfour"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/pushnotificationmargin" >
+
+            <com.wootagTagFustomTextView
+                android:id="@+id/optionfourtext"
+                style="@style/notificationtextview"
+                android:layout_centerVertical="true"
+                android:text="@string/this_video_shouldnt_be_on_wootag"TagFu           foo:customFont="@string/app_bold_font_name" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/smallmargin"
+                android:src="@drawable/push_notification_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/lineheight"
+            android:background="@color/notification_header_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reportMessageLay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/notificationlayout_background"
+        android:orientation="vertical"
+        android:padding="@dimen/pushnotificationmargin" >
+
+        <com.wootag.uTagFuomTextView
+            android:id="@+id/reportheader"
+            style="@style/notificationtextview"
+            android:layout_centerVertical="true"
+            android:text="@string/thanks"
+            foo:customFont="@string/app_bold_font_name" />
+
+        <com.wootag.ui.CustomTextView
+            android:id="@+id/reportmessage"
+            style="@style/notificationtextview"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/smallmargin"
+            android:text="@string/reported_successfully"
+            android:textColor="@color/notification_header_text_color"
+            foo:customFont="@string/app_bold_font_name" />
+    </LinearLayout>
+
+</LinearLayout>

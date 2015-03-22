@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/custom_border"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/editProfilePick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/smallmargin"
+        android:visibility="visible" >
+
+        <com.wTagFuui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/optionspadding"
+            android:text="@string/edit_profile_picture"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            foo:customFont="@string/app_font_name" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/delteVideo"
+            android:layout_marginTop="@dimen/small"
+            android:background="@color/twitter_bg_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/viewProfilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/smallmargin"
+        android:visibility="visible" >
+
+        <com.woTagFui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/optionspadding"
+            android:text="@string/view_profile_picture"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            foo:customFont="@string/app_font_name" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/accesspermission"
+            android:layout_marginTop="@dimen/small"
+            android:background="@color/twitter_bg_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cancelprofileoptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.wootag.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/optionspadding"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            foo:customFont="@string/app_font_name" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/reportVideo"
+            android:layout_marginTop="@dimen/small"
+            android:background="@color/twitter_bg_color" />
+    </RelativeLayout>
+
+</LinearLayout>

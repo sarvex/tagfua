@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="@dimen/margin"
+    android:visibility="gone" >
+
+    <Button
+        android:id="@+id/exitwTagFualltoaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/productview"
+        android:background="@drawable/close" />
+
+    <LinearLayout
+        android:id="@+id/productview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exitwoTagFulltoaction"
+        android:background="@color/gray"
+        android:gravity="top"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/smallmargin"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/notif_banner" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/smallmargin" >
+
+                <com.wooTagFu.CustomTextView
+                    android:id="@+id/productTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="30"
+                    android:padding="@dimen/smallmargin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    foo:customFont="@string/app_bold_font_name" />
+
+                <com.wootTagFuCustomTextView
+                    android:id="@+id/productCurrencytype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/productTitle"
+                    android:padding="@dimen/smallmargin"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    foo:customFont="@string/app_font_name" />
+
+                <com.wootaTagFuustomTextView
+                    android:id="@+id/productPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/productCurrencytype"
+                    android:padding="@dimen/smallmargin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    foo:customFont="@string/app_font_name" />
+            </RelativeLayout>
+
+            <com.wootag.ui.CustomTextView
+                android:id="@+id/productDescription"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/smallmargin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                foo:customFont="@string/app_font_name" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="@dimen/lineheight"
+                android:layout_margin="@dimen/smallmargin"
+                android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/intrested"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/smallmargin"
+                android:src="@drawable/intrested" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:id="@+id/headingView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/smallmargin" >
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/videotakedownmargin"
+                android:background="@drawable/uploadback"
+                android:visibility="visible" />
+
+            <com.wTagFuui.CustomTextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/share"
+                android:textColor="#118be3"
+                android:textSize="@dimen/notification_bold_text_size"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <Button
+                android:id="@+id/cancelpublish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/videotakedownmargin"
+                android:background="@drawable/cancelbutton" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/twitter_bg_color" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uploadLayout"
+        android:layout_below="@+id/headingView"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tag_layout_bg_color"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/videothumbimageview"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:src="@drawable/notif_banner" />
+
+                <EditText
+                    android:id="@+id/videoname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:background="@drawable/account_setting_edit_text_background"
+                    android:hint="@string/enter_video_title_here"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/twitter_bg_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/twitter_bg_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginLeft="@dimen/smallmargin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:orientation="vertical" >
+
+                    <com.woTagFui.CustomTextView
+                        style="@style/headingViewStylewithoutMargin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Public"
+                        android:textColor="@color/twitter_bg_color"
+                        foo:customFont="@string/app_bold_font_name" />
+
+                    <com.wooTagFu.CustomTextView
+                        style="@style/headingStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/everywhere"
+                        android:textColor="@color/twitter_bg_color"
+                        foo:customFont="@string/app_font_name" />
+
+                    <ToggleButton
+                        android:id="@+id/tooglepublicbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/smallmargin"
+                        android:background="@drawable/toggle_drawable_layers"
+                        android:textColor="@android:color/transparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginLeft="@dimen/smallmargin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:orientation="vertical" >
+
+                    <com.wootTagFuCustomTextView
+                        style="@style/headingViewStylewithoutMargin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/only_followers"
+                        android:textColor="@color/twitter_bg_color"
+                        foo:customFont="@string/app_bold_font_name" />
+
+                    <com.wootaTagFuustomTextView
+                        style="@style/headingStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/followers_video_feeds"
+                        android:textColor="@color/twitter_bg_color"
+                        foo:customFont="@string/app_font_name" />
+
+                    <ToggleButton
+                        android:id="@+id/tooglefollowersbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/smallmargin"
+                        android:background="@drawable/toggle_drawable_layers"
+                        android:textColor="@android:color/transparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginLeft="@dimen/smallmargin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:orientation="vertical" >
+
+                    <com.wootagTagFustomTextView
+                        style="@style/headingViewStylewithoutMargin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/only_private_group"
+                        android:textColor="@color/twitter_bg_color"
+                        foo:customFont="@string/app_bold_font_name" />
+
+                    <com.wootag.TagFutomTextView
+                        style="@style/headingStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/private_feeds"
+                        android:textColor="@color/twitter_bg_color"
+                        foo:customFont="@string/app_font_name" />
+
+                    <ToggleButton
+                        android:id="@+id/toogleprivatebutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/smallmargin"
+                        android:background="@drawable/toggle_drawable_layers"
+                        android:checked="true"
+                        android:textColor="@android:color/transparent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/twitter_bg_color" />
+
+            <LinearLayout
+                android:id="@+id/facebookshare"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tag_layout_bg_color"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/smallmargin" >
+
+                <Button
+                    android:id="@+id/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="@dimen/smallmargin"
+                    android:background="@drawable/sharefacebook" />
+
+                <com.wootag.uTagFuomTextView
+                    android:id="@+id/textfb"
+                    style="@style/socialSiteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/facebook"
+                    foo:customFont="@string/app_bold_font_name" />
+
+                <ToggleButton
+                    android:id="@+id/fbtoggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/tagsociallayouttop"
+                    android:background="@drawable/toggle_drawable_layers"
+                    android:textColor="@android:color/transparent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/twitter_bg_color" />
+
+            <LinearLayout
+                android:id="@+id/twshare"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tag_layout_bg_color"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/smallmargin" >
+
+                <Button
+                    android:id="@+id/twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="@dimen/smallmargin"
+                    android:background="@drawable/sharetwitter" />
+
+                <com.wootag.uiTagFumTextView
+                    android:id="@+id/texttw"
+                    style="@style/socialSiteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/twitter_"
+                    foo:customFont="@string/app_bold_font_name" />
+
+                <ToggleButton
+                    android:id="@+id/twtoggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/tagsociallayouttop"
+                    android:background="@drawable/toggle_drawable_layers"
+                    android:textColor="@android:color/transparent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/twitter_bg_color" />
+
+            <LinearLayout
+                android:id="@+id/gplusshare"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tag_layout_bg_color"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/smallmargin" >
+
+                <Button
+                    android:id="@+id/gplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="@dimen/smallmargin"
+                    android:background="@drawable/sharegoogleplus" />
+
+                <com.wootag.ui.CustomTextView
+                    android:id="@+id/textgplus"
+                    style="@style/socialSiteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/google_"
+                    foo:customFont="@string/app_bold_font_name" />
+
+                <ToggleButton
+                    android:id="@+id/gplustoggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/tagsociallayouttop"
+                    android:background="@drawable/toggle_drawable_layers"
+                    android:textColor="@android:color/transparent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/twitter_bg_color" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/uploadLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/twitter_bg_color"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/uploadvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/upload" />
+    </LinearLayout>
+
+</RelativeLayout>

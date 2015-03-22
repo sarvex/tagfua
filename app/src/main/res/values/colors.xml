@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="media_controller_text_color">#FFFFFF</color>
+    <color name="media_controller_bg_color">#5f5f5f</color>
+    <color name="seekbar_bg">#141414</color>
+    <color name="fb_bg_color">#3b5998</color>
+    <color name="gplus_bg_color">#a53130</color>
+    <color name="twitter_bg_color">#10a2e7</color>
+    <color name="user_text_color">#11a3e7</color>
+    <color name="tag_expression_text_color">#585858</color>
+    <color name="tag_layout_bg_color">#f4f4f4</color>
+    <color name="quicklink_bg_color">#a7a7a7</color>
+    <color name="bottom_tab_text_color">#c0bfbf</color>
+    <color name="bottom_tab_text_focus_color">#24a1db</color>
+    <color name="tagsbg">#e7e7e7</color>
+    <color name="tabbgcolor">#ececec</color>
+    <color name="commentline">#0d95d2</color>
+    <color name="seekbar_progress">#a53130</color>
+    <color name="seekbar_sec_progress">#875e5e</color>
+    <color name="tab_focus">#212121</color>
+    <color name="tab_normal">#555454</color>
+    <color name="tablayout_background">#2d2d2d</color>
+    <color name="notificationlayout_background">#f7f7f7</color>
+    <color name="notification_header_background">#f5f5f5</color>
+    <color name="notification_header_text_color">#818181</color>
+    <color name="redcolor">#fb0200</color>
+    <color name="green">#3ec700</color>
+    <color name="blue">#00c0ff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#fcaa00</color>
+    <color name="lavender">#5b6cbe</color>
+    <color name="gray">#4b4b4b</color>
+    <color name="vine_green">#ff00b589</color>
+    <color name="com_facebook_picker_search_bar_background">#f5f5f7</color>
+    <color name="com_facebook_picker_search_bar_text">#bcbdc2</color>
+
+</resources>

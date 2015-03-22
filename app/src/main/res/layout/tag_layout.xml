@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res/com.TagFu"
+    android:id="@+id/taglayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/small" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/smallmargin"
+        android:layout_marginRight="@dimen/smallmargin"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/small"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.wTagFuui.CustomTextView
+                    android:id="@+id/nameHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="@dimen/small"
+                    android:text="@string/compose_your_expression_"
+                    android:textColor="@color/tag_expression_text_color"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    foo:customFont="@string/app_bold_font_name" />
+
+                <com.woTagFui.CustomTextView
+                    android:id="@+id/expressionCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/smallmargin"
+                    android:gravity="center_vertical"
+                    android:text="@string/_40"
+                    android:textColor="@color/twitter_bg_color"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    foo:customFont="@string/app_bold_font_name" />
+            </LinearLayout>
+
+            <com.wooTagFu.CustomEditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small"
+                android:background="@drawable/edit_text_border"
+                android:imeOptions="actionNext"
+                android:maxLength="40"
+                android:padding="@dimen/smallmargin"
+                android:singleLine="true"
+                android:textSize="@dimen/normal_text_size"
+                foo:customFont="@string/app_font_name" />
+
+            <com.wootTagFuCustomTextView
+                android:id="@+id/linkHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="@dimen/small"
+                android:text="@string/link_"
+                android:textColor="@color/tag_expression_text_color"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                foo:customFont="@string/app_bold_font_name" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small"
+                android:background="@drawable/edit_text_border"
+                android:padding="@dimen/small" >
+
+                <com.wootaTagFuustomEditText
+                    android:id="@+id/link"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="@dimen/small"
+                    android:paddingRight="@dimen/margin"
+                    android:singleLine="true"
+                    android:textSize="@dimen/normal_text_size"
+                    foo:customFont="@string/app_font_name" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" >
+
+                    <ImageView
+                        android:id="@+id/tagSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/smallmargin"
+                        android:src="@drawable/tag_search" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/lineheight"
+            android:layout_height="@dimen/tagVerticalline"
+            android:layout_gravity="center_vertical"
+            android:background="@color/twitter_bg_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <com.wootagTagFustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/smallmargin"
+                    android:gravity="left"
+                    android:text="@string/duration_"
+                    android:textColor="@color/tag_expression_text_color"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    foo:customFont="@string/app_bold_font_name" />
+
+                <RelativeLayout
+                    android:id="@+id/timeLay"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/edit_text_border"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/smallmargin" >
+
+                    <com.wootag.TagFutomTextView
+                        android:id="@+id/timetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:imeOptions="actionNext"
+                        android:text="@string/_5_sec"
+                        android:textColor="@color/black"
+                        foo:customFont="@string/app_font_name" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/optionspadding"
+                        android:src="@drawable/tag_add" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin"
+                android:orientation="horizontal" >
+
+                <com.wootag.uTagFuomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/smallmargin"
+                    android:gravity="left"
+                    android:text="@string/colour_"
+                    android:textColor="@color/tag_expression_text_color"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    foo:customFont="@string/app_bold_font_name" />
+
+                <RelativeLayout
+                    android:id="@+id/colorLay"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/edit_text_border"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/smallmargin" >
+
+                    <ImageView
+                        android:id="@+id/colorView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="left"
+                        android:background="@drawable/blue_color_view" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/optionspadding"
+                        android:src="@drawable/tag_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/lineheight"
+            android:layout_height="@dimen/tagVerticalline"
+            android:layout_gravity="center_vertical"
+            android:background="@color/twitter_bg_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/playerfb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/smallmargin"
+                android:layout_marginLeft="@dimen/smallmargin"
+                android:layout_marginRight="@dimen/smallmargin"
+                android:background="@drawable/facebook_button" />
+
+            <Button
+                android:id="@+id/playertwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/smallmargin"
+                android:background="@drawable/twitter_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/playergoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/smallmargin"
+                    android:layout_marginLeft="@dimen/smallmargin"
+                    android:layout_marginRight="@dimen/smallmargin"
+                    android:background="@drawable/g_plus_button" />
+
+                <Button
+                    android:id="@+id/playerwootag"
+ TagFu             android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/smallmargin"
+                    android:background="@drawable/wootag_button" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/lineheight"
+            android:layout_height="@dimen/tagVerticalline"
+            android:layout_gravity="center_vertical"
+            android:background="@color/twitter_bg_color" />
+
+        <LinearLayout
+            android:id="@+id/buttonlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/smallmargin"
+                android:background="@drawable/tag_publish" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/smallmargin"
+                android:background="@drawable/tag_reset"
+                android:gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/smallmargin"
+                android:background="@drawable/tag_update"
+                android:gravity="center_horizontal"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

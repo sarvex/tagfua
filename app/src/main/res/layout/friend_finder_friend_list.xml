@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/socialsitefriendlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:gravity="top" >
+
+        <TextView
+            android:id="@+id/heading"
+            style="@style/headingtextview"
+            android:layout_centerInParent="true"
+            android:text="@string/friend_list" />
+
+        <ImageButton
+            android:id="@+id/inviteDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/smallmargin"
+            android:background="@drawable/invitecontacts"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/fbback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/smallmargin"
+            android:background="@drawable/back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searchLay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/socialiconimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sharefacebook"
+            android:gravity="center" />
+
+        <AutoCompleteTextView
+            android:id="@+id/invitefriendsearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/socialiconimageview"
+            android:background="@drawable/search_boarder"
+            android:hint="@string/search"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/fbfriendslist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@android:color/transparent"
+        android:gravity="center_horizontal" />
+
+    <ListView
+        android:id="@+id/friendFindercontactsList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@null"
+        android:gravity="center_horizontal"
+        android:visibility="gone" />
+
+</LinearLayout>
