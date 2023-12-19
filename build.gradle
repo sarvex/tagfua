@@ -43,6 +43,6 @@ dependencies {
     compile 'com.google.android.gms:play-services:7.0.0'
     compile 'com.commonsware.cwac:wakeful:1.2.3'
     compile 'oauth.signpost:signpost-core:1.2.1.2'
-    compile 'org.twitter4j:twitter4j-core:4.0.2'
+    compile 'org.twitter4j:twitter4j-core:4.1.2'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 }
